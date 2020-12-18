@@ -1,0 +1,13 @@
+---
+title: 'About Economics 262'
+description: "Spring 2021 @ Penn"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+In this blog we will disseminate course content and engage
+  discussion. 
+  
+Check out [`#TidyTuesday`](https://github.com/rfordatascience/tidytuesday/blob/master/README.md)

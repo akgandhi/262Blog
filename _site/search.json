@@ -1,0 +1,20 @@
+{
+  "articles": [
+    {
+      "path": "about.html",
+      "title": "About Economics 262",
+      "description": "Spring 2021 @ Penn",
+      "author": [],
+      "contents": "\nIn this blog we will disseminate course content and engage discussion.\nCheck out #TidyTuesday\n\n\n\n",
+      "last_modified": "2020-12-17T15:59:20+00:00"
+    },
+    {
+      "path": "index.html",
+      "title": "Designing Economic Decisions",
+      "author": [],
+      "contents": "\n\n\n\n",
+      "last_modified": "2020-12-17T15:59:20+00:00"
+    }
+  ],
+  "collections": ["posts/posts.json"]
+}

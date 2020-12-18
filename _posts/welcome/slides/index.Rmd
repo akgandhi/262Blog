@@ -1,0 +1,64 @@
+---
+title: "Presentation Ninja"
+subtitle: "⚔<br/>with xaringan"
+author: "Yihui Xie"
+institute: "RStudio, PBC"
+date: "2016/12/12 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    css: ["default", "css/sfah.css", "css/fonts.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+background-image: url(https://upload.wikimedia.org/wikipedia/commons/b/be/Sharingan_triple.svg)
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+
+xaringanExtra::use_share_again()
+```
+
+???
+
+Image credit: [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Sharingan_triple.svg)
+
+
+
+---
+name: xaringan
+
+# .center[What is xaringan?]
+--
+
+.pull-right[
+
+To create:
+
+> .fancy["An R package for creating HTML5 presentations with remark.js through R Markdown."]
+]
+
+---
+class: center, inverse, middle
+
+# .fancy[This is a test]
+
+Lets see `what` happens
+
+
+---
+name: logos
+class: middle, center
+
+# .fancy[Let's talk <br> .acid[logos] ]
+
+tl;dr: treat like slide-specific background images!
+
+---
+
+.left-column[
+## .fancy[.fatinline[05:00 minutes]]
+]

@@ -1,0 +1,14 @@
+name: "262Blog"
+title: "Designing Economic Decisions"
+description: |
+  Designing Economic Decisions
+output_dir: "_site"
+theme: theme.css
+include: ["slides/"]
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "About"
+      href: about.html
+output: distill::distill_article

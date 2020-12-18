@@ -1,0 +1,24 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Lecture 1: Welcome to Economics 262",
+    "description": "Economics 262 examines the intersection between data technologies and economic decision making.",
+    "author": [
+      {
+        "name": "Amit Gandhi",
+        "url": "upenn.edu"
+      }
+    ],
+    "date": "2020-12-12",
+    "categories": [
+      "Torch",
+      "R",
+      "Image Recognition & Image Processing",
+      "Time series"
+    ],
+    "contents": "\n\nContents\nIntroduction\n\nIntroduction\nThe working title of the class: “Market Design for Economic Decisions”. In the first lecture we will make the case for this course name in relation to the key problems we aim to tackle.\nA key motivation for the course is given by the memorable quote:\n\nLife is a matter of choices, and every choice you make makes you.\n—John C. Maxwell\n\n\nThis is an aside\n\n\n\n\n\n\nfitvids('.shareagain', {players: 'iframe'});\n\n\n\n\n",
+    "preview": "https://db0ip7zd23b50.cloudfront.net/dims4/default/0dfba66/2147483647/legacy_thumbnail/960x369%3E/quality/90/?url=http%3A%2F%2Fbloomberg-bna-brightspot.s3.amazonaws.com%2F43%2F5e%2F9afb1c354b0e8ee71a13c737d4f5%2Fgettyimages-921135480.jpg",
+    "last_modified": "2020-12-17T15:08:16+00:00",
+    "input_file": {}
+  }
+]

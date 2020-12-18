@@ -1,0 +1,56 @@
+---
+title: "Lecture 1: Welcome to Economics 262"
+description: |
+  Economics 262 examines the intersection between data technologies and economic decision making.   
+author:
+  - name: Amit Gandhi
+    url: upenn.edu
+    affiliation: University of Pennsylvania and Microsoft
+    affiliation_url: upenn.edu
+date: 12-12-2020
+categories:
+  - Torch
+  - R
+  - Image Recognition & Image Processing
+  - Time series
+output:
+  distill::distill_article:
+    toc: true
+    self_contained: false
+preview: https://db0ip7zd23b50.cloudfront.net/dims4/default/0dfba66/2147483647/legacy_thumbnail/960x369%3E/quality/90/?url=http%3A%2F%2Fbloomberg-bna-brightspot.s3.amazonaws.com%2F43%2F5e%2F9afb1c354b0e8ee71a13c737d4f5%2Fgettyimages-921135480.jpg
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating blogs with Distill at:
+# https://rstudio.github.io/distill/blog.html
+
+```
+
+# Introduction
+
+The working title of the class: "Market Design for Economic Decisions". In the first lecture we will make the case for this course name in relation to the key problems we aim to tackle.
+
+A key motivation for the course is given by the memorable quote:
+
+> Life is a matter of choices, and every choice you make makes you.
+> 
+> ---John C. Maxwell
+
+<aside>
+This is an aside
+</aside>
+
+
+```{r share-again, echo=FALSE}
+xaringanExtra::use_share_again()
+```
+
+```{r embed-xaringan, echo=FALSE, fig.cap="[Slides](slides/index.html)"}
+xaringanExtra::embed_xaringan(url = "slides/index.html", ratio = "16:9")
+```
+
+
+
+
