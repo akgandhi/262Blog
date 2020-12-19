@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2020-12-17-lecture-1/",
+    "title": "Lecture 1",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "Amit K. Gandhi",
+        "url": "upenn.edu"
+      }
+    ],
+    "date": "2020-12-17",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2020-12-18T15:55:02+00:00",
+    "input_file": "lecture-1.utf8.md"
+  },
+  {
     "path": "posts/welcome/",
     "title": "Lecture 1: Welcome to Economics 262",
     "description": "Economics 262 examines the intersection between data technologies and economic decision making.",

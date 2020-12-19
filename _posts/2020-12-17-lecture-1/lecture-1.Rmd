@@ -3,7 +3,7 @@ title: "Lecture 1"
 description: |
   A short description of the post.
 author:
-  - name: Amit Gandhi
+  - name: Amit K. Gandhi
     url: upenn.edu
 date: 12-17-2020
 output:
