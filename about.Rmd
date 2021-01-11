@@ -7,6 +7,8 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 This is the course blog for **Economics 262 -  Market Design** taught at the **University of Pennsylvania** in Spring 2021. Market design is the part of economics that aims to make economics *functional* - apply economic principles to make real world decisions. 
+
+
 The course is predicated on the view that modern deployments of economics into the real world invariably involve the confluence of economic principles, data, and technology. The course blog is a reflection of this philosophy.
 
 Our ultimate aim is empowering a new generation of software that is able to "think like an economist" and help humans and organizations make better decisions.

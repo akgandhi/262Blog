@@ -1,5 +1,5 @@
 ---
-title: "Market Design"
+title: "Course Introduction"
 description: |
   Economics at the Intersection of Data and Technology
 author:
