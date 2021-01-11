@@ -1,0 +1,34 @@
+---
+title: "Influencing with Data"
+description: |
+  A short description of the post.
+author:
+  - name: Amit K. Gandhi
+    url: upenn.edu
+date: 12-27-2020
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+As you try to influence someone with an idea, you will be assessed as much (and perhaps more so) on how you say it on top of what you have to say. For data technologies, this means the *artifacts* that you use to communicate the points/insights from data (whether this is simply plotting data or running a model) will fundamentally matter. We will in fact see later in the course on the cognitive mechanism as to why the how influences as much as the "what". 
+
+
+The traditional medium of communiciation in organizational or transactional environments- powerpoint presentations (or death by powerpoint) are too limiting to convey the value and insight of real data. You will rarely change the way someone thinks about a problem with a powerpoint (they are great at summarizing group consensus which was often arrived the old fashion way - through meeting, discussion, and deliberation). Powerpoints are great summarizes of consensus that has already been made, but rarely ever compel new insight into a problem on their own. It is the work that goes into producing a powerpoint where the influence lies. 
+
+<!-- Show example -->
+
+At the other extreme are "data dashboards" on the other hand are beset by complexity and do not distill the storyline that a data driven solution would have to offer. 
+
+<!-- Show example -->
+
+Is there a medium ground - e.g, that brings story, concept, data, and technology together. The answer is "yes" and has to do with a pradigm known as literate programming. 
+
+
+powerpoint presentations - they are simply not 
+

@@ -1,5 +1,5 @@
 ---
-title: "Designing Economic Decisions"
+title: "Market Design"
 site: distill::distill_website
 listing: posts
 ---

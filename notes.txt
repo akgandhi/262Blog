@@ -1,0 +1,230 @@
+`r emo::ji("book")` @rubinstein98 (ch. 1) <br> `r emo::ji("scroll")` @caplin2011search | `r emo::ji("scroll")` @schnabel2016
+
+
+v\### Introduction
+| Class | Topic | Assignment | 
+  |:-----:|:-----|:----------|
+  | Thurs Jan 21 | Rstudio Global Conference | Attend Conference and share your learning on Canvass
+| Tues Jan 26 | Intro to Class | `r emo::ji("paper")` @bounthavong2019 <br> `r emo::ji("paper")`  @schneider2018 
+| Thurs Jan 28 | Introduction to Rmarkdown and ggplot2 | `r emo::ji("paper")` @hohman2020communicating
+| Tues Feb 2| Homo Economicus and Nudge | `r emo::ji("book")` tfs (ch. 1) <br> `r emo::ji("book")` nudge (ch. 1)
+
+
+
+### Economics and (ir)rationality
+| Class | Topic | Reading | Presentation
+| ----- |:----- |:------- |:------------
+  | Thurs Feb 4 | Positive Economics | `r emo::ji("paper")` @f53 <br> `r emo::ji("paper")` @athey2017 | 
+  | Tues Feb 9 | Testing Rationality | `r emo::ji("book")` @rubinstein98 (ch. 1) <br> `r emo::ji("paper")` @caplin2011search | `r emo::ji("paper")` @schnabel2016
+| Thurs Feb 11 | Choice Context  | `r emo::ji("paper")` @huber82 <br>  `r emo::ji("paper")` @shafir93 | `r emo::ji("paper")` @dimara2018 <br> `r emo::ji("paper")` @dimarablog <br> `r emo::ji("paper")` @weinmann2020 <br> @stoffel2019testing
+
+| Tues Feb 16 | Too Much Choice |  `r emo::ji("paper")` @iyengar2000 <br> `r emo::ji("paper")` @iyengar2010 <br> `r emo::ji("paper")` @madrian2001 |  `r emo::ji("paper")` @bhargava2018
+|Thurs Feb 18 | Choice Architecture |  `r emo::ji("book")` nudge (ch 2-3) <br> `r emo::ji("paper")` @benartzi2020 | Guest Lecture
+| Tues Feb 23 | The Dark Side of Nudging | `r emo::ji("paper")` @kresge2020 <br> | `r emo::ji("paper")` @scheiber2017 <br> `r emo::ji("paper")` @narayanan2020 <br> :coffee: `r emo::ji("paper")` @gino2017 
+|Thurs Feb 25| No Class
+
+
+
+### Cognitive Foundations
+| Class | Topic | Assignment | Class Activity
+| ---   | ---   | ---        |  ---
+  |Tues March 2| Meet System 1 and System 2 | `r emo::ji("book")` tfs (ch. 1-5)
+|Thurs March 4| Associative Memory and Neural Nets | `r emo::ji("book")` @rojas2013 (ch. 1)
+|Tues March 9 | Heuristics and Biases | `r emo::ji("book")` tfs (ch. 6-9, Appendix A)
+|Thurs March 11 | No Class
+
+
+## Judgment Heuristics
+| Class | Topic | Assignment | Presentation
+| ---   | ---   | ---        |  ---
+  |Tues March 16| Law of Small Numbers | `r emo::ji("book")` tfs (ch 11) <br> `r emo::ji("paper")` @tversky71 <br> `r emo::ji("paper")` @engber2016 <br> `r emo::ji("paper")` @chivers2019| 
+  |Thurs March 18| Gambler's and Hot-Hand Fallacy| `r emo::ji("paper")` @miller2020 <br>   | `r emo::ji("paper")` @rao2020 <br>`r emo::ji("paper")` @voxeu2020 <br> `r emo::ji("paper")` @lantis2019
+|Tues March 23| Anchoring | `r emo::ji("book")` tfs (ch 11) <br> `r emo::ji("paper")` @ross1977| `r emo::ji("paper")` @zhang2020 <br> `r emo::ji("paper")` @xiong2019 <br> `r emo::ji("paper")` <br> @wall2019
+|Thurs March 25 | Availability| `r emo::ji("book")` tfs (ch. 12-13) <br> `r emo::ji("book")` nudge (ch. 9) <br> `r emo::ji("paper")` @ross1979 |`r emo::ji("paper")` @enke2020 <br> `r emo::ji("paper")` @fernandes2018
+|Thurs April 1| Base Rate Neglect | `r emo::ji("book")` tfs (ch. 14, 16) | `r emo::ji("paper")` @esponda2020 <br> `r emo::ji("paper")` @kim2019
+|Tues April 6| Conjunction Fallacy | `r emo::ji("book")` tfs (ch. 15, 35) <br> `r emo::ji("paper")` @tetlock89
+|Thurs April 8|  Regression  | `r emo::ji("book")` tfs (ch. 17,18) | `r emo::ji("paper")` @law2020causal
+|Tues April 13 | Overconfidence   | `r emo::ji("book")` tfs (ch. 19-20)
+|Thurs April 15 | Algorithm Aversion | `r emo::ji("book")` tfs (ch. 20-21)
+
+
+## Nudging in Practice
+| Class | Topic
+|  ---  |  ---
+|Tues April 20  | Guest Lecture | 
+|Thurs April 22 | Guest Lecture | 
+|Tues  April 27 | Guest Lecture |
+|Thurs April 29 | Guest Lecture |  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ### Thurs -->
+  
+  <!-- Register and attend any sessions of interest at the [Rstudio global conference](https://rstudio.com/conference/) -->
+  <!-- <br> -->
+  <!-- <br> -->
+  <!-- ![](https://rstudio.com/assets/img/rstudio-global-with-date.jpg) -->
+  
+  
+  
+  <!-- ### Tues (Syllabus Day and Class Introduction) -->
+  
+  
+  <!-- - `r emo::ji("newspaper")` `r TextCite(bib, "bounthavong2019")` -->
+  <!-- - `r emo::ji("newspaper")` `r TextCite(bib, "schneider2018")` -->
+  
+  <!-- ### Thurs (Introduction to Rmarkdown and ggplot2) -->
+  
+  <!-- - `r emo::ji("scroll")`  `r TextCite(bib, "schneider2018")`  -->
+  
+  <!-- ## `r advdate(mon, 3)` -->
+  
+  <!-- ### Tues (Homo Economicus and Nudge) -->
+  
+  
+  <!-- - r emo::ji("book")` tfs (ch. 1)  -->
+  <!-- - `r emo::ji("book")` nudge (ch. 1) -->
+  
+  <!-- ### Thurs (Positive Economics) -->
+  <!-- - `r emo::ji` `r TextCite(bib, "f53")` -->
+  <!-- - `r emo::ji("paper")` `r TextCite(bib, "athey2017")`  -->
+  
+  <!-- ## `r advdate(mon, 4)` -->
+  
+  
+  
+  <!-- ### Readings {.salt} -->
+
+<!-- <!-- How can data and technology raise the overall value of real world economic decisions made by human actors?  How do we identify and how do we influence? Are there any principles or frameworks we can use to guide our understanding?  --> -->
+
+<!-- We will draw ideas from two books during the the class to provide structure for engaging in these questions and topics. -->
+
+<!-- <!-- The objective of the the class are to create a collaborative and stimulating learning to engage in this question. --> -->
+
+<!-- #### Thinking Fast and Slow  -->
+
+<!-- ![](https://www.kurzweilai.net/images/book-cover-Thinking-Fast-+-Slow-no.-5.png) -->
+
+
+<!-- In order to understand human decisions in the wild and identify economic inefficiencies, we need a map to know where to look. If human departures from efficient decisions happen completely at random, then the search would be difficult if not impossible - we would be at the mercy of luck to successfully design! -->
+
+<!-- Fortunately this is not the case. What is arguably the biggest discovery in the social and behavioral science in the last 50 years is that there are robust patterns of human cognition that make humans, e.g, **Homo Sapien** behave differently than the rational ideal, e.g., **Homo Economicus**.  -->
+
+<!-- <aside> -->
+<!-- **Homo Economicus** is the &quot;rational actor&quot from your principles of economics courses used to model decisions by consumers, firms, and societies/governments. -->
+<!-- </aside> -->
+
+<!-- Our primary text for the class - **"Thinking Fast and Slow"** by *Daniel Kahneman* - describes the conceptual and historical backdrop behind the scientific discovery of systematic patterns human bias in economic decision making. As discussed above, this is a field Kahneman himself helped pioneer along with long time collaborator Amos Tversky that eventually spawned the field of behavioral economics and led to Kahneman being awarded the Nobel Prize in 2002 (Tversy sadly passed away in 1996).  -->
+
+<!-- "Thinking Fast and Slow" gives us the basic clues for where we can anticipate that sub-rational economic decisions will happen. Identifying these scenarios is a central part of being a market designer in the digital age - data and AI when properly employed should ameliorate these biases and improve economic efficiency. -->
+
+
+<!-- <!-- Their seminal paper in fact tackled the subject of thinking and reasoning about data. As the book examines, our built-in cognition has an "intuitive statistics" that departs from formal probabilistic and statistical reasoning in repeatable and predictable ways. Homo Economicus on the other hand reasons about risk, uncertainty, and data like formal statisticians.  --> -->
+
+<!-- <!-- Data and AI technologies codify and implement formal statistical and econometric principles in code, algorithms, and visualizations. Can these technologies provide a mechanism to tame our inner "intuitive statistician" and lead to a more rational approach to data in real world economic decisions?  --> -->
+
+<!-- <!-- This will be a central question we consider in our reading of Kahneman's book. --> -->
+  
+  
+  
+  <!-- <!-- The "Heuristics and Biases" research program as it came to be called was interestingly motivated by a question of the human capability to reason about data. our built-in cognition has an "intuitive statistics" that departs from formal probabilistic and statistical reasoning in repeatable and predictable ways.^[It is one among many reasons that is remarkably challenging to keep straight the proper interpretation of a p-value - its runs up against our intuitive statistics - a topic we will revisit later in the semester].   --> -->
+  
+  <!-- <!-- Economics assumes economics agents are able to reason about risk, uncertainty, and data like formal statisticians. Data and AI technologies on the other hand codify and implement formal statistical and econometric principles in code, algorithms, and visualizations. Can these technologies provide an alternative route to taming our intuitive statistics and lead to a more rational approach to data in real world economic decisions?  --> -->
+  
+  
+  <!-- <!-- The "Heuristics and Biases" research program as it came to be called was interestingly motivated by a question of the human capability to reason about data. The jumping off point for these studies was a basic question: are humans intuitive statisticians? To appreciate the question – it is clear humans are intuitive grammarians – we internalize the rules of grammar in spoken behavior at a young age without a formal training in the structure of language. Does that same hold true for human grasp of statistical concepts and principles that are at the core of modern techniques in ML and AI. The answer is "yes and no" and will be one of the central points we will aim to understand. --> -->
+  
+  <!-- <!-- The answer like all great scientific revolutions has a flavor of surprise - while humans are remarkably efficient information processors, our built-in cognition has an "intuitive statistics" that departs from formal probabilistic and statistical reasoning in repeatable and predictable ways.^[It is one among many reasons that is remarkably challenging to keep straight the proper interpretation of a p-value - its runs up against our intuitive statistics - a topic we will revisit later in the semester]. What is remarkable about intuitive statistics is that even many hours of formal training do not allow us to bypass its impulses - we can't "unlearn it" but can (after much effort!) learn to tame it through formal training and practice in statistics, probability, and econometrics.  --> -->
+
+<!-- <!-- This tension between intuitive and formal statistics creates a large wedge between economic rationality and human decisions and will be a focus of our reading of our TFS. Economics assumes economics agents are able to reason about risk, uncertainty, and data like formal statisticians. Data and AI technologies on the other hand codify and implement formal statistical and econometric principles in code, algorithms, and visualizations. Can these technologies provide an alternative route to taming our intuitive statistics?  --> -->
+
+
+<!-- #### Nudge  -->
+
+<!-- ![](https://cms.qz.com/wp-content/uploads/2018/10/Nudge.jpg?quality=75&strip=all&w=1600&h=900&crop=1g) -->
+<!-- Identifying an inefficiency in an economic decision is one thing. Changing someone's behavior towards a more efficient state is quite another. No one likes to be told what to do, especially from data they may not fully be aware or understand.  -->
+  
+  <!-- Perhaps the answer lies not in directing the outcome of the decision, but rather to *nudge* the decision maker towards the rational outcome while respecting their autonomy over the decision.  -->
+  
+  <!-- This is the key idea behind the book **Nudge** by Richard Thaler and Cass Sunstein. Richard Thaler is a behavioral economist who developed the first economic applications of Kahneman and Tversky's discoveries. He was awarded the Nobel prize himself in 2017.  -->
+
+<!-- Nudge argues that seemingly innocuous details of the choice environment matter. They can be manipulated and hence designed to produce decisions that are more rational. Thaler and Sunstein call this type of market design *choice architecture* - designing the choice environment to nudge people to behave more rationally without having to make  people "think" more rationally!  -->
+
+<!-- However the practice of designing nudges has a potential **dark side** - they can be used to exploit human frailties to extract profits in a way that may not be human welfare improving to the user. Of course the definition of *welfare* itself can be in the eye of the beholder, and the dividing line between *good* vs *evil* nudges is not always clear. We will aim to be mindful of this important complexity as we explore the topic.  -->
+
+<!-- ### Why is the book optional? -->
+
+<!-- The book first establishes the conceptual framework that defines nudges and choice architectures in relation to Homo Economicus. It then documents several private and public sector programs whose design has benefited (or could have benefited) from "Nudge thinking".  -->
+
+<!-- We will unfortunately not have time in the course to cover the range of applications that Thaler and Sunstein examine. The framework itself is presented in separate papers written by the authors (see e.g., their paper on [Choice Architecture](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1583509)).  -->
+
+<!-- What is primarily of interest to us is their overall framework, which provides a general strategy for improving economic decisions through suitable design of the choice architecture. The framework itself is also laid out in separate papers written by the authors (see e.g., their paper on [Choice Architecture](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1583509)).  -->
+
+<!-- We will thus not make the book a required reading, but will make the relevant chapters in it optional for the course. That said, I would highly recommend the book as it brings to life many of the ideas on design for more rational decisions we cover in the class (and is a fairly inexpensive purchase).  -->
+<!-- Once it is recognized that human decisions depart from fully rational norm, then it becomes clear that the even small details in the choice environment can impact real human behavior in ways that would otherwise make a textbook rational agent indifferent. The key to Thaler and Sunstein's main idea is taking this logic one step further - the effect of seemingly innocuous details creates to design the choice environment that produces decisions that are more rational without having to make  people "think" more rationally!  -->
+  
+  <!-- Thaler and Sunstein call this type of market design *choice architecture* - designing the choice environment to help make human decisions more rational.  -->
+  
+  
+  
+  <!-- Our reading of TFS will be aimed at flushing out the tension between the human tendencies for reasoning about risk and uncertainty in decision making and their tension with rational models of behavior.  -->
+  
+  <!-- and the formal approach to data that is today being codified by data and AI technologies.  -->
+  
+  <!-- One of the obvious contributions to data technology and AI on the other hand codify and implement formal statistical rules of data reasoning. How  -->
+  
+  
+  
+  
+  <!-- This and statistical reasoning in systematic ways.  -->
+  
+  <!-- he jumping off point for these studies was a basic question: are humans intuitive statisticians? To appreciate the question – it is clear humans are intuitive grammarians – we internalize the rules of grammar in spoken behavior at a young age without a formal training in the structure of language. Does that same hold true for human grasp of statistical concepts and principles?  -->
+  
+  <!-- interestingly for our purposes initiated with a question of data in mind -->
+  
+  <!-- Kahneman wa awarded the Noble Prize in XXX for these contributions wh -->
+  
+  
+  
+  <!-- of the core insights of modern behavioral economics. In particular, the enormously influential &quot;Heuristics and Biases&quot; research program that he and his long time collaborator Amos Tversky partly pioneered and spawned  -->
+  
+  <!-- These biases have been documented in the behavioral economics literature over the last 50 years. Data and AI hold immense promise to ameliorate these biases and become extensionso of not just our social selves but thinking selves.guide humans towards more efficient, value maximizing decisions. This is especially pronounced in the post-pandemic world where an extraordinary number of our interactions and decisions take place in context that are set by our devices and screens. If these contexts can be designed to bring about more efficient decisions, then they not only become extensions of our social selves but also extensions of our thinking selves. -->
+  <!-- The primary text for the class is  -->
+  
+  
+  
+  <!-- ## Stortelling with Data (optional) -->
+  <!-- ![](https://img1.wsimg.com/isteam/ip/354cf7ca-89ac-40a3-bacf-20f7a86f6592/fe9b001b-4250-4def-be14-4ff43dc25527.png) -->
+  
+  <!-- Both "Thinking Fast and Slow" and "Nudge" were written before data science came of age. In fact the term "data science" itself was coined in 2008, the same year as *Nudge* was published.^[Paper here]  -->
+  
+  <!-- <!-- Furthermore, the audience that "Nudge" is targeting is an audience of policy makers in positions of power and authority. This does not describe the lives of many young people entering the workforce who will be increasingly working directly with data to solve problems.  --> -->
+  
+  <!-- Data science is in many ways represents the modern day choice architecture. Data scientist are processing, filtering, and designing displays of information that defines the context for a large variety of our economic decisions. -->
+  
+  <!-- How can we design nudges with data? This requires displaying data in such a way that the interpretation of the data is both intuitive and rational.  -->
+  
+  <!-- It needs to be intuitive in the sense of compelling the behavioral response we seek from nudging the user. Yet it also needs to be rational in properly representing the statistical and economic content of the data.  -->
+  
+  <!-- Intuitive displays means the data tells us a clear story that fits naturally with the patterns of human cognition revealed by our reading of Kahneman. It is the intuitive connection with the data that compels the behavioral response we seek from a nudge.  -->
+  
+  <!-- But to be an effective nudge it must also be rational. Data contain in it statistical information and one of the fundamental limitations of intuitive human reasoning as will also study is the ability to internalize formal statistical content.  -->
+  
+  <!-- We will close the course by studying/examining best the art and science of visualizing data to compel rational human behaviors. We will draw from the text "Story Telling with Data" - which is completely optional but a very useful companion to your future endeavors. We will also hear the experience of leaders and practitioners who are pushing the boundaries of data rationality in real firms, organizations, and markets.  -->
+  
+  
+  <!-- Influencing decision making with data technology however can be an art as much as a science. The best education is thus to hear directly from leaders who are pushing the boundaries of data rationality in real firms, organizations, and markets. We will thus welcome to our class a group of experts from a number of industries who will share their experiences and perspectives on data, AI, and decision making. -->
+  
+  
+  

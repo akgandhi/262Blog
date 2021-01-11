@@ -1,0 +1,811 @@
+---
+title: "Market Design"
+description: |
+  Economics at the Intersection of Data and Technology
+author:
+  - name: Amit K. Gandhi
+    url: upenn.edu
+date: 12-24-2020
+output:
+  distill::distill_article:
+    self_contained: false
+    toc: true
+    toc_depth: 2
+bibliography: ../../biblio.json
+categories:
+  - Data 
+  - A.I.
+  - Homo Economicus
+  - Behavioral Economics
+preview: https://db0ip7zd23b50.cloudfront.net/dims4/default/0dfba66/2147483647/legacy_thumbnail/960x369%3E/quality/90/?url=http%3A%2F%2Fbloomberg-bna-brightspot.s3.amazonaws.com%2F43%2F5e%2F9afb1c354b0e8ee71a13c737d4f5%2Fgettyimages-921135480.jpg
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+colorize <- function(x, color) {
+  if (knitr::is_latex_output()) {
+    sprintf("\\textcolor{%s}{%s}", color, x)
+  } else if (knitr::is_html_output()) {
+    sprintf("<span style='color: %s;'>%s</span>", color, 
+      x)
+  } else x
+}
+
+library(RefManageR)
+bib <- ReadBib("../../biblio.bib")
+#myopts <- BibOptions(cite.style = "authoryear", bib.style = "authoryear", style="markdown", first.inits=FALSE, max.names = 20)
+
+BibOptions(check.entries = FALSE, style = "markdown", bib.style = "authoryear", cite.style = 'authoryear')
+
+mon <- as.Date("2021-01-18")
+
+advdate <- function(obj, adv) {
+ tmon <- obj + 7*(adv-1)
+ tfri <- obj + 4 + 7*(adv-1)
+ tmon <- format(tmon, format="%m/%d")
+ tfri <- format(tfri, format="%m/%d")
+ zadv <- sprintf("%02d", adv)
+ tmp <- paste("Week ",zadv,sep='',", ", tmon," - ",tfri)
+ return(tmp)
+}
+```
+
+![](https://db0ip7zd23b50.cloudfront.net/dims4/default/0dfba66/2147483647/legacy_thumbnail/960x369%3E/quality/90/?url=http%3A%2F%2Fbloomberg-bna-brightspot.s3.amazonaws.com%2F43%2F5e%2F9afb1c354b0e8ee71a13c737d4f5%2Fgettyimages-921135480.jpg)
+
+
+<font size = "12pt">
+
+<center>
+
+&nbsp; | &nbsp;
+  --- | ---
+| <font color = "red"> Course </font> | Econ 262
+| <font color = "red">   Professor | Amit Gandhi (<akgandhi@upenn.edu>)
+| <font color = "red"> TA | etc
+| <font color = "red"> Lecture </font> | Tues, Thursday 1.30-2.50
+| <font color = "red"> Office Hours </font> | By appointment
+| <font color = "red"> Website </font> | [marketdesign.io](marketdesign.io)
+
+</center>
+</font>
+
+
+# Welcome {.salt}
+
+**Welcome to Market Design (Econ 262)**! 
+
+The course will be taught virtually. We will use both synchronous and asynchronous channels for our course interactions. 
+
+We will meet regularly during our alloted lecture time to engage in one of 3 activities (which will be recorded for those who cannot attend live):
+
+1. Short lectures with break-out sessions
+2. Student presentations
+3. Virtual office hours for questions on material
+
+The course [website](marketdesign.io) will deliver the lectures material extracted from the weekly readings. Our class canvass site will be used to deliver recorded lectures and host asynchronous class discussion.
+
+# What is Market Design?{.salt}
+
+The goal of market design  is to design policies that improve the efficiency of economic decisions. An **economic decision** is any decision that involves trade-offs, which is synonymous with the very definition of economics as “the study of the allocation of scarce means to satisfy competing ends.” [@becker2017economic]
+
+Economic decisions are made by diverse actors in an economic system - **households**, **firms**, **governments**, and even the **markets** themselves (e.g., the invisible hand!). 
+
+An economic decision is **efficient** if it makes an optimal trade-off given the objectives and constraints of the decision maker.
+
+Helping make decisions more efficient **creates value, generates profits, and raises welfare**. But how should such interventions be designed? This is the central problem of market design. 
+
+# What is the Topic of Our Class?{.salt}
+Our class is focused on the problems of market design in **digital environments**.
+
+Humans are increasingly making decisions in the presence of **screens** and **devices**, both at work and home. This has been especially pronounced during the last year of the pandemic where life quite literally moved online! 
+
+<aside>
+A digital environment is one where computers and devices are networked together to facilitate human communication and transactions. 
+</aside>
+
+
+**What is the impact of digital environments on economic decisions?** Does the transition from offline to digital environment improve economic efficiency? Can digital environments be **designed** to enable humans to better optimize their economic decisions? 
+
+These are central questions for market design in digital environments.  
+
+A key difference between digital decisions and their offline counterparts is the role of **data**. A digital decision can leverage unprecedented  **velocity, variety, and volume ** of data. The proliferation of data is a product of technological advancements in *data science, data engineering, data analytics, machine learning, and A.I"*, which generates data intelligence that is distributed to decision makers through the **cloud**.
+
+
+
+<!-- The data arise from technologies developed by *data science, data engineering, data analytics, machine learning, and A.I"*, and distributed to applications through the cloud.  -->
+
+
+
+<!-- made possible by technology developed from *data science, data engineering, data analytics, machine learning, and A.I"* and distributed through the cloud.  -->
+
+
+
+
+<!-- The physical interface between the human and the data is often web application. The application consumes data from **data technologies** that have been developed through *data science, data engineering, data analytics, machine learning, and A.I"* and distributed to the application through the **cloud**.  -->
+
+
+
+<!-- An unprecedented  **velocity, variety, and volume ** of data are being placed at the hands of human decisions in digital environments.  -->
+
+<!-- .A digital decision can be informed by an unprecedented **velocity, variety, and volume ** of data. The i data technologies developed through *data science, data engineering, data analytics, machine learning, and A.I*. The data technologies are distributed through the cloud to web applications that define the interface for a  -->
+
+<!-- The basic human interface for a digital decision is a web application. Web applications today can integrate with a host of modern data technologies developed by the software techniques of *data science, data engineering, data analytics, machine learning, and A.I*, which are distributed to application end points through the **cloud**. Thus unprecedented  **velocity, variety, and volume ** of data are being placed at the hands of human decisions.  -->
+
+A fundamental question is then:
+
+<center>
+
+### More Data = Better Decisions? {.heat}
+
+</center>
+<!-- A key new ingredient for decision making in digital settings is data. The digital medium offers bring  **data technologies** arising from *data science, data engineering, data analytics, machine learning, and of course A.I!* to directly bear on economic decisions. -->
+
+
+<!-- The digital medium creates new opportunities and challenges for market design. Online settings can more tightly integrate with **data technologies** arising from *data science, data engineering, data analytics, machine learning, and of course A.I!*. Bthe **velocity, variety, and volume** of data these technologies afford represents an important new fuel for economic decisions.  -->
+
+
+<!-- Although the mathematical ideas behind these technologies is not always new, what is fundamentally is the **economies of scale** that has been reached in producing them. This has substantially lowered the cost of the technology adoption to end users. Today, the sheer **velocity, variety, and volume** of data humans can readily access is breaking new barriers at frenetic pace.^[This is a natural outcome of basic economics - as the price of a product falls, its consumption rises.] -->
+
+<!-- <aside> -->
+<!-- This owes to the hyper-scale growth of **public cloud computing**, the **Internet of things (IoT)**, and fast **low-latency network** telecommunications. -->
+<!-- </aside> -->
+
+The answer is not as straightforward as it may seem. From a purely statistical or econometric viewpoint - more data is always better - we get better parameter inferences, better predictive accuracy, and better power to test models. 
+
+However from a decision making perspective matters are less clear. The main problem is that data and A.I. - despite the hype - is not a panacea by itself.  **The technologies alone do not magically transform decisions.** As economists are fond of saying, **there is no free lunch**! 
+
+Hal Varian (Chief Economist at Google and Professor at Berkeley) summarized the matter nicely in a recent interview:
+
+> I think there’s a mystical belief in the power of data. Data is like oil in one respect… namely, it needs to be refined in order to be useful. So the data itself is not the important components, the know-how to refine it into something that’s useful. It’s the same [when] we talk about oil or data – it’s just the raw material, it’s not the finished product.
+
+In order to create value,  data technologies need to be transformed into applications that solve real problems and improve economic decisions. That is, applications need to be **designed** to extract value from data. Without good design, we are left with an alternative possibility:
+
+<center>
+
+### More Data = <br> More Complexity = <br> Worse Decisions! {.heat} 
+
+</center>
+
+
+A <font size = 4 color = "red"> central problem </font> for market design  is <font size = 4 color = "red"> designing digital environment to translate "more data" into "better economic decisions".</font>. 
+
+
+## What is our approach to the topic?
+
+How should digital environment be designed to enable efficient economic decisions?
+
+**The first rule of good design is to know your audience.** For whom are we designing? Who is the user? 
+
+Let me state the obvious answer which nevertheless has some profound implications for market design. **The user is a human being**!
+
+Our approach in the class is to start with the user - the human - and understand how humans process and act upon data for economic decision making. 
+
+The interface between a human decision and the raw data in a digital environment is typically defined by a web application. The application processes, models, summarizes, and displays features of the raw data to the user. 
+
+![](https://boostlabs.com/wp-content/uploads/2019/09/10-types-of-data-visualization-1.jpg)
+
+Thus from a user perspective, effective design in digital environments requires that a market designer to do 3 things:
+
+**1. Identify** an existing inefficiency in a human decision making process.
+
+**2. Improve** the the decision by leveraging data, technology, and economics.
+
+**3. Influence** humans to change their behavior toward the efficient outcome through a digital interface.
+
+<!-- This is where it differs from consulting - you are building a product, and the 3 steps progress in an iterative fashion. You are in college to learn the "Deep thinking" that is (2) but that is also inefficient.-->
+
+We can see that success in a market design project involves holistic thinking that integrates data/economic techniques  with the visual elements of the digital interface, which are all tailored to the user behaviors we aim to effectuate. 
+
+This is hard! It is a domain that is still in its infancy and being developed in real time across academic, business, and government as organizations digitally transform make data more central to their operation. It is thus a course that (by design `r emo::ji("smile")`) will aim to pose many more questions than necessarily answering them. 
+
+## How Does this Differ from Data Science? 
+
+Whereas a data science or machine learning classes will often focus attention on elements **(2)** (usually substituting "better decisions" with "better predictions") and the plethora of skills and technique involved therein, we will examine the design problem through the human touch points in **(1)** and **(3)**. Our focus is thus the *human-centric design of data technologies to enhance economic decisions*.
+
+<aside>
+I recognize that combining "human-centric" and "economic" together is not often how the "dismal science" is practiced or perceived. `r emo::ji("smile")`
+</aside> 
+
+<!-- In order to identify and influence economic inefficiencies in the wild, we need a map to know where to look. If human departures from efficient decisions happen completely at random, then the search would be difficult if not impossible - we would be at the mercy of luck to successfully design! -->
+
+<!-- Fortunately this is not the case. What is arguably the biggest discovery in the social and behavioral science in the last 50 years is that there are robust patterns of human cognition that make humans, e.g, **Homo Sapien** behave differently than the rational ideal, e.g., **Homo Economicus**.  -->
+
+The science we will apply to the question follows from the seminal work of Kahneman and Tversy (KT for short) who in 1971 began the first inquiry into the question of whether humans naturally are **intuitive statisticians** - e.g., do humans instinctively process data in a fashion that abides by formal statistical principles?
+
+![](https://media.vanityfair.com/photos/58262be9364154776b0baa17/1:1/w_1016,h_1016,c_limit/michael-lewis-moneyball-daniel-kahneman-amos-tversky-01.jpg) ![](images/lawofsmallnumbers.png)
+
+The surprising answer to the question was "no", and led to an influential research paradigm known as **"Heuristics and Biases"** (H&B for short). 
+
+The crux of H&B, which is among the biggest discovery in the social and behavioral sciences of the last 50 years,  is that there are robust patterns of human cognition that make humans, e.g, **Homo Sapien** behave differently than the rational ideal, e.g., **Homo Economicus**.  The program spawned the field of behavioral economics and led to Kahneman being awarded the **Nobel Prize for Economic Science** in 2002 (Tversy sadly passed away in 1996). 
+
+<aside>
+**Homo Economicus** is the &quot;rational actor&quot from your principles of economics courses used to model decisions by consumers, firms, and societies/governments.
+</aside>
+
+# Course Books {.salt}
+### Thinking Fast and Slow
+
+![](https://www.kurzweilai.net/images/book-cover-Thinking-Fast-+-Slow-no.-5.png)
+
+Our primary text for the class - **"Thinking Fast and Slow"** by *Daniel Kahneman* - describes the conceptual and historical backdrop behind H&B and provides the basic clues for where we can anticipate that sub-rational economic decisions will happen. Identifying these scenarios is a central part of being a market designer in the digital age - data and AI when properly employed should ameliorate these biases and improve economic efficiency.
+
+### Nudge
+
+![](https://cms.qz.com/wp-content/uploads/2018/10/Nudge.jpg?quality=75&strip=all&w=1600&h=900&crop=1g)
+
+Identifying an inefficiency in an economic decision is one thing. Changing someone's behavior towards a more efficient state is quite another. No one likes to be told what to do, especially from data they may not fully be aware or understand. 
+
+Perhaps the answer lies not in directing the outcome of the decision, but rather to *nudge* the decision maker towards the rational outcome while respecting their autonomy over the decision. 
+
+This is the key idea behind the book **Nudge** by Richard Thaler and Cass Sunstein. Richard Thaler is a behavioral economist who developed the first economic applications of Kahneman and Tversky's discoveries. He was awarded the Nobel prize himself in 2017. 
+
+An implication of H&B for market design is that it is not simply *what* data is presented to humans, but **how** they are presented that affects which economic decisions are made. It implies that both the presentation of information as well as the information itself are part of the design problem. Said another way - **The interface matters!**
+
+Nudge applies this fact and recognizes that interfaces (what they call **choice contexts**) can manipulated and hence designed to produce decisions that are more rational. Thaler and Sunstein call this type of market design *choice architecture* - designing the choice environment to nudge people to behave more rationally without having to make  people "think" more rationally! 
+
+However the practice of designing nudges has a potential **dark side** - especially in digital environments. They can be used to exploit human frailties to extract profits in a way that may not be human welfare improving to the user. Of course the definition of *welfare* itself can be in the eye of the beholder, and the dividing line between *good* vs *evil* nudges is not always clear. We will aim to be mindful of this important complexity as we explore the topic. 
+
+
+<!-- The design challenge is especially prominent in digital environments where the complexity of presenting statistical information to humans can have unintended consequences on the resulting economic behaviors. Being able to anticipate those consequences is critical to solving the market design problem in digital environments and a core issue for the class.  -->
+
+
+
+<!-- Our primary text for the class - **"Thinking Fast and Slow"** by *Daniel Kahneman* - describes the conceptual and historical backdrop behind the scientific discovery of systematic patterns human bias in economic decision making. -->
+
+<!-- ![](https://www.kurzweilai.net/images/book-cover-Thinking-Fast-+-Slow-no.-5.png) -->
+
+
+<!-- "Thinking Fast and Slow" gives us the basic clues for where we can anticipate that sub-rational economic decisions will happen. Identifying these scenarios is a central part of being a market designer in the digital age - data and AI when properly employed should ameliorate these biases and improve economic efficiency. -->
+
+
+
+<!-- Whereas data science or machine learning classes will often focus attention on (2) and the plethora of skills and technique involved therein, we will examine the design problem through the human and economic touch points in (1) and (3). Thus we are interested in problem of the *human-centric design of data technologies to enhance economic decisions*. -->
+
+
+<!-- The details of the interface market design in digital environments is creating interfaces that are both rational and intuitive. It needs to be rational in properly representing the statistical and economic content of the data. Yet it also needs to be intuitive in the sense of compelling a behavioral response in the direction of economic efficiency.  -->
+
+
+<!-- Thus we are interested in problem of the *human-centric design of data technologies to enhance economic decisions*. -->
+
+<!-- <aside> -->
+<!-- I recognize that combining "human-centric" and "economic" together is not often how the "dismal science" is practiced or perceived. `r emo::ji("smile")` -->
+<!-- </aside> -->
+
+
+
+<!-- be equally concerned with applying data in a rational and efficient way but at the same time creating human interfaces for the data that that are compatible with intuitive reasoning to compel new behaviors.  -->
+
+
+
+<!-- The central design problem is how the interfaces and applications themselves should be designed to enable more efficient economic decisions.  -->
+
+<!-- The central finding from Heuristics and Biases is that it is not simply *what* data is presented and from which model, but **how** they are presented that impacts real world economic decisions.  -->
+
+
+<!-- Designing applications for better economic decisions needs thus  -->
+
+<!-- What are then the "laws of intuitive reasoning" and how do they differ from rational principle is a key -->
+
+
+<!-- display of data and the structure of data applications should be designed to enable more efficient economic decisions. As we will see, in order to influence decisions in an efficien tdirection, data needs to be applied in such a way that the interpretation of the data is both intuitive and rational.  -->
+
+<!-- It needs to be intuitive in the sense of compelling the behavioral response we seek from nudging the user. Yet it also needs to be rational in properly representing the statistical and economic content of the data.  -->
+
+
+<!-- The understanding will allow us to interfaces and applications themselves should be designed to  -->
+
+
+<!-- Our mode of inquiry into the question will be set by the seminal work of Kahneman and Tversy (KT for short) who in 1971 began the first inquiry into the question of whether humans are naturally intuitive statisticians - do humans intuitively process data in a fashion that abides by formal statistical principles. -->
+
+<!-- The surprising answer was "no", and led to a collaboration that culminated in the award for the Nobel Prize in Economic science in 2002. We will study this research program, known as "Heuristics and Biases", and examine how the systematic patterns of intuitive statistical reasoning can be influenced by data presented in digital environments to  efficient decisions.  -->
+
+
+
+<!-- Humans rarely consume raw data in software, but rather data that is processed, summarized,  and presented through digital interfaces, often web applications. The gap between intuitive and formal statistical judgments means it is not just what information is presented but how it is presented that will impacts economic behavior.  -->
+
+
+<!-- The fact humans cognition internalizes patterns in data in a systematically different way than formal statistical and econometric reasoning presents a key opportunity fir market design in digital environments. Humans rarely consume raw data in software, but rather data that is processed, summarized,  and presented through digital interfaces, often web applications. The gap between intuitive and formal statistical judgments means it is not just what information is presented but how it is presented that will impacts economic behavior. -->
+
+
+
+<!-- wrote the first paper in their long collaboration culminating in the award of a Nobel Prize in Economics in 2002. Their first paper considered whether humans are naturally intuitive statisticians - do humans intuitively process data in a fashion that abides by formal statistical principles. The surprising answer which has bkey finding of the research paradigm, which came to be known as the **Heuristics and Biases** program, is that humans cognition internalizes patterns in data in a systematically different way than formal statistical and econometric reasoning.  -->
+
+<!-- What does this mean for market design itself? An important point to recognize is that humans rarely consume raw data in software, but rather data that is processed, summarized,  and presented through digital interfaces, often web applications. The gap between intuitive and formal statistical judgments implies how information is presented in an interface impacts economic behavior.  -->
+
+<!-- The understanding can be applied to the question of how the interfaces and applications themselves should be designed to enable more efficient economic decisions. -->
+
+<!-- Thus we are interested in problem of the *human-centric design of data technologies to enhance economic decisions*. -->
+
+<!-- <aside> -->
+<!-- I recognize that combining "human-centric" and "economic" together is not often how the "dismal science" is practiced or perceived. `r emo::ji("smile")` -->
+<!-- </aside> -->
+
+<!-- The topic is one that is being actively debated in business and government as they digitally transform and use more data. It is thus a course that (by design!) will aim to pose many more questions than necessarily answering them.  -->
+
+
+<!-- The understanding should allow the market designer to use data more efficiently.  to make economic decisions by humans more efficient.  -->
+
+
+<!-- The understanding should allow a market designer to do 3 things: -->
+
+<!-- **1. Identify** an existing inefficiency in human decisions. -->
+<!-- <br> -->
+<!-- **2. Improve** the inefficiency of the decisions by leveraging data and technology. -->
+<!-- <br> -->
+<!-- **3. Influence** human decision makers to behave differently.  -->
+
+<!-- Whereas data science or machine learning classes will often focus attention on (2) and the plethora of skills and technique involved therein, we will examine the design problem through the human and economic touch points in (1) and (3). Thus we are interested in problem of the *human-centric design of data technologies to enhance economic decisions*. -->
+
+<!-- <aside> -->
+<!-- I recognize that combining "human-centric" and "economic" together is not often how the "dismal science" is practiced or perceived. `r emo::ji("smile")` -->
+<!-- </aside> -->
+
+<!-- The topic is one that is being actively debated in business and government as they digitally transform and use more data. It is thus a course that (by design!) will aim to pose many more questions than necessarily answering them.  -->
+
+
+<!-- AI in and  of itself is not a panacea  and does not magically transform decisions. As economists are fond of saying, there is no free lunch! In order to create value for economic decisions these data technologies have to be . An effective A.I needs to be designed in a way that is they are economically intelligent enough to add value to decisions, e.g., they need to be both relevant and correct for the economic decision at hand. Yet at the same these technologies need to be empathetic enough that their intelligence can be absorbed, accepted, and acted upon by humans. Both as we shall see are rather challenging.  -->
+
+
+<!-- These technologies have become omnipresent in our lives -  -->
+
+<!-- However these technologies are not a panacea. In order to harness their powers for improving decisions -->
+
+<!-- What these data technologies mean from an economic perspective is that they can raise the overall value of real world economic decisions made by human actors. The standard &quot;rational actor&quot; model of your principles of economics courses assumes that decisions by consumers, firms, and societies/governments are fully **rational**. However, in reality, there are fundamental mechanisms that underlie human cognition that systematically inhibit our real life decision making from being fully rational. These biases have been documented in the behavioral economics literature over the last 50 years.  -->
+
+<!-- Data and AI hold immense promise to ameliorate these biases and guide humans towards more efficient, value maximizing decisions. This is especially pronounced in the post-pandemic world where an extraordinary number of our interactions and decisions take place in context that are set by our devices and screens. If these contexts can be designed to bring about more efficient decisions, then they not only become extensions of our social selves but also extensions of our thinking selves.  -->
+
+
+<!-- As economists are fond of saying - there is no free lunch. The theorem holds true here as well. AI does not magically transform decisions. In order to achieve this promise, data solutions must overcome a critical design hurdle. An effective A.I needs to be designed in a way that is they are economically intelligent enough to add value to decisions, e.g., they need to be both relevant and correct for the economic decision at hand. Yet at the same these technologies need to be empathetic enough that their intelligence can be absorbed, accepted, and acted upon by humans. Both as we shall see are rather challenging.  -->
+
+<!-- In this course we examine the problem of human-centric design of data and AI technologies for economic decisions. Given that these topics are at the frontier of the digital transformation challenge currently being faced in industry and government,, it is a course that aims to pose many more questions than necessarily answering them.  -->
+
+<!-- lies at the heart of many modern societal, industrial, governmental problems in the cloud era.  -->
+
+
+
+<!-- (Design of the interface with AI or data technologies today - breakout discussion - top 3 list) -->
+
+
+<!-- Thus effective AI needs be both  and human centric design.  -->
+
+<!-- In this course we explore this critical design problem from multiple angles.  -->
+
+<!-- It is a class that will pose more questions than necessarily answering them.  -->
+
+<!-- That is to say, the success of AI for augmenting human decision making capabilities hinges on identifyig human-centric design of AI needs to take both the rational actor  -->
+
+<!-- To understand the economic value for AI at an everyday level, we will dive into economic decision making both from a human perspective, and from a machine perspective to see how algorithms and data are being designed (and will be designed into the future) that make economic decisions more efficient. -->
+
+<!-- Furthermore, underlying the outward technological features of AI are fundamental economic and econometric principles which are central to their design and implementation. In short, to perform well, an AI system must &quot;think like economists&quot;. -->
+
+<!-- The primary goals of this course are thus twofold. The first is to explore the advances in behavioral economics that has documented a variety of systematic departures from this fully rational actor model that is presumed in neoclassical economics. Our second goal is to show how these very same economic principles play a role in the modern development of AI and are being encoded in AI technologies. This juxtaposition between machine and human decision making enables us to see how the development of AI can be leveraged to enhance the efficiency of human decisions and thereby act as a complements (as opposed to substitutes) to each other. -->
+
+
+
+# Learning Objectives and Course Evaluation {.salt}
+
+
+There are 3 primary **learning objectives** in the class that set the dimensions we use for evaluation and grading. 
+
+## Reading (35%)
+### Objective
+
+Understand the meaning of "Heuristics and Biases" - how are economic decisions made intuitively what are the practical opportunities for market design to nudge decisions to a more efficient state.
+
+### Key Results
+
+Read the assigned papers and book chapters according to course schedule and engage with readings both through class discussion and the Perusal platform. 
+
+### Description
+
+The primary learning experience in the course is rooted in reading the assigned book chapters and papers, and discussing them as a class. We will add a technological twist to this age old formula by adopting the  <font size = 4 color = "red"> Perusall </font> application. 
+
+
+Perusall manages your engagement in the weekly readings. Perusall itself is based on an intelligent data technology that is aiding a key form of decision making in the classroom - student evaluations! Perusall measures engagement by your annotations in the reading, which forces you into an active reading mode through similar social forces that motivate our online media habits - it thus also embodies key features of Nudge!
+
+We will use Perusall to manage the readings from "Thinking Fast and Slow" - which should be purchased through Perusall site. We will also use well as the articles from journals and online sources. 
+
+## Class Presentation (25%)
+
+### Learning Objective
+
+Translate the insights from the classical H&B science to a modern topic about human decisions in digital settings.
+
+### Key Results
+
+Class presentation on a research paper assigned from literature that covers the "five main questions" to structure a summary of piece of research.
+
+### Description
+
+Both "Thinking Fast and Slow" and "Nudge" were written before data science came of age. In fact the term "data science" itself was coined in 2008 (by D.J. Patil and Jeff Hammerbacher), the same year as *Nudge* was published.
+
+<!-- Furthermore, the audience that "Nudge" is targeting is an audience of policy makers in positions of power and authority. This does not describe the lives of many young people entering the workforce who will be increasingly working directly with data to solve problems.  -->
+
+Data science is in many ways represents the modern day choice architecture. Data scientist are processing, filtering, and designing displays of information that defines the context for a large variety of our economic decisions.
+
+
+You will work in groups of 3 and present one paper associated to one of the cognitive "heuristics and biases" we discuss. The schedule of topics and list of potential papers are listed below. 
+
+I have chosen the papers rather intentionally to provide a current perspective on these classical challenges for economic decision making. Many of the papers are explicitly focused on the way in which heuristics and biases manifest themselves in digital environments where human attention is spent digesting data on a screen. 
+
+That said, if you have an alternative paper or topic you would rather examine, I am happy to discuss the possibility with you depending on how it fits into the syllabus. 
+
+The presentation should be roughly 15-20 mins - presented using any medium you prefer (powerpoint, google docs, latex, r markdwon etc) and should address the following issues in order:
+
+:::{.heatinline}
+1) What is the question that the paper addresses?
+2) How is this question related to the ideas of our class?
+3) How do they go about studying this question?
+4) What are the primary and secondary findings?
+5) What are the key consequences in your opinion of the research for our understanding for market design and economic decisions in digital environments. 
+:::
+
+
+## Final Project (40%)
+
+### Objective
+
+Build a digital interface for influencing decision makers through literate programming. 
+
+### Key Result
+
+Groups complete their final project on a blog post that utilizes literate programming techniques and deployed live on the class blog.
+  
+### Description
+
+Literate programming is based on a **text as code** for influencing where code, text, and visuals are part of a single notebook that packages data and storytelling together in one medium. 
+
+
+Your final project builds on your class presentation. You will be asked to use the paper you studied for your presentation as the basis for a **blog post** that introduces the topic of the paper to a wider audience, bundles it with additional research/investigation into the topic, and argues why they should care for their economic decision making. 
+
+The blog post should be written using *R markdown* and can avail itself of interactive media (visualizations, animations etc) to bring the idea to life. 
+
+We will assemble all the blog entries from the class and publish a live course blog aimed at practicing data scientist looknig to make an economic impact with their work. 
+
+I will work with each group on their blog concept over the course of the semester. 
+
+
+
+# Course Schedule {.salt}
+
+We reference 
+
+- "Thinking Fast and Slow" [@tfs] = **tfs**  
+- "Nudge" [@nudge] =  **nudge**
+
+Papers that are assigned for group presentations are color coded according to:
+
+<center>
+:::{.acidinline .large}
+Group A
+:::
+
+or
+
+:::{.fatinline .large}
+Group B 
+:::
+</center>
+
+depending on the number of group presentations scheduled. 
+
+
+## `r advdate(mon, 1)`
+
+### Thurs Jan 21 {.heatinline}
+#### Topic: Rstudio Global Conference 
+
+ Register and attend any session(s) of the [Rstudio global conference](https://rstudio.com/conference/) 
+  <br> 
+  <br> 
+  ![](https://rstudio.com/assets/img/rstudio-global-with-date.jpg) 
+
+
+
+## `r advdate(mon, 2)`
+
+### Tues Jan 26 {.heatinline}
+#### Topic: Syllabus Day
+
+```{r, echo=FALSE, results = "asis"}
+emo::ji("scroll")
+bib[c("bounthavong2019", "schneider2018")]
+```
+
+
+### Thurs Jan 28 {.heatinline}
+#### Topic: Introduction to Homo Economicus and Digital Nudges {.heatinline}
+
+`r emo::ji("book")` tfs (Introduction) <br>
+`r emo::ji("book")` nudge (ch. 1-2)
+
+## `r advdate(mon, 3)`
+
+### Tues Feb 2 {.heatinline}
+#### Topic: Literate Programming via Rmarkdown
+
+```{r, echo=FALSE, results = "asis"}
+emo::ji("scroll")
+bib[c("hohman2020communicating")]
+```
+
+### Thurs Feb 4 {.heatinline}
+#### Topic: Testing Homo Economicus
+
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll")
+bib[c("f53", "athey2017")]
+```
+
+## `r advdate(mon, 4)`
+
+### Tues Feb 9 {.heatinline}
+#### Topic: The Independence or Irrelevant Alternatives
+
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("rubinstein98")]
+```
+
+### Thursday Feb 11 {.heatinline}
+
+No Class
+
+## `r advdate(mon, 5)`
+### Tues Feb 16 {.heatinline}
+#### Topic: Optimizing vs Satisficing
+
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("caplin2011search", "schnabel2016" )]
+```
+
+### Thurs Feb 18 {.heatinline}
+#### Topic: Choice Contexts
+
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("huber82", "shafir93", "lea2015irrationality" )]
+```
+
+## `r advdate(mon, 6)`
+### Tues Feb 23 {.heatinline}
+#### Topic: Choice Contexts in Digital Environments
+:::{.acidinline}
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("dimara2018", "dimarablog" )]
+```
+:::
+:::{.fatinline}
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("weinmann2020")]
+```
+:::
+
+
+### Thurs Feb 25 {.heatinline}
+#### Topic: Too Much Choice
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("iyengar2000", "iyengar2010", "madrian2001" )]
+```
+
+## `radvdate(mon, 7)`
+### Tues March 2 {.heatinline}
+#### Topic: Digital Nudges
+
+`r emo::ji("book")` nudge (ch 3,5)
+
+:::{.acidinline}
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("bhargava2018", "benartzi2020 ")]
+```
+:::
+
+### Thurs March 4 {.heatinline}
+#### Topic: Dark Nudges
+
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("kresge2020" )]
+```
+
+:::{.acidinline}
+```{r, echo = FALSE, results = "asis"}
+bib[c("scheiber2017", "narayanan2020", "gino2017" )]
+```
+:::
+
+## `r advdate(mon, 8)`
+
+### Tues March 9 {.heatinline}
+
+#### Topic: System 1 and System 2
+
+`r emo::ji("book")` tfs (ch. 1-5)
+
+
+### Thurs March 11 {.heatinline}
+
+Spring Break
+
+
+## `r advdate(mon, 9)`
+
+### Tues March 16 {.heatinline}
+#### Topic: Heuristics
+
+`r emo::ji("book")` tfs (ch. 6-9, Appendix A)
+
+### Thurs March 18 {.heatinline}
+#### Topic: Law of Small Numbers
+
+`r emo::ji("book")` tfs (ch 11)
+
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("tversky71", "engber2016", "chivers2019")]
+```
+
+## `r advdate(mon, 10)`
+### Tues March 23 {.heatinline}
+#### Topic: Law of Small Numbers + Gambler's Fallacy
+:::{.acidinline}
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("kale2018")]
+```
+:::
+
+
+### Thurs March 25 {.heatinline}
+#### Topic: Anchoring
+`r emo::ji("book")` tfs (ch 11) 
+
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("ross1977")]
+```
+
+:::{.acidinline}
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("wall2019")]
+```
+:::
+
+## `r advdate(mon, 11)`
+### Tues March 30 {.heatinline}
+
+No class
+
+### Thurs April 1 {.heatinline}
+#### Topic: Availability
+`r emo::ji("book")` tfs (ch. 12-13) <br> `r emo::ji("book")` nudge (ch. 9) 
+
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("ross1979")]
+```
+
+
+## `r advdate(mon, 12)`
+### Tues April 6 {.heatinline}
+#### Topic: Availability and Selection Bias
+
+:::{.acidinline}
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("enke2020")]
+```
+:::
+
+:::{.fatinline}
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("fernandes2018")]
+```
+:::
+
+### Thurs April 8 {.heatinline}
+#### Topic: Base Rate Neglect
+
+`r emo::ji("book")` tfs (ch. 14, 16)
+
+:::{.acidinline}
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("esponda2020")]
+```
+:::
+
+## `r advdate(mon, 13)`
+### Tues April 13 {.heatinline}
+
+#### Topic: Bayesian Inference in Digital Environments
+
+:::{.acidinline}
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c( "kim2019")]
+```
+:::
+
+:::{.fatinline}
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c( "heck2020love")]
+```
+:::
+
+### Thurs April 15 {.heatinline}
+#### Topic: Conjunction Fallacy
+
+`r emo::ji("book")` tfs (ch. 15, 35)  
+
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("tetlock89")]
+```
+
+:::{.acidinline}
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("furnkranz2020")]
+```
+:::
+
+## `r advdate(mon, 14)`
+### Tues  April 20 {.heatinline}
+#### Topic: Regression
+
+`r emo::ji("book")` tfs (ch. 17,18) 
+
+:::{.acidinline}
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("law2020causal")]
+```
+:::
+
+### Thurs April 22 {.heatinline}
+#### Topic: Overconfidence
+
+`r emo::ji("book")` tfs (ch. 19-20)
+
+## `r advdate(mon, 15)`
+### Tues April 27 {.heatinline}
+#### Topic: Algorithm Aversion
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("colson2019ai")]
+```
+
+:::{.acidinline}
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("dietvorst2020people")]
+```
+:::
+:::{.fatinline}
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("logg2019algorithm")]
+```
+:::
+### Thurs April 29 {.heatinline}
+
+#### Topic: Algorithm Aversion
+:::{.acidinline}
+```{r, echo = FALSE, results = "asis"}
+emo::ji("scroll") 
+bib[c("fildes2020stability")]
+```
+:::
+
+

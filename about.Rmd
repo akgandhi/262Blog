@@ -1,13 +1,16 @@
 ---
-title: 'About Economics 262'
-description: "Spring 2021 @ Penn"
+title: 'Market Design Blog'
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-In this blog we will disseminate course content and engage
-  discussion. 
-  
-Check out [`#TidyTuesday`](https://github.com/rfordatascience/tidytuesday/blob/master/README.md)
+This is the course blog for **Economics 262 -  Market Design** taught at the **University of Pennsylvania** in Spring 2021. Market design is the part of economics that aims to make economics *functional* - apply economic principles to make real world decisions. We believe modern deployments of economics into the real world invariably involve the confluence of economic principles, data, and technology. 
+
+The course blog is a reflection of this philosophy. Rather than passively learn through lecture, HW, and exam, we will aim to build economic knowledge into human usable forms. 
+
+Our ultimate aim of which is empowering a new generation of software that is able to "think like an economist" and help humans and organizations make better decisions.
+
+
+

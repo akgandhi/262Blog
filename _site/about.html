@@ -86,29 +86,26 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Designing Economic Decisions: About Economics 262</title>
+  <title>Econ 262: Market Design Blog</title>
   
-  <meta property="description" itemprop="description" content="Spring 2021 @ Penn"/>
   
   
   
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Designing Economic Decisions: About Economics 262"/>
+  <meta property="og:title" content="Econ 262: Market Design Blog"/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="Spring 2021 @ Penn"/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Designing Economic Decisions"/>
+  <meta property="og:site_name" content="Econ 262"/>
   
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Designing Economic Decisions: About Economics 262"/>
-  <meta property="twitter:description" content="Spring 2021 @ Penn"/>
+  <meta property="twitter:title" content="Econ 262: Market Design Blog"/>
   
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["About Economics 262"]},{"type":"character","attributes":{},"value":["Spring 2021 @ Penn"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Market Design Blog"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2086,7 +2083,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   html {
     /*-- Main font sizes --*/
     --title-size:      50px;
-    --body-size:       1.06rem;
+    --body-size:       1.26rem;
     --code-size:       14px;
     --aside-size:      12px;
     --fig-cap-size:    13px;
@@ -2142,7 +2139,265 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     --hover-color:      #ff6700;
     --bkgd-color:       white;
   }
-  </style>
+  
+  
+  :root {
+    --color-salt: #61acf0; /* blue */
+    --color-fat: #f0a561; /* orange */
+    --color-acid: #cbd20a; /* lime */
+    --color-heat: #e74a2f; /* red */
+    --color-black: #1a1917; /* black */
+  }
+  
+  .large { 
+    font-size: 160%;
+  }
+  
+  .salt {
+    color: var(--color-salt);
+    font-size: 200%; 
+    font-weight:700;
+  }
+  
+  .fat {
+    color: var(--color-fat);
+    font-size: 200%; 
+    font-weight:700;
+  }
+  
+  .acid {
+    color: var(--color-acid);
+    font-size: 200%;
+    font-weight:700;
+  }
+  
+  .heat {
+    color: var(--color-heat);
+    font-size: 200%;
+    font-weight:700;
+  }
+  
+  .saltinline {
+    color: var(--color-salt);
+  }
+  
+  .fatinline {
+    color: var(--color-fat);
+  }
+  
+  .acidinline {
+    color: var(--color-acid);
+  }
+  
+  .heatinline {
+    color: var(--color-heat);
+  }
+  
+  
+  /* highlighted code */
+  
+  .remark-code-line-highlighted {
+    background-color: rgba(97, 172, 240, .5);
+  }
+  
+  /* in line code */
+  
+  .remark-code, .remark-inline-code {
+    color: var(--color-heat);
+  }
+  
+  /* from emi tanaka's ninjutsu css! */
+  
+  .img-fill img { object-fit: fill; height:100%; width:100%; overflow: hidden;}
+  .img-contain img { object-fit: contain; height:100%; width:100%;  overflow: hidden}
+  .img-cover img { object-fit: cover; height:100%; width:100%;  overflow: hidden}
+  .img-none img { object-fit: none; height:100%; width:100%; }
+  
+  /* from lucy's css!
+  ol {
+    max-width: 350px;
+    counter-reset: my-counter;
+    list-style: none;
+    padding-left: 40px;
+  }
+  ol li {
+    counter-increment: my-counter;
+    position: relative;
+    margin: 20px 0;
+  }
+  ol li::before {
+    content: counter(my-counter);
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    left: -60px;
+    width: 9%;
+    height: 0;
+    padding-bottom: 9%;
+    line-height: 1em;
+    margin-top: -0.5em;
+    background: var(--color-fat);
+    border-radius: 50%;
+    text-align: center;
+  }
+  */
+  
+  .inverse {
+    background-color: var(--color-black);
+    text-shadow: 0 0 0;
+  }
+  
+  
+  
+  /* links */
+  					 
+  a,
+  a:visited {
+    color: var(--color-black);
+    border-bottom: 1px solid var(--color-salt);
+    box-shadow: inset 0 -2px 0 var(--color-salt);
+  }
+  
+  a:hover,
+  a:focus {
+    color: var(--color-black);
+    background: rgba(97, 172, 240, .5);
+    border-bottom: none;
+  }
+  
+  a > code {
+    color: var(--color-heat);
+    text-decoration: none;
+  }
+  
+  .inverse a {
+    color: #FFF;
+  }
+  
+  .remark-inline-code {
+    color: var(--color-heat);
+    text-decoration: none;
+  }
+  
+  /* from the hygge css! */
+  
+  .polaroid img {
+      display: block; 
+      width: inherit; 
+      border: 10px solid #fff;
+      border-bottom: 45px solid #fff;
+      -webkit-box-shadow: 3px 3px 3px #111;
+      -moz-box-shadow: 3px 3px 3px #111;
+      box-shadow: 3px 3px 3px #111;
+  }
+  
+  /* footer */
+  
+  div.my-footer {
+      background-color: #1a1917;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
+      height: 20px;
+      width: 100%;
+  }
+  
+  div.my-footer span {
+      font-size: 10pt;
+      color: #F7F8FA;
+      position: absolute;
+      left: 15px;
+      bottom: 2px;
+  }
+  
+  .remark-slide-number {
+    bottom: 18px;
+    opacity: 0.5;
+    position: absolute;
+    right: 20px;
+  }
+  
+  img.circle {
+    border-radius:50%;
+  }
+  
+  /* split rows*/
+  
+  
+  .title-slide .remark-slide-number { 
+    display: none; 
+  }
+  
+  .wrapper {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    place-items: center;
+    place-content: center;	
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  
+  .top-left {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    background-color: var(--color-salt);
+  }
+  
+  .top-right {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    background-color: var(--color-fat);
+  }
+  
+  .bottom-left {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+    background-color: var(--color-acid);
+  }
+  
+  .bottom-right {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    background-color: var(--color-heat);
+  }
+  
+  /* https://stackoverflow.com/questions/50919104/horizontally-scrollable-output-on-xaringan-slides */
+  
+  pre {
+    background: #f8f8f8; /* match github highlightjs */
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  
+  img.lil {
+    width: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  /* Headings */
+  
+  h1{ font-size:2.5em; }
+  h2{ font-size:2em;  border-bottom: 1px solid #CCC; padding-bottom: 10px; }
+  h3{ font-size:1.5em; }
+  h4{ font-size:1.2em; }
+  h5{ font-size:1em; }
+  h6{ font-size:0.9em; }
+  
+  <style>
+    .col2 {
+      columns: 2 200px;         /* number of columns and width in pixels*/
+      -webkit-columns: 2 200px; /* chrome, safari */
+      -moz-columns: 2 200px;    /* firefox */
+    }
+    .col3 {
+      columns: 3 100px;
+      -webkit-columns: 3 100px;
+      -moz-columns: 3 100px;
+    }
+  </style></style>
   <style type="text/css">
   /* base style */
   
@@ -2306,7 +2561,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"About Economics 262","description":"Spring 2021 @ Penn","authors":[]}
+{"title":"Market Design Blog","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2314,7 +2569,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a href="index.html" class="title">Designing Economic Decisions</a>
+<span class="logo">
+<img src="images/pennlogo.png"/>
+</span>
+<a href="index.html" class="title">Econ 262</a>
 <input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
 </div>
 <div class="nav-right">
@@ -2329,16 +2587,17 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>About Economics 262</h1>
+<h1>Market Design Blog</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p>Spring 2021 @ Penn</p>
+
 </div>
 
 
 <div class="d-article">
-<p>In this blog we will disseminate course content and engage discussion.</p>
-<p>Check out <a href="https://github.com/rfordatascience/tidytuesday/blob/master/README.md"><code>#TidyTuesday</code></a></p>
+<p>This is the course blog for <strong>Economics 262 - Market Design</strong> taught at the <strong>University of Pennsylvania</strong> in Spring 2021. Market design is the part of economics that aims to make economics <em>functional</em> - apply economic principles to make real world decisions. We believe modern deployments of economics into the real world invariably involve the confluence of economic principles, data, and technology.</p>
+<p>The course blog is a reflection of this philosophy. Rather than passively learn through lecture, HW, and exam, we will aim to build economic knowledge into human usable forms.</p>
+<p>Our ultimate aim of which is empowering a new generation of software that is able to “think like an economist” and help humans and organizations make better decisions.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

@@ -1,0 +1,2034 @@
+[
+  {
+    "author": [
+      {
+        "family": "Kale",
+        "given": "Alex"
+      },
+      {
+        "family": "Nguyen",
+        "given": "Francis"
+      },
+      {
+        "family": "Kay",
+        "given": "Matthew"
+      },
+      {
+        "family": "Hullman",
+        "given": "Jessica"
+      }
+    ],
+    "container-title": "IEEE transactions on visualization and computer graphics",
+    "id": "kale2018",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "892-902",
+    "publisher": "IEEE",
+    "title": "Hypothetical outcome plots help untrained observers judge trends in ambiguous data",
+    "type": "article-journal",
+    "volume": "25"
+  },
+  {
+    "author": [
+      {
+        "family": "Fürnkranz",
+        "given": "Johannes"
+      },
+      {
+        "family": "Kliegr",
+        "given": "Tomáš"
+      },
+      {
+        "family": "Paulheim",
+        "given": "Heiko"
+      }
+    ],
+    "container-title": "Machine Learning",
+    "id": "furnkranz2020",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "853-898",
+    "publisher": "Springer",
+    "title": "On cognitive preferences and the plausibility of rule-based models",
+    "type": "article-journal",
+    "volume": "109"
+  },
+  {
+    "URL": "https://www.nber.org/system/files/working_papers/w23927/w23927.pdf",
+    "author": [
+      {
+        "family": "Benjamin",
+        "given": "Daniel J"
+      },
+      {
+        "family": "Moore",
+        "given": "Don A"
+      },
+      {
+        "family": "Rabin",
+        "given": "Matthew"
+      }
+    ],
+    "id": "benjamin2017biased",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "publisher": "National Bureau of Economic Research",
+    "title": "Biased beliefs about random samples: Evidence from two integrated experiments",
+    "title-short": "Biased beliefs about random samples",
+    "type": "report"
+  },
+  {
+    "URL": "file:///media/fuse/drivefs-45559c520459d057f4d237900a1bc412/root/Market%20Design%202021/Presentations/Regression%20and%20Causation/2012.14477.pdf",
+    "author": [
+      {
+        "family": "Law",
+        "given": "Po-Ming"
+      },
+      {
+        "family": "Lo",
+        "given": "Leo Yu Ho"
+      },
+      {
+        "family": "Endert",
+        "given": "Alex"
+      },
+      {
+        "family": "Stasko",
+        "given": "John"
+      },
+      {
+        "family": "Qu",
+        "given": "Huamin"
+      }
+    ],
+    "id": "law2020causal",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "publisher": "OSF Preprints",
+    "title": "Causal perception in question-answering systems",
+    "type": "no-type"
+  },
+  {
+    "URL": "https://cacm.acm.org/magazines/2018/7/229029-digital-nudging/fulltext#R25",
+    "author": [
+      {
+        "family": "Schneider",
+        "given": "Christoph"
+      },
+      {
+        "family": "Weinmann",
+        "given": "Markus"
+      },
+      {
+        "family": "Vom Brocke",
+        "given": "Jan"
+      }
+    ],
+    "container-title": "Communications of the ACM",
+    "id": "schneider2018",
+    "issue": "7",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "67-73",
+    "publisher": "ACM New York, NY, USA",
+    "title": "Digital nudging: Guiding online user choices through interface design",
+    "title-short": "Digital nudging",
+    "type": "article-journal",
+    "volume": "61"
+  },
+  {
+    "URL": "https://mbounthavong.com/blog/2019/12/13/communicating-data-effectively-with-data-visualizations-part-21-examples-of-famous-and-infamous-data-visualizations-1",
+    "author": [
+      {
+        "family": "Bounthavong",
+        "given": "Mark"
+      }
+    ],
+    "id": "bounthavong2019",
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          12
+        ]
+      ]
+    },
+    "title": "Communicating data effectively with data visualizations: Part 21",
+    "title-short": "Communicating data effectively with data visualizations",
+    "type": "no-type"
+  },
+  {
+    "author": [
+      {
+        "family": "Weinmann",
+        "given": "Markus"
+      },
+      {
+        "family": "Mishra",
+        "given": "Abhay"
+      },
+      {
+        "family": "Kaiser",
+        "given": "Lena"
+      },
+      {
+        "dropping-particle": "vom",
+        "family": "Brocke",
+        "given": "Jan"
+      }
+    ],
+    "container-title": "Available at SSRN 3630514",
+    "id": "weinmann2020",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "The attraction effect in reward-based crowdfunding: Evidence from four experiments",
+    "title-short": "The attraction effect in reward-based crowdfunding",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Wall",
+        "given": "Emily"
+      },
+      {
+        "family": "Blaha",
+        "given": "Leslie"
+      },
+      {
+        "family": "Paul",
+        "given": "Celeste"
+      },
+      {
+        "family": "Endert",
+        "given": "Alex"
+      }
+    ],
+    "container-title": "IFIP conference on human-computer interaction",
+    "id": "wall2019",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "555-575",
+    "publisher": "Springer",
+    "title": "A formative study of interactive bias metrics in visual analytics using anchoring bias",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Kim",
+        "given": "Yea-Seul"
+      },
+      {
+        "family": "Walls",
+        "given": "Logan A"
+      },
+      {
+        "family": "Krafft",
+        "given": "Peter"
+      },
+      {
+        "family": "Hullman",
+        "given": "Jessica"
+      }
+    ],
+    "container-title": "Proceedings of the 2019 chi conference on human factors in computing systems",
+    "id": "kim2019",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "1-14",
+    "title": "A bayesian cognition approach to improve data visualization",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Fernandes",
+        "given": "Michael"
+      },
+      {
+        "family": "Walls",
+        "given": "Logan"
+      },
+      {
+        "family": "Munson",
+        "given": "Sean"
+      },
+      {
+        "family": "Hullman",
+        "given": "Jessica"
+      },
+      {
+        "family": "Kay",
+        "given": "Matthew"
+      }
+    ],
+    "container-title": "Proceedings of the 2018 chi conference on human factors in computing systems",
+    "id": "fernandes2018",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "1-12",
+    "title": "Uncertainty displays using quantile dotplots or cdfs improve transit decision-making",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Esponda",
+        "given": "Ignacio"
+      },
+      {
+        "family": "Vespa",
+        "given": "Emanuel"
+      },
+      {
+        "family": "Yuksel",
+        "given": "Sevgi"
+      }
+    ],
+    "id": "esponda2020",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "publisher": "mimeo",
+    "title": "Mental models and learning: The case of base-rate neglect",
+    "title-short": "Mental models and learning",
+    "type": "report"
+  },
+  {
+    "author": [
+      {
+        "family": "Schnabel",
+        "given": "Tobias"
+      },
+      {
+        "family": "Bennett",
+        "given": "Paul N"
+      },
+      {
+        "family": "Dumais",
+        "given": "Susan T"
+      },
+      {
+        "family": "Joachims",
+        "given": "Thorsten"
+      }
+    ],
+    "container-title": "Proceedings of the 25th international conference on world wide web",
+    "id": "schnabel2016",
+    "issued": {
+      "date-parts": [
+        [
+          2016
+        ]
+      ]
+    },
+    "page": "987-997",
+    "title": "Using shortlists to support decision making and improve recommender system performance",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Dimara",
+        "given": "Evanthia"
+      },
+      {
+        "family": "Bailly",
+        "given": "Gilles"
+      },
+      {
+        "family": "Bezerianos",
+        "given": "Anastasia"
+      },
+      {
+        "family": "Franconeri",
+        "given": "Steven"
+      }
+    ],
+    "container-title": "IEEE transactions on visualization and computer graphics",
+    "id": "dimara2018",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "page": "850-860",
+    "publisher": "IEEE",
+    "title": "Mitigating the attraction effect with visualizations",
+    "type": "article-journal",
+    "volume": "25"
+  },
+  {
+    "URL": "https://insight.kellogg.northwestern.edu/article/decoy-effect-psychology-information-overload",
+    "author": [
+      {
+        "family": "Dimara",
+        "given": "Evanthia"
+      },
+      {
+        "family": "Bailly",
+        "given": "Gilles"
+      },
+      {
+        "family": "Bezerianos",
+        "given": "Anastasia"
+      },
+      {
+        "family": "Franconeri",
+        "given": "Steven"
+      }
+    ],
+    "container-title": "Kellog Insight",
+    "id": "dimarablog",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "title": "Too many options? Here’s a data visualization technique that can lead to better decisions",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Tetlock",
+        "given": "Philip E"
+      },
+      {
+        "family": "Boettger",
+        "given": "Richard"
+      }
+    ],
+    "container-title": "Journal of personality and social psychology",
+    "id": "tetlock89",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          1989
+        ]
+      ]
+    },
+    "page": "388",
+    "publisher": "American Psychological Association",
+    "title": "Accountability: A social magnifier of the dilution effect.",
+    "title-short": "Accountability",
+    "type": "article-journal",
+    "volume": "57"
+  },
+  {
+    "author": [
+      {
+        "family": "Sunstein",
+        "given": "Cass R"
+      }
+    ],
+    "container-title": "Climatic change",
+    "id": "sunstein2006",
+    "issue": "1-2",
+    "issued": {
+      "date-parts": [
+        [
+          2006
+        ]
+      ]
+    },
+    "page": "195-210",
+    "publisher": "Springer",
+    "title": "The availability heuristic, intuitive cost-benefit analysis, and climate change",
+    "type": "article-journal",
+    "volume": "77"
+  },
+  {
+    "author": [
+      {
+        "family": "Enke",
+        "given": "Benjamin"
+      }
+    ],
+    "container-title": "The Quarterly Journal of Economics",
+    "id": "enke2020",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "1363-1398",
+    "publisher": "Oxford University Press",
+    "title": "What you see is all there is",
+    "type": "article-journal",
+    "volume": "135"
+  },
+  {
+    "URL": "https://voxeu.org/article/basketball-s-hot-hand-myth-or-reality",
+    "author": [
+      {
+        "family": "Sittl",
+        "given": "Roman"
+      },
+      {
+        "family": "Warnke",
+        "given": "Arne Jonas"
+      },
+      {
+        "family": "Lackner",
+        "given": "Mario"
+      },
+      {
+        "family": "Stracke",
+        "given": "Rudi"
+      },
+      {
+        "family": "Sunde",
+        "given": "Uwe"
+      },
+      {
+        "family": "Winter-Ebmer",
+        "given": "Rudolf"
+      },
+      {
+        "family": "Dagaev",
+        "given": "Dmitry"
+      },
+      {
+        "family": "Suzdaltsev",
+        "given": "Alex"
+      },
+      {
+        "family": "Jørgensen",
+        "given": "Claus"
+      },
+      {
+        "family": "Suetens",
+        "given": "Sigrid"
+      },
+      {
+        "literal": "others"
+      }
+    ],
+    "id": "voxeu2020",
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          5
+        ]
+      ]
+    },
+    "title": "An analysis of the ‘hot hand’in nba field goal and free throw shooting",
+    "type": "no-type"
+  },
+  {
+    "author": [
+      {
+        "family": "Lantis",
+        "given": "Robert M"
+      },
+      {
+        "family": "Nesson",
+        "given": "Erik T"
+      }
+    ],
+    "id": "lantis2019",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "publisher": "National Bureau of Economic Research",
+    "title": "Hot shots: An analysis of the’Hot hand’in nba field goal and free throw shooting",
+    "title-short": "Hot shots",
+    "type": "report"
+  },
+  {
+    "author": [
+      {
+        "family": "Rabin",
+        "given": "Matthew"
+      }
+    ],
+    "container-title": "The Quarterly Journal of Economics",
+    "id": "rabin2002",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          2002
+        ]
+      ]
+    },
+    "page": "775-816",
+    "publisher": "MIT Press",
+    "title": "Inference by believers in the law of small numbers",
+    "type": "article-journal",
+    "volume": "117"
+  },
+  {
+    "author": [
+      {
+        "family": "Wall",
+        "given": "Emily"
+      },
+      {
+        "family": "Arcalgud",
+        "given": "Arup"
+      },
+      {
+        "family": "Gupta",
+        "given": "Kuhu"
+      },
+      {
+        "family": "Jo",
+        "given": "Andrew"
+      }
+    ],
+    "container-title": "2019 ieee visualization conference (vis)",
+    "id": "wall2019",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "81-85",
+    "publisher": "IEEE",
+    "title": "A markov model of users’ interactive behavior in scatterplots",
+    "type": "paper-conference"
+  },
+  {
+    "author": [
+      {
+        "family": "Yik",
+        "given": "Michelle"
+      },
+      {
+        "family": "Wong",
+        "given": "Kin Fai Ellick"
+      },
+      {
+        "family": "Zeng",
+        "given": "Kevin J"
+      }
+    ],
+    "container-title": "Frontiers in psychology",
+    "id": "yik2019",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "2567",
+    "publisher": "Frontiers",
+    "title": "Anchoring-and-adjustment during affect inferences",
+    "type": "article-journal",
+    "volume": "9"
+  },
+  {
+    "author": [
+      {
+        "family": "Xiong",
+        "given": "Cindy"
+      },
+      {
+        "family": "Ceja",
+        "given": "Cristina R"
+      },
+      {
+        "family": "Ludwig",
+        "given": "Casimir JH"
+      },
+      {
+        "family": "Franconeri",
+        "given": "Steven"
+      }
+    ],
+    "container-title": "IEEE Transactions on Visualization and Computer Graphics",
+    "id": "xiong2019",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "301-310",
+    "publisher": "IEEE",
+    "title": "Biased average position estimates in line and bar graphs: Underestimation, overestimation, and perceptual pull",
+    "title-short": "Biased average position estimates in line and bar graphs",
+    "type": "article-journal",
+    "volume": "26"
+  },
+  {
+    "URL": "https://www.nature.com/articles/d41586-019-03755-2",
+    "author": [
+      {
+        "family": "Chivers",
+        "given": "Tom"
+      }
+    ],
+    "container-title": "Nature",
+    "id": "chivers2019",
+    "issued": {
+      "date-parts": [
+        [
+          2019,
+          12
+        ]
+      ]
+    },
+    "title": "What’s next for psychology’s embattled field of social priming",
+    "type": "no-type"
+  },
+  {
+    "author": [
+      {
+        "family": "Miller",
+        "given": "Joshua B"
+      },
+      {
+        "family": "Gelman",
+        "given": "Andrew"
+      },
+      {
+        "literal": "others"
+      }
+    ],
+    "container-title": "Statistical Science",
+    "id": "miller2020",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "159-170",
+    "publisher": "Institute of Mathematical Statistics",
+    "title": "Laplace’s theories of cognitive illusions, heuristics and biases",
+    "type": "article-journal",
+    "volume": "35"
+  },
+  {
+    "URL": "https://slate.com/technology/2016/12/kahneman-and-tversky-researched-the-science-of-error-and-still-made-errors.html",
+    "author": [
+      {
+        "family": "Engber",
+        "given": "Daniel"
+      }
+    ],
+    "container-title": "Slate",
+    "id": "engber2016",
+    "issued": {
+      "date-parts": [
+        [
+          2016,
+          12
+        ]
+      ]
+    },
+    "title": "The irony effect",
+    "type": "no-type"
+  },
+  {
+    "author": [
+      {
+        "family": "Zhang",
+        "given": "Shirley"
+      },
+      {
+        "family": "Sussman",
+        "given": "Abigail B"
+      },
+      {
+        "family": "Hsee",
+        "given": "Christopher K"
+      }
+    ],
+    "container-title": "Journal of Consumer Research",
+    "id": "zhang2020",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "A dragging-down effect: Consumer decisions in response to price increases",
+    "title-short": "A dragging-down effect",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Tversky",
+        "given": "Amos"
+      },
+      {
+        "family": "Kahneman",
+        "given": "Daniel"
+      }
+    ],
+    "container-title": "Psychological bulletin",
+    "id": "tversky71",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          1971
+        ]
+      ]
+    },
+    "page": "105",
+    "publisher": "American Psychological Association",
+    "title": "Belief in the law of small numbers.",
+    "type": "article-journal",
+    "volume": "76"
+  },
+  {
+    "URL": "https://page.mi.fu-berlin.de/rojas/neural/",
+    "author": [
+      {
+        "family": "Rojas",
+        "given": "Raúl"
+      }
+    ],
+    "id": "rojas2013",
+    "issued": {
+      "date-parts": [
+        [
+          2013
+        ]
+      ]
+    },
+    "publisher": "Springer Science & Business Media",
+    "title": "Neural networks: A systematic introduction",
+    "title-short": "Neural networks",
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Kim",
+        "given": "Yea-Seul"
+      },
+      {
+        "family": "Kayongo",
+        "given": "Paula"
+      },
+      {
+        "family": "Grunde-McLaughlin",
+        "given": "Madeleine"
+      },
+      {
+        "family": "Hullman",
+        "given": "Jessica"
+      }
+    ],
+    "container-title": "IEEE Transactions on Visualization and Computer Graphics",
+    "id": "kim2020bayesian",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "publisher": "IEEE",
+    "title": "Bayesian-assisted inference from visualized data",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Rao",
+        "given": "Kariyushi"
+      },
+      {
+        "family": "Hastie",
+        "given": "Reid"
+      }
+    ],
+    "container-title": "Available at SSRN 3597264",
+    "id": "rao2020",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Predicting outcomes in a sequence of binary events: Belief updating and gambler’s fallacy reasoning",
+    "title-short": "Predicting outcomes in a sequence of binary events",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Ross",
+        "given": "Michael"
+      },
+      {
+        "family": "Sicoly",
+        "given": "Fiore"
+      }
+    ],
+    "container-title": "Journal of personality and social psychology",
+    "id": "ross1979",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          1979
+        ]
+      ]
+    },
+    "page": "322",
+    "publisher": "American Psychological Association",
+    "title": "Egocentric biases in availability and attribution.",
+    "type": "article-journal",
+    "volume": "37"
+  },
+  {
+    "author": [
+      {
+        "family": "Ross",
+        "given": "Lee"
+      },
+      {
+        "family": "Greene",
+        "given": "David"
+      },
+      {
+        "family": "House",
+        "given": "Pamela"
+      }
+    ],
+    "container-title": "Journal of experimental social psychology",
+    "id": "ross1977",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          1977
+        ]
+      ]
+    },
+    "page": "279-301",
+    "publisher": "Elsevier",
+    "title": "The “false consensus effect”: An egocentric bias in social perception and attribution processes",
+    "title-short": "The “false consensus effect”",
+    "type": "article-journal",
+    "volume": "13"
+  },
+  {
+    "author": [
+      {
+        "family": "Horenstein",
+        "given": "Alex R"
+      },
+      {
+        "family": "Osgood",
+        "given": "Daniel"
+      },
+      {
+        "family": "Snir",
+        "given": "Avichai"
+      }
+    ],
+    "container-title": "Real Estate Finance, Summer",
+    "id": "horenstein2017",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "title": "Out-of-town buyers, mispricing and the availability heuristic in a housing market",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Yamashiro",
+        "given": "Jeremy K"
+      },
+      {
+        "family": "Roediger",
+        "given": "Henry L"
+      }
+    ],
+    "container-title": "Memory & Cognition",
+    "id": "yamashiro2020",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "1-12",
+    "publisher": "Springer",
+    "title": "Biased collective memories and historical overclaiming: An availability heuristic account",
+    "title-short": "Biased collective memories and historical overclaiming",
+    "type": "article-journal"
+  },
+  {
+    "URL": "https://laborcenter.berkeley.edu/wp-content/uploads/2020/12/Working-Paper-Data-and-Algorithms-in-the-Workplace-A-Primer-on-New-Technologies-FINAL.pdf",
+    "author": [
+      {
+        "family": "Kresge",
+        "given": "Lisa"
+      }
+    ],
+    "id": "kresge2020",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Data and algorithms in the workplace: A primer on new technologies",
+    "title-short": "Data and algorithms in the workplace",
+    "type": "no-type"
+  },
+  {
+    "URL": "https://hbr-org.proxy.library.upenn.edu/2017/04/uber-shows-how-not-to-apply-behavioral-economics",
+    "author": [
+      {
+        "family": "Gino",
+        "given": "F"
+      }
+    ],
+    "container-title": "Harvard Business Review",
+    "id": "gino2017",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "title": "Uber shows how not to apply behavioral economics",
+    "type": "article-journal"
+  },
+  {
+    "URL": "https://cpb-us-w2.wpmucdn.com/voices.uchicago.edu/dist/1/2826/files/2020/12/darkpatternsqueue.pdf",
+    "author": [
+      {
+        "family": "NARAYANAN",
+        "given": "ARVIND"
+      },
+      {
+        "family": "MATHUR",
+        "given": "ARUNESH"
+      },
+      {
+        "family": "CHETTY",
+        "given": "MARSHINI"
+      },
+      {
+        "family": "KSHIRSAGAR",
+        "given": "MIHIR"
+      }
+    ],
+    "container-title": "ACM Queue",
+    "id": "narayanan2020",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "title": "Dark patterns",
+    "type": "article-journal"
+  },
+  {
+    "URL": "https://www.nytimes.com/interactive/2017/04/02/technology/uber-drivers-psychological-tricks.html?_r=0",
+    "author": [
+      {
+        "family": "Scheiber",
+        "given": "Noam"
+      }
+    ],
+    "container-title": "The New York Times",
+    "id": "scheiber2017",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "title": "How uber uses psychological tricks to push its drivers’ buttons",
+    "type": "article-journal",
+    "volume": "2"
+  },
+  {
+    "author": [
+      {
+        "family": "Madrian",
+        "given": "Brigitte C"
+      },
+      {
+        "family": "Shea",
+        "given": "Dennis F"
+      }
+    ],
+    "container-title": "The Quarterly journal of economics",
+    "id": "madrian2001",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          2001
+        ]
+      ]
+    },
+    "page": "1149-1187",
+    "publisher": "MIT Press",
+    "title": "The power of suggestion: Inertia in 401 (k) participation and savings behavior",
+    "title-short": "The power of suggestion",
+    "type": "article-journal",
+    "volume": "116"
+  },
+  {
+    "author": [
+      {
+        "family": "Bhargava",
+        "given": "Saurabh"
+      },
+      {
+        "family": "Conell-Price",
+        "given": "Lynn"
+      },
+      {
+        "family": "Mason",
+        "given": "Richard"
+      },
+      {
+        "family": "Benartzi",
+        "given": "Shlomo"
+      }
+    ],
+    "id": "bhargava2018",
+    "issued": {
+      "date-parts": [
+        [
+          2018
+        ]
+      ]
+    },
+    "title": "Save (d) by design",
+    "type": "no-type"
+  },
+  {
+    "URL": "https://hbr.org/2020/02/how-digital-design-drives-user-behavior",
+    "author": [
+      {
+        "family": "Benartzi",
+        "given": "Shlomo"
+      }
+    ],
+    "container-title": "Harvard Business Review",
+    "id": "benartzi2020",
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          2
+        ]
+      ]
+    },
+    "title": "How digital design drives user behavior",
+    "type": "no-type"
+  },
+  {
+    "URL": "https://hbr.org/2017/12/how-digital-tools-and-behavioral-economics-will-save-retirement",
+    "author": [
+      {
+        "family": "Benartzi",
+        "given": "Shlomo"
+      }
+    ],
+    "container-title": "Harvard Business Review",
+    "id": "benartzi2017",
+    "issued": {
+      "date-parts": [
+        [
+          2017,
+          12
+        ]
+      ]
+    },
+    "title": "How digital tools and behavioral economics will save retirement",
+    "type": "no-type"
+  },
+  {
+    "author": [
+      {
+        "family": "Rubinstein",
+        "given": "Ariel"
+      }
+    ],
+    "chapter-number": "1",
+    "id": "rubinstein98",
+    "issued": {
+      "date-parts": [
+        [
+          1998
+        ]
+      ]
+    },
+    "publisher": "MIT press",
+    "title": "Modeling bounded rationality",
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Athey",
+        "given": "Susan"
+      }
+    ],
+    "container-title": "Science",
+    "id": "athey2017",
+    "issue": "6324",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "483-485",
+    "publisher": "American Association for the Advancement of Science",
+    "title": "Beyond prediction: Using big data for policy problems",
+    "title-short": "Beyond prediction",
+    "type": "article-journal",
+    "volume": "355"
+  },
+  {
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Milton"
+      }
+    ],
+    "container-title": "Essays in positive economics",
+    "id": "f53",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          1953
+        ]
+      ]
+    },
+    "page": "145-178",
+    "publisher": "Chicago",
+    "title": "The methodology of positive economics",
+    "type": "article-journal",
+    "volume": "3"
+  },
+  {
+    "author": [
+      {
+        "family": "Kahneman",
+        "given": "Daniel"
+      }
+    ],
+    "id": "tfs",
+    "issued": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    },
+    "publisher": "Macmillan",
+    "title": "Thinking, fast and slow",
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Thaler",
+        "given": "Richard H"
+      },
+      {
+        "family": "Sunstein",
+        "given": "Cass R"
+      }
+    ],
+    "id": "nudge",
+    "issued": {
+      "date-parts": [
+        [
+          2009
+        ]
+      ]
+    },
+    "publisher": "Penguin",
+    "title": "Nudge: Improving decisions about health, wealth, and happiness",
+    "title-short": "Nudge",
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Becker",
+        "given": "Gary S"
+      }
+    ],
+    "id": "becker2017economic",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "publisher": "Routledge",
+    "title": "Economic theory",
+    "type": "book"
+  },
+  {
+    "author": [
+      {
+        "family": "Caplin",
+        "given": "Andrew"
+      },
+      {
+        "family": "Dean",
+        "given": "Mark"
+      },
+      {
+        "family": "Martin",
+        "given": "Daniel"
+      }
+    ],
+    "container-title": "American Economic Review",
+    "id": "caplin2011search",
+    "issue": "7",
+    "issued": {
+      "date-parts": [
+        [
+          2011
+        ]
+      ]
+    },
+    "page": "2899-2922",
+    "title": "Search and satisficing",
+    "type": "article-journal",
+    "volume": "101"
+  },
+  {
+    "author": [
+      {
+        "family": "Stoffel",
+        "given": "Sandro Tiziano"
+      },
+      {
+        "family": "Yang",
+        "given": "Jiahong"
+      },
+      {
+        "family": "Vlaev",
+        "given": "Ivo"
+      },
+      {
+        "dropping-particle": "von",
+        "family": "Wagner",
+        "given": "Christian"
+      }
+    ],
+    "container-title": "PloS one",
+    "id": "stoffel2019testing",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "e0213668",
+    "publisher": "Public Library of Science San Francisco, CA USA",
+    "title": "Testing the decoy effect to increase interest in colorectal cancer screening",
+    "type": "article-journal",
+    "volume": "14"
+  },
+  {
+    "author": [
+      {
+        "family": "Simonson",
+        "given": "Itamar"
+      }
+    ],
+    "container-title": "Journal of consumer research",
+    "id": "simonson1989choice",
+    "issue": "2",
+    "issued": {
+      "date-parts": [
+        [
+          1989
+        ]
+      ]
+    },
+    "page": "158-174",
+    "publisher": "The University of Chicago Press",
+    "title": "Choice based on reasons: The case of attraction and compromise effects",
+    "title-short": "Choice based on reasons",
+    "type": "article-journal",
+    "volume": "16"
+  },
+  {
+    "author": [
+      {
+        "family": "Huber",
+        "given": "Joel"
+      },
+      {
+        "family": "Payne",
+        "given": "John W"
+      },
+      {
+        "family": "Puto",
+        "given": "Christopher"
+      }
+    ],
+    "container-title": "Journal of consumer research",
+    "id": "huber82",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          1982
+        ]
+      ]
+    },
+    "page": "90-98",
+    "publisher": "The University of Chicago Press",
+    "title": "Adding asymmetrically dominated alternatives: Violations of regularity and the similarity hypothesis",
+    "title-short": "Adding asymmetrically dominated alternatives",
+    "type": "article-journal",
+    "volume": "9"
+  },
+  {
+    "author": [
+      {
+        "family": "Shafir",
+        "given": "Eldar"
+      },
+      {
+        "family": "Simonson",
+        "given": "Itamar"
+      },
+      {
+        "family": "Tversky",
+        "given": "Amos"
+      }
+    ],
+    "container-title": "Cognition",
+    "id": "shafir1993",
+    "issue": "1-2",
+    "issued": {
+      "date-parts": [
+        [
+          1993
+        ]
+      ]
+    },
+    "page": "11-36",
+    "publisher": "Elsevier",
+    "title": "Reason-based choice",
+    "type": "article-journal",
+    "volume": "49"
+  },
+  {
+    "author": [
+      {
+        "family": "Huber",
+        "given": "Joel"
+      },
+      {
+        "family": "Payne",
+        "given": "John W"
+      },
+      {
+        "family": "Puto",
+        "given": "Christopher P"
+      }
+    ],
+    "container-title": "Journal of Marketing Research",
+    "id": "huber2014let",
+    "issue": "4",
+    "issued": {
+      "date-parts": [
+        [
+          2014
+        ]
+      ]
+    },
+    "page": "520-525",
+    "publisher": "SAGE Publications Sage CA: Los Angeles, CA",
+    "title": "Let’s be honest about the attraction effect",
+    "type": "article-journal",
+    "volume": "51"
+  },
+  {
+    "author": [
+      {
+        "family": "Huber",
+        "given": "Joel"
+      },
+      {
+        "family": "Payne",
+        "given": "John W"
+      },
+      {
+        "family": "Puto",
+        "given": "Christopher"
+      }
+    ],
+    "container-title": "Journal of consumer research",
+    "id": "huber1982adding",
+    "issue": "1",
+    "issued": {
+      "date-parts": [
+        [
+          1982
+        ]
+      ]
+    },
+    "page": "90-98",
+    "publisher": "The University of Chicago Press",
+    "title": "Adding asymmetrically dominated alternatives: Violations of regularity and the similarity hypothesis",
+    "title-short": "Adding asymmetrically dominated alternatives",
+    "type": "article-journal",
+    "volume": "9"
+  },
+  {
+    "author": [
+      {
+        "family": "Friedman",
+        "given": "Milton"
+      }
+    ],
+    "container-title": "Essays in positive economics",
+    "id": "friedman1953methodology",
+    "issue": "3",
+    "issued": {
+      "date-parts": [
+        [
+          1953
+        ]
+      ]
+    },
+    "page": "145-178",
+    "publisher": "Chicago",
+    "title": "The methodology of positive economics",
+    "type": "article-journal",
+    "volume": "3"
+  },
+  {
+    "author": [
+      {
+        "family": "Athey",
+        "given": "Susan"
+      }
+    ],
+    "container-title": "Science",
+    "id": "athey2017beyond",
+    "issue": "6324",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "page": "483-485",
+    "publisher": "American Association for the Advancement of Science",
+    "title": "Beyond prediction: Using big data for policy problems",
+    "title-short": "Beyond prediction",
+    "type": "article-journal",
+    "volume": "355"
+  },
+  {
+    "author": [
+      {
+        "family": "Mäki",
+        "given": "Uskali"
+      },
+      {
+        "literal": "others"
+      }
+    ],
+    "container-title": "The methodology of positive economics Reflections on the Milton Friedman legacy",
+    "id": "maki2009unrealistic",
+    "issued": {
+      "date-parts": [
+        [
+          2009
+        ]
+      ]
+    },
+    "publisher": "Cambridge University Press",
+    "title": "Unrealistic assumptions and unnecessary confusions: Rereading and rewriting f53 as a realist statement",
+    "title-short": "Unrealistic assumptions and unnecessary confusions",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Iyengar",
+        "given": "Sheena S"
+      },
+      {
+        "family": "Lepper",
+        "given": "Mark R"
+      }
+    ],
+    "container-title": "Journal of personality and social psychology",
+    "id": "iyengar2000",
+    "issue": "6",
+    "issued": {
+      "date-parts": [
+        [
+          2000
+        ]
+      ]
+    },
+    "page": "995",
+    "publisher": "American Psychological Association",
+    "title": "When choice is demotivating: Can one desire too much of a good thing?",
+    "title-short": "When choice is demotivating",
+    "type": "article-journal",
+    "volume": "79"
+  },
+  {
+    "author": [
+      {
+        "family": "Iyengar",
+        "given": "Sheena S"
+      },
+      {
+        "family": "Kamenica",
+        "given": "Emir"
+      }
+    ],
+    "container-title": "Journal of Public Economics",
+    "id": "iyengar2010",
+    "issue": "7-8",
+    "issued": {
+      "date-parts": [
+        [
+          2010
+        ]
+      ]
+    },
+    "page": "530-539",
+    "publisher": "Elsevier",
+    "title": "Choice proliferation, simplicity seeking, and asset allocation",
+    "type": "article-journal",
+    "volume": "94"
+  },
+  {
+    "author": [
+      {
+        "family": "Lea",
+        "given": "Amanda M"
+      },
+      {
+        "family": "Ryan",
+        "given": "Michael J"
+      }
+    ],
+    "container-title": "Science",
+    "id": "lea2015irrationality",
+    "issue": "6251",
+    "issued": {
+      "date-parts": [
+        [
+          2015
+        ]
+      ]
+    },
+    "page": "964-966",
+    "publisher": "American Association for the Advancement of Science",
+    "title": "Irrationality in mate choice revealed by túngara frogs",
+    "type": "article-journal",
+    "volume": "349"
+  },
+  {
+    "author": [
+      {
+        "family": "Tversky",
+        "given": "Amos"
+      },
+      {
+        "family": "Shafir",
+        "given": "Eldar"
+      }
+    ],
+    "container-title": "Psychological science",
+    "id": "tversky1992choice",
+    "issue": "6",
+    "issued": {
+      "date-parts": [
+        [
+          1992
+        ]
+      ]
+    },
+    "page": "358-361",
+    "publisher": "SAGE Publications Sage CA: Los Angeles, CA",
+    "title": "Choice under conflict: The dynamics of deferred decision",
+    "title-short": "Choice under conflict",
+    "type": "article-journal",
+    "volume": "3"
+  },
+  {
+    "author": [
+      {
+        "family": "Shafir",
+        "given": "Eldar"
+      },
+      {
+        "family": "Simonson",
+        "given": "Itamar"
+      },
+      {
+        "family": "Tversky",
+        "given": "Amos"
+      }
+    ],
+    "container-title": "Cognition",
+    "id": "shafir93",
+    "issue": "1-2",
+    "issued": {
+      "date-parts": [
+        [
+          1993
+        ]
+      ]
+    },
+    "page": "11-36",
+    "publisher": "Elsevier",
+    "title": "Reason-based choice",
+    "type": "article-journal",
+    "volume": "49"
+  },
+  {
+    "author": [
+      {
+        "family": "Logg",
+        "given": "Jennifer M"
+      },
+      {
+        "family": "Minson",
+        "given": "Julia A"
+      },
+      {
+        "family": "Moore",
+        "given": "Don A"
+      }
+    ],
+    "container-title": "Organizational Behavior and Human Decision Processes",
+    "id": "logg2019algorithm",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "page": "90-103",
+    "publisher": "Elsevier",
+    "title": "Algorithm appreciation: People prefer algorithmic to human judgment",
+    "title-short": "Algorithm appreciation",
+    "type": "article-journal",
+    "volume": "151"
+  },
+  {
+    "author": [
+      {
+        "family": "Fildes",
+        "given": "Robert"
+      },
+      {
+        "family": "Goodwin",
+        "given": "Paul"
+      }
+    ],
+    "container-title": "International Journal of Forecasting",
+    "id": "fildes2020stability",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "publisher": "Elsevier",
+    "title": "Stability in the inefficient use of forecasting systems: A case study in a supply chain company",
+    "title-short": "Stability in the inefficient use of forecasting systems",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Longoni",
+        "given": "Chiara"
+      },
+      {
+        "family": "Cian",
+        "given": "Luca"
+      }
+    ],
+    "container-title": "Journal of Marketing",
+    "id": "longoni2020artificial",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "0022242920957347",
+    "publisher": "SAGE Publications Sage CA: Los Angeles, CA",
+    "title": "Artificial intelligence in utilitarian vs. Hedonic contexts: The “word-of-machine” effect",
+    "title-short": "Artificial intelligence in utilitarian vs. Hedonic contexts",
+    "type": "article-journal"
+  },
+  {
+    "author": [
+      {
+        "family": "Dawes",
+        "given": "Robyn M"
+      }
+    ],
+    "container-title": "American psychologist",
+    "id": "dawes1979robust",
+    "issue": "7",
+    "issued": {
+      "date-parts": [
+        [
+          1979
+        ]
+      ]
+    },
+    "page": "571",
+    "publisher": "American Psychological Association",
+    "title": "The robust beauty of improper linear models in decision making.",
+    "type": "article-journal",
+    "volume": "34"
+  },
+  {
+    "author": [
+      {
+        "family": "Feng",
+        "given": "Xiaojing"
+      },
+      {
+        "family": "Gao",
+        "given": "Jia"
+      }
+    ],
+    "container-title": "Decision Support Systems",
+    "id": "feng2020optimal",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "113251",
+    "publisher": "Elsevier",
+    "title": "Is optimal recommendation the best? A laboratory investigation under the newsvendor problem",
+    "type": "article-journal",
+    "volume": "131"
+  },
+  {
+    "author": [
+      {
+        "family": "Dietvorst",
+        "given": "Berkeley J"
+      },
+      {
+        "family": "Bharti",
+        "given": "Soaham"
+      }
+    ],
+    "container-title": "Psychological science",
+    "id": "dietvorst2020people",
+    "issue": "10",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "1302-1314",
+    "publisher": "SAGE Publications Sage CA: Los Angeles, CA",
+    "title": "People reject algorithms in uncertain decision domains because they have diminishing sensitivity to forecasting error",
+    "type": "article-journal",
+    "volume": "31"
+  },
+  {
+    "author": [
+      {
+        "family": "Heck",
+        "given": "Daniel W"
+      },
+      {
+        "family": "Seiling",
+        "given": "Lukas"
+      },
+      {
+        "family": "Bröder",
+        "given": "Arndt"
+      }
+    ],
+    "container-title": "Cognition",
+    "id": "heck2020love",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "page": "104069",
+    "publisher": "Elsevier",
+    "title": "The love of large numbers revisited: A coherence model of the popularity bias",
+    "title-short": "The love of large numbers revisited",
+    "type": "article-journal",
+    "volume": "195"
+  },
+  {
+    "author": [
+      {
+        "family": "Colson",
+        "given": "Eric"
+      }
+    ],
+    "container-title": "Harvard Business Review",
+    "id": "colson2019ai",
+    "issued": {
+      "date-parts": [
+        [
+          2019
+        ]
+      ]
+    },
+    "title": "What ai-driven decision making looks like",
+    "type": "article-journal"
+  },
+  {
+    "DOI": "10.23915/distill.00028",
+    "author": [
+      {
+        "family": "Hohman",
+        "given": "Fred"
+      },
+      {
+        "family": "Conlen",
+        "given": "Matthew"
+      },
+      {
+        "family": "Heer",
+        "given": "Jeffrey"
+      },
+      {
+        "family": "Chau",
+        "given": "Duen Horng (Polo)"
+      }
+    ],
+    "container-title": "Distill",
+    "id": "hohman2020communicating",
+    "issued": {
+      "date-parts": [
+        [
+          2020
+        ]
+      ]
+    },
+    "note": "https://distill.pub/2020/communicating-with-interactive-articles",
+    "title": "Communicating with interactive articles",
+    "type": "article-journal"
+  }
+]

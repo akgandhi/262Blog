@@ -1,7 +1,8 @@
 ---
-title: "Lecture 1: Welcome to Economics 262"
+title: "Economics in the Era of the Cloud"
 description: |
-  Economics 262 examines the intersection between data technologies and economic decision making.   
+  Decision making is the midst of a revolution arising from the power of data in the cloud. As these capabiliteis diffuse from inside of the world's largest technology companies to all industries and sectors of life, the classical 18th century economic idea of a rational actor -  *Homo Economicus*
+  - has taken on a brave new meaning as a model for AI systems.   
 author:
   - name: Amit Gandhi
     url: upenn.edu
@@ -9,19 +10,23 @@ author:
     affiliation_url: upenn.edu
 date: 12-12-2020
 categories:
-  - Torch
-  - R
-  - Image Recognition & Image Processing
-  - Time series
+  - Data 
+  - Cloud
+  - Homo Ecnoomicus
+  - Behavioral Economics
 output:
   distill::distill_article:
     toc: true
     self_contained: false
 preview: https://db0ip7zd23b50.cloudfront.net/dims4/default/0dfba66/2147483647/legacy_thumbnail/960x369%3E/quality/90/?url=http%3A%2F%2Fbloomberg-bna-brightspot.s3.amazonaws.com%2F43%2F5e%2F9afb1c354b0e8ee71a13c737d4f5%2Fgettyimages-921135480.jpg
+bibliography: ../../biblio.json
+draft: true
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(dplyr)
+library(flair)
 
 # Learn more about creating blogs with Distill at:
 # https://rstudio.github.io/distill/blog.html
@@ -30,18 +35,222 @@ knitr::opts_chunk$set(echo = FALSE)
 
 # Introduction
 
-The working title of the class: "Market Design for Economic Decisions". In the first lecture we will make the case for this course name in relation to the key problems we aim to tackle.
+<!-- Who is Homo Economicus and Why Should Data Scientists Care? -->
 
-A key motivation for the course is given by the memorable quote:
+<!-- The working title of the class: "Market Design for Economic Decisions". In the first lecture we will make the case for this course name in relation to the key problems we aim to tackle. -->
+
+<!-- A key motivation for the course is given by the memorable quote: -->
 
 > Life is a matter of choices, and every choice you make makes you.
 > 
 > ---John C. Maxwell
 
-<aside>
-This is an aside
-</aside>
+Economics is the science of choices - choice under scarcity specifically. Of course given that all choices involve an *opportunity cost* - the value of your next best alternative to the choice that was actually made - all choices are made in the presence of scarcity. Or said another way, in the words of a famous economic theorem you have likely heard -  **there is no free lunch**!^[The choices are made by a set of *economic actors* whose decisions interrelate to give rise to the fundamental economic outcomes in society. This includes what gets produced, how is it produced, and who receives it. The underlying actors themselves encompass consumers/households, firms/organizations, governments, and the market mechanism itself - e.g., the invisible hand.] 
 
+
+
+The way economics approaches this science is actually a little quixotic and takes some time to appreciate the angle of attack. In order to understand the choices made by actual people in an economic system, an economic model will typically start with asking what may seem like an unusual question: *what would a hypothetical rational actor choose under the circumstances faced by actual person or entity making the choice?* 
+
+Notice that this is distinct from asking : "what would the actual person or entity in question choose?". The reason for the difference is that the "rational actor experiment" - embedding a hypothetical rational actor in the setting faced by an actual decision maker - provides insight into the major forces that determine the outcome of the decision. By mapping the cause and effect relationship from decision forces to behavior, it enables economists to predict what different decisions could result as those forces are altered. 
+
+A key force of interest in economics are incentives. Hence the rational actor is not meant to be a perfect replication of the entity in question in question making the decision, but rather a model that provides an approximation and is designed to **isolate the effect of incentives on behavior**. 
+
+This actor interestingly enough has a name: `Homo Economicus`. It is a whole species of humanity that abides by the axioms of rational choice!
+
+***
+
+<center>
+
+![Homo Economicus](https://theprogenygroup.com/wp-content/uploads/2016/06/homo-economicus.jpg)
+
+</center>
+
+***
+
+## (Re-)Introducing Homo Economicus
+
+If you don't remember your Homo Economicus, lets have a quick refresher. Consider the list of options below which represent potential payoffs from choosing that option. Which option would you choose.  
+
+```{r, echo=FALSE}
+knitr::include_graphics("./images/payoffs_simple.png")
+```
+
+The answer should likely jump off the page. The option **20** feels (and indeed is) the highest payoff, and given that all else equal you prefer more to less, you choose it. 
+
+If you have chosen in this fashion, there is a **Homo Economicus** living inside of you. You have entered a choice situation with a clear objective - maximize payoff. Yo also likely delibratively considered each option and assessed the one which best fulfilled your objective. In other word, you have just maximized the utility subject to a budget constraint - a key capability of Homo Economicus!
+
+### How did Homo Economicus evolve?
+
+Homo Economicus was historically discovered not through laboratory experiments, but rather through a process of human introspection. A collection of scholars spanning multiple fields - ranging from  Economics, Mathematics, Statistics, Computer Science, Operations Research, as well as Psychology and Sociology and even Philosophy - have all contributed to the modern conception of Homo Economicus by asking a common question: How should a rational actor behave given the logical structure of a decision problem.
+
+This introspective methodology created the basic DNA of Homo Economicus. This DNA has evolved from the 18th century enlightenment thought to the present day in a fashion akin to natural selection as a wider variety of decision problems confronted Homo Economicus. These problems arose from a practical need to solve economic questions as opposed to completely abstract undertakings - e.g., they were problems truly found in the wild of applied economics. 
+
+
+Homo Economicus is thus a human creation - a model built by humans for humans to shed light and understanding on the human condition. 
+
+![Homo Economicus History](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQun_GXmWw3IpNU0cHKuDPUpTMyL-3klcl4jw&usqp=CAU)
+
+### What are the traits of Homo Economicus
+
+The core anatomy of Homo Economicus that has emerged in modern economics encompasses the following set of traits:
+
+1.	Has stable preferences
+2.	Maximizes utility
+3.	Forms beliefs about uncertain outcomes satisfying laws of probability distributions (probablistic sophistication)
+4.	Updates beliefs with new information through Bayes Rule
+5.	Makes decisions under uncertainty according to the principle of expected utility
+6.	Makes decision over time in accordance with Bellman's principle (dynamically consistent). 
+
+These traits are able to mix and match together depending on the structure of the choice problem to give rise to a very general model of rational behavior that is highly adaptable to most decisions. One of the first skills taught to graduate students in economics is to build a Homo Economicus in problem sets and computer simulations and to observe its behavior!
+
+EXAMPLE HERE
+
+## But You are Actually Homo Sapien
+
+All of this is great for the economics profession by what does it matter to you. Consider the following variation of the choice problem we presented above. What choice would you make among the following options. 
+
+```{r echo=FALSE}
+knitr::include_graphics("./images/payoffs.png")
+```
+
+This choice problem feels different and triggers a rather different thought process. It is harder and your conclusion is more uncertain although there is no uncertainty in the question. Likely you will start to do a few operations of addition which you full well understand how to do in theory but don't particularly enjoy in practice. You will grow slightly weary of this repetition (different individuals will have a different threshold for this pain), you will then resort to glancing through the patterns of the numbers in the numbers and "recognize" through an intuitive sense which is the highest payoff from among these based on this pattern. 
+
+If you functioned in this way, then congratulations you are indeed human - i.e., Homo Sapien! Homo Sapien, unlike Homo Economicus, is governed by another "thinking and reasoning system" that allows you to quickly assemble data from the environment, make sense of it, draw conclusions, and make decisions in a fairly automatic fashion. This thinking system stands at the front line of many decisions you actually make. It is distinguished by its remarkable speed and fairly effortless operation. 
+
+For Homo Economicus the two presentations of the decision problem yield the exact same choice - the the problems are logically identical becauset the choice options themselves are mathematically equivalent. However for Homo Economicus they lead us down different "thinking" pathway. The end result of the two pathways lead to materially different decisions. 
+
+Consider the following data from an experiment conducted by @caplin2011search. They presented 22 Subjects with 657 choices analgous to the choices above but the choice problem varied among subjects in two key dimensions:
+
+  * 2 complexity levels: 3 or 7 operations
+  * 3 choice set sizes: 10\, 20\, 40 options
+
+which gave 6 overall treatments. An example of a choice problem can be seen below:
+![A Treatment in the Experiment](images/HomoEconomicus3.png)
+
+
+The results of the study are found below:
+
+```{r out.width=c('50%', '50%'), fig.show='hold'}
+knitr::include_graphics("images/HomoEconomicus4.png")
+knitr::include_graphics("images/HomoEconomicus5.png")
+```
+The outcome reveals a few key realities that will be central themes for us:
+
+**1)** Homo Sapien falls short of the rational ideal of Homo Economicus - Homo Sapien is *boundedly rationality*. 
+<br>
+
+**2)** The more complex environment exacerbates the difference with considerable heterogeneity among individuals.
+<br>
+
+**3)** Homo Sapien's choices are however reasonably effective - we leave cash on the table, but the level of inefficiency experienced is perhaps acceptable given the onerous calculations that would have been involved. 
+
+# So what is to be done about it?
+
+Here is where our chief quandary will lie. 
+
+Economists for the most part build fairly sophisticated models of Homo Economicus through data, theory, and econometric technique which are motivated by real world problems faced by actual economic actors. 
+
+But at the end of the day you on the other hand are Homo Sapien. We are left with two options to then consider:
+
+**Option A:** &nbsp; Economists should really be performing genetic engineering on Homo Economicus to look and act more like Homo Sapiens. In this way build more realistic models of human behavior. 
+
+**Option B:** &nbsp; Homo Sapien should act more like Homo Economicus if indeed the latter is rational and no one is likely to dispute a basic desire to be rational. 
+
+Both options are interesting and quite important - there is an opportunity to build more predictive/realistic economic models and at the same time guide Homo Sapien towards a state of heightened rationality in actual behavior. 
+
+Yet neither option if tenable if the difference between Homo Sapien and Homo Economicus and Homo Sapien is due to the whims and randomness of passion. That is, if the dividing line between Homo Economicus and Homo Sapien is attributable to a third specimen of being - **Homo Emotionalis**.
+
+
+
+```{r}
+knitr::include_graphics("./images/homoemotion.png")
+```
+
+This point of view was the established wisdom in the social sciences for the better part of the 20th century. The relevant departures from rational choice where the outcome of emotional reactions to the environment - the behavior of Homo Emotionalis. 
+
+Under this paradigm, the general predisposition towards Homo Economicus was the norm, with the countervailing influence of an emotions that leading to momentary but significant departures from the rational norm. 
+
+Mathematically we can imagine a theory of behavior under this view of people that resembled:
+
+$$
+\color{blue}{\mbox{actual behavior} = \mbox{rational behavior} + \epsilon}
+$$
+
+where $\epsilon$ is a random factor that causes our real behavior to fluctuate from the tenants of rational choice. 
+
+Under this model, our rational selves are at the center and the emotional perturbations are disruptions to the center. This model
+
+This rational system of thought which you are capable of internalizing we will identify with a dimension of your brain following Kahneman as your "System 2". The other designations we can give System 2 are your deliberate, rational, and formal thought system. 
+
+The view emerging from System 1 and System 2 is actually
+$$
+\color{blue}{\mbox{actual behavior} = \mbox{intuitive behavior} + \mbox{rational adjustmnet}}
+$$
+
+
+System 2 is your inner Homo Economicus. It can follow the precepts of formal reasoning and motivate action on that basis. It is however **lazy**. It takes cues from system 1. All else equal it would rather outsource its job to another complementary 
+This intuitive system of thought we will represent as another dimension of your brain that (following Kahneman) will call "System 1". 
+
+Now we recognize that System 1 and System 2 are both present at the moment we are making a decision 
+
+The outcome reveals a few key realities that will be themes for us:
+
+**1** There is a difference between the decisions reached through System 1 and System 2 reasoning - that is our System 1 self leads us to a place of *boundedly rationality*. 
+
+**2** The more complex environment heightened the substantive difference between these two mechanisms of thought with considerable heterogeneity among individuals.
+
+**3** Even our System 1 choices are reasonably effective - we leave cash on the table, but the level of inefficiency experienced is perhaps "acceptable" given the cost of enacting the more onerous method of thought. 
+
+Our main text in the class - thinking fast and slow - will be focused on the dual operation of System 1 and System 2 and how they operate together in a rich interplay that guides human decisions to predictably depart from Homo Economicus. 
+
+# Why Does This Matter : Choice Architecture
+
+Why don't we just take classes in decision making to solve the problem. 
+
+Consider the analogy betweeen cognitive illusions and optical illusions. On the one hand we can't help but observe the world a certain way by the nature of our perceptual system. Thinking in fact is seen as a extension of perception. 
+
+However in the case of optical illusions, when we learn of their existence, although we cannot "unsee it" we can learn to behave differently, e.g., to not be fooled by the same illusion when we come to recognize it in nature because we will have understood it. 
+
+The situation is much harder for cognitive illusions. Take the author of the book - he makes a very direct confession:
+
+Hence learning about bias and intellectually understanding it is a System 2 feat - using that to discipline and tame your System 1 insticts is quite different. As much as I wish this class were the answer to bringing about more rational, efficient economic decisions in the ordinary course of life events, such is not the case. 
+
+We need an alternative strategy besides lecturing and education, as much as knowledge and science is an important precursor to change. 
+
+Herein lies the idea of Nudging. 
+
+Even "System 1" and "System 2" is a masterful bit of nudging to make the ideas in his book more permanently last. System 1 forms stories quickly and acts on them. By turning System 1 and System 2 into characters with a plot, their reality becomes more imprinted in our System 1 pattern of thought. 
+
+Having recognized that we have an omnipresent "System 1" that confidently and quickly generates reasoning that can be cause us to depart from the formal and logical System 2 view of the world, the question becomes what (if anything) is there to be done about it aside from understand it?
+
+A widely circulated statistic is that we make approximately [30,000 choices](https://www.psychologytoday.com/us/blog/stretching-theory/201809/how-many-decisions-do-we-make-each-day) a day.
+Much of life presents itself as the second choice scenario. We are facing decisions with complex, nuanced settings, and sometimes ambiguous information that we need to quickly process in order to take an action. that must be effective enough to avoid disasters. 
+
+Though our System 1 can navigate us past disasters, it will systematically leave cash on the table in many circumstances. How can we do better? Well -  if we can "transform" problems to resemble the second circumstance, then we will more readily make the rational decision. 
+
+What then is the essential difference between the two circumstances. The choices are logically equivalent, but in the first the data is more transparent to our cognitive system as to what is optimal. In the second, the way the data is presented trigges a different form of thinking. 
+
+This would seem to present an incredible an opportunity. The key distinguishing feature of the two decision environments is the "data" that are presented. With one set of data inputs, we readily adopt reasoning that achieves **Homo Economicus** levels of performance. With another set of inputs, we are induced into cognitive strategies that lead to a systematic departure from Homo Economicus.
+
+The way in which information is presented fundamentally altars the behavior in two logically equivalent situations. This is significant because the data we face in many choice circumstances are actually the production of someone else's efforts - the data we are absorbing is *designed* - either intentionally or unintentionally - and this design will have material impact on the recipient's behavior. 
+
+The key idea that even small changes in the choice context can have significant impact on the actual choices - choice architecture. 
+
+By actively manipulating the design of information we can produce different choice behavior. What is data science - it is
+
+that others generate rather than data directly from nature. 
+
+What data is presented can impact behavior and decisions is a key idea. 
+
+
+# Data Scientists are the Modern Day Choice Architects
+
+Hal Varian came out around this time of the writing of these books with the following observation:
+
+
+Homo Economicus provides a way to study problems. In this way Economics is a methodology. Lets use the description from the Armchair economist. 
+
+As Box famously stated the matters: all models are wrong but some models are useful. 
 
 ```{r share-again, echo=FALSE}
 xaringanExtra::use_share_again()
@@ -51,6 +260,42 @@ xaringanExtra::use_share_again()
 xaringanExtra::embed_xaringan(url = "slides/index.html", ratio = "16:9")
 ```
 
+<br>
+<br>
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
+<center>
+Bad Design = Bad Decision Making
+</center>
+</div>
 
+Aesthetics, Art, and Engineering come together with Economics. 
+
+
+
+```{r}
+library(equatiomatic)
+
+# Fit a simple model
+mod1 <- lm(mpg ~ cyl + disp, mtcars)
+
+```
+
+```{r}
+set.seed(8675309)
+d <- data.frame(cat1 = rep(letters[1:3], 100),
+                cat2 = rep(LETTERS[1:3], each = 100),
+                cont1 = rnorm(300, 100, 1),
+                cont2 = rnorm(300, 50, 5),
+                out   = rnorm(300, 10, 0.5))
+mod4 <- lm(out ~ log(cont1) + cat2 + cont2 + cat1, d)
+```
+
+
+```{r equation, results='asis'}
+extract_eq(mod4, wrap = TRUE)
+```
 
 
