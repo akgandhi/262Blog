@@ -63,7 +63,7 @@ advdate <- function(obj, adv) {
   --- | ---
 | <font color = "red"> Course </font> | Econ 262
 | <font color = "red">   Professor | Amit Gandhi (<akgandhi@upenn.edu>)
-| <font color = "red"> Nawaaz Khalfan | (<khalfan@sas.upenn.edu>)
+| <font color = "red"> TA| Nawaaz Khalfan (<khalfan@sas.upenn.edu>)
 | <font color = "red"> Lecture </font> | Tues, Thursday 1.30-2.50
 | <font color = "red"> Office Hours </font> | By appointment
 | <font color = "red"> Website </font> | [econ262.com](econ62.com)
