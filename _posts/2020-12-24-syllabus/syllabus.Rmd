@@ -594,7 +594,7 @@ emo::ji("scroll")
 bib[c("iyengar2000", "iyengar2010", "madrian2001" )]
 ```
 
-## `radvdate(mon, 7)`
+## `r advdate(mon, 7)`
 ### Tues March 2 {.heatinline}
 #### Topic: Digital Nudges
 
