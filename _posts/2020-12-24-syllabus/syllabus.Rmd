@@ -110,7 +110,7 @@ A digital environment is one where computers and devices are networked together 
 
 These are central questions for market design in digital environments.  
 
-A key difference between digital decisions and their offline counterparts is the role of **data**. A digital decision can leverage unprecedented  **velocity, variety, and volume ** of data. The proliferation of data is a product of technological advancements in *data science, data engineering, data analytics, machine learning, and A.I"*, which generates data intelligence that is distributed to decision makers through the **cloud**.
+A key difference between digital decisions and their offline counterparts is the role of **data**. A digital decision can leverage unprecedented  **velocity, variety, and volume ** of data. The proliferation of data is a product of technological advancements in *data science, data engineering, data analytics, machine learning, and A.I*, which are distributed to decision makers through  **public cloud infrastructure**. 
 
 
 
@@ -192,7 +192,7 @@ Thus from a user perspective, effective design in digital environments requires 
 
 **2. Improve** the the decision by leveraging data, technology, and economics.
 
-**3. Influence** humans to change their behavior toward the efficient outcome through a digital interface.
+**3. Influence** humans to change their behavior toward the efficient outcome through  digital interfaces.
 
 <!-- This is where it differs from consulting - you are building a product, and the 3 steps progress in an iterative fashion. You are in college to learn the "Deep thinking" that is (2) but that is also inefficient.-->
 
