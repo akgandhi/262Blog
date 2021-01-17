@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-01-17-classsurvey/",
+    "title": "Class Survey",
+    "description": "Please share detials on your background and interests so we can make the course successful for you!",
+    "author": [
+      {
+        "name": "Amit K. Gandhi",
+        "url": "upenn.edu"
+      }
+    ],
+    "date": "2021-01-17",
+    "categories": [],
+    "contents": "\nPlease fill out the class survey!\n\n\nName: \n\n\nEmail: \n\n\nMeme URL: \n\n\n\nSend\n\n\n\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-01-17T21:14:43+00:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2020-12-24-syllabus/",
     "title": "Course Introduction",
     "description": "Economics at the Intersection of Data and Technology",
