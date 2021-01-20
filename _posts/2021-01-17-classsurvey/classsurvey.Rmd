@@ -9,6 +9,8 @@ date: 01-17-2021
 output:
   distill::distill_article:
     self_contained: false
+preview: https://rstudio.com/assets/img/rstudio-global-with-date.jpg
+  
 ---
 
 
