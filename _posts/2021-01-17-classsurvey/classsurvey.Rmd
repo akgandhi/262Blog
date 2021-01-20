@@ -1,7 +1,7 @@
 ---
-title: "Class Survey"
+title: "First Day of Class"
 description: |
-  Please share detials on your background and interests so we can make the course successful for you!
+  Rstudio Global Conference
 author:
   - name: Amit K. Gandhi
     url: upenn.edu
@@ -14,21 +14,44 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(pander, lubridate)
+library(tidyverse)
+library(kableExtra)
 ```
 
-Please fill out the class survey!
+## The Rstudio Global Conference
+```{r}
+knitr::include_graphics("https://rstudio.com/assets/img/rstudio-global-with-date.jpg")
+```
 
-<form name="submitMeme" action="/thanks.html" netlify>
-  <p>
-    <label>Name: <input type="text" name="name" size="40"></label>
-  </p>
-  <p>
-    <label>Email: <input type="text" name="email" size="40"></label>
-  </p>
-  <p>
-    <label>Meme URL: <input type="text" name="memeurl" size="40"></label>
-  </p>
-  <p>
-    <button type="submit">Send</button>
-  </p>
-</form>
+
+As I emailed you all last week, we will not have a synchronous class tomorrow but instead have asked you all to **register and attend any sessions of interests** at the **Rstudio global conference** taking place tomorrow The link to register is [here](https://rstudio.com/conference/). 
+
+There are many interesting talks taking place - you can see the full program [here](https://global.rstudio.com/student/catalog). I have earmarked a few talks that are personally interesting to me that I think resonate with topics/issues we will address in the course around using data to make decisions with technology. These are listed below and marked the ones in <span style="color: red;">red</span>  that are specifically on the topic of data visualization, which is a problem we will discuss next week. 
+
+I would pay particular attention to the opening keynote talk by Hadley Wickham (the chief scientist of Rstudio and designer of the *Tidyverse* framework for data science in R, which includes the famed visualization package **ggplot**). 
+
+```{r, out.width=c('50%', '50%'), fig.show='hold'}
+knitr::include_graphics("https://upload.wikimedia.org/wikipedia/commons/f/fa/Hadley-wickham2016-02-04.jpg")
+knitr::include_graphics("https://ggplot2.tidyverse.org/logo.png")
+```
+
+```{r, include = FALSE}
+schedule <- read_csv("assets/schedule.csv")
+schedule <- schedule %>% 
+#   mutate(time_est = time_at_tz(time_gmt, tz = "America/New_York")) 
+#  mutate(time = format(time_est, "%H:%M")) %>%
+  filter(talk_id %in% c(1, 286, 261, 218, 182, 274, 3, 327, 125, 279, 128, 134, 307,222, 323,117,224,  246, 186, 100, 163, 312, 355, 278, 114, 245, 334)) %>%
+  mutate(time = lubridate::with_tz(time_gmt, "America/New_York")) %>%
+  filter(time < lubridate::make_datetime(2020, 1, 21, 23, 00, tz = "America/New_York")) %>%
+  mutate(time = format(time, "%I:%M%p")) %>%
+  select(time, name, title_text, url) %>%
+  rename(presenter = name, title = title_text)
+```
+
+
+```{r}
+knitr::kable(schedule) %>% row_spec(1:7, bold = T, color = "white", background = "red")
+
+```
+

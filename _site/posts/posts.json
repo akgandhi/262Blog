@@ -1,8 +1,25 @@
 [
   {
+    "path": "posts/2021-01-20-coursesurvey/",
+    "title": "Quick Survey",
+    "description": "Please tell me a little about yourself!",
+    "author": [
+      {
+        "name": "Amit K. Gandhi",
+        "url": "upenn.edu"
+      }
+    ],
+    "date": "2021-01-20",
+    "categories": [],
+    "contents": "\nA Short Survey\n\nThe plunge into virtual learning, like all unexpected events, has created significant challenges and opportunities. I think the challenges are clear to all of us at a personal level as we have shifted our learning lives to the online medium.\nBut there are real opportunities that lay before us in terms of how we approach the classroom, learning, and collaborative relationships that can have lasting impact on education and work after the pandemic.\nA key theme of the class as we will discover is that realizing opportunities for more efficient outcomes in digital environments requires data!\nIn this spirit, I would love to learn a little to help ensure the class meets your own interests and educational objectives in a way that is compatible with your background.\nPlease fill out the short survey below by Fri Jan 22 - I will discuss the results at our first synchronous meeting on Tuesday!\n\n\nName \n\n\n What do you hope to learn from the class?: \n\n Do you have programming experience in R? If so, have you ever used Rmarkdown?: \n\n Do you have any experience using a collaborative messaging platform such as Slack or Teams? \n\nSend\n\n\n\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-01-20T15:39:11+00:00",
+    "input_file": "coursesurvey.utf8.md"
+  },
+  {
     "path": "posts/2021-01-17-classsurvey/",
-    "title": "Class Survey",
-    "description": "Please share detials on your background and interests so we can make the course successful for you!",
+    "title": "First Day of Class",
+    "description": "Rstudio Global Conference",
     "author": [
       {
         "name": "Amit K. Gandhi",
@@ -11,10 +28,10 @@
     ],
     "date": "2021-01-17",
     "categories": [],
-    "contents": "\nPlease fill out the class survey!\n\n\nName: \n\n\nEmail: \n\n\nMeme URL: \n\n\n\nSend\n\n\n\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-01-17T21:14:43+00:00",
-    "input_file": {}
+    "contents": "\nThe Rstudio Global Conference\n\n\n\nAs I emailed you all last week, we will not have a synchronous class tomorrow but instead have asked you all to register and attend any sessions of interests at the Rstudio global conference taking place tomorrow The link to register is here.\nThere are many interesting talks taking place - you can see the full program here. I have earmarked a few talks that are personally interesting to me that I think resonate with topics/issues we will address in the course around using data to make decisions with technology. These are listed below and marked the ones in red that are specifically on the topic of data visualization, which is a problem we will discuss next week.\nI would pay particular attention to the opening keynote talk by Hadley Wickham (the chief scientist of Rstudio and designer of the Tidyverse framework for data science in R, which includes the famed visualization package ggplot).\n\n\n\n\n\ntime\n\n\npresenter\n\n\ntitle\n\n\nurl\n\n\n11:00AM\n\n\nHadley Wickham\n\n\nMaintaining the house the tidyverse built\n\n\nhttps://global.rstudio.com/student/page/40521\n\n\n01:00PM\n\n\nKara Woo\n\n\nAlways look on the bright side of plots\n\n\nhttps://global.rstudio.com/student/page/40618\n\n\n02:19PM\n\n\nMegan Beckett\n\n\nAesthetically automated figure production\n\n\nhttps://global.rstudio.com/student/page/40627\n\n\n01:19PM\n\n\nSean Lopp\n\n\nR & Python: Going Steady\n\n\nhttps://global.rstudio.com/student/page/40638\n\n\n01:19PM\n\n\nNicole Kramer\n\n\nA New Paradigm for Multifigure, Coordinate-Based Plotting in R\n\n\nhttps://global.rstudio.com/student/page/40633\n\n\n02:00PM\n\n\nSophie Beiers\n\n\nTrial and Error in Data Viz at the ACLU\n\n\nhttps://global.rstudio.com/student/page/40642\n\n\n03:00PM\n\n\nJohn Burn-Murdoch\n\n\nReporting on and visualising the pandemic\n\n\nhttps://global.rstudio.com/student/page/40615\n\n\n06:20PM\n\n\nRiva Quiroga\n\n\nHow to do things with words: learning to program in R with a “communicative approach”\n\n\nhttps://global.rstudio.com/student/page/40637\n\n\n05:00PM\n\n\nEmily Riederer\n\n\noRganization: How to make internal R packages part of your team\n\n\nhttps://global.rstudio.com/student/page/40607\n\n\n05:19PM\n\n\nMalcolm Barrett\n\n\nYou’re Already Ready: Zen and the Art of R Package Development\n\n\nhttps://global.rstudio.com/student/page/40621\n\n\n06:20PM\n\n\nAthanasia M. Mowinckel\n\n\nMake a package - Make some friends\n\n\nhttps://global.rstudio.com/student/page/40599\n\n\n06:25PM\n\n\nJohn Helveston\n\n\nUsing formr to create R-powered surveys with individualized feedback\n\n\nhttps://global.rstudio.com/student/page/40616\n\n\n06:35PM\n\n\nAlex Cookson\n\n\nThe Power of Great Datasets\n\n\nhttps://global.rstudio.com/student/page/40596\n\n\n05:00PM\n\n\nMax Kuhn\n\n\nWhat’s new in tidymodels?\n\n\nhttps://global.rstudio.com/student/page/40625\n\n\n05:16PM\n\n\nShirbi Ish-Shalom\n\n\nUsing R to Up Your Experimentation Game\n\n\nhttps://global.rstudio.com/student/page/40640\n\n\n06:23PM\n\n\nSimon Couch\n\n\ntidymodels/stacks, Or, In Preparation for Pesto: A Grammar for Stacked Ensemble Modeling\n\n\nhttps://global.rstudio.com/student/page/40641\n\n\n06:38PM\n\n\nAlan Feder\n\n\nCategorical Embeddings: New Ways to Simplify Complex Data\n\n\nhttps://global.rstudio.com/student/page/40595\n\n\n09:20PM\n\n\nEric Gunnar Cronstrom\n\n\nHow we made the switch: a case study on automating a complex report.\n\n\nhttps://global.rstudio.com/student/page/40608\n\n\n10:00PM\n\n\nRika\n\n\nFrom Zero to Hero: Best practices for setting up Rstudio Team in the Cloud\n\n\nhttps://global.rstudio.com/student/page/40636\n\n\n10:17PM\n\n\nDean Marchiori\n\n\nHow reproducible am I? A retrospective on a year of commercial data science projects in R\n\n\nhttps://global.rstudio.com/student/page/40606\n\n\n10:26PM\n\n\nCarson Sievert\n\n\nCustom theming in Shiny & R Markdown with bslib & thematic\n\n\nhttps://global.rstudio.com/student/page/40601\n\n\n09:18PM\n\n\nBarret Schloerke\n\n\nplumber + future: Async Web APIs\n\n\nhttps://global.rstudio.com/student/page/40600\n\n\n10:00PM\n\n\nNeal Richardson\n\n\nBigger Data With Ease Using Apache Arrow\n\n\nhttps://global.rstudio.com/student/page/40631\n\n\n10:19PM\n\n\nZJ\n\n\nEasy larger-than-RAM data manipulation with {disk.frame}\n\n\nhttps://global.rstudio.com/student/page/40647\n\n\n10:24PM\n\n\nGarrick Aden-Buie\n\n\nxaringan Playground: Using xaringan to learn web development\n\n\nhttps://global.rstudio.com/student/page/40609\n\n\n10:34PM\n\n\nLucy D’Agostino McGowan\n\n\nDesigning Randomized Studies using Shiny\n\n\nhttps://global.rstudio.com/student/page/40620\n\n\n\n\n\n",
+    "preview": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Hadley-wickham2016-02-04.jpg",
+    "last_modified": "2021-01-20T15:47:10+00:00",
+    "input_file": "classsurvey.utf8.md"
   },
   {
     "path": "posts/2020-12-24-syllabus/",

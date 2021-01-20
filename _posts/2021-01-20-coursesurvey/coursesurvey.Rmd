@@ -1,0 +1,77 @@
+---
+title: "Quick Survey"
+description: |
+  Please tell me a little about yourself!
+author:
+  - name: Amit K. Gandhi
+    url: upenn.edu
+date: 01-20-2021
+output:
+  distill::distill_article:
+    self_contained: false
+draft: true
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## A Short Survey
+
+![](https://www.vedamo.com/wp-content/uploads/2017/06/what-is-virtual-learning-1.png)
+
+The plunge into virtual learning, like all unexpected events, has created significant challenges and opportunities. I think the challenges are clear to all of us at a personal level as we have shifted our learning lives to the online medium. 
+
+But there are real opportunities that lay before us in terms of how we approach the classroom, learning, and collaborative relationships that can have lasting impact on education and work after the pandemic. 
+
+A key theme of the class as we will discover is that realizing opportunities for more efficient outcomes in digital environments requires data! 
+
+In this spirit, I would love to learn a little to help ensure the class meets your own interests and educational objectives in a way that is compatible with your background. 
+
+Please fill out the short survey below by **Fri Jan 22** - I will discuss the results at our first synchronous meeting on Tuesday!
+
+<form name="survey" action="/thanks.html" netlify>
+  <p>
+    <label>Name <br> <input type="text" name="name" size="40"></label>  </p>
+
+  <p>
+    <label> What do you hope to learn from the class?: <br>
+            <textarea
+            name="message"
+            id="contact-form-message"
+            aria-labelledby="contact-form-message-label"
+            class="form-textarea"
+            rows="10" cols = "50">
+        </textarea>
+  </p>
+  
+  
+  <p>
+    <label> Do you have programming experience in R? Describe <br>
+            <textarea
+            name="message"
+            id="contact-form-message"
+            aria-labelledby="contact-form-message-label"
+            class="form-textarea"
+            rows="10" cols = "50">
+        </textarea>
+  </p>
+  
+  
+  <p>
+    <label>  Do you have any experience using a collaborative messaging platform such as Slack or Teams? <br>
+            <textarea
+            name="message"
+            id="contact-form-message"
+            aria-labelledby="contact-form-message-label"
+            class="form-textarea"
+            rows="10" cols = "50">
+        </textarea>
+  </p>
+ 
+  
+    <button type="submit">Send</button>
+  </p>
+</form>
+
