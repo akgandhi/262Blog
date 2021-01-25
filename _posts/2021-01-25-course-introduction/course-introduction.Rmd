@@ -197,7 +197,7 @@ There is no curve in this class and hence no quotas on A's or C's. If you earnes
 
 A core learning experience in the course is rooted in reading the assigned book chapters and papers, and discussing them as a class. We will add a technological twist to this age old formula by adopting the  <font size = 4 color = "red"> Perusall </font> application. 
 
-Our Perusall code for the class is GANDHI-HUX9J. Go to ![the Perusall website](www.perusall.com) and enter this code to access our class library where all reading assignments will be posted. 
+Our Perusall code for the class is GANDHI-HUX9J. Go to to the Perusall website and enter this code to access our class library where all reading assignments will be posted. 
 
 Perusall manages your engagement in the weekly readings. Perusall itself is based on an intelligent data technology that is aiding a key form of decision making in the classroom - student evaluations! Perusall measures engagement by your annotations in the reading, which forces you into an active reading mode through similar social forces that motivate our online media habits - it thus also embodies key features of Nudge (one of the books below)!
 
