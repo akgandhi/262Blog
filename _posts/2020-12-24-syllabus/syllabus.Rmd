@@ -25,6 +25,8 @@ draft: true
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 
+library(DiagrammeR)
+
 colorize <- function(x, color) {
   if (knitr::is_latex_output()) {
     sprintf("\\textcolor{%s}{%s}", color, x)
@@ -75,21 +77,15 @@ advdate <- function(obj, adv) {
 
 # Welcome {.salt}
 
-**Welcome to Market Design (Econ 262)**! 
+**Welcome to Market Design (Econ 262)**! This is a virtual course in the **economics of decision making** being taught in the Spring of 2021 at the **University of Pennsylvania**. This page describes the topic of the course, the learning objectives, the logistical plan, the evaluation policies, and the class schedule. 
 
-The course will be taught virtually. We will use both synchronous and asynchronous channels for our course interactions. 
 
-We will meet regularly during our alloted lecture time to engage in one of 3 activities (which will be recorded for those who cannot attend live):
+The course [website](marketdesign.io) will act as a central repository for the class to disseminate lecture materials and announcements. A **GroupMe** group for the class has been setup (reach out to Amit for access if you do not have it yet) and will servce as our platform to communicate with each other, conduct flash polls, and send reminders of class activities (including links for zoom class meetings.)
 
-1. Short lectures with break-out sessions
-2. Student presentations
-3. Virtual office hours for questions on material
-
-The course [website](marketdesign.io) will deliver the lectures material extracted from the weekly readings. Our class canvass site will be used to deliver recorded lectures and host asynchronous class discussion.
 
 # What is Market Design?{.salt}
 
-The goal of market design  is to design policies that improve the efficiency of economic decisions. An **economic decision** is any decision that involves trade-offs, which is synonymous with the very definition of economics as “the study of the allocation of scarce means to satisfy competing ends.” [@becker2017economic]
+The goal of market design is to design policies that improve the efficiency of economic decisions. An **economic decision** is any decision that involves trade-offs, which is synonymous with the very definition of economics as “the study of the allocation of scarce means to satisfy competing ends.” [@becker2017economic]
 
 Economic decisions are made by diverse actors in an economic system - **households**, **firms**, **governments**, and even the **markets** themselves (e.g., the invisible hand!). 
 
@@ -173,7 +169,7 @@ In order to create value,  data technologies need to be transformed into applica
 A <font size = 4 color = "red"> central problem </font> for market design  is <font size = 4 color = "red"> designing digital environment to translate "more data" into "better economic decisions".</font>. 
 
 
-## What is our approach to the topic?
+## Our approach to market design
 
 How should digital environment be designed to enable efficient economic decisions?
 
@@ -181,9 +177,13 @@ How should digital environment be designed to enable efficient economic decision
 
 Let me state the obvious answer which nevertheless has some profound implications for market design. **The user is a human being**!
 
+
+>You cannot understand good design if you do not understand people; design is made for people.
+>`r tufte::quote_footer('--- Dieter Rams')`
+
 Our approach in the class is to start with the user - the human - and understand how humans process and act upon data for economic decision making. 
 
-The interface between a human decision and the raw data in a digital environment is typically defined by a web application. The application processes, models, summarizes, and displays features of the raw data to the user. 
+Humans interact with raw data in a digital environment typically through a web application. The application processes, models, summarizes, and displays features of the raw data to the user, who internalizes the information in their behavior. 
 
 ![](https://boostlabs.com/wp-content/uploads/2019/09/10-types-of-data-visualization-1.jpg)
 
@@ -193,25 +193,54 @@ Thus from a user perspective, effective design in digital environments requires 
 
 **2. Improve** the the decision by leveraging data, technology, and economics.
 
-**3. Influence** humans to change their behavior toward the efficient outcome through  digital interfaces.
+**3. Influence** humans to change their behavior toward the efficient outcome through digital interfaces.
 
 <!-- This is where it differs from consulting - you are building a product, and the 3 steps progress in an iterative fashion. You are in college to learn the "Deep thinking" that is (2) but that is also inefficient.-->
 
-We can see that success in a market design project involves holistic thinking that integrates data/economic techniques  with the visual elements of the digital interface, which are all tailored to the user behaviors we aim to effectuate. 
 
-This is hard! It is a domain that is still in its infancy and being developed in real time across academic, business, and government as organizations digitally transform make data more central to their operation. It is thus a course that (by design `r emo::ji("smile")`) will aim to pose many more questions than necessarily answering them. 
+The design problem encompasses all three steps. We can see that success in a market design project involves holistic thinking that integrates data/economic techniques  with the visual elements of the digital interface, which are all tailored to the human behaviors we aim to effectuate and improve. 
 
-## How Does this Differ from Data Science? 
+This is hard! It is a domain that is still in its infancy and being developed in real time across academic, business, and government as organizations digitally transform make data more central to their operation. 
 
-Whereas a data science or machine learning classes will often focus attention on elements **(2)** (usually substituting "better decisions" with "better predictions") and the plethora of skills and technique involved therein, we will examine the design problem through the human touch points in **(1)** and **(3)**. Our focus is thus the *human-centric design of data technologies to enhance economic decisions*.
+<!-- It is thus a course that (by design `r emo::ji("smile")`) will aim to pose many more questions than necessarily answering them.  -->
+
+## How does this differ from data science? 
+
+A standard data science or machine learning classes will focus attention on the elements **(2)** (usually substituting "better decisions" with "better predictions"). These classes will focus on software techniques and algorithms for building and deploying ML algorithms. 
+
+We are instead interested in the underlying human decision problems that these algorithms and ultimately the data are intended to improve. Thus our focus is defining the problem **(1)** and generating influence **(3)**, which provides the perspective necessary for solving **(2)**.  
+
+Thus our focus is the *human-centered design of data technologies to enhance economic decisions*.
 
 <aside>
-I recognize that combining "human-centric" and "economic" together is not often how the "dismal science" is practiced or perceived. `r emo::ji("smile")`
+I recognize that combining "human-centered" and "economic" together is not often how the "dismal science" is practiced or perceived. `r emo::ji("smile")`
 </aside> 
 
 <!-- In order to identify and influence economic inefficiencies in the wild, we need a map to know where to look. If human departures from efficient decisions happen completely at random, then the search would be difficult if not impossible - we would be at the mercy of luck to successfully design! -->
 
 <!-- Fortunately this is not the case. What is arguably the biggest discovery in the social and behavioral science in the last 50 years is that there are robust patterns of human cognition that make humans, e.g, **Homo Sapien** behave differently than the rational ideal, e.g., **Homo Economicus**.  -->
+
+
+# How Will We Learn {.salt}
+
+In order to solve the design problem above, we need to understand our user - *human decision makers* - in the wid. The investigation will proceed along two parallel tracks of learning in the class.
+
+## Reading (50%)
+
+A core learning experience in the course is rooted in reading the assigned book chapters and papers, and discussing them as a class. We will add a technological twist to this age old formula by adopting the  <font size = 4 color = "red"> Perusall </font> application. 
+
+
+Perusall manages your engagement in the weekly readings. Perusall itself is based on an intelligent data technology that is aiding a key form of decision making in the classroom - student evaluations! Perusall measures engagement by your annotations in the reading, which forces you into an active reading mode through similar social forces that motivate our online media habits - it thus also embodies key features of Nudge!
+
+Our readings fall into two categories:
+1. Reading to gain perspective on human biases in decision making relative to efficient economic norms, and the effect of data on the manifestation of those biases. 
+2. Reading to learn tools for understanding human users and influencing them with the data scientific artifacts.
+
+We describe the main texts that are part of the reading:
+
+### Thinking Fast and Slow{.heat}
+
+![](https://www.kurzweilai.net/images/book-cover-Thinking-Fast-+-Slow-no.-5.png)
 
 The science we will apply to the question follows from the seminal work of Kahneman and Tversy (KT for short) who in 1971 began the first inquiry into the question of whether humans naturally are **intuitive statisticians** - e.g., do humans instinctively process data in a fashion that abides by formal statistical principles?
 
@@ -225,14 +254,10 @@ The crux of H&B, which is among the biggest discovery in the social and behavior
 **Homo Economicus** is the &quot;rational actor&quot from your principles of economics courses used to model decisions by consumers, firms, and societies/governments.
 </aside>
 
-# Course Books {.salt}
-### Thinking Fast and Slow
 
-![](https://www.kurzweilai.net/images/book-cover-Thinking-Fast-+-Slow-no.-5.png)
+The book  **"Thinking Fast and Slow"** by *Daniel Kahneman* - describes the conceptual and historical backdrop behind H&B and provides the basic clues for where we can anticipate that sub-rational economic decisions will happen. Identifying these scenarios is a central part of being a market designer in the digital age - data and AI when properly employed should ameliorate these biases and improve economic efficiency.
 
-Our primary text for the class - **"Thinking Fast and Slow"** by *Daniel Kahneman* - describes the conceptual and historical backdrop behind H&B and provides the basic clues for where we can anticipate that sub-rational economic decisions will happen. Identifying these scenarios is a central part of being a market designer in the digital age - data and AI when properly employed should ameliorate these biases and improve economic efficiency.
-
-### Nudge
+### Nudge{.heat}
 
 ![](https://cms.qz.com/wp-content/uploads/2018/10/Nudge.jpg?quality=75&strip=all&w=1600&h=900&crop=1g)
 
@@ -383,23 +408,104 @@ However the practice of designing nudges has a potential **dark side** - especia
 
 <!-- The primary goals of this course are thus twofold. The first is to explore the advances in behavioral economics that has documented a variety of systematic departures from this fully rational actor model that is presumed in neoclassical economics. Our second goal is to show how these very same economic principles play a role in the modern development of AI and are being encoded in AI technologies. This juxtaposition between machine and human decision making enables us to see how the development of AI can be leveraged to enhance the efficiency of human decisions and thereby act as a complements (as opposed to substitutes) to each other. -->
 
+### R for Data Science{.heat}
+![](https://d33wubrfki0l68.cloudfront.net/bd366e1a176f391d0e6f092439ee92a0e99875c6/6250e/wp-content/uploads/2018/08/r-for-data-science.jpg)
 
+Both "Thinking Fast and Slow" and "Nudge" were written before data science came of age. In fact the term "data science" itself was coined in 2008 (by D.J. Patil and Jeff Hammerbacher), the same year as *Nudge* was published.
+
+<!-- Furthermore, the audience that "Nudge" is targeting is an audience of policy makers in positions of power and authority. This does not describe the lives of many young people entering the workforce who will be increasingly working directly with data to solve problems.  -->
+
+Data science is in many ways represents the modern day choice architecture. Data scientist in organizations across industries are processing, filtering, and designing displays of information that defines the context for a large variety of our economic decisions.
+
+Data science should be seen as both a set of **tools** for working with data, as well as a **process** for answering questions and solving problems with data to influence stakeholders seeking value from data (typically decision makers who are the clients or customers of a data analysis). The book **R for Data Science** written by Hadley Wickham has become a ``modern classic'' in establishing an elegant and powerful set of tools and processes. 
+
+The tools he describes, including *ggplot*, *dplyr*, and *tibbles*, are the staples of being a productive data scientist. The process, which sometimes receives less attention, is just as powerful and encapsulated by the following data science workflow:
+![](https://d33wubrfki0l68.cloudfront.net/571b056757d68e6df81a3e3853f54d3c76ad6efc/32d37/diagrams/data-science.png)
+
+The `tidyverse` is a collection of packages that have a common set of design principles and interfaces that juxtaposes against this workflow to create a rich ecosystem for data science. A sampling of the most popular packages can be seen here:
+![](https://miro.medium.com/max/4032/1*B-cwhqnFgGIbd9lWnzi_mQ.png)
+
+Particularly of interest for digital design of decisions is the **communication** step. As can be seen, communication is the last mile of the data scientific workflow and it is arguably the most important (and unfortunately least taught!). The communicaton step is associated to a specific tooling element: **rmarkdown**. 
+
+Rmarkdown weaves together code, text, and visualizations in a single software medium intended for human consumption. It lives as a text file, e.g., a piece of code, which can be versioned and generates a communication that is reproducible. We will examine rmarkdown and the process of building data based communications that can influence the behavior of human decision makers. 
+
+## Project (50%)
+
+
+You will work in teams of 3-4 and engage in a human centered design process that applies data to help solve a decision problem. The process will entail 7 distinct stages that you will carry your project forward with your team. The stages correspond to the elements of a human centered design process for data solutions:
+
+
+```{r, fig.width=10, fig.height=6, fig.cap = 'Project Flow'}
+my_graphviz <- grViz("digraph{
+
+                     graph[rankdir = LR]
+                     
+                     node[shape = rectangle, style = filled, fontsize = 44]  
+                     A[label = 'Decision Problem']
+                     B[label = 'User Persona']
+                     C[label = 'User Interview']
+                     D[label = 'Data Collection']
+                     E[label = 'Construct Prototype']
+                     F[label = 'Collect Feedback']
+                     G[label = 'Iterate and Finalize']
+
+                     edge[color = black, fontsize = 44]
+                     A -> B
+                     B -> C
+                     C -> D
+                     D -> E
+                     E -> F
+                     F -> G
+                     
+                     { rank= same B G }
+                     { rank= same C F }
+                     { rank= same D E }
+                     
+                     }")
+
+my_graphviz
+```
+
+:::{.heatinline}
+1. Define a decision problem of interest/concern
+2. Hypothesize user personas and recruit users for interviews
+3. Conduct user interviews and test/iterate the problem and persona definitions
+4. Collect data for the problem
+5. Construct a prototype
+6. Collect user feedback on the prototype
+7. Iterate and finalize prototype
+:::
+
+
+Your journey along this path will documented in a **team blog**. Each stage is a milestone in the project. Your output from each stage will correspond to a **blog post**. We will use **rmarkdown** for creating team blogs. Instructions for building your blog with Rmarkdown will be provided in the class. 
+
+The goal of the project is to get you to experience first hand the challenging aspect of the **design problem**. This is usually not the technical AI, ML, or Data Science component, but rather **understanding the user experience** and user value for the decision being improved. The particular data technique that factors into building a prototype can be very simple - a well designed **data visualization** for example can more than suffice for a successful prototype, but it is the discretion of the team to find the appropriate data design for the problem at hand. 
+
+You are **not** being evaluated on the intricacy of the prototype- there is no failure! Your evaluation is based on attempting to follow the process to develop a useful scenario for the application of data to the decision problem you have scoped. A big part of success is thus having a **well defined problem**, which itself will feel ambiguous and will morph as you go along the process. 
+
+Thus you should see the process as an education in itself in real world design of data solution. You will **struggle with ambiguity** and test ideas, and discard many false starts before you find a path towards a solution that adds value to a decision problem. This is the nature of the **iterative method** and keeps you constantly connected to the **user scenario** before investing heavily in the technology side of what you are developing. 
 
 # Learning Objectives and Course Evaluation {.salt}
 
+There are 3 primary **learning objectives** for the class:
 
-There are 3 primary **learning objectives** in the class that set the dimensions we use for evaluation and grading. 
+1. To understand the role of *heuristics and biases* in intuitive thought and how it drives a wedge between actual human behavior and efficient decisions. 
+   - **class activity**: Perusall reading and discussion 
+   - **weight**  =   <font color = "red"> 50% </font>
 
-## Reading (35%)
+2. Recognize how elements of digital environments interacts with our heuristics and biases, which can be used to design nudges and influence economic decisions.
+   - **class activity**: Group presentation of a research paper
+   - **weight** =  <font color = "red"> 20% </font>
+
+3. Learn how to create an rmarkdown document to communicate knowledge derived from data and domain understanding.
+   - **class activity**: Write a blog entry in markdown with your team
+   - **weight** =  <font color = "red"> 30% </font>
+
+
+
+## Reading (50%)
 ### Objective
 
-Understand the meaning of "Heuristics and Biases" - how are economic decisions made intuitively what are the practical opportunities for market design to nudge decisions to a more efficient state.
-
-### Key Results
-
-Read the assigned papers and book chapters according to course schedule and engage with readings both through class discussion and the Perusal platform. 
-
-### Description
 
 The primary learning experience in the course is rooted in reading the assigned book chapters and papers, and discussing them as a class. We will add a technological twist to this age old formula by adopting the  <font size = 4 color = "red"> Perusall </font> application. 
 
@@ -408,23 +514,7 @@ Perusall manages your engagement in the weekly readings. Perusall itself is base
 
 We will use Perusall to manage the readings from "Thinking Fast and Slow" - which should be purchased through Perusall site. We will also use well as the articles from journals and online sources. 
 
-## Class Presentation (25%)
-
-### Learning Objective
-
-Translate the insights from the classical H&B science to a modern topic about human decisions in digital settings.
-
-### Key Results
-
-Class presentation on a research paper assigned from literature that covers the "five main questions" to structure a summary of piece of research.
-
-### Description
-
-Both "Thinking Fast and Slow" and "Nudge" were written before data science came of age. In fact the term "data science" itself was coined in 2008 (by D.J. Patil and Jeff Hammerbacher), the same year as *Nudge* was published.
-
-<!-- Furthermore, the audience that "Nudge" is targeting is an audience of policy makers in positions of power and authority. This does not describe the lives of many young people entering the workforce who will be increasingly working directly with data to solve problems.  -->
-
-Data science is in many ways represents the modern day choice architecture. Data scientist are processing, filtering, and designing displays of information that defines the context for a large variety of our economic decisions.
+## Class Presentation (20%)
 
 
 You will work in groups of 3 and present one paper associated to one of the cognitive "heuristics and biases" we discuss. The schedule of topics and list of potential papers are listed below. 
@@ -444,7 +534,10 @@ The presentation should be roughly 15-20 mins - presented using any medium you p
 :::
 
 
-## Final Project (40%)
+## Final Project (30%)
+Design a data visualization that hekps solve a decision problem. 
+
+Define a problem where human decisions are likely inefficient today.
 
 ### Objective
 
@@ -520,7 +613,13 @@ bib[c("bounthavong2019", "schneider2018")]
 #### Topic: Introduction to Homo Economicus and Digital Nudges {.heatinline}
 
 `r emo::ji("book")` tfs (Introduction) <br>
-`r emo::ji("book")` nudge (ch. 1-2)
+nudge (Chapter 1)
+
+```{r, echo=FALSE, results = "asis"}
+emo::ji("scroll")
+bib[c("bounthavong2019", "schneider2018")]
+```
+
 
 ## `r advdate(mon, 3)`
 
@@ -529,7 +628,7 @@ bib[c("bounthavong2019", "schneider2018")]
 
 ```{r, echo=FALSE, results = "asis"}
 emo::ji("scroll")
-bib[c("hohman2020communicating")]
+bib[c("hohman2020communicating", "Rmarkdown")]
 ```
 
 ### Thurs Feb 4 {.heatinline}

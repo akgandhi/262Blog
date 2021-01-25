@@ -2,6 +2,48 @@
   {
     "author": [
       {
+        "family": "Wickham",
+        "given": "Hadley"
+      }
+    ],
+    "chapter-number": "27",
+    "container-title": "R for data science",
+    "id": "Rmarkdown",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "publisher": "O’Reilly",
+    "title": "R markdown",
+    "type": "chapter"
+  },
+  {
+    "author": [
+      {
+        "family": "Wickham",
+        "given": "Hadley"
+      }
+    ],
+    "chapter-number": "3",
+    "container-title": "R for data science",
+    "id": "ggplot",
+    "issued": {
+      "date-parts": [
+        [
+          2017
+        ]
+      ]
+    },
+    "publisher": "O’Reilly",
+    "title": "Data visualization",
+    "type": "chapter"
+  },
+  {
+    "author": [
+      {
         "family": "Kale",
         "given": "Alex"
       },
