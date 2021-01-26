@@ -321,7 +321,7 @@ The components are:
 
 Your journey along this path will documented in a **team blog**. Each stage is a milestone in the project. Your output from each stage will correspond to a **blog post**. We will use **rmarkdown** for creating team blogs. Instructions for building your blog with Rmarkdown will be provided in the class. 
 
-The goal of the project is to get you to experience first hand the challenging aspect of the **design problem**. This is usually not the technical AI, ML, or Data Science component, but rather **understanding the user experience** and user value for the decision being improved. The particular data technique that factors into building a prototype can be very simple - a well designed **data visualization** for example can more than suffice for a successful prototype, but it is the discretion of the team to find the appropriate data design for the problem at hand. 
+The goal of the project is to get you to experience first hand what I view as the most challenging aspect of the **design problem**. This is usually not the technical AI, ML, or Data Science component, but rather **understanding the user experience** and user value for the decision being improved. The particular data technique that factors into building a prototype can be very simple - a well designed **data visualization** for example can more than suffice for a successful prototype, but it is the discretion of the team to find the appropriate data design for the problem at hand. 
 
 You are not being evaluated on the intricacy of the prototype- **there is no failure**! Your evaluation is based on attempting to follow the process to develop a useful scenario for the application of data to the decision problem you have scoped. A big part of success is thus having a **well defined problem**, which itself will feel ambiguous and will morph as you go along the process. 
 
@@ -331,20 +331,24 @@ Thus you should see the process as an education in itself in real world design o
 
 The course will work in the following way. 
 
-### You will have readings mostly due Tuesday of each week
-With some occasional exceptions on readings due Tues and Thurs early in the semester to establish a few foundations
+### You will have readings mostly due Tuesday of each week.
+With some occasional exceptions for shorter readings that are due both Tues and Thurs, which will take place early in the semester to establish a few foundations (see schedule below).
 
-### During the synchronous session on Tuesday I will review main highlights from your weekly reading and the Perusall questions/comments
+### During the synchronous session on Tuesday, I will review the key highlights from your weekly reading and the Perusall questions/comments.
 
-### The rest of the class time on Tuesday and Thursday will be spent with me working individually with teams on assisting with the project milestone during for the week.
+### The rest of the class time on Tuesday and Thursday will be spent with me working individually with each team, and assisting with the project milestone for the week.
 
-Teams should be prepared with specific ideas/questions they would like to review where advice is needed to achieve the goals of the milestone
+I will break everyone into their team rooms where you can work together on the project milestone. I will have planned times to meet with each team during their breakout room session. Teams should be prepared with specific ideas/questions they would like to review where advice is needed to achieve the goals of the milestone
 
-We will arrange a schedule of working with the teams for each week. There will be time allotted for me to work with each team once a week and Nawaaz to work one once each week. There is no necessity to meet with us (you can opt out), and it is intended as an aid to unblock you on challenges you may face with your project. 
+We will arrange a schedule for meeting in advance of the week. Each team will have a session alloted with me, and a session with Nawaaz.  There is no necessity to meet with us (you can opt out), and it is intended as an aid to help unblock any challenges you may face along the process of building a data solution.
 
 ### On select lecture dates we will have guest speakers
 
 The topic we are studying is at the bleeding edge of applied practice in the data industry. As such it is useful to hear perspective on human centered design from leaders in industry. As their participation is confirmed it will be updated on the course schedule. 
+
+# Course Schedule {.salt}
+
+The following schedule provides dates for readings. Most but not all readings will be assigned to Perusall. It has also marked the weeks where a project milestone begins and ends. The schedule will fill out with more detail as the semester progresses.  
 
 ## `r advdate(mon, 1)`
 

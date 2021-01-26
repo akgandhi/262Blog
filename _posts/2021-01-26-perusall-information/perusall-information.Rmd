@@ -1,0 +1,71 @@
+---
+title: "Perusall Information"
+description: |
+  A short description of how Perusall works
+author:
+  - name: Amit K. Gandhi
+    url: upenn.edu
+date: 01-26-2021
+output:
+  distill::distill_article:
+    self_contained: false
+preview: https://lms.unimelb.edu.au/__data/assets/image/0004/3355654/tile-perusall.png
+---
+
+![](https://lms.unimelb.edu.au/__data/assets/image/0004/3355654/tile-perusall.png)
+
+# How Perusall Works
+
+
+
+Perusall helps you master readings faster, understand the material better, and get more out of your classes. To achieve this goal, you will be collaboratively annotating the textbook with others in your class. 
+
+The help you’ll get and provide your classmates (even if you don’t know anyone personally) will get you past confusions quickly and will make the process more fun. While you read, you’ll receive rapid answers to your questions, help others resolve their questions (which also helps you learn), and advise the instructor how to make class time most productive. 
+
+You can start a new annotation thread in Perusall by highlighting text, asking a question, or posting a comment; you can also add a reply or comment to an existing thread. Each thread is like a chat with one or more members of your class, and it happens in real time. Your goals in annotating each reading assignment are to stimulate discussion by posting good questions or comments and to help others by answering their questions.
+
+```{r}
+vembedr::embed_youtube("ODE6v4YOo0E")
+vembedr::embed_youtube("lIDHntxCvVo")
+```
+
+
+Research shows that by annotating thoughtfully, you’ll learn more, so here’s what “annotating thoughtfully” means: Effective annotations deeply engage points in the readings, stimulate discussion, offer informative questions or comments, and help others by addressing their questions or confusions. To help you connect with classmates, you can “mention” a classmate in a comment or question to have them notified by email (they’ll also see a notification immediately if online), and you’ll also be notified when your classmates respond to your questions. 
+
+
+
+For each assignment, the application will evaluate the annotations you submit on time (see below). Based on the overall body of your annotations, you will receive a score for each assignment as follows
+
+:::{.heatinline}
+
+3 =	demonstrates exceptionally thoughtful and thorough reading of the entire assignment
+
+2 = demonstrates thoughtful and thorough reading of the entire assignment
+
+1 =	demonstrates superficial reading of the entire assignment OR thoughtful reading of only part of the assignment
+
+0 = 	demonstrates superficial reading of only part of the assignment
+:::
+
+
+
+
+##  How many annotations do I need to enter?	
+
+
+
+When Perusall examines your annotations, its "assessment engine" has been designed to reflect the effort you put in your study of the text. It is unlikely that that effort will be reflected by just a few thoughtful annotations per assignment. On the other extreme, 30 per assignment is probably too many, unless a number of them are superficial or short comments or questions (which is fine, because it is OK to engage in chat with your peers). Somewhere in between these two extremes is about right and, thoughtful questions or comments that stimulate discussion or thoughtful and helpful answers to other students’ questions will earn you a higher score for the assignment. 
+
+
+
+
+
+## What does “on time” mean?
+
+
+
+The work done in class depends on you having done the reading in advance. We will use the data arising from student responses on Perusall reading assignments as a guide for classroom discussion. Hence it is necessary to complete the reading and post your annotations before the deadline to receive credit. The deadline is a hard deadline, typically set 11pm on the night prior to the day of the lecture the reading is discussed.
+
+
+
+
