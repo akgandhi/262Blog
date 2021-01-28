@@ -226,5 +226,99 @@ v\### Introduction
   
   <!-- Influencing decision making with data technology however can be an art as much as a science. The best education is thus to hear directly from leaders who are pushing the boundaries of data rationality in real firms, organizations, and markets. We will thus welcome to our class a group of experts from a number of industries who will share their experiences and perspectives on data, AI, and decision making. -->
   
-  
+
+
+Consider the analogy betweeen cognitive illusions and optical illusions. On the one hand we can't help but observe the world a certain way by the nature of our perceptual system. Thinking in fact is seen as a extension of perception. 
+
+However in the case of optical illusions, when we learn of their existence, although we cannot "unsee it" we can learn to behave differently, e.g., to not be fooled by the same illusion when we come to recognize it in nature because we will have understood it. 
+
+The situation is much harder for cognitive illusions. Take the author of the book - he makes a very direct confession:
+
+Hence learning about bias and intellectually understanding it is a System 2 feat - using that to discipline and tame your System 1 insticts is quite different. As much as I wish this class were the answer to bringing about more rational, efficient economic decisions in the ordinary course of life events, such is not the case. 
+
+We need an alternative strategy besides lecturing and education, as much as knowledge and science is an important precursor to change. 
+
+Herein lies the idea of Nudging. 
+
+Even "System 1" and "System 2" is a masterful bit of nudging to make the ideas in his book more permanently last. System 1 forms stories quickly and acts on them. By turning System 1 and System 2 into characters with a plot, their reality becomes more imprinted in our System 1 pattern of thought. 
+
+Having recognized that we have an omnipresent "System 1" that confidently and quickly generates reasoning that can be cause us to depart from the formal and logical System 2 view of the world, the question becomes what (if anything) is there to be done about it aside from understand it?
+
+A widely circulated statistic is that we make approximately [30,000 choices](https://www.psychologytoday.com/us/blog/stretching-theory/201809/how-many-decisions-do-we-make-each-day) a day.
+Much of life presents itself as the second choice scenario. We are facing decisions with complex, nuanced settings, and sometimes ambiguous information that we need to quickly process in order to take an action. that must be effective enough to avoid disasters. 
+
+Though our System 1 can navigate us past disasters, it will systematically leave cash on the table in many circumstances. How can we do better? Well -  if we can "transform" problems to resemble the second circumstance, then we will more readily make the rational decision. 
+
+What then is the essential difference between the two circumstances. The choices are logically equivalent, but in the first the data is more transparent to our cognitive system as to what is optimal. In the second, the way the data is presented trigges a different form of thinking. 
+
+This would seem to present an incredible an opportunity. The key distinguishing feature of the two decision environments is the "data" that are presented. With one set of data inputs, we readily adopt reasoning that achieves **Homo Economicus** levels of performance. With another set of inputs, we are induced into cognitive strategies that lead to a systematic departure from Homo Economicus.
+
+The way in which information is presented fundamentally altars the behavior in two logically equivalent situations. This is significant because the data we face in many choice circumstances are actually the production of someone else's efforts - the data we are absorbing is *designed* - either intentionally or unintentionally - and this design will have material impact on the recipient's behavior. 
+
+The key idea that even small changes in the choice context can have significant impact on the actual choices - choice architecture. 
+
+By actively manipulating the design of information we can produce different choice behavior. What is data science - it is
+
+that others generate rather than data directly from nature. 
+
+What data is presented can impact behavior and decisions is a key idea. 
+
+
+# Data Scientists are the Modern Day Choice Architects
+
+Hal Varian came out around this time of the writing of these books with the following observation:
+
+
+Homo Economicus provides a way to study problems. In this way Economics is a methodology. Lets use the description from the Armchair economist. 
+
+As Box famously stated the matters: all models are wrong but some models are useful. 
+
+```{r share-again, echo=FALSE}
+xaringanExtra::use_share_again()
+```
+
+```{r embed-xaringan, echo=FALSE, fig.cap="[Slides](slides/index.html)"}
+xaringanExtra::embed_xaringan(url = "slides/index.html", ratio = "16:9")
+```
+
+<br>
+<br>
+<style>
+div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
+</style>
+<div class = "blue">
+<center>
+Bad Design = Bad Decision Making
+</center>
+</div>
+
+Aesthetics, Art, and Engineering come together with Economics. 
+
+
+
+```{r}
+library(equatiomatic)
+
+# Fit a simple model
+mod1 <- lm(mpg ~ cyl + disp, mtcars)
+
+```
+
+```{r}
+set.seed(8675309)
+d <- data.frame(cat1 = rep(letters[1:3], 100),
+                cat2 = rep(LETTERS[1:3], each = 100),
+                cont1 = rnorm(300, 100, 1),
+                cont2 = rnorm(300, 50, 5),
+                out   = rnorm(300, 10, 0.5))
+mod4 <- lm(out ~ log(cont1) + cat2 + cont2 + cat1, d)
+```
+
+
+```{r equation, results='asis'}
+extract_eq(mod4, wrap = TRUE)
+```
+
+
+
   

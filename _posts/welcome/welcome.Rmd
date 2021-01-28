@@ -1,14 +1,13 @@
 ---
-title: "Economics in the Era of the Cloud"
+title: "An Introduction to Homo Economicus"
 description: |
-  Decision making is the midst of a revolution arising from the power of data in the cloud. As these capabiliteis diffuse from inside of the world's largest technology companies to all industries and sectors of life, the classical 18th century economic idea of a rational actor -  *Homo Economicus*
-  - has taken on a brave new meaning as a model for AI systems.   
+  Who is Homo Economicus and how is he/she related to you?
 author:
   - name: Amit Gandhi
     url: upenn.edu
     affiliation: University of Pennsylvania and Microsoft
     affiliation_url: upenn.edu
-date: 12-12-2020
+date: 1-28-2021
 categories:
   - Data 
   - Cloud
@@ -18,9 +17,8 @@ output:
   distill::distill_article:
     toc: true
     self_contained: false
-preview: https://db0ip7zd23b50.cloudfront.net/dims4/default/0dfba66/2147483647/legacy_thumbnail/960x369%3E/quality/90/?url=http%3A%2F%2Fbloomberg-bna-brightspot.s3.amazonaws.com%2F43%2F5e%2F9afb1c354b0e8ee71a13c737d4f5%2Fgettyimages-921135480.jpg
-bibliography: ../../biblio.json
-draft: true
+preview: https://theprogenygroup.com/wp-content/uploads/2016/06/homo-economicus.jpg
+
 ---
 
 ```{r setup, include=FALSE}
@@ -90,7 +88,44 @@ Homo Economicus is thus a human creation - a model built by humans for humans to
 
 ![Homo Economicus History](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQun_GXmWw3IpNU0cHKuDPUpTMyL-3klcl4jw&usqp=CAU)
 
+### Lets try an Example
+
+
+-  Decision Maker **Doris** who lives for two periods
+ 
+- In each period she will receive some income.
+    - In the first period does not know what income in second period will be
+- In each period will spend money on two goods
+    - Bourbon \(b\) or Yoga classes \(y\)
+    - She has utility $u(b,y)$ from consuming these two goods in any period she consumes them
+    
+- Can borrow and save between periods at interest rate $r$, but cannot die in debt
+
+- Our job (as economists) is to predict how Doris is going to behave
+    -How much bourbon and yoga she will she consume in each period?
+    -How much will she save?
+- How would Homo Economicus solve this decision problem?
+
+
+# Key Assumptions
+
+- Doris makes optimal choices – i\.e\. maximizes her utility
+- Doris’s tastes do not change between period 1 and 2
+- Doris forms the correct expectations about income in period 2\, and makes choices based on expected utility
+- The only thing that appears in Doris’s utility function is the amount of bourbon and yoga consumed
+    -No ‘reference points’
+    -Not other people’s consumption
+
+- Doris makes optimal choices – i\.e\. maximizes her utility
+- Doris’s tastes do not change between period 1 and 2
+- Doris forms the correct expectations about income in period 2\, and makes choices based on expected utility
+ The only thing that appears in Doris’s utility function is the amount of bourbon and yoga consumed
+    -No ‘reference points’
+    -Not other people’s consumption
+
+
 ### What are the traits of Homo Economicus
+
 
 The core anatomy of Homo Economicus that has emerged in modern economics encompasses the following set of traits:
 
@@ -103,7 +138,6 @@ The core anatomy of Homo Economicus that has emerged in modern economics encompa
 
 These traits are able to mix and match together depending on the structure of the choice problem to give rise to a very general model of rational behavior that is highly adaptable to most decisions. One of the first skills taught to graduate students in economics is to build a Homo Economicus in problem sets and computer simulations and to observe its behavior!
 
-EXAMPLE HERE
 
 ## But You are Actually Homo Sapien
 
@@ -119,10 +153,10 @@ If you functioned in this way, then congratulations you are indeed human - i.e.,
 
 For Homo Economicus the two presentations of the decision problem yield the exact same choice - the the problems are logically identical becauset the choice options themselves are mathematically equivalent. However for Homo Economicus they lead us down different "thinking" pathway. The end result of the two pathways lead to materially different decisions. 
 
-Consider the following data from an experiment conducted by @caplin2011search. They presented 22 Subjects with 657 choices analgous to the choices above but the choice problem varied among subjects in two key dimensions:
+Consider the following data from an experiment conducted in 2011 by Caplin, Dean, and Martin (see [here](https://www.aeaweb.org/articles?id=10.1257/aer.101.7.2899)), they presented 22 Subjects with 657 choices analgous to the choices above but the choice problem varied among subjects in two key dimensions:
 
-  * 2 complexity levels: 3 or 7 operations
-  * 3 choice set sizes: 10\, 20\, 40 options
+  - 2 complexity levels: 3 or 7 operations
+  - 3 choice set sizes: 10\, 20\, 40 options
 
 which gave 6 overall treatments. An example of a choice problem can be seen below:
 ![A Treatment in the Experiment](images/HomoEconomicus3.png)
@@ -144,7 +178,7 @@ The outcome reveals a few key realities that will be central themes for us:
 
 **3)** Homo Sapien's choices are however reasonably effective - we leave cash on the table, but the level of inefficiency experienced is perhaps acceptable given the onerous calculations that would have been involved. 
 
-# So what is to be done about it?
+# What should be done?
 
 Here is where our chief quandary will lie. 
 
@@ -191,111 +225,10 @@ $$
 System 2 is your inner Homo Economicus. It can follow the precepts of formal reasoning and motivate action on that basis. It is however **lazy**. It takes cues from system 1. All else equal it would rather outsource its job to another complementary 
 This intuitive system of thought we will represent as another dimension of your brain that (following Kahneman) will call "System 1". 
 
-Now we recognize that System 1 and System 2 are both present at the moment we are making a decision 
-
-The outcome reveals a few key realities that will be themes for us:
-
-**1** There is a difference between the decisions reached through System 1 and System 2 reasoning - that is our System 1 self leads us to a place of *boundedly rationality*. 
-
-**2** The more complex environment heightened the substantive difference between these two mechanisms of thought with considerable heterogeneity among individuals.
-
-**3** Even our System 1 choices are reasonably effective - we leave cash on the table, but the level of inefficiency experienced is perhaps "acceptable" given the cost of enacting the more onerous method of thought. 
-
-Our main text in the class - thinking fast and slow - will be focused on the dual operation of System 1 and System 2 and how they operate together in a rich interplay that guides human decisions to predictably depart from Homo Economicus. 
-
-# Why Does This Matter : Choice Architecture
-
-Why don't we just take classes in decision making to solve the problem. 
-
-Consider the analogy betweeen cognitive illusions and optical illusions. On the one hand we can't help but observe the world a certain way by the nature of our perceptual system. Thinking in fact is seen as a extension of perception. 
-
-However in the case of optical illusions, when we learn of their existence, although we cannot "unsee it" we can learn to behave differently, e.g., to not be fooled by the same illusion when we come to recognize it in nature because we will have understood it. 
-
-The situation is much harder for cognitive illusions. Take the author of the book - he makes a very direct confession:
-
-Hence learning about bias and intellectually understanding it is a System 2 feat - using that to discipline and tame your System 1 insticts is quite different. As much as I wish this class were the answer to bringing about more rational, efficient economic decisions in the ordinary course of life events, such is not the case. 
-
-We need an alternative strategy besides lecturing and education, as much as knowledge and science is an important precursor to change. 
-
-Herein lies the idea of Nudging. 
-
-Even "System 1" and "System 2" is a masterful bit of nudging to make the ideas in his book more permanently last. System 1 forms stories quickly and acts on them. By turning System 1 and System 2 into characters with a plot, their reality becomes more imprinted in our System 1 pattern of thought. 
-
-Having recognized that we have an omnipresent "System 1" that confidently and quickly generates reasoning that can be cause us to depart from the formal and logical System 2 view of the world, the question becomes what (if anything) is there to be done about it aside from understand it?
-
-A widely circulated statistic is that we make approximately [30,000 choices](https://www.psychologytoday.com/us/blog/stretching-theory/201809/how-many-decisions-do-we-make-each-day) a day.
-Much of life presents itself as the second choice scenario. We are facing decisions with complex, nuanced settings, and sometimes ambiguous information that we need to quickly process in order to take an action. that must be effective enough to avoid disasters. 
-
-Though our System 1 can navigate us past disasters, it will systematically leave cash on the table in many circumstances. How can we do better? Well -  if we can "transform" problems to resemble the second circumstance, then we will more readily make the rational decision. 
-
-What then is the essential difference between the two circumstances. The choices are logically equivalent, but in the first the data is more transparent to our cognitive system as to what is optimal. In the second, the way the data is presented trigges a different form of thinking. 
-
-This would seem to present an incredible an opportunity. The key distinguishing feature of the two decision environments is the "data" that are presented. With one set of data inputs, we readily adopt reasoning that achieves **Homo Economicus** levels of performance. With another set of inputs, we are induced into cognitive strategies that lead to a systematic departure from Homo Economicus.
-
-The way in which information is presented fundamentally altars the behavior in two logically equivalent situations. This is significant because the data we face in many choice circumstances are actually the production of someone else's efforts - the data we are absorbing is *designed* - either intentionally or unintentionally - and this design will have material impact on the recipient's behavior. 
-
-The key idea that even small changes in the choice context can have significant impact on the actual choices - choice architecture. 
-
-By actively manipulating the design of information we can produce different choice behavior. What is data science - it is
-
-that others generate rather than data directly from nature. 
-
-What data is presented can impact behavior and decisions is a key idea. 
+Now we recognize that System 1 and System 2 are both present at the moment we are making a decision. Our main text in the class - thinking fast and slow - will be focused on the dual operation of System 1 and System 2 and how they operate together in a rich interplay that guides human decisions to predictably depart from Homo Economicus. 
 
 
-# Data Scientists are the Modern Day Choice Architects
+# A question
 
-Hal Varian came out around this time of the writing of these books with the following observation:
-
-
-Homo Economicus provides a way to study problems. In this way Economics is a methodology. Lets use the description from the Armchair economist. 
-
-As Box famously stated the matters: all models are wrong but some models are useful. 
-
-```{r share-again, echo=FALSE}
-xaringanExtra::use_share_again()
-```
-
-```{r embed-xaringan, echo=FALSE, fig.cap="[Slides](slides/index.html)"}
-xaringanExtra::embed_xaringan(url = "slides/index.html", ratio = "16:9")
-```
-
-<br>
-<br>
-<style>
-div.blue { background-color:#e6f0ff; border-radius: 5px; padding: 20px;}
-</style>
-<div class = "blue">
-<center>
-Bad Design = Bad Decision Making
-</center>
-</div>
-
-Aesthetics, Art, and Engineering come together with Economics. 
-
-
-
-```{r}
-library(equatiomatic)
-
-# Fit a simple model
-mod1 <- lm(mpg ~ cyl + disp, mtcars)
-
-```
-
-```{r}
-set.seed(8675309)
-d <- data.frame(cat1 = rep(letters[1:3], 100),
-                cat2 = rep(LETTERS[1:3], each = 100),
-                cont1 = rnorm(300, 100, 1),
-                cont2 = rnorm(300, 50, 5),
-                out   = rnorm(300, 10, 0.5))
-mod4 <- lm(out ~ log(cont1) + cat2 + cont2 + cat1, d)
-```
-
-
-```{r equation, results='asis'}
-extract_eq(mod4, wrap = TRUE)
-```
-
+Why don't we just take classes in decision making to solve the problem?
 
