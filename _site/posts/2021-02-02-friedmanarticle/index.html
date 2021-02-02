@@ -1,0 +1,2891 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #20794d; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007ba5; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #007ba5; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #007ba5; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #20794d; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+  <!--radix_placeholder_meta_tags-->
+<title>Econ 262: Friedman's Defense of Homo Economicus</title>
+
+<meta property="description" itemprop="description" content="The Methodology of Positive Economics"/>
+
+
+<!--  https://schema.org/Article -->
+<meta property="article:published" itemprop="datePublished" content="2021-02-02"/>
+<meta property="article:created" itemprop="dateCreated" content="2021-02-02"/>
+<meta name="article:author" content="Amit Gandhi"/>
+
+<!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+<meta property="og:title" content="Econ 262: Friedman&#39;s Defense of Homo Economicus"/>
+<meta property="og:type" content="article"/>
+<meta property="og:description" content="The Methodology of Positive Economics"/>
+<meta property="og:locale" content="en_US"/>
+<meta property="og:site_name" content="Econ 262"/>
+
+<!--  https://dev.twitter.com/cards/types/summary -->
+<meta property="twitter:card" content="summary"/>
+<meta property="twitter:title" content="Econ 262: Friedman&#39;s Defense of Homo Economicus"/>
+<meta property="twitter:description" content="The Methodology of Positive Economics"/>
+
+<!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+<script type="text/json" id="radix-rmarkdown-metadata">
+{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","categories","preview"]}},"value":[{"type":"character","attributes":{},"value":["Friedman's Defense of Homo Economicus"]},{"type":"character","attributes":{},"value":["The Methodology of Positive Economics"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Amit Gandhi"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["02-02-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["Homo Economicus","positive economics"]},{"type":"character","attributes":{},"value":["http://c250.columbia.edu/images/c250_celebrates/remarkable_columbians/240x240_bio_friedman.jpg"]}]}
+</script>
+<!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["friedmanarticle_files/anchor-4.2.2/anchor.min.js","friedmanarticle_files/bowser-1.9.3/bowser.min.js","friedmanarticle_files/distill-2.2.21/template.v2.js","friedmanarticle_files/header-attrs-2.5/header-attrs.js","friedmanarticle_files/jquery-1.11.3/jquery.min.js","friedmanarticle_files/vembedr-0.1.4/css/vembedr.css","friedmanarticle_files/webcomponents-2.0.0/webcomponents.js","img/FriedmanDisucussion0.jpg","img/FriedmanDisucussion1.jpg","img/FriedmanDisucussion2.jpg"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+<meta name="distill:offset" content="../.."/>
+
+<script type="application/javascript">
+
+  window.headroom_prevent_pin = false;
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // initialize headroom for banner
+    var header = $('header').get(0);
+    var headerHeight = header.offsetHeight;
+    var headroom = new Headroom(header, {
+      tolerance: 5,
+      onPin : function() {
+        if (window.headroom_prevent_pin) {
+          window.headroom_prevent_pin = false;
+          headroom.unpin();
+        }
+      }
+    });
+    headroom.init();
+    if(window.location.hash)
+      headroom.unpin();
+    $(header).addClass('headroom--transition');
+
+    // offset scroll location for banner on hash change
+    // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+    window.addEventListener("hashchange", function(event) {
+      window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+    });
+
+    // responsive menu
+    $('.distill-site-header').each(function(i, val) {
+      var topnav = $(this);
+      var toggle = topnav.find('.nav-toggle');
+      toggle.on('click', function() {
+        topnav.toggleClass('responsive');
+      });
+    });
+
+    // nav dropdowns
+    $('.nav-dropbtn').click(function(e) {
+      $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+      $(this).parent().siblings('.nav-dropdown')
+         .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $("body").click(function(e){
+      $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+    });
+    $(".nav-dropdown").click(function(e){
+      e.stopPropagation();
+    });
+  });
+</script>
+
+<style type="text/css">
+
+/* Theme (user-documented overrideables for nav appearance) */
+
+.distill-site-nav {
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #0F2E3D;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+.distill-site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.distill-site-nav a:hover {
+  color: white;
+}
+
+@media print {
+  .distill-site-nav {
+    display: none;
+  }
+}
+
+.distill-site-header {
+
+}
+
+.distill-site-footer {
+
+}
+
+
+/* Site Header */
+
+.distill-site-header {
+  width: 100%;
+  box-sizing: border-box;
+  z-index: 3;
+}
+
+.distill-site-header .nav-left {
+  display: inline-block;
+  margin-left: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header .nav-left {
+    margin-left: 0;
+  }
+}
+
+
+.distill-site-header .nav-right {
+  float: right;
+  margin-right: 8px;
+}
+
+.distill-site-header a,
+.distill-site-header .title {
+  display: inline-block;
+  text-align: center;
+  padding: 14px 10px 14px 10px;
+}
+
+.distill-site-header .title {
+  font-size: 18px;
+  min-width: 150px;
+}
+
+.distill-site-header .logo {
+  padding: 0;
+}
+
+.distill-site-header .logo img {
+  display: none;
+  max-height: 20px;
+  width: auto;
+  margin-bottom: -4px;
+}
+
+.distill-site-header .nav-image img {
+  max-height: 18px;
+  width: auto;
+  display: inline-block;
+  margin-bottom: -3px;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+  .distill-site-header .logo img {
+    display: inline-block;
+  }
+  .distill-site-header .nav-left {
+    margin-left: 20px;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 20px;
+  }
+  .distill-site-header .title {
+    padding-left: 12px;
+  }
+}
+
+
+.distill-site-header .nav-toggle {
+  display: none;
+}
+
+.nav-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.nav-dropdown .nav-dropbtn {
+  border: none;
+  outline: none;
+  color: rgba(255, 255, 255, 0.8);
+  padding: 16px 10px;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  margin: 0;
+  margin-top: 1px;
+  z-index: 2;
+}
+
+.nav-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 200px;
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 4px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+  z-index: 1;
+  margin-top: 2px;
+  white-space: nowrap;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.nav-dropdown-content hr {
+  margin-top: 4px;
+  margin-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.nav-dropdown-active {
+  display: block;
+}
+
+.nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+  color: black;
+  padding: 6px 24px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.nav-dropdown-content .nav-dropdown-header {
+  display: block;
+  padding: 5px 24px;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #999999;
+  white-space: nowrap;
+}
+
+.nav-dropdown:hover .nav-dropbtn {
+  color: white;
+}
+
+.nav-dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav-right .nav-dropdown-content {
+  margin-left: -45%;
+  right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+  .distill-site-header a.nav-toggle {
+    float: right;
+    display: block;
+  }
+  .distill-site-header .title {
+    margin-left: 0;
+  }
+  .distill-site-header .nav-right {
+    margin-right: 0;
+  }
+  .distill-site-header {
+    overflow: hidden;
+  }
+  .nav-right .nav-dropdown-content {
+    margin-left: 0;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-header.responsive {position: relative; min-height: 500px; }
+  .distill-site-header.responsive a.nav-toggle {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .distill-site-header.responsive a,
+  .distill-site-header.responsive .nav-dropdown {
+    display: block;
+    text-align: left;
+  }
+  .distill-site-header.responsive .nav-left,
+  .distill-site-header.responsive .nav-right {
+    width: 100%;
+  }
+  .distill-site-header.responsive .nav-dropdown {float: none;}
+  .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+  .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Site Footer */
+
+.distill-site-footer {
+  width: 100%;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 3;
+  margin-top: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+/* Headroom */
+
+d-title {
+  padding-top: 6rem;
+}
+
+@media print {
+  d-title {
+    padding-top: 4rem;
+  }
+}
+
+.headroom {
+  z-index: 1000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.headroom--transition {
+  transition: all .4s ease-in-out;
+}
+
+.headroom--unpinned {
+  top: -100px;
+}
+
+.headroom--pinned {
+  top: 0;
+}
+
+</style>
+
+<link href="../../site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
+<link href="../../site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
+<script src="../../site_libs/headroom-0.9.4/headroom.min.js"></script>
+<script src="../../site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
+<script src="../../site_libs/fuse-6.4.1/fuse.min.js"></script>
+
+<script type="application/javascript">
+
+function getMeta(metaName) {
+  var metas = document.getElementsByTagName('meta');
+  for (let i = 0; i < metas.length; i++) {
+    if (metas[i].getAttribute('name') === metaName) {
+      return metas[i].getAttribute('content');
+    }
+  }
+  return '';
+}
+
+function offsetURL(url) {
+  var offset = getMeta('distill:offset');
+  return offset ? offset + '/' + url : url;
+}
+
+function createFuseIndex() {
+
+  // create fuse index
+  var options = {
+    keys: [
+      { name: 'title', weight: 20 },
+      { name: 'categories', weight: 15 },
+      { name: 'description', weight: 10 },
+      { name: 'contents', weight: 5 },
+    ],
+    ignoreLocation: true,
+    threshold: 0
+  };
+  var fuse = new window.Fuse([], options);
+
+  // fetch the main search.json
+  return fetch(offsetURL('search.json'))
+    .then(function(response) {
+      if (response.status == 200) {
+        return response.json().then(function(json) {
+          // index main articles
+          json.articles.forEach(function(article) {
+            fuse.add(article);
+          });
+          // download collections and index their articles
+          return Promise.all(json.collections.map(function(collection) {
+            return fetch(offsetURL(collection)).then(function(response) {
+              if (response.status === 200) {
+                return response.json().then(function(articles) {
+                  articles.forEach(function(article) {
+                    fuse.add(article);
+                  });
+                })
+              } else {
+                return Promise.reject(
+                  new Error('Unexpected status from search index request: ' +
+                            response.status)
+                );
+              }
+            });
+          })).then(function() {
+            return fuse;
+          });
+        });
+
+      } else {
+        return Promise.reject(
+          new Error('Unexpected status from search index request: ' +
+                      response.status)
+        );
+      }
+    });
+}
+
+window.document.addEventListener("DOMContentLoaded", function (event) {
+
+  // get search element (bail if we don't have one)
+  var searchEl = window.document.getElementById('distill-search');
+  if (!searchEl)
+    return;
+
+  createFuseIndex()
+    .then(function(fuse) {
+
+      // make search box visible
+      searchEl.classList.remove('hidden');
+
+      // initialize autocomplete
+      var options = {
+        autoselect: true,
+        hint: false,
+        minLength: 2,
+      };
+      window.autocomplete(searchEl, options, [{
+        source: function(query, callback) {
+          const searchOptions = {
+            isCaseSensitive: false,
+            shouldSort: true,
+            minMatchCharLength: 2,
+            limit: 10,
+          };
+          var results = fuse.search(query, searchOptions);
+          callback(results
+            .map(function(result) { return result.item; })
+            .filter(function(item) { return !!item.description; })
+          );
+        },
+        templates: {
+          suggestion: function(suggestion) {
+            var html = `
+              <div class="search-item">
+                <h3>${suggestion.title}</h3>
+                <div class="search-item-description">
+                  ${suggestion.description}
+                </div>
+                <div class="search-item-preview">
+                  <img src="${suggestion.preview ? offsetURL(suggestion.preview) : ''}"</img>
+                </div>
+              </div>
+            `;
+            return html;
+          }
+        }
+      }]).on('autocomplete:selected', function(event, suggestion) {
+        window.location.href = offsetURL(suggestion.path);
+      });
+      // remove inline display style on autocompleter (we want to
+      // manage responsive display via css)
+      $('.algolia-autocomplete').css("display", "");
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
+
+});
+
+</script>
+
+<style type="text/css">
+
+/* Algolioa Autocomplete */
+
+.algolia-autocomplete {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: sub;
+  background-color: white;
+  color: black;
+  padding: 6px;
+  padding-top: 8px;
+  padding-bottom: 0;
+  border-radius: 6px;
+  border: 1px #0F2E3D solid;
+  width: 180px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .distill-site-nav .algolia-autocomplete {
+    display: none;
+    visibility: hidden;
+  }
+  .distill-site-nav.responsive .algolia-autocomplete {
+    display: inline-block;
+    visibility: visible;
+  }
+  .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
+    margin-left: 0;
+    width: 400px;
+    max-height: 400px;
+  }
+}
+
+.algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+  width: 90%;
+  outline: none;
+  border: none;
+}
+
+.algolia-autocomplete .aa-hint {
+  color: #999;
+}
+.algolia-autocomplete .aa-dropdown-menu {
+  width: 550px;
+  max-height: 70vh;
+  overflow-x: visible;
+  overflow-y: scroll;
+  padding: 5px;
+  margin-top: 3px;
+  margin-left: -150px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #999;
+  border-top: none;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+  cursor: pointer;
+  padding: 5px 4px;
+  border-bottom: 1px solid #eee;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
+  border-bottom: none;
+  margin-bottom: 2px;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
+  overflow: hidden;
+  font-size: 0.8em;
+  line-height: 1.4em;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
+  margin-block-start: 0;
+  margin-block-end: 5px;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
+  display: inline-block;
+  overflow: hidden;
+  height: 2.8em;
+  width: 80%;
+  margin-right: 4%;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
+  display: inline-block;
+  width: 15%;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
+  height: 3em;
+  width: auto;
+  display: none;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
+  display: initial;
+}
+
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+  background-color: #eee;
+}
+.algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+  font-weight: bold;
+  font-style: normal;
+}
+
+</style>
+
+
+<!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+<style type="text/css">
+
+body {
+  background-color: white;
+}
+
+.pandoc-table {
+  width: 100%;
+}
+
+.pandoc-table>caption {
+  margin-bottom: 10px;
+}
+
+.pandoc-table th:not([align]) {
+  text-align: left;
+}
+
+.pagedtable-footer {
+  font-size: 15px;
+}
+
+d-byline .byline {
+  grid-template-columns: 2fr 2fr;
+}
+
+d-byline .byline h3 {
+  margin-block-start: 1.5em;
+}
+
+d-byline .byline .authors-affiliations h3 {
+  margin-block-start: 0.5em;
+}
+
+.authors-affiliations .orcid-id {
+  width: 16px;
+  height:16px;
+  margin-left: 4px;
+  margin-right: 4px;
+  vertical-align: middle;
+  padding-bottom: 2px;
+}
+
+d-title .dt-tags {
+  margin-top: 1em;
+  grid-column: text;
+}
+
+.dt-tags .dt-tag {
+  text-decoration: none;
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0em 0.4em;
+  margin-right: 0.5em;
+  margin-bottom: 0.4em;
+  font-size: 70%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+d-article table.gt_table td,
+d-article table.gt_table th {
+  border-bottom: none;
+}
+
+.html-widget {
+  margin-bottom: 2.0em;
+}
+
+.l-screen-inset {
+  padding-right: 16px;
+}
+
+.l-screen .caption {
+  margin-left: 10px;
+}
+
+.shaded {
+  background: rgb(247, 247, 247);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .html-widget {
+  margin-bottom: 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.shaded .shaded-content {
+  background: white;
+}
+
+.text-output {
+  margin-top: 0;
+  line-height: 1.5em;
+}
+
+.hidden {
+  display: none !important;
+}
+
+d-article {
+  padding-top: 2.5rem;
+  padding-bottom: 30px;
+}
+
+d-appendix {
+  padding-top: 30px;
+}
+
+d-article>p>img {
+  width: 100%;
+}
+
+d-article h2 {
+  margin: 1rem 0 1.5rem 0;
+}
+
+d-article h3 {
+  margin-top: 1.5rem;
+}
+
+d-article iframe {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 2.0em;
+  width: 100%;
+}
+
+/* Tweak code blocks */
+
+d-article div.sourceCode code,
+d-article pre code {
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+}
+
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: auto;
+}
+
+d-article div.sourceCode {
+  background-color: white;
+}
+
+d-article div.sourceCode pre {
+  padding-left: 10px;
+  font-size: 12px;
+  border-left: 2px solid rgba(0,0,0,0.1);
+}
+
+d-article pre {
+  font-size: 12px;
+  color: black;
+  background: none;
+  margin-top: 0;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+d-article pre a {
+  border-bottom: none;
+}
+
+d-article pre a:hover {
+  border-bottom: none;
+  text-decoration: underline;
+}
+
+@media(min-width: 768px) {
+
+d-article pre,
+d-article div.sourceCode,
+d-article div.sourceCode pre {
+  overflow: visible !important;
+}
+
+d-article div.sourceCode pre {
+  padding-left: 18px;
+  font-size: 14px;
+}
+
+d-article pre {
+  font-size: 14px;
+}
+
+}
+
+figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+/* CSS for d-contents */
+
+.d-contents {
+  grid-column: text;
+  color: rgba(0,0,0,0.8);
+  font-size: 0.9em;
+  padding-bottom: 1em;
+  margin-bottom: 1em;
+  padding-bottom: 0.5em;
+  margin-bottom: 1em;
+  padding-left: 0.25em;
+  justify-self: start;
+}
+
+@media(min-width: 1000px) {
+  .d-contents.d-contents-float {
+    height: 0;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-self: center;
+    padding-right: 3em;
+    padding-left: 2em;
+  }
+}
+
+.d-contents nav h3 {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.d-contents li {
+  list-style-type: none
+}
+
+.d-contents nav > ul {
+  padding-left: 0;
+}
+
+.d-contents ul {
+  padding-left: 1em
+}
+
+.d-contents nav ul li {
+  margin-top: 0.6em;
+  margin-bottom: 0.2em;
+}
+
+.d-contents nav a {
+  font-size: 13px;
+  border-bottom: none;
+  text-decoration: none
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.d-contents nav a:hover {
+  text-decoration: underline solid rgba(0, 0, 0, 0.6)
+}
+
+.d-contents nav > ul > li > a {
+  font-weight: 600;
+}
+
+.d-contents nav > ul > li > ul {
+  font-weight: inherit;
+}
+
+.d-contents nav > ul > li > ul > li {
+  margin-top: 0.2em;
+}
+
+
+.d-contents nav ul {
+  margin-top: 0;
+  margin-bottom: 0.25em;
+}
+
+.d-article-with-toc h2:nth-child(2) {
+  margin-top: 0;
+}
+
+
+/* Figure */
+
+.figure {
+  position: relative;
+  margin-bottom: 2.5em;
+  margin-top: 1.5em;
+}
+
+.figure img {
+  width: 100%;
+}
+
+.figure .caption {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.figure img.external {
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+  padding: 18px;
+  box-sizing: border-box;
+}
+
+.figure .caption a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.figure .caption b,
+.figure .caption strong, {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 1.0);
+}
+
+/* Citations */
+
+d-article .citation {
+  color: inherit;
+  cursor: inherit;
+}
+
+div.hanging-indent{
+  margin-left: 1em; text-indent: -1em;
+}
+
+
+/* Tweak 1000px media break to show more text */
+
+@media(min-width: 1000px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 16px;
+  }
+
+  .grid {
+    grid-column-gap: 16px;
+  }
+
+  d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+  }
+  figure .caption, .figure .caption, figure figcaption {
+    font-size: 13px;
+  }
+}
+
+@media(min-width: 1180px) {
+  .base-grid,
+  distill-header,
+  d-title,
+  d-abstract,
+  d-article,
+  d-appendix,
+  distill-appendix,
+  d-byline,
+  d-footnote-list,
+  d-citation-list,
+  distill-footer {
+    grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+    grid-column-gap: 32px;
+  }
+
+  .grid {
+    grid-column-gap: 32px;
+  }
+}
+
+
+/* Get the citation styles for the appendix (not auto-injected on render since
+   we do our own rendering of the citation appendix) */
+
+d-appendix .citation-appendix,
+.d-appendix .citation-appendix {
+  font-size: 11px;
+  line-height: 15px;
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 18px;
+  border: 1px solid rgba(0,0,0,0.1);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 10px 18px;
+  border-radius: 3px;
+  color: rgba(150, 150, 150, 1);
+  overflow: hidden;
+  margin-top: -12px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Include appendix styles here so they can be overridden */
+
+d-appendix {
+  contain: layout style;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-top: 60px;
+  margin-bottom: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  color: rgba(0,0,0,0.5);
+  padding-top: 60px;
+  padding-bottom: 48px;
+}
+
+d-appendix h3 {
+  grid-column: page-start / text-start;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 1em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.65);
+}
+
+d-appendix h3 + * {
+  margin-top: 1em;
+}
+
+d-appendix ol {
+  padding: 0 0 0 15px;
+}
+
+@media (min-width: 768px) {
+  d-appendix ol {
+    padding: 0 0 0 30px;
+    margin-left: -30px;
+  }
+}
+
+d-appendix li {
+  margin-bottom: 1em;
+}
+
+d-appendix a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+d-appendix > * {
+  grid-column: text;
+}
+
+d-appendix > d-footnote-list,
+d-appendix > d-citation-list,
+d-appendix > distill-appendix {
+  grid-column: screen;
+}
+
+/* Include footnote styles here so they can be overridden */
+
+d-footnote-list {
+  contain: layout style;
+}
+
+d-footnote-list > * {
+  grid-column: text;
+}
+
+d-footnote-list a.footnote-backlink {
+  color: rgba(0,0,0,0.3);
+  padding-left: 0.5em;
+}
+
+
+
+/* Anchor.js */
+
+.anchorjs-link {
+  /*transition: all .25s linear; */
+  text-decoration: none;
+  border-bottom: none;
+}
+*:hover > .anchorjs-link {
+  margin-left: -1.125em !important;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+/* Social footer */
+
+.social_footer {
+  margin-top: 30px;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.67);
+}
+
+.disqus-comments {
+  margin-right: 30px;
+}
+
+.disqus-comment-count {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+#disqus_thread {
+  margin-top: 30px;
+}
+
+.article-sharing a {
+  border-bottom: none;
+  margin-right: 8px;
+}
+
+.article-sharing a:hover {
+  border-bottom: none;
+}
+
+.sidebar-section.subscribe {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.subscribe p {
+  margin-bottom: 0.5em;
+}
+
+
+.article-footer .subscribe {
+  font-size: 15px;
+  margin-top: 45px;
+}
+
+
+.sidebar-section.custom {
+  font-size: 12px;
+  line-height: 1.6em;
+}
+
+.custom p {
+  margin-bottom: 0.5em;
+}
+
+/* Styles for listing layout (hide title) */
+.layout-listing d-title, .layout-listing .d-title {
+  display: none;
+}
+
+/* Styles for posts lists (not auto-injected) */
+
+
+.posts-with-sidebar {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+.posts-list .description h2,
+.posts-list .description p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+.posts-list .description h2 {
+  font-weight: 700;
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.posts-list h2.post-tag {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 12px;
+}
+.posts-list {
+  margin-top: 60px;
+  margin-bottom: 24px;
+}
+
+.posts-list .post-preview {
+  text-decoration: none;
+  overflow: hidden;
+  display: block;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 24px 0;
+}
+
+.post-preview-last {
+  border-bottom: none !important;
+}
+
+.posts-list .posts-list-caption {
+  grid-column: screen;
+  font-weight: 400;
+}
+
+.posts-list .post-preview h2 {
+  margin: 0 0 6px 0;
+  line-height: 1.2em;
+  font-style: normal;
+  font-size: 24px;
+}
+
+.posts-list .post-preview p {
+  margin: 0 0 12px 0;
+  line-height: 1.4em;
+  font-size: 16px;
+}
+
+.posts-list .post-preview .thumbnail {
+  box-sizing: border-box;
+  margin-bottom: 24px;
+  position: relative;
+  max-width: 500px;
+}
+.posts-list .post-preview img {
+  width: 100%;
+  display: block;
+}
+
+.posts-list .metadata {
+  font-size: 12px;
+  line-height: 1.4em;
+  margin-bottom: 18px;
+}
+
+.posts-list .metadata > * {
+  display: inline-block;
+}
+
+.posts-list .metadata .publishedDate {
+  margin-right: 2em;
+}
+
+.posts-list .metadata .dt-authors {
+  display: block;
+  margin-top: 0.3em;
+  margin-right: 2em;
+}
+
+.posts-list .dt-tags {
+  display: block;
+  line-height: 1em;
+}
+
+.posts-list .dt-tags .dt-tag {
+  display: inline-block;
+  color: rgba(0,0,0,0.6);
+  padding: 0.3em 0.4em;
+  margin-right: 0.2em;
+  margin-bottom: 0.4em;
+  font-size: 60%;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.posts-list img {
+  opacity: 1;
+}
+
+.posts-list img[data-src] {
+  opacity: 0;
+}
+
+.posts-more {
+  clear: both;
+}
+
+
+.posts-sidebar {
+  font-size: 16px;
+}
+
+.posts-sidebar h3 {
+  font-size: 16px;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.sidebar-section {
+  margin-bottom: 30px;
+}
+
+.categories ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories li {
+  color: rgba(0, 0, 0, 0.8);
+  margin-bottom: 0;
+}
+
+.categories li>a {
+  border-bottom: none;
+}
+
+.categories li>a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.categories .active {
+  font-weight: 600;
+}
+
+.categories .category-count {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+
+@media(min-width: 768px) {
+  .posts-list .post-preview h2 {
+    font-size: 26px;
+  }
+  .posts-list .post-preview .thumbnail {
+    float: right;
+    width: 30%;
+    margin-bottom: 0;
+  }
+  .posts-list .post-preview .description {
+    float: left;
+    width: 45%;
+  }
+  .posts-list .post-preview .metadata {
+    float: left;
+    width: 20%;
+    margin-top: 8px;
+  }
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.5em;
+    font-size: 16px;
+  }
+  .posts-with-sidebar .posts-list {
+    float: left;
+    width: 75%;
+  }
+  .posts-with-sidebar .posts-sidebar {
+    float: right;
+    width: 20%;
+    margin-top: 60px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+
+/* Improve display for browsers without grid (IE/Edge <= 15) */
+
+.downlevel {
+  line-height: 1.6em;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+}
+
+.downlevel .d-title {
+  padding-top: 6rem;
+  padding-bottom: 1.5rem;
+}
+
+.downlevel .d-title h1 {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1em;
+  margin: 0 0 0.5rem;
+}
+
+.downlevel .d-title p {
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.55em;
+  margin-top: 0;
+}
+
+.downlevel .d-byline {
+  padding-top: 0.8em;
+  padding-bottom: 0.8em;
+  font-size: 0.8rem;
+  line-height: 1.8em;
+}
+
+.downlevel .section-separator {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.downlevel .d-article {
+  font-size: 1.06rem;
+  line-height: 1.7em;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+
+.downlevel .d-appendix {
+  padding-left: 0;
+  padding-right: 0;
+  max-width: none;
+  font-size: 0.8em;
+  line-height: 1.7em;
+  margin-bottom: 0;
+  color: rgba(0,0,0,0.5);
+  padding-top: 40px;
+  padding-bottom: 48px;
+}
+
+.downlevel .footnotes ol {
+  padding-left: 13px;
+}
+
+.downlevel .base-grid,
+.downlevel .distill-header,
+.downlevel .d-title,
+.downlevel .d-abstract,
+.downlevel .d-article,
+.downlevel .d-appendix,
+.downlevel .distill-appendix,
+.downlevel .d-byline,
+.downlevel .d-footnote-list,
+.downlevel .d-citation-list,
+.downlevel .distill-footer,
+.downlevel .appendix-bottom,
+.downlevel .posts-container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+@media(min-width: 768px) {
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+  padding-left: 150px;
+  padding-right: 150px;
+  max-width: 900px;
+}
+}
+
+.downlevel pre code {
+  display: block;
+  border-left: 2px solid rgba(0, 0, 0, .1);
+  padding: 0 0 0 20px;
+  font-size: 14px;
+}
+
+.downlevel code, .downlevel pre {
+  color: black;
+  background: none;
+  font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  line-height: 1.5;
+
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+
+.downlevel .posts-list .post-preview {
+  color: inherit;
+}
+
+
+
+</style>
+
+<script type="application/javascript">
+
+function is_downlevel_browser() {
+  if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                 window.navigator.userAgent)) {
+    return true;
+  } else {
+    return window.load_distill_framework === undefined;
+  }
+}
+
+// show body when load is complete
+function on_load_complete() {
+
+  // add anchors
+  if (window.anchors) {
+    window.anchors.options.placement = 'left';
+    window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+  }
+
+
+  // set body to visible
+  document.body.style.visibility = 'visible';
+
+  // force redraw for leaflet widgets
+  if (window.HTMLWidgets) {
+    var maps = window.HTMLWidgets.findAll(".leaflet");
+    $.each(maps, function(i, el) {
+      var map = this.getMap();
+      map.invalidateSize();
+      map.eachLayer(function(layer) {
+        if (layer instanceof L.TileLayer)
+          layer.redraw();
+      });
+    });
+  }
+
+  // trigger 'shown' so htmlwidgets resize
+  $('d-article').trigger('shown');
+}
+
+function init_distill() {
+
+  init_common();
+
+  // create front matter
+  var front_matter = $('<d-front-matter></d-front-matter>');
+  $('#distill-front-matter').wrap(front_matter);
+
+  // create d-title
+  $('.d-title').changeElementType('d-title');
+
+  // create d-byline
+  var byline = $('<d-byline></d-byline>');
+  $('.d-byline').replaceWith(byline);
+
+  // create d-article
+  var article = $('<d-article></d-article>');
+  $('.d-article').wrap(article).children().unwrap();
+
+  // move posts container into article
+  $('.posts-container').appendTo($('d-article'));
+
+  // create d-appendix
+  $('.d-appendix').changeElementType('d-appendix');
+
+  // flag indicating that we have appendix items
+  var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+  // replace footnotes with <d-footnote>
+  $('.footnote-ref').each(function(i, val) {
+    appendix = true;
+    var href = $(this).attr('href');
+    var id = href.replace('#', '');
+    var fn = $('#' + id);
+    var fn_p = $('#' + id + '>p');
+    fn_p.find('.footnote-back').remove();
+    var text = fn_p.html();
+    var dtfn = $('<d-footnote></d-footnote>');
+    dtfn.html(text);
+    $(this).replaceWith(dtfn);
+  });
+  // remove footnotes
+  $('.footnotes').remove();
+
+  // move refs into #references-listing
+  $('#references-listing').replaceWith($('#refs'));
+
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    var id = $(this).attr('id');
+    $('.d-contents a[href="#' + id + '"]').parent().remove();
+    appendix = true;
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+  });
+
+  // show d-appendix if we have appendix content
+  $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+  // localize layout chunks to just output
+  $('.layout-chunk').each(function(i, val) {
+
+    // capture layout
+    var layout = $(this).attr('data-layout');
+
+    // apply layout to markdown level block elements
+    var elements = $(this).children().not('div.sourceCode, pre, script');
+    elements.each(function(i, el) {
+      var layout_div = $('<div class="' + layout + '"></div>');
+      if (layout_div.hasClass('shaded')) {
+        var shaded_content = $('<div class="shaded-content"></div>');
+        $(this).wrap(shaded_content);
+        $(this).parent().wrap(layout_div);
+      } else {
+        $(this).wrap(layout_div);
+      }
+    });
+
+
+    // unwrap the layout-chunk div
+    $(this).children().unwrap();
+  });
+
+  // remove code block used to force  highlighting css
+  $('.distill-force-highlighting-css').parent().remove();
+
+  // remove empty line numbers inserted by pandoc when using a
+  // custom syntax highlighting theme
+  $('code.sourceCode a:empty').remove();
+
+  // load distill framework
+  load_distill_framework();
+
+  // wait for window.distillRunlevel == 4 to do post processing
+  function distill_post_process() {
+
+    if (!window.distillRunlevel || window.distillRunlevel < 4)
+      return;
+
+    // hide author/affiliations entirely if we have no authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+    if (!have_authors)
+      $('d-byline').addClass('hidden');
+
+    // article with toc class
+    $('.d-contents').parent().addClass('d-article-with-toc');
+
+    // strip links that point to #
+    $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+    // add orcid ids
+    $('.authors-affiliations').find('.author').each(function(i, el) {
+      var orcid_id = front_matter.authors[i].orcidID;
+      if (orcid_id) {
+        var a = $('<a></a>');
+        a.attr('href', 'https://orcid.org/' + orcid_id);
+        var img = $('<img></img>');
+        img.addClass('orcid-id');
+        img.attr('alt', 'ORCID ID');
+        img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+        a.append(img);
+        $(this).append(a);
+      }
+    });
+
+    // hide elements of author/affiliations grid that have no value
+    function hide_byline_column(caption) {
+      $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+    }
+
+    // affiliations
+    var have_affiliations = false;
+    for (var i = 0; i<front_matter.authors.length; ++i) {
+      var author = front_matter.authors[i];
+      if (author.affiliation !== "&nbsp;") {
+        have_affiliations = true;
+        break;
+      }
+    }
+    if (!have_affiliations)
+      $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+    // published date
+    if (!front_matter.publishedDate)
+      hide_byline_column("Published");
+
+    // document object identifier
+    var doi = $('d-byline').find('h3:contains("DOI")');
+    var doi_p = doi.next().empty();
+    if (!front_matter.doi) {
+      // if we have a citation and valid citationText then link to that
+      if ($('#citation').length > 0 && front_matter.citationText) {
+        doi.html('Citation');
+        $('<a href="#citation"></a>')
+          .text(front_matter.citationText)
+          .appendTo(doi_p);
+      } else {
+        hide_byline_column("DOI");
+      }
+    } else {
+      $('<a></a>')
+         .attr('href', "https://doi.org/" + front_matter.doi)
+         .html(front_matter.doi)
+         .appendTo(doi_p);
+    }
+
+     // change plural form of authors/affiliations
+    if (front_matter.authors.length === 1) {
+      var grid = $('.authors-affiliations');
+      grid.children('h3:contains("Authors")').text('Author');
+      grid.children('h3:contains("Affiliations")').text('Affiliation');
+    }
+
+    // remove d-appendix and d-footnote-list local styles
+    $('d-appendix > style:first-child').remove();
+    $('d-footnote-list > style:first-child').remove();
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // clear polling timer
+    clearInterval(tid);
+
+    // show body now that everything is ready
+    on_load_complete();
+  }
+
+  var tid = setInterval(distill_post_process, 50);
+  distill_post_process();
+
+}
+
+function init_downlevel() {
+
+  init_common();
+
+   // insert hr after d-title
+  $('.d-title').after($('<hr class="section-separator"/>'));
+
+  // check if we have authors
+  var front_matter = JSON.parse($("#distill-front-matter").html());
+  var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+  // manage byline/border
+  if (!have_authors)
+    $('.d-byline').remove();
+  $('.d-byline').after($('<hr class="section-separator"/>'));
+  $('.d-byline a').remove();
+
+  // remove toc
+  $('.d-contents').remove();
+
+  // move appendix elements
+  $('h1.appendix, h2.appendix').each(function(i, val) {
+    $(this).changeElementType('h3');
+  });
+  $('h3.appendix').each(function(i, val) {
+    $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+  });
+
+
+  // inject headers into references and footnotes
+  var refs_header = $('<h3></h3>');
+  refs_header.text('References');
+  $('#refs').prepend(refs_header);
+
+  var footnotes_header = $('<h3></h3');
+  footnotes_header.text('Footnotes');
+  $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+  // move appendix-bottom entries to the bottom
+  $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+  $('.appendix-bottom').remove();
+
+  // remove appendix if it's empty
+  if ($('.d-appendix').children().length === 0)
+    $('.d-appendix').remove();
+
+  // prepend separator above appendix
+  $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+  // trim code
+  $('pre>code').each(function(i, val) {
+    $(this).html($.trim($(this).html()));
+  });
+
+  // move posts-container right before article
+  $('.posts-container').insertBefore($('.d-article'));
+
+  $('body').addClass('downlevel');
+
+  on_load_complete();
+}
+
+
+function init_common() {
+
+  // jquery plugin to change element types
+  (function($) {
+    $.fn.changeElementType = function(newType) {
+      var attrs = {};
+
+      $.each(this[0].attributes, function(idx, attr) {
+        attrs[attr.nodeName] = attr.nodeValue;
+      });
+
+      this.replaceWith(function() {
+        return $("<" + newType + "/>", attrs).append($(this).contents());
+      });
+    };
+  })(jQuery);
+
+  // prevent underline for linked images
+  $('a > img').parent().css({'border-bottom' : 'none'});
+
+  // mark non-body figures created by knitr chunks as 100% width
+  $('.layout-chunk').each(function(i, val) {
+    var figures = $(this).find('img, .html-widget');
+    if ($(this).attr('data-layout') !== "l-body") {
+      figures.css('width', '100%');
+    } else {
+      figures.css('max-width', '100%');
+      figures.filter("[width]").each(function(i, val) {
+        var fig = $(this);
+        fig.css('width', fig.attr('width') + 'px');
+      });
+
+    }
+  });
+
+  // auto-append index.html to post-preview links in file: protocol
+  // and in rstudio ide preview
+  $('.post-preview').each(function(i, val) {
+    if (window.location.protocol === "file:")
+      $(this).attr('href', $(this).attr('href') + "index.html");
+  });
+
+  // get rid of index.html references in header
+  if (window.location.protocol !== "file:") {
+    $('.distill-site-header a[href]').each(function(i,val) {
+      $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
+    });
+  }
+
+  // add class to pandoc style tables
+  $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+  $('.kable-table').children('table').addClass('pandoc-table');
+
+  // add figcaption style to table captions
+  $('caption').parent('table').addClass("figcaption");
+
+  // initialize posts list
+  if (window.init_posts_list)
+    window.init_posts_list();
+
+  // implmement disqus comment link
+  $('.disqus-comment-count').click(function() {
+    window.headroom_prevent_pin = true;
+    $('#disqus_thread').toggleClass('hidden');
+    if (!$('#disqus_thread').hasClass('hidden')) {
+      var offset = $(this).offset();
+      $(window).resize();
+      $('html, body').animate({
+        scrollTop: offset.top - 35
+      });
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (is_downlevel_browser())
+    init_downlevel();
+  else
+    window.addEventListener('WebComponentsReady', init_distill);
+});
+
+</script>
+
+<style type="text/css">
+/* base variables */
+
+/* Edit the CSS properties in this file to create a custom
+   Distill theme. Only edit values in the right column
+   for each row; values shown are the CSS defaults.
+   To return any property to the default,
+   you may set its value to: unset
+   All rows must end with a semi-colon.                      */
+
+/* Optional: embed custom fonts here with `@import`          */
+/* This must remain at the top of this file.                 */
+
+
+
+html {
+  /*-- Main font sizes --*/
+  --title-size:      50px;
+  --body-size:       1.06rem;
+  --code-size:       14px;
+  --aside-size:      12px;
+  --fig-cap-size:    13px;
+  /*-- Main font colors --*/
+  --title-color:     #000000;
+  --header-color:    rgba(0, 0, 0, 0.8);
+  --body-color:      rgba(0, 0, 0, 0.8);
+  --aside-color:     rgba(0, 0, 0, 0.6);
+  --fig-cap-color:   rgba(0, 0, 0, 0.6);
+  /*-- Specify custom fonts ~~~ must be imported above   --*/
+  --heading-font:    sans-serif;
+  --mono-font:       monospace;
+  --body-font:       sans-serif;
+  --navbar-font:     sans-serif;  /* websites + blogs only */
+}
+
+/*-- ARTICLE METADATA --*/
+d-byline {
+  --heading-size:    0.6rem;
+  --heading-color:   rgba(0, 0, 0, 0.5);
+  --body-size:       0.8rem;
+  --body-color:      rgba(0, 0, 0, 0.8);
+}
+
+/*-- ARTICLE TABLE OF CONTENTS --*/
+.d-contents {
+  --heading-size:    18px;
+  --contents-size:   13px;
+}
+
+/*-- ARTICLE APPENDIX --*/
+d-appendix {
+  --heading-size:    15px;
+  --heading-color:   rgba(0, 0, 0, 0.65);
+  --text-size:       0.8em;
+  --text-color:      rgba(0, 0, 0, 0.5);
+}
+
+/*-- WEBSITE HEADER + FOOTER --*/
+/* These properties only apply to Distill sites and blogs  */
+
+.distill-site-header {
+  --title-size:       18px;
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #0F2E3D;
+}
+
+.distill-site-footer {
+  --text-color:       rgba(255, 255, 255, 0.8);
+  --text-size:        15px;
+  --hover-color:      white;
+  --bkgd-color:       #0F2E3D;
+}
+
+/*-- Additional custom styles --*/
+/* Add any additional CSS rules below                      */
+</style>
+<style type="text/css">/* base variables */
+
+/* Edit the CSS properties in this file to create a custom
+   Distill theme. Only edit values in the right column
+   for each row; values shown are the CSS defaults.
+   To return any property to the default,
+   you may set its value to: unset
+   All rows must end with a semi-colon.                      */
+
+/* Optional: embed custom fonts here with `@import`          */
+/* This must remain at the top of this file.                 */
+@import url('https://fonts.googleapis.com/css2?family=Lato');
+@import url('https://fonts.googleapis.com/css2?family=Chivo');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono');
+
+
+
+html {
+  /*-- Main font sizes --*/
+  --title-size:      50px;
+  --body-size:       1.26rem;
+  --code-size:       14px;
+  --aside-size:      12px;
+  --fig-cap-size:    13px;
+  /*-- Main font colors --*/
+  --title-color:     #000000;
+  --header-color:    rgba(0, 0, 0, 0.8);
+  --body-color:      rgba(0, 0, 0, 0.8);
+  --aside-color:     rgba(0, 0, 0, 0.6);
+  --fig-cap-color:   rgba(0, 0, 0, 0.6);
+  /*-- Specify custom fonts ~~~ must be imported above   --*/
+  --heading-font:    'Fira Mono', sans-serif;
+  --mono-font:       'Fira Mono', monospace;
+  --body-font:       'Lato', sans-serif;
+  --navbar-font:     "Fira Mono", serif;
+}
+
+/*-- ARTICLE METADATA --*/
+.d-byline {
+  --heading-size:    0.6rem;
+  --heading-color:   rgba(0, 0, 0, 0.5);
+  --body-size:       0.8rem;
+  --body-color:      rgba(0, 0, 0, 0.8);
+}
+
+/*-- ARTICLE TABLE OF CONTENTS --*/
+.d-contents {
+  --heading-size:    18px;
+  --contents-size:   13px;
+}
+
+/*-- ARTICLE APPENDIX --*/
+d-appendix {
+  --heading-size:    15px;
+  --heading-color:   rgba(0, 0, 0, 0.65);
+  --text-size:       0.8em;
+  --text-color:      rgba(0, 0, 0, 0.5);
+}
+
+/*-- WEBSITE HEADER + FOOTER --*/
+/* These properties only apply to Distill sites and blogs  */
+
+.distill-site-header {
+  --title-size:       18px;
+  --text-color:       #000;
+  --text-size:        15px;
+  --hover-color:      #ff6700;
+  --bkgd-color:       white;
+}
+
+.distill-site-footer {
+  --text-color:       #000;
+  --text-size:        15px;
+  --hover-color:      #ff6700;
+  --bkgd-color:       white;
+}
+
+
+:root {
+  --color-salt: #61acf0; /* blue */
+  --color-fat: #f0a561; /* orange */
+  --color-acid: #cbd20a; /* lime */
+  --color-heat: #e74a2f; /* red */
+  --color-black: #1a1917; /* black */
+}
+
+.large { 
+  font-size: 160%;
+}
+
+.salt {
+  color: var(--color-salt);
+  font-size: 200%; 
+  font-weight:700;
+}
+
+.fat {
+  color: var(--color-fat);
+  font-size: 200%; 
+  font-weight:700;
+}
+
+.acid {
+  color: var(--color-acid);
+  font-size: 200%;
+  font-weight:700;
+}
+
+.heat {
+  color: var(--color-heat);
+  font-size: 200%;
+  font-weight:700;
+}
+
+.saltinline {
+  color: var(--color-salt);
+}
+
+.fatinline {
+  color: var(--color-fat);
+}
+
+.acidinline {
+  color: var(--color-acid);
+}
+
+.heatinline {
+  color: var(--color-heat);
+}
+
+
+/* highlighted code */
+
+.remark-code-line-highlighted {
+  background-color: rgba(97, 172, 240, .5);
+}
+
+/* in line code */
+
+.remark-code, .remark-inline-code {
+  color: var(--color-heat);
+}
+
+/* from emi tanaka's ninjutsu css! */
+
+.img-fill img { object-fit: fill; height:100%; width:100%; overflow: hidden;}
+.img-contain img { object-fit: contain; height:100%; width:100%;  overflow: hidden}
+.img-cover img { object-fit: cover; height:100%; width:100%;  overflow: hidden}
+.img-none img { object-fit: none; height:100%; width:100%; }
+
+/* from lucy's css!
+ol {
+  max-width: 350px;
+  counter-reset: my-counter;
+  list-style: none;
+  padding-left: 40px;
+}
+ol li {
+  counter-increment: my-counter;
+  position: relative;
+  margin: 20px 0;
+}
+ol li::before {
+  content: counter(my-counter);
+  color: #fff;
+  font-weight: bold;
+  position: absolute;
+  left: -60px;
+  width: 9%;
+  height: 0;
+  padding-bottom: 9%;
+  line-height: 1em;
+  margin-top: -0.5em;
+  background: var(--color-fat);
+  border-radius: 50%;
+  text-align: center;
+}
+*/
+
+.inverse {
+  background-color: var(--color-black);
+  text-shadow: 0 0 0;
+}
+
+
+
+/* links */
+					 
+a,
+a:visited {
+  color: var(--color-black);
+  border-bottom: 1px solid var(--color-salt);
+  box-shadow: inset 0 -2px 0 var(--color-salt);
+}
+
+a:hover,
+a:focus {
+  color: var(--color-black);
+  background: rgba(97, 172, 240, .5);
+  border-bottom: none;
+}
+
+a > code {
+  color: var(--color-heat);
+  text-decoration: none;
+}
+
+.inverse a {
+  color: #FFF;
+}
+
+.remark-inline-code {
+  color: var(--color-heat);
+  text-decoration: none;
+}
+
+/* from the hygge css! */
+
+.polaroid img {
+    display: block; 
+    width: inherit; 
+    border: 10px solid #fff;
+    border-bottom: 45px solid #fff;
+    -webkit-box-shadow: 3px 3px 3px #111;
+    -moz-box-shadow: 3px 3px 3px #111;
+    box-shadow: 3px 3px 3px #111;
+}
+
+/* footer */
+
+div.my-footer {
+    background-color: #1a1917;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    height: 20px;
+    width: 100%;
+}
+
+div.my-footer span {
+    font-size: 10pt;
+    color: #F7F8FA;
+    position: absolute;
+    left: 15px;
+    bottom: 2px;
+}
+
+.remark-slide-number {
+  bottom: 18px;
+  opacity: 0.5;
+  position: absolute;
+  right: 20px;
+}
+
+img.circle {
+  border-radius:50%;
+}
+
+/* split rows*/
+
+
+.title-slide .remark-slide-number { 
+  display: none; 
+}
+
+.wrapper {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  place-items: center;
+  place-content: center;	
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+}
+
+.top-left {
+  grid-row: 1 / 2;
+  grid-column: 1 / 2;
+  background-color: var(--color-salt);
+}
+
+.top-right {
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  background-color: var(--color-fat);
+}
+
+.bottom-left {
+  grid-row: 3 / 4;
+  grid-column: 1 / 2;
+  background-color: var(--color-acid);
+}
+
+.bottom-right {
+  grid-row: 3 / 4;
+  grid-column: 3 / 4;
+  background-color: var(--color-heat);
+}
+
+/* https://stackoverflow.com/questions/50919104/horizontally-scrollable-output-on-xaringan-slides */
+
+pre {
+  background: #f8f8f8; /* match github highlightjs */
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+img.lil {
+  width: 15%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Headings */
+
+h1{ font-size:2.5em; }
+h2{ font-size:2em;  border-bottom: 1px solid #CCC; padding-bottom: 10px; }
+h3{ font-size:1.5em; }
+h4{ font-size:1.2em; }
+h5{ font-size:1em; }
+h6{ font-size:0.9em; }
+
+<style>
+  .col2 {
+    columns: 2 200px;         /* number of columns and width in pixels*/
+    -webkit-columns: 2 200px; /* chrome, safari */
+    -moz-columns: 2 200px;    /* firefox */
+  }
+  .col3 {
+    columns: 3 100px;
+    -webkit-columns: 3 100px;
+    -moz-columns: 3 100px;
+  }
+</style></style>
+<style type="text/css">
+/* base style */
+
+/* FONT FAMILIES */
+
+:root {
+  --heading-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  --mono-default: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  --body-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+body,
+.posts-list .post-preview p,
+.posts-list .description p {
+  font-family: var(--body-font), var(--body-default);
+}
+
+h1, h2, h3, h4, h5, h6,
+.posts-list .post-preview h2,
+.posts-list .description h2 {
+  font-family: var(--heading-font), var(--heading-default);
+}
+
+d-article div.sourceCode code,
+d-article pre code {
+	font-family: var(--mono-font), var(--mono-default);
+}
+
+
+/*-- TITLE --*/
+d-title h1,
+.posts-list > h1 {
+  color: var(--title-color, black);
+}
+
+d-title h1 {
+  font-size: var(--title-size, 50px);
+}
+
+/*-- HEADERS --*/
+d-article h1,
+d-article h2,
+d-article h3,
+d-article h4,
+d-article h5,
+d-article h6 {
+  color: var(--header-color, rgba(0, 0, 0, 0.8));
+}
+
+/*-- BODY --*/
+/* only text inside of <p> tags */
+d-article > p {
+  color: var(--body-color, rgba(0, 0, 0, 0.8));
+  font-size: var(--body-size, 1.06rem);
+}
+
+/*-- CODE --*/
+d-article div.sourceCode code,
+d-article pre code {
+	font-size: var(--code-size, 14px);
+}
+
+/*-- ASIDE --*/
+d-article aside {
+	font-size: var(--aside-size, 12px);
+	color: var(--aside-color, rgba(0, 0, 0, 0.6));
+}
+
+/*-- FIGURE CAPTIONS --*/
+figure .caption,
+figure figcaption,
+.figure .caption {
+	font-size: var(--fig-cap-size, 13px);
+	color: var(--fig-cap-color, rgba(0, 0, 0, 0.6));
+}
+
+/*-- METADATA --*/
+d-byline h3 {
+	font-size: var(--heading-size, 0.6rem);
+	color: var(--heading-color, rgba(0, 0, 0, 0.5));
+}
+
+d-byline {
+	font-size: var(--body-size, 0.8rem);
+	color: var(--body-color, rgba(0, 0, 0, 0.8));
+}
+
+d-byline a,
+d-article d-byline a {
+	color: var(--body-color, rgba(0, 0, 0, 0.8));
+}
+
+/*-- TABLE OF CONTENTS --*/
+.d-contents nav h3 {
+	font-size: var(--heading-size, 18px);
+}
+
+.d-contents nav a {
+	font-size: var(--contents-size, 13px);
+}
+
+/*-- APPENDIX --*/
+d-appendix h3 {
+  font-size: var(--heading-size, 15px);
+	color: var(--heading-color, rgba(0, 0, 0, 0.65));
+}
+
+d-appendix {
+  font-size: var(--text-size, 0.8em);
+	color: var(--text-color, rgba(0, 0, 0, 0.5));
+}
+
+d-appendix d-footnote-list a.footnote-backlink {
+	color: var(--text-color, rgba(0, 0, 0, 0.5));
+}
+
+/*-- WEBSITE HEADER + FOOTER --*/
+.distill-site-header .title {
+	font-size: var(--title-size, 18px);
+	font-family: var(--navbar-font), var(--heading-default);
+}
+
+.distill-site-header a,
+.nav-dropdown .nav-dropbtn {
+  font-family: var(--navbar-font), var(--heading-default);
+}
+
+.distill-site-header a:hover {
+	color: var(--hover-color, white);
+}
+
+.distill-site-header {
+	font-size: var(--text-size, 15px);
+	color: var(--text-color, rgba(255, 255, 255, 0.8));
+	background-color: var(--bkgd-color, #0F2E3D);
+}
+
+.distill-site-footer {
+	font-size: var(--text-size, 15px);
+	color: var(--text-color, rgba(255, 255, 255, 0.8));
+	background-color: var(--bkgd-color, #0F2E3D);
+}
+
+.distill-site-footer a:hover {
+	color: var(--hover-color, white);
+}</style>
+<!--/radix_placeholder_distill-->
+  <script src="../../site_libs/header-attrs-2.5/header-attrs.js"></script>
+  <link href="../../site_libs/vembedr-0.1.4/css/vembedr.css" rel="stylesheet" />
+  <script src="../../site_libs/jquery-1.11.3/jquery.min.js"></script>
+  <script src="../../site_libs/anchor-4.2.2/anchor.min.js"></script>
+  <script src="../../site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="../../site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="../../site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+<!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Friedman's Defense of Homo Economicus","description":"The Methodology of Positive Economics","authors":[{"author":"Amit Gandhi","authorURL":{},"affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-02-02T00:00:00.000+00:00","citationText":"Gandhi, 2021"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<span class="logo">
+<img src="../../images/pennlogo.png"/>
+</span>
+<a href="../../index.html" class="title">Econ 262</a>
+<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
+</div>
+<div class="nav-right">
+<a href="../../index.html">Home</a>
+<a href="../../about.html">About</a>
+<a href="https://twitter.com/AmitEcon">
+<i class="fa fa-twitter" aria-hidden="true"></i>
+</a>
+<a href="mailto:akgandhi@upenn.edu">
+<i class="fa fa-envelope" aria-hidden="true"></i>
+</a>
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Friedman’s Defense of Homo Economicus</h1>
+<!--radix_placeholder_categories-->
+<div class="dt-tags">
+  <a href="../../index.html#category:Homo_Economicus" class="dt-tag">Homo Economicus</a>
+  <a href="../../index.html#category:positive_economics" class="dt-tag">positive economics</a>
+</div>
+<!--/radix_placeholder_categories-->
+<p><p>The Methodology of Positive Economics</p></p>
+</div>
+
+<div class="d-byline">
+  Amit Gandhi true 
+  
+<br/>02-02-2021
+</div>
+
+<div class="d-article">
+<p>Friedman’s essay on the <em>Methodology of Positive Economics</em> written in 1953 is a classic exposition of the economic approach to studying problems. It forces us to contend with the the empirical interpretation of Homo Economicus and its role in the normative vs positive applications of economic theory.</p>
+<h1 id="milton-friedman">Milton Friedman</h1>
+<p><img src="img/FriedmanDisucussion1.jpg" width=261px /></p>
+<ul>
+<li><p>Born in 1912 in New York City</p></li>
+<li><p>BA Rutgers University(1932) MA University of Chicago <span class="math inline">\(1933\)</span> PhD Columbia University <span class="math inline">\(1946\)</span></p></li>
+<li><p>Professor at University of Chicago <span class="math inline">\(1946\-1977\)</span></p></li>
+<li><p>Fellow at the Hoover Institution,at StanfordUniversity <span class="math inline">\(1977\-\)</span></p></li>
+<li><p>Mentors:Arthur Burns, Wesley Mitchell, Jacob Viner, Frank Knight</p></li>
+<li><p>1976:Nobel Memorial Prize in Economics</p></li>
+<li><p>Influence:in economics - New Classical Macroeconomics, in policy - Ronald Regan and, Margaret Thatcher <span class="math inline">\(1980s\)</span></p></li>
+<li><p>Controversy:lecture in Chile in 1975</p></li>
+<li><p>He died in San Francisco in 2006</p></li>
+</ul>
+<h1 id="scientific-contribution">Scientific contribution</h1>
+<p><span style="color:#CC0000">Statistics</span></p>
+<p>Friedman non-parametric tests JASA 1937, JASA 1939, AMS 1940</p>
+<p><span style="color:#CC0000">Methodology</span></p>
+<p>“The Methodology of Positive Economics” in <em>Essays</em> <em>in</em> <em>Positive</em> <em>Economics</em> <span class="math inline">\(1953\)</span></p>
+<p><span style="color:#CC0000">Consumption</span></p>
+<p><em>A</em> <em>Theory</em> <em>of</em> <em>the</em> <em>Consumption Function</em> <span class="math inline">\(1957\)</span></p>
+<p><span style="color:#CC0000">Monetary</span> <span style="color:#CC0000">theory,</span> <span style="color:#CC0000">history</span> <span style="color:#CC0000">and</span> <span style="color:#CC0000">policy</span></p>
+<ul>
+<li><p><em>A</em> <em>Monetary History</em> <em>of</em> <em>the</em> <em>United</em> <em>States,</em> <em>1867-1960</em> with A. Schwartz, 1963;</p></li>
+<li><p>“The Quantity Theory of Money:A Restatement”, in <em>Studies</em> <em>in</em> <em>the</em> <em>Quantity</em> <em>Theory</em> <em>of</em> <em>Money</em> ed.M.Friedman,1956;</p></li>
+<li><p>“The Role of Monetary Policy”, (<em>AER</em> 1968); “A Theoretical Framework for Monetary Analysis” ( <em>JPE</em> 1970)</p></li>
+</ul>
+<p><span style="color:#CC0000">Business</span> <span style="color:#CC0000">cycles</span> <span style="color:#CC0000">and</span> <span style="color:#CC0000">inflation</span></p>
+<ul>
+<li><p>“Money and business cycles” with A. Schwartz (<em>RES</em>,1963)</p></li>
+<li><p><em>Monetary</em> <em>Trends</em> <em>in</em> <em>the</em> <em>US</em> <em>and the</em> <em>UK</em> with A. Schwartz,1982;</p></li>
+<li><p>“Inflation and Unemployment” (<em>JPE</em> 1977)</p></li>
+</ul>
+<p><span style="color:#CC0000">Ideology,</span> <span style="color:#CC0000">Pop</span></p>
+<ul>
+<li><em>Capitialism and</em> <em>Freedom</em> (1962)</li>
+<li><em>Free</em> <em>to</em> <em>Choose</em> with R Friedman, 1980)</li>
+</ul>
+<h1 id="the-normative-friedman">The “Normative” Friedman</h1>
+<p>Later in Freidman’s career, he became a popuar voice for economics in the mainstream media, and would engage with large and broad audienecs “head-on” for live policy debates. He thus took a normative view of policy - what types of policies should be enacted - based on his understanding of the positive predictions from economic theory.</p>
+<p>In addition to being a towering intellect, he was a fierce debater and orator of economics. Here is a famous discussion he gave on the power of prices in a market economy as a means to efficiently coordinated the multitude of economic decisions that are linked together in an economy.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="vembedr">
+<div>
+<iframe src="https://www.youtube.com/embed/67tHtpac5ws" width="533" height="300" frameborder="0" allowfullscreen=""></iframe>
+</div>
+</div>
+</div>
+<p>We thus see his normative leanings towards market as drivers of overall efficiency - a topic which continues today to be hotly debated. In this normative stance, Homo Economicus was a means to an end - a way to reach conclusions about the effect of economic policies</p>
+<h1 id="the-revival-of-the-homo-economicus">The revival of the homo economicus</h1>
+<ul>
+<li><p>Idea of <em>homo</em> <em>economicus</em> (Mill 1836; Robbins 1932)</p></li>
+<li><p>Keynes (1936): alternative views:</p>
+<ul>
+<li><p><em>animal</em> <em>spirits</em></p></li>
+<li><p><em>fundamental</em> <em>psychological</em> <em>law</em></p></li>
+</ul></li>
+<li><p>Friedman:revivalof <span style="color:#009900">rational</span> <span style="color:#009900">behaviour</span> in economics</p>
+<ul>
+<li><p>concept of “permanent income” in consumption</p></li>
+<li><p>rejection of permanent trade-off between inflationa ndunemployment due to expectations of future inflation</p></li>
+</ul></li>
+</ul>
+<h1 id="marshallian-methodology">Marshallian methodology</h1>
+<ul>
+<li><p>Friedman was not as radical as the New Classical Macroeconomics (Lucas,Sargent):</p>
+<p>-rejection of Rational Expectation Hypothesis</p></li>
+<li><p><em>Marshallian</em> vs. <em>Walrasian</em> methodology</p>
+<ul>
+<li><p>Walrasian perspective: general equilibrium and complete micro-foundation in individual optimization; secondary role of empirical evidence</p></li>
+<li><p>Marshallian perspective: partial equilibrium</p></li>
+<li><p>theory as “an engine for the discovery of concrete truth” (Marshall1885)</p></li>
+<li><p>importance of empirical economics</p></li>
+</ul></li>
+<li><p>Friedman considered himself a <span style="color:#009900">Marshallian</span></p></li>
+</ul>
+<h1 id="f.-53">F. 53</h1>
+<p><strong>“The Methodology of Positive Economics”</strong></p>
+<p>A forceful, careful, and heavily influential essay on the meaning of the methodology of economics.</p>
+<p><span style="color:#666666"> <strong>CHICAGO. ECONOMICS 300A. CORE THEORY. GARY BECKER, 1956</strong> </span></p>
+<p><img src="img/FriedmanDisucussion2.jpg" width=500px /></p>
+<p><span style="color:#666666">_______________</span></p>
+<p><span style="color:#666666"> <strong>Economics 300A</strong> </span> <span style="color:#666666"> <strong>Autumn 1956</strong> </span> <span style="color:#666666"> <strong>Reading Assignments by G. Becker</strong> </span></p>
+<p><span style="color:#666666">NOTES:</span></p>
+<p><span style="color:#666666">1) A knowledge of the material in George Stigler,</span> <span style="color:#666666"> <em>A Theory of Price</em> </span> <span style="color:#666666">or in Kenneth</span> <span style="color:#666666">Boulding</span> <span style="color:#666666">,</span> <span style="color:#666666"> <em>Economic Analysis</em> </span> <span style="color:#666666">, is a prerequisite. <br> </span> <span style="color:#666666">2) Readings marked with an asterisk <span class="math inline">\(*\)</span> are recommended, not required.</span></p>
+<p><span style="color:#666666"> <em>I. INTRODUCTION</em> </span></p>
+<p><span style="color:#666666">Friedman, M.,</span> <span style="color:#666666"> <em>Lecture Notes</em> </span> <span style="color:#666666">, pp. 1-16.</span> <br> <span style="color:#666666">Knight, F. H.,</span> <span style="color:#666666"> <em>The Economic Organization</em> </span> <span style="color:#666666">, pp. 1-37.</span> <br> <span style="color:#666666">Friedman, Milton, “The New Methodology of Positive Economics,” in</span> <span style="color:#666666"> <em>Essays in Positive Economics</em> </span> <span style="color:#666666">.</span> <br> <span style="color:#666666">*Hayek, F. A., “The Use of Knowledge in Society,”</span> <span style="color:#666666"> <em>American Economic Review</em> </span> <span style="color:#666666">, September 1945, reprinted in</span> <span style="color:#666666"> <em>Individualism and Economic Order</em> </span> <span style="color:#666666">.</span> <span style="color:#666666">*Keynes, J. N.,</span> <span style="color:#666666"> <em>The Scope and Method of Political Economy</em> </span> <span style="color:#666666">, pp. 1-83.</span></p>
+<p><span style="color:#666666"> <em>II. DEMAND ANALYSIS</em> </span></p>
+<p><span style="color:#666666">Marshall, A.,</span> <span style="color:#666666"> <em>Principles of Economics</em> </span> <span style="color:#666666">, Book III,</span> <span style="color:#666666">chs</span> <span style="color:#666666">. 2-4; Book V,</span> <span style="color:#666666">chs</span> <span style="color:#666666">. 1-2.</span></p>
+<h1 id="f.s-enemies">F.’s enemies</h1>
+<ul>
+<li><p>1946-1953: controversy on the “marginalist” theory of the firm</p></li>
+<li><p>Hall and Hitch (1939): “Price Theory and Business Behaviour”, <em>Oxford</em> <em>Economic</em> <em>Papers</em></p>
+<ul>
+<li>survey on how prices emerged within firms</li>
+<li>rules of thumb inconsistent with the hypothesis of maximization of expected profits</li>
+<li>psychological mechanisms different from model’s mechanism: <span style="color:#009900">false</span> <span style="color:#009900">assumptions</span></li>
+</ul></li>
+<li><p>The Rise of Chamberlainian and Walrasian Economics: Monopolistic Competition and General Equilibrium.</p></li>
+</ul>
+<p>Friedman is feeling the Marshallian approach under attack from multiple fronts. As his 1974 self revealed - how do you respond?</p>
+<p>“You cannot be sure that you are right unless you understand the arguments against your views better than your opponents do.”</p>
+<h2 id="the-methodology-of-positive-economics-1953">The Methodology of Positive Economics (1953)</h2>
+<p>Opening line:</p>
+<p><br> <em>In</em> <em>his</em> <em>admirable</em> <em>book</em> <em>on The</em> <em>Scope</em> <em>and</em> <em>Method</em> <em>of</em> <em>Political</em> <em>Economy,</em> <em>John</em> <em>Neville</em> <em>Keynes</em> <em>distinguishes</em> <em>among</em> <em>“a</em> <span style="color:#CC0000"> <em>positive</em> </span> <em>science</em> <em>. . .</em> <em>a</em> <em>body</em> <em>of</em> <em>systematized</em> <em>knowledge</em> <em>concerning</em> <em>what</em> <em>is;</em> <span style="color:#CC0000"> <em>a</em> </span> <span style="color:#CC0000"> <em>normative</em> </span> <em>or</em> <em>regulative</em> <em>science</em> <em>...</em> <em>a</em> <em>body</em> <em>of</em> <em>systematized</em> <em>knowledge</em> <em>discussing</em> <em>criteria</em> <em>of</em> <em>what</em> <em>ought</em> <em>to</em> <em>be</em> <em>. . .</em> <em>;</em> <em>an</em> <span style="color:#CC0000"> <em>art</em> </span> <em>...</em> <em>a</em> <em>system</em> <em>of</em> <em>rules</em> <em>for</em> <em>the</em> <em>attainment</em> <em>of</em> <em>a</em> <em>given</em> <em>end";</em> <em>comments</em> <em>that</em> <em>“confusion between</em> <em>them</em> <em>is</em> <em>common</em> <em>and</em> <em>has been</em> <em>the</em> <em>source</em> <em>of</em> <em>many</em> <em>mischievous</em> <em>errors";</em> <em>and</em> <em>urges</em> <em>the</em> <em>importance</em> <em>of</em> <em>“recognizing</em> <em>a</em> <em>distinct</em> <em>positive</em> <em>science</em> <em>of</em> <em>political</em> <em>economy”.</em></p>
+<p>He thus raised the positive-normative distinction, which he continues to discuss</p>
+<blockquote>
+<p>Normative economics and the art of economics, on the other hand, cannot be independent of positive economics. Any policy conclusion necessarily rests on a prediction about the consequences of doing one thing rather than another, a prediction that must be based – implicitly or explicitly - on positive economics. There is not, of course, a one-to-one relation between policy conclusions and the conclusions of positive economics; if there were, there would be no separate normative science. Two individuals may agree on the consequences of a particular piece of legislation. One may regard them as desirable on balance and so favor the legislation; the other, as undesirable and so oppose the legislation. (page 5)</p>
+</blockquote>
+<h2 id="the-case-for-positive-economics">The Case for Positive Economics</h2>
+<ul>
+<li><p>Normative versus positive economics</p></li>
+<li><p>Policy questions center around “what policy should we <em>as a society</em> enact?”</p></li>
+<li><p>In order to answer this we must be able to answer “if we enacted this policy what will happen?”</p></li>
+</ul>
+<blockquote>
+<p>I venture the judgment, however, that currently in the Western world, and especially in the United States, differences about economic policy among disinterested citizens derive predominantly from different predictions about the economic consequences of taking action - differences that in principle can be eliminated by the progress of positive economics - rather than from fundamental differences in basic values, differences about which men can ultimately only fight.” <span class="math inline">\(page 7\)</span></p>
+</blockquote>
+<blockquote>
+<p>The ultimate goal of a positive science is the development of a “theory” or, “hypothesis” that yields valid and meaningful i.e., (not truistic) predictions about phenomena not yet observed. Such a theory is, in general, a complex intermixture of two elements. In part, it is a “language” designed to promote “systematic and organized methods of reasoning.” In part, it is a body of substantive hypotheses designed to abstract essential features of complex reality. <span class="math inline">\(page 7\)</span></p>
+</blockquote>
+<h3 id="translation">Translation</h3>
+<p>Positive Economics consists of two parts:</p>
+<ol type="1">
+<li><p>A completely self-enclosed formal system consisting of assumptions and implications drawn from those assumptions</p></li>
+<li><p>The hypotheses stated in the language of the science that abstracts “essential features” of the reality it purports to explain.</p></li>
+</ol>
+<h3 id="popperian-perspective">Popperian perspective</h3>
+<p><em>the</em> <em>only</em> <em>relevant</em> <em>test</em> <em>of</em> <em>the</em> <em>validity</em> <em>of</em> <em>a</em> <em>hypothesis is</em> <em>comparison</em> <em>of</em> <em>its</em> <em>predictions</em> <em>with</em> <em>experience.</em> <em>The hypothesis is</em> <em>rejected</em> <em>if</em> <em>its</em> <em>predictions</em> <em>are</em> <em>contradicted “frequently”</em> <em>or</em> <em>more</em> <em>often</em> <em>than</em> <em>predictions from</em> <em>an alternative</em> <em>hypothesis;</em> <em>it</em> <em>is</em> <em>accepted</em> <em>if</em> <em>its</em> <em>predictions</em> <em>are</em> <em>not</em> <em>contradicted;</em> <em>great confidence</em> <em>is</em> <em>attached</em> <em>to</em> <em>it</em> <em>if</em> <em>it</em> <em>has</em> <em>survived</em> <em>many</em> <em>opportunities</em> <em>for</em> <em>contradiction.</em> <em>Factual evidence can</em> <em>never</em> <em>“prove”</em> <em>a</em> <em>hypothesis;</em> <em>it</em> <em>can</em> <em>only</em> <em>fail</em> <em>to</em> <em>disprove</em> <em>it,</em> <em>which</em> <em>is</em> <em>what</em> <em>we</em> <em>generally</em> <em>mean</em> <em>when</em> <em>we</em> <em>say,</em> <em>somewhat</em> <em>inexactly,</em> <em>that</em> <em>the hypothesis</em> <em>has been</em> <em>“confirmed”</em> <em>by</em> <em>experience</em></p>
+<h2 id="digression-i-logical-positivism">Digression I: logical positivism</h2>
+<ul>
+<li><p>Origin in the Vienna circle of 1920s. Cfr. H.Feigl, R.Carnap, H.Reichenbach, M.Schlick</p></li>
+<li><p>Six tenets or tendencies (cfr.Hacking1983: 41-42):</p>
+<ol type="1">
+<li><p>Emphasis upon verification</p></li>
+<li><p>Pro observation</p></li>
+<li><p>Anti-cause</p></li>
+<li><p>Downplaying explanation</p></li>
+<li><p>Anti-theoretical entities</p></li>
+<li><p>To sum up: against metaphysics!</p></li>
+</ol></li>
+<li><p><span style="color:#FFFFFF">Popper’s</span> <span style="color:#FFFFFF">variant:</span> <span style="color:#FFFFFF">falsificationism</span></p></li>
+</ul>
+<p>Popper emphasized within this tradition two things:</p>
+<ol type="1">
+<li><p><em>modus</em> <em>tollens</em> - <em>If P implies Q and Q is false, then P is false</em>. (related to _red <em>uctio</em> <em>ad absurdum)</em></p></li>
+<li><p>Simplicity</p></li>
+</ol>
+<h2 id="duhem-quine-problem">Duhem-Quine problem</h2>
+<blockquote>
+<p>Unfortunately, we can seldom test particular predictions in the social sciences by experiments explicitly designed to eliminate what are judged to be the most important disturbing influences. Generally, we must rely on evidence cast up by the “experiments” that happen to occur…No experiment can be completely controlled, and every experience is partly controlled, in the sense that some disturbing influences are relatively constant in the course of it. (page 10)</p>
+</blockquote>
+<h3 id="translation-1">Translation</h3>
+<ul>
+<li><p>The predictions that arise from economic theory are typically “ceteris paribus” statements.</p></li>
+<li><p>Holding all else equal, a change in X causes a change in Y#</p></li>
+<li><p>Unfortunately the data never “holds all else equal” – it is always full of “disturbing influences”</p></li>
+<li><p>The inability to conduct “randomized experiments” makes these disturbing influences especially hard for taking theory to data.</p></li>
+</ul>
+<blockquote>
+<p>The difficulty in the social sciences of getting new evidence for this class of phenomena and of judging its conformity with the implications of the hypothesis makes it tempting to suppose that other, more readily available, evidence is equally relevant to the validity of the hypothesis-to suppose that hypotheses have not only “implications” but also “assumptions” and that the conformity of these “assumptions” to “reality” is a test of the validity of the hypothesis different from or additional to the test by implications. This widely held view is fundamentally wrong and productive of much mischief. <span class="math inline">\(page 14\)</span></p>
+</blockquote>
+<h2 id="the-f-twist">The F-twist</h2>
+<p><span style="color:#CC0000"> <em>Truly</em> </span> <span style="color:#CC0000"> <em>important</em> </span> <span style="color:#CC0000"> <em>and</em> </span> <span style="color:#CC0000"> <em>significant</em> </span> <span style="color:#CC0000"> <em>hypotheses</em> </span> <span style="color:#CC0000"> <em>will</em> </span> <span style="color:#CC0000"> <em>be</em> </span> <span style="color:#CC0000"> <em>found</em> </span> <span style="color:#CC0000"> <em>to</em> </span> <span style="color:#CC0000"> <em>have</em> </span> <span style="color:#CC0000"> <em>“assumptions”that</em> </span> <span style="color:#CC0000"> <em>are</em> </span> <span style="color:#CC0000"> <em>wildly</em> </span> <span style="color:#CC0000"> <em>inaccurate</em> </span> <span style="color:#CC0000"> <em>descriptive</em> </span> <span style="color:#CC0000"> <em>representations</em> </span> <span style="color:#CC0000"> <em>of</em> </span> <span style="color:#CC0000"> <em>reality,</em> </span> <span style="color:#CC0000"> <em>and,</em> </span> <span style="color:#CC0000"> <em>in</em> </span> <span style="color:#CC0000"> <em>general,</em> </span> <span style="color:#CC0000"> <em>the</em> </span> <span style="color:#CC0000"> <em>more</em> </span> <span style="color:#CC0000"> <em>significant</em> </span> <span style="color:#CC0000"> <em>the</em> </span> <span style="color:#CC0000"> <em>theory,</em> </span> <span style="color:#CC0000"> <em>the</em> </span> <span style="color:#CC0000"> <em>more</em> </span> <span style="color:#CC0000"> <em>unrealistic the</em> </span> <span style="color:#CC0000"> <em>assumptions</em> </span> <span style="color:#CC0000"> <em>in</em> </span> <span style="color:#CC0000"> <em>this</em> </span> <span style="color:#CC0000"> <em>sense.</em> </span> <em>The</em> <em>reason</em> <em>is simple.</em> <em>A</em> <em>hypothesis is</em> <em>important</em> <em>if</em> <em>it</em> <em>“explains”much by little,</em> <em>that</em> <em>is, if</em> <em>it</em> <span style="color:#CC0000"> <em>abstracts</em> </span> <em>the</em> <em>common</em> <em>and</em> <em>crucial</em> <em>elements</em> <em>from</em> <em>the mass</em> <em>of</em> <em>complex</em> <em>and</em> <em>detailed</em> <em>circumstances</em> <em>surrounding</em> <em>the</em> <em>phenomena</em> <em>to</em> <em>be</em> <em>explained</em> <em>and</em> <em>permits</em> <em>valid</em> <em>predictions</em> <em>on the</em> <em>basis</em> <em>of</em> <em>them</em> <em>alone.</em> <em>To</em> <em>be</em> <em>important,</em> <em>therefore,</em> <em>a</em> <em>hypothesis</em> <em>must</em> <em>be</em> <span style="color:#CC0000"> <em>descriptively</em> </span> <span style="color:#CC0000"> <em>false</em> </span> <em>in</em> <em>its</em> <em>assumptions;</em> <em>it</em> <em>takes</em> <em>account</em> <em>of,</em> <em>and accounts</em> <em>for,</em> <em>none</em> <em>of</em> <em>the</em> <em>many</em> <em>other</em> <em>attendant</em> <em>circumstances,</em> <em>since</em> <em>its</em> <em>very</em> <em>success</em> <em>shows</em> <em>them</em> <em>to</em> <em>be</em> <em>irrelevant</em> <em>for</em> <em>the</em> <em>phenomena</em> <em>to</em> <em>be</em> _explained_ (F53: 14-15, emphasis added)</p>
+<h3 id="digression-ii-realism-vs.-instrumentalism">Digression II: realism vs. instrumentalism</h3>
+<ul>
+<li><p>Problem of <span style="color:#009900">unobservables</span> :lack of <em>direct</em> sensory access to theoretical entities in science (e.g.electrons,quarks,radiowaves,viruses,demandcurve,permanentincome,velocityofmoney)</p></li>
+<li><p><span style="color:#009900">Realism</span> : scientific theories <span class="math inline">\(should\)</span> deliver true description of the world (or of some structure of the world),including the unobservable part</p>
+<ul>
+<li>emphasis on description and explanation</li>
+</ul></li>
+<li><p><span style="color:#009900">Instrumentalism</span> : we are in no position to get true descriptions of the world: theories are useful instruments to generate predictions</p>
+<ul>
+<li>emphasis on prediction and manipulation</li>
+</ul></li>
+</ul>
+<h3 id="realism-vs.-realisticness">Realism vs. realisticness</h3>
+<ul>
+<li><p>In economics it is particularly important to distinguish <em>realism</em> ,which emphasizes the possibility of identifying faithful description of some structures of reality,from the degree of <span style="color:#CC0000">accurateness</span> of the description.</p></li>
+<li><p>Uskali Mäki (1994, 1998) calls descriptive accuracy <em>realisticness</em></p></li>
+<li><p>Thus one can be realist with respect to some model or theory without emphasizing its realisticness</p></li>
+<li><p>The importance of <strong>abstractions</strong> <strong>and</strong> <strong>idealizations</strong></p></li>
+</ul>
+<h3 id="f.-on-the-realism-of-the-assumptions">F. on the realism of the assumptions</h3>
+<p><em>the relevant</em> <em>question</em> <em>to</em> <em>ask</em> <em>about</em> <em>the “assumptions”</em> <em>of</em> <em>a</em> <em>theory is</em> <em>not</em> <em>whether</em> <em>they</em> <em>are</em> <em>descriptively</em> <em>“realistic,”</em> <em>for</em> <em>they</em> <em>never</em> <em>are,</em> <em>but</em> <em>whether</em> <em>they</em> <em>are</em> <em>sufficiently</em> <em>good</em> <em>approximations</em> <em>for</em> <em>the</em> <em>purpose</em> <em>in</em> <em>hand.</em> <em>And</em> <em>this</em> <em>question</em> <em>can</em> <em>be</em> <em>answered</em> <em>only</em> <em>by</em> <em>seeing</em> <em>whether the theory works,</em> <em>which</em> <em>means whether</em> <em>it</em> <em>yields</em> <em>sufficiently</em> <em>accurate</em> _predictions. (F53:15)</p>
+<h2 id="first-example-galilean-experiment">First example: Galilean experiment</h2>
+<p><em>It</em> <em>is an</em> <em>accepted</em> <em>hypothesis</em> <em>that</em> <em>the</em> <em>acceleration</em> <em>of</em> <em>a</em> <em>body</em> <em>dropped</em> <em>in</em> <em>a</em> <em>vacuum</em> <em>is</em> <em>a</em> <em>constant</em> <em>- g,</em> <em>or</em> <em>approximately 32</em> <em>feet</em> <em>per second per second</em> <em>on the</em> <em>earth</em> <em>- and is</em> <em>independent</em> <em>of</em> <em>the</em> <em>shape</em> <em>of</em> <em>the</em> <em>body,</em> <em>the</em> <em>manner</em> <em>of</em> <em>dropping</em> <em>it,</em> <em>etc.</em> <em>This</em> <em>implies</em> <em>that</em> <em>the</em> <em>distance traveled</em> <em>by</em> <em>a</em> <em>falling</em> <em>body</em> <em>in</em> <em>any</em> <em>specified</em> <em>time</em> <em>is</em> <em>given by</em> <em>the formula s</em> = (1/2)gt^2 <em>,</em> <em>where</em> <em>s is the</em> <em>distance</em> <em>traveled</em> <em>in</em> <em>feet</em> <em>and</em> <em>t</em> <em>is</em> <em>time</em> <em>in</em> <em>seconds.</em> <em>The</em> <em>application</em> <em>of</em> <em>this</em> <em>formula to</em> <em>a</em> <em>compact</em> <em>ball dropped</em> <em>from</em> <em>the</em> <em>roof</em> <em>of</em> <em>a</em> <em>building</em> <em>is</em> <em>equivalent</em> <em>to</em> <em>saying</em> <em>that</em> <em>a</em> <em>ball</em> <em>so</em> <em>dropped behaves</em> <span style="color:#CC0000"> <em>as</em> </span> <span style="color:#CC0000"> <em>if</em> </span> <em>it</em> <em>were</em> <em>falling</em> <em>in</em> <em>a</em> <em>vacuum.</em> <em>Testing</em> <em>this</em> <em>hypothesis</em> <em>by</em> <em>its</em> <em>assumptions</em> <em>presumably means</em> <em>measuring</em> <em>the</em> <em>actual</em> <em>air</em> <em>pressure</em> <em>and</em> <em>deciding</em> <em>whether</em> <em>it</em> <em>is</em> <em>close</em> <em>enough to</em> <em>zero.</em> (F53: 16-17, emphasis added)</p>
+<p><em>This</em> <em>example</em> <em>illustrates</em> <em>both</em> <em>the</em> <em>impossibility</em> <em>of</em> <em>testing</em> <em>a</em> <em>theory</em> <em>by</em> <em>its</em> <em>assumptions</em> <em>and</em> <em>also</em> <em>the</em> <em>ambiguity</em> <em>of</em> <em>the</em> <em>concept</em> <em>“the</em> <em>assumptions</em> <em>of</em> <em>a</em> <em>theory.”</em> <em>The formula s</em> =(1/2) gt^2 <em>is valid</em> <em>for</em> <em>bodies</em> <em>falling</em> <em>in</em> <em>a</em> <em>vacuum</em> <em>and</em> <em>can</em> <em>be</em> <em>derived</em> <em>by</em> <em>analyzing</em> <em>the</em> <em>behavior</em> <em>of</em> <em>such</em> <em>bodies.</em> <em>It</em> <em>can</em> <em>therefore</em> <em>be</em> <em>stated:</em> <em>under</em> <em>a</em> <em>wide</em> <em>range</em> <em>of</em> <em>circumstances,</em> <em>bodies</em> <em>that</em> <em>fall</em> <em>in</em> <em>the</em> <em>actual</em> <em>atmosphere</em> <em>behave as</em> <em>if</em> <em>they</em> <em>were</em> <em>falling</em> <em>in</em> <em>a</em> <em>vacuum.</em> <em>The formula is</em> <em>accepted</em> <em>because</em> <em>it</em> <em>works,</em> <em>not</em> <em>because</em> <em>we live</em> <em>in</em> <em>an</em> <em>approximate</em> <em>vacuum</em> <em>- whatever</em> <em>that</em> <em>means.</em> (F53: 17-18)</p>
+<h3 id="translation-2">Translation</h3>
+<ul>
+<li><p>A Galilean Assumption: Air Pressure = 0</p></li>
+<li><p>Role of assumption: All forces other than gravitation = 0</p></li>
+<li><p>Idealizes gravity as the sole cause of the motion of a falling body, assuming all other forces are powerless.</p></li>
+<li><p>A Neoclassical Assumption: Producers and traders pursue maximum expected returns</p></li>
+<li><p>Role of assumption: All other motives except the maximization motive have zero strength.</p></li>
+</ul>
+<h2 id="second-example-an-evolutionary-argument">Second example: an evolutionary argument</h2>
+<p><em>Consider</em> <em>the</em> <em>density</em> <em>of</em> <em>leaves</em> <em>around</em> <em>a</em> <em>tree.</em> <em>I</em> <em>suggest</em> <em>the hypothesis</em> <em>that</em> <em>the</em> <em>leaves</em> <em>are</em> <em>positioned</em> <span style="color:#CC0000"> <em>as</em> </span> <span style="color:#CC0000"> <em>if</em> </span> <span style="color:#CC0000"> <em>each</em> </span> <span style="color:#CC0000"> <em>leaf</em> </span> <span style="color:#CC0000"> <em>deliberately</em> </span> <span style="color:#CC0000"> <em>sought</em> </span> <span style="color:#CC0000"> <em>to</em> </span> <span style="color:#CC0000"> <em>maximize</em> </span> <span style="color:#CC0000"> <em>the</em> </span> <span style="color:#CC0000"> <em>amount</em> </span> <span style="color:#CC0000"> <em>of</em> </span> <span style="color:#CC0000"> <em>sunlight</em> </span> <span style="color:#CC0000"> <em>it</em> </span> <span style="color:#CC0000"> <em>receives</em> </span> <em>,</em> <em>given</em> <em>the position</em> <em>of</em> <em>its</em> <em>neighbors,</em> <span style="color:#CC0000"> <em>as</em> </span> <span style="color:#CC0000"> <em>if</em> </span> <span style="color:#CC0000"> <em>it</em> </span> <span style="color:#CC0000"> <em>knew</em> </span> <span style="color:#CC0000"> <em>the</em> </span> <span style="color:#CC0000"> <em>physical</em> </span> <span style="color:#CC0000"> <em>laws</em> </span> <em>determining</em> <em>the</em> <em>amount</em> <em>of</em> <em>sunlight</em> <em>that</em> <em>would</em> <em>be</em> <em>received</em> <em>in</em> <em>various positions and</em> <em>could</em> <em>move rapidly</em> <em>or</em> <em>instantaneously</em> <em>from</em> <em>any</em> <em>one</em> <em>position to</em> <em>any</em> <em>other</em> <em>desired</em> <em>and unoccupied position.</em> <em>Now</em> <em>some</em> <em>of</em> <em>the</em> <em>more</em> <em>obvious</em> <em>implications</em> <em>of</em> <em>this</em> <em>hypothesis</em> <em>are</em> <em>clearly</em> <em>consistent</em> <em>with</em> <em>experience:</em> <em>for</em> <em>example,</em> <em>leaves</em> <em>are</em> <em>in</em> <em>general</em> <em>denser</em> <em>on the</em> <em>south</em> <em>than</em> <em>on the</em> <em>north</em> <em>side</em> <em>of</em> <em>trees</em> <em>but,</em> <em>as</em> <em>the hypothesis implies,</em> <em>less</em> <em>so or</em> <em>not</em> <em>at</em> <em>all</em> <em>on the</em> <em>northern</em> <em>slope</em> <em>of</em> <em>a</em> <em>hill</em> <em>or</em> <em>when</em> <em>the</em> <em>south</em> <em>side</em> <em>of</em> <em>the</em> <em>trees</em> <em>is</em> <em>shaded</em> <em>in</em> <em>some</em> <em>other</em> <em>way.</em> <em>... the hypothesis</em> <em>does</em> <em>not</em> <em>assert</em> <em>that</em> <em>leaves</em> <em>do</em> <em>these</em> <em>things</em> <em>but</em> <em>only that</em> <em>their</em> <em>density</em> <em>is the</em> <em>same</em> <span style="color:#CC0000"> <em>as</em> </span> <span style="color:#CC0000"> <em>if</em> </span> <em>they</em> <em>did. Despite the</em> <em>apparent</em> <em>falsity</em> <em>of</em> <em>the “assumptions”</em> <em>of</em> <em>the hypothesis,</em> <em>it</em> <em>has</em> <em>great</em> <em>plausibility</em> <em>because of</em> <em>the</em> <em>conformity</em> <em>of</em> <em>its</em> <em>implications</em> <em>with</em> <em>observation</em>. (F53: 19-20, emphasis added)</p>
+<h2 id="third-example-the-billiard-player">Third example: the billiard player</h2>
+<p><em>Consider</em> <em>the</em> <em>problem</em> <em>of</em> <em>predicting the shots</em> <em>made</em> <em>by</em> <em>an expert</em> <em>billiard</em> <em>player.</em> <em>It</em> <em>seems</em> <em>not</em> <em>at</em> <em>all unreasonable</em> <em>that</em> <em>excellent predictions</em> <em>would</em> <em>be</em> <em>yielded</em> <em>by</em> <em>the hypothesis</em> <em>that</em> <em>the</em> <em>billiard player</em> <em>made</em> <em>his shots</em> <span style="color:#CC0000"> <em>as</em> </span> <span style="color:#CC0000"> <em>if</em> </span> <em>he</em> <em>knew</em> <em>the</em> <em>complicated</em> <em>mathematical formulas</em> <em>that</em> <em>would</em> <em>give the</em> <em>optimum</em> <em>directions</em> <em>of</em> <em>travel,</em> <em>could</em> <em>estimate</em> <em>accurately</em> <em>by</em> <em>eye</em> <em>the</em> <em>angles, etc., describing</em> <em>the</em> <em>location</em> <em>of</em> <em>the</em> <em>balls,</em> <em>could</em> <em>make</em> <em>lightning</em> <em>calculations from</em> <em>the formulas, and</em> <em>could</em> <em>then</em> <em>make</em> <em>the</em> <em>balls</em> <em>travel</em> <em>in</em> <em>the</em> <em>direction indicated</em> <em>by</em> <em>the</em> <em>formulas.</em> (F53:21)</p>
+<blockquote>
+<p>Now, of course, businessmen do not actually and literally solve the system of simultaneous equations in terms of which the mathematical economist finds it convenient to express this hypothesis, any more than leaves or billiard players explicitly go through complicated mathematical calculations… The billiard player, if asked how he decides where to hit the ball, may say that he “just figures it out” but then also rubs a rabbit’s foot just to make sure; and the businessman may well say that he prices at average cost, with of course some minor deviations when the market makes it necessary. The one statement is about as helpful as the other, and neither is a relevant test of the associated hypothesis.</p>
+</blockquote>
+<h2 id="bottom-line">Bottom line</h2>
+<p><em>individual firm</em> <em>behave as</em> <em>if</em> <em>they</em> <em>were</em> <em>seeking</em> <em>rationally to</em> <em>maximize</em> <em>their</em> <em>expected</em> <em>returns</em> <em>...and</em> <em>had</em> <em>full</em> <em>knowledge</em> <em>of</em> <em>the</em> <em>data needed</em> <em>to</em> <em>succeed</em> <em>in</em> <em>this</em> <em>attempt;</em> <em>as</em> <em>if,</em> <em>that</em> <em>is,</em> <em>they knew</em> <em>the relevant</em> <em>cost</em> <em>and demand</em> <em>functions,</em> <em>calculated</em> <em>marginal</em> <em>cost</em> <em>and marginal revenue</em> <em>from</em> <em>all</em> <em>actions</em> <em>open</em> <em>to</em> <em>them,</em> <em>and pushed</em> <em>each</em> <em>line</em> <em>of</em> <em>action</em> <em>to the</em> <em>point</em> <em>at</em> <em>which</em> <em>the relevant marginal</em> <em>cost</em> <em>and marginal revenue</em> <em>were</em> <em>equal.</em> (F53:21)</p>
+<h2 id="f.s-ambiguities">F.’s ambiguities</h2>
+<ul>
+<li><p>It would not be fair to dub F. as an instrumentalist</p></li>
+<li><p>He swings between realism (<em>but anti-realisticness</em>) and instrumentalism</p></li>
+<li><p>Especially if we judge F53 vis-à-vis Friedman and Schwartz (1963) and his professed Marshallian methodology</p></li>
+</ul>
+<p><em>Marshall</em> <em>took</em> <em>the world</em> <em>as</em> <em>it</em> <em>is; he</em> <em>sought</em> <em>to</em> <em>construct</em> <em>an</em> <em>“engine”</em> <em>to analyze</em> <em>it, not</em> <em>a</em> <em>photographic</em> <em>reproduction</em> <em>of</em> <em>it</em> (F53:35)</p>
+<h2 id="conclusion">Conclusion</h2>
+<ul>
+<li><p>The relevant hypothesis is: “I can treat the data of interest AS IF it were generated by the ideal types contained in my model”.</p></li>
+<li><p>A reasonable starting point if model was generated by isolating essential features of reality in the first place.</p></li>
+</ul>
+<h2 id="how-can-we-test-our-model-of-homo-economicus">How can we test our model of Homo Economicus</h2>
+<p>Imagine the following question was asked to a decision maker:</p>
+<ul>
+<li><p>You won a free ticket to an Eric Clapton concert.</p></li>
+<li><p>Bob Dylan is playing on the same night and is your most attractive alternative.</p></li>
+<li><p>Ticket to see Dylan is $40</p></li>
+<li><p>You would be willing to pay up to $50 to see Dylan</p></li>
+<li><p>No other costs of seeing either performer</p></li>
+<li><p>Willing to pay $50 to see Dylan</p></li>
+<li><p>Cost of Dylan ticket = $40</p></li>
+</ul>
+<p>Based on this information, what is the opportunity cost of seeing Clapton?</p>
+<ol type="a">
+<li><p>$0</p></li>
+<li><p>$10</p></li>
+<li><p>$40</p></li>
+<li><p>$50</p></li>
+</ol>
+<p><strong>7.4% of 270</strong> undergrads who had previously taken a course in economics answered the question correctly</p>
+<p><strong>17.2% of 88</strong> undergrads who had never taken a course in economics answered the question correctly</p>
+<p>What would Friedman say to this data as a test against Homo Economicus</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>
