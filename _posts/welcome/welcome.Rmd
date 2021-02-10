@@ -11,7 +11,7 @@ date: 1-28-2021
 categories:
   - Data 
   - Cloud
-  - Homo Ecnoomicus
+  - Homo Economicus
   - Behavioral Economics
 output:
   distill::distill_article:
