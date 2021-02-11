@@ -5,14 +5,14 @@
       "title": "Market Design Blog",
       "author": [],
       "contents": "\nThis is the course blog for Economics 262 - Market Design taught at the University of Pennsylvania in Spring 2021. Market design is the part of economics that aims to make economics functional - apply economic principles to make real world decisions.\nThe course is predicated on the view that modern deployments of economics into the real world invariably involve the confluence of economic principles, data, and technology. The course blog is a reflection of this philosophy.\nOur ultimate aim is empowering a new generation of software that is able to “think like an economist” and help humans and organizations make better decisions.\n\n\n\n",
-      "last_modified": "2021-02-10T22:09:30+00:00"
+      "last_modified": "2021-02-11T14:10:02+00:00"
     },
     {
       "path": "index.html",
       "title": "Market Design",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-02-10T22:09:31+00:00"
+      "last_modified": "2021-02-11T14:10:03+00:00"
     }
   ],
   "collections": ["posts/posts.json"]
