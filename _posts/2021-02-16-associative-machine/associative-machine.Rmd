@@ -89,11 +89,11 @@ others.
 The linkages can take have different underlying
 meaning/interpretation such as
 
-- Causes linked to effects (virus cold)
+- Causes linked to effects (virus -> cold)
 
-- Things linked to their properties (lime green)
+- Things linked to their properties (lime -> green)
 
-- Things to the category in which they belong (banana fruit)
+- Things to the category in which they belong (banana -> fruit)
 
 The association of ideas was understood by Enlightenment philosophers
 *John Locke* and *David Hume* as a basis for human intelligence. 
@@ -106,6 +106,58 @@ and hidden from our conscious selves.
 
 The activation mechanism is
 symmetric - causes activate effects and effects activate causes.
+
+### Hebbian Learning
+
+![D. O Hebb](https://upload.wikimedia.org/wikipedia/en/0/08/The_Organization_of_Behavior.jpg)
+
+
+>“When an axon of cell A is near enough to excite a cell B and repeatedly or
+>persistently takes part in firing it, some growth process or
+metabolic change takes place in one or both cells such that
+A’s efficiency, as one of the cells firing B, is increased.”
+>
+> --- D. O. Hebb (1949)
+
+![D. O Hebb](https://upload.wikimedia.org/wikipedia/en/1/1d/Donald_Hebb.gif)
+
+
+Or said another way....
+
+
+<center>
+**"Neurons that fire together, wire together. Neurons that fire out of sync, fail to link."**
+</center>
+
+
+![neuron](https://miro.medium.com/max/800/1*7USI1acRxDubBhdj_efHHQ.png)
+
+- **Dendrites** : Act as the channel that gets signals to cell body with their strength as weights
+ 
+- **Cell Body** : Collects input through dendrites and processes to produce output
+
+- **Axon** : Responsible for transmitting signals to other neurons
+
+A biological neural network consists of a collection of neurons and their synaptic connections. 
+
+![biological neural net](https://annmaryliu.files.wordpress.com/2012/05/neuron-network_invert.jpg)
+
+- At a point in time the network is characterized by a state - a pattern of activity (*on/off*) of the individual neurons.
+
+- Neurons update their activity based on the input the receive over the synapses. Information is processed by the network through activity spread.
+
+### Synaptic Strength
+
+![synaptic strength](https://qbi.uq.edu.au/files/7776/Long-term-synaptic-plasticity_QBI-the-brain.jpg)
+
+
+- Synapses are the links between neurons or between neurons and fibers carrying external input. 
+
+- A synapse carries pre-synaptic activity to the post-synaptic site. 
+
+- Synapses have differential strength, reflecting the amount of energy it transmits to the post-synaptic neuron from activity at the pre-synaptic site. 
+
+
 
 ### Priming
 
@@ -200,8 +252,8 @@ are more readily accepted by System 2.
 The feeling of cognitive ease is embedded in its own associative network
 of ideas internalized by System 1, and described on P.60.
 
-![](img/cognitiveease.png){width="6.5in"
-height="2.7402777777777776in"}
+![](img/cognitiveease.png)
+
 
 When an idea/concept/communication has been repeated in the past, is
 displayed/communicated clearly, has been primed in advance, and conveyed
@@ -293,7 +345,7 @@ In each case we are unconscious to the inherent ambiguity
 
 The System 1 suppression of ambiguity leads to the “Halo Effect”
 
-If you like one thing about a person you have  tendency to like everything \(and vice versa\)
+If you like one thing about a person you have  tendency to like everything and vice versa.
 
 **What do you think of Alan & Ben?**
 <center>
@@ -301,6 +353,7 @@ If you like one thing about a person you have  tendency to like everything \(and
 <br>
 **Ben**: envious\, stubborn\, critical\, impulsive\, industrious\, intelligent\.
 </center>
+<br>
 
 As Kahneman explains:
 
@@ -322,7 +375,7 @@ Importantly, what did System 1 _not_ do:
 
 <center>
 “What would I need to know before I formed an opinion about the quality of someone’s leadership”?
-</center?
+</center>
 
 <font color = "red"> So what is the problem? </font>
 

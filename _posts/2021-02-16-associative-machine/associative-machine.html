@@ -1476,13 +1476,53 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>The mechanisms of association of ideas should be seen as nodes in a large network (associative memory) in which each idea is linked to many others.</p>
 <p>The linkages can take have different underlying meaning/interpretation such as</p>
 <ul>
-<li><p>Causes linked to effects (virus cold)</p></li>
-<li><p>Things linked to their properties (lime green)</p></li>
-<li><p>Things to the category in which they belong (banana fruit)</p></li>
+<li><p>Causes linked to effects (virus -&gt; cold)</p></li>
+<li><p>Things linked to their properties (lime -&gt; green)</p></li>
+<li><p>Things to the category in which they belong (banana -&gt; fruit)</p></li>
 </ul>
 <p>The association of ideas was understood by Enlightenment philosophers <em>John Locke</em> and <em>David Hume</em> as a basis for human intelligence.</p>
 <p>The modern scientific appreciation to the subject adds to this philosophical tradition by recognizing that each when a node in this network is activated in memory, it triggers activation of the entire linked network of ideas/concepts all at once in a manner that is automatic (System 1) and hidden from our conscious selves.</p>
 <p>The activation mechanism is symmetric - causes activate effects and effects activate causes.</p>
+<h3 id="hebbian-learning">Hebbian Learning</h3>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/en/0/08/The_Organization_of_Behavior.jpg" alt="D. O Hebb" /><figcaption aria-hidden="true">D. O Hebb</figcaption>
+</figure>
+<blockquote>
+<p>“When an axon of cell A is near enough to excite a cell B and repeatedly or persistently takes part in firing it, some growth process or metabolic change takes place in one or both cells such that A’s efficiency, as one of the cells firing B, is increased.”</p>
+<p>— D. O. Hebb (1949)</p>
+</blockquote>
+<figure>
+<img src="https://upload.wikimedia.org/wikipedia/en/1/1d/Donald_Hebb.gif" alt="D. O Hebb" /><figcaption aria-hidden="true">D. O Hebb</figcaption>
+</figure>
+<p>Or said another way….</p>
+<center>
+<strong>“Neurons that fire together, wire together. Neurons that fire out of sync, fail to link.”</strong>
+</center>
+<figure>
+<img src="https://miro.medium.com/max/800/1*7USI1acRxDubBhdj_efHHQ.png" alt="neuron" /><figcaption aria-hidden="true">neuron</figcaption>
+</figure>
+<ul>
+<li><p><strong>Dendrites</strong> : Act as the channel that gets signals to cell body with their strength as weights</p></li>
+<li><p><strong>Cell Body</strong> : Collects input through dendrites and processes to produce output</p></li>
+<li><p><strong>Axon</strong> : Responsible for transmitting signals to other neurons</p></li>
+</ul>
+<p>A biological neural network consists of a collection of neurons and their synaptic connections.</p>
+<figure>
+<img src="https://annmaryliu.files.wordpress.com/2012/05/neuron-network_invert.jpg" alt="biological neural net" /><figcaption aria-hidden="true">biological neural net</figcaption>
+</figure>
+<ul>
+<li><p>At a point in time the network is characterized by a state - a pattern of activity (<em>on/off</em>) of the individual neurons.</p></li>
+<li><p>Neurons update their activity based on the input the receive over the synapses. Information is processed by the network through activity spread.</p></li>
+</ul>
+<h3 id="synaptic-strength">Synaptic Strength</h3>
+<figure>
+<img src="https://qbi.uq.edu.au/files/7776/Long-term-synaptic-plasticity_QBI-the-brain.jpg" alt="synaptic strength" /><figcaption aria-hidden="true">synaptic strength</figcaption>
+</figure>
+<ul>
+<li><p>Synapses are the links between neurons or between neurons and fibers carrying external input.</p></li>
+<li><p>A synapse carries pre-synaptic activity to the post-synaptic site.</p></li>
+<li><p>Synapses have differential strength, reflecting the amount of energy it transmits to the post-synaptic neuron from activity at the pre-synaptic site.</p></li>
+</ul>
 <h3 id="priming">Priming</h3>
 <p>The functioning of this associative machinery leads to a certain “manipulability” of System 1 through associative cues known as priming.</p>
 <p>Priming arises when exposure to one idea makes an individual more receptive to the suggestion of another idea due to familiarity induced by change in the state of memory from the network of underlying associations.</p>
@@ -1526,7 +1566,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <h3 id="endorsing-intuitions-cognitive-ease">Endorsing Intuitions: Cognitive Ease</h3>
 <p>When System 1 can readily achieve cognitive coherence, it provides a sensation of cognitive ease. It is lack of cognitive ease (or cognitive strain) that is one of the warning signs that mobilizes System 2. However, when cognitive ease is present, the endorsements of System 1 are more readily accepted by System 2.</p>
 <p>The feeling of cognitive ease is embedded in its own associative network of ideas internalized by System 1, and described on P.60.</p>
-<p><img src="img/cognitiveease.png" style="width:6.5in;height:2.74028in" /></p>
+<p><img src="img/cognitiveease.png" /></p>
 <p>When an idea/concept/communication has been repeated in the past, is displayed/communicated clearly, has been primed in advance, and conveyed when the subject is in a good mood, these all enhance the chances for the experience of cognitive ease.</p>
 <p>Likewise when the subject experiences cognitive ease associated with a stimuli, the subject is more likely to experience affects like the feeling of truth, feeling of familiarities, and feeling good/effortless.</p>
 <p>This diagram has a variety of behavioral implications. It suggests that when cognitive ease is achieved, then statements are more likely to be believed.</p>
@@ -1554,11 +1594,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>In each case we are unconscious to the inherent ambiguity</p>
 <h3 id="halo-effect">Halo Effect</h3>
 <p>The System 1 suppression of ambiguity leads to the “Halo Effect”</p>
-<p>If you like one thing about a person you have tendency to like everything <span class="math inline">\(and vice versa\)</span></p>
+<p>If you like one thing about a person you have tendency to like everything and vice versa.</p>
 <strong>What do you think of Alan &amp; Ben?</strong>
 <center>
 <strong>Alan</strong>: intelligent, industrious, impulsive, critical, stubborn, envious. <br> <strong>Ben</strong>: envious, stubborn, critical, impulsive, industrious, intelligent.
 </center>
+<p><br></p>
 <p>As Kahneman explains:</p>
 <blockquote>
 <p>The sequence in which we observe characteristics of a person is often determined by chance. Sequence matters, however, because the halo effect increases the weight of first impressions, sometimes to the point that subsequent information is mostly wasted” <span class="math inline">\(TFS\, p\. 83\)</span></p>
@@ -1571,7 +1612,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <p>System 1 has a coherent association and an answer…<strong>yes!</strong></p>
 <p>Importantly, what did System 1 <em>not</em> do:</p>
 <center>
-<p>“What would I need to know before I formed an opinion about the quality of someone’s leadership”? &lt;/center?</p>
+“What would I need to know before I formed an opinion about the quality of someone’s leadership”?
+</center>
 <p><font color = "red"> So what is the problem? </font></p>
 <p>Isn’t System 1 <em>warts and all</em> making life functional?</p>
 <blockquote>
