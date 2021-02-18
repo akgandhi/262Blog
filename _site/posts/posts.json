@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-02-18-user-persona/",
+    "title": "Defining a User",
+    "description": "Who will benefit from your solution and how will they experience value?",
+    "author": [
+      {
+        "name": "Amit Gandhi",
+        "url": {}
+      }
+    ],
+    "date": "2021-02-18",
+    "categories": [],
+    "contents": "\nNow that you have a problem you are trying to impact and a first iteration design question, lets start to converge on a specific scenario where your efforts will be impactful.\nThe ultimate goal will be to collect evidence for the hypothesized elements in your design thinking. Evidence will take a structured form. Here is an example used by AI teams at Google.\n\nYou will collect this information by talking to people - e.g., User Interviews.\nBut who should you ask?\nThis amounts to understanding your audience better, which in turns gives you a deeper appreciation for your problem and design question.\nClass Activity\n\nUser Persona\nUse the define your audience exercise to build 3 User Personas - e.g., personality profiles of your potential users. Your goal is to find users and interview them and have one user from each prototype.\nThere are many online tools available to help you develop flashy user personas. Feel free to adopt any such took to guide your thinking.\nHowever for the purpose of our second milestone, we will use the simple medium of google docs. Adopt the Pet Resume template in Google docs and build 3 User Personas.\n\nPart of the goal of defining the user (and ultimately improving their lives in some fashion) is to narrow their pain points so you know what to rapidly prototype. Consider the advice from a human-centered designer:\n\nI like to use the problem youth sports sign-ups in my courses and workshops. Being a mom of four kids, I really struggle to sign them up for sports in a hassle-free, efficient way. Something always seems to go wrong. When designing for a persona whose frustration is dealing with complicated scheduling, the wireframe should reflect a solution to frustration by displaying the time and date of the practices and games prominently. They shouldn’t just be another line of text. They should be a heading or in their own column. It’s important to have them stand out so that the user will have their frustration alleviated or at least reduced due to clear communication on the scheduling of the sports events. This is just one way to accommodate this frustration, but it’s straightforward giving us a clear sense of how a person directly ties into a wireframe.\n\nHere are the dimensions to reflect in your profiles:\nName\nDemographic data\nPicture\nBackground\nBehaviors/Hobbies/where they spend time making decisions\nProblem/Pain/Frustrations\nUrgency/Intensity\nAnswer to the question: What is most important is to connect the emotions of your persona with the problem being addressed?\n\n\n\n",
+    "preview": "https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/01/Marketing-personas.jpg?auto=format&q=60&w=1860&h=1860&fit=crop&crop=faces",
+    "last_modified": "2021-02-18T18:13:05+00:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2021-02-16-associative-machine/",
     "title": "Associative Machine",
     "description": "A closer look at the thinking patterns of System 1",
