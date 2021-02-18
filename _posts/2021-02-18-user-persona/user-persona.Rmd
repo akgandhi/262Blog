@@ -10,6 +10,9 @@ output:
   distill::distill_article:
     self_contained: false
 preview: https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/01/Marketing-personas.jpg?auto=format&q=60&w=1860&h=1860&fit=crop&crop=faces
+categories:
+  - Semester Project
+  - Human-Centered Design
 ---
 
 
