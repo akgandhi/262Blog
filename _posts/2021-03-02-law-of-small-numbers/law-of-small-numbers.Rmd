@@ -1,0 +1,133 @@
+---
+title: "The Law of Small Numbers"
+description: |
+  Fooled by Randomness.
+author:
+  - name: Amit Gandhi
+    url: {}
+date: 03-02-2021
+output:
+  distill::distill_article:
+    self_contained: false
+preview: http://psychology.iresearchnet.com/wp-content/uploads/2016/01/Law-of-Small-Numbers-300x259.jpg
+---
+
+The belief in the **law of small numbers** is the belief that the properties of a sample (even a small one) should closely resemble the properties of the population from which the sample is drawn. 
+
+Or said another way, the belief is tied to an **under-estimate** of the role of sampling variation to explain sample outcomes. 
+
+
+Consider the following judgment task
+
+
+<font size = 4pt>
+Study of the incidence of kidney cancer in 3141 counties in the USA. The counties in which the incidence of kidney cancer is <font color = "red"> lowest </font> are mostly rural, sparsely populated, and located in traditionally Republican states in the Midwest, the South and the West.
+</font>
+
+What do you make of this fact?
+
+## The Mental Shotgun
+
+- This is a thinking problem. 
+
+- System 2 tries to go to work: Searches memory and forms hypotheses. 
+
+- System 1 goes to work also: seeks associative coherence and cognitive ease that it recommends to System 2.
+
+- Associative machine activates network of associates and attempts to assemble story. 
+
+- What is the causal coherence that comes to mind?
+
+
+
+
+## Now consider the following judgment task
+
+
+
+<font size = 4pt>
+Study of the incidence of kidney cancer in 3141 counties in the USA. The counties in which the incidence of kidney cancer is <font color = "red"> highest </font> are mostly rural, sparsely populated, and located in traditionally Republican states in the Midwest, the South and the West.
+</font>
+
+
+How can these both be true?
+
+
+## A Binomial Experiment
+
+
+Imagine a large urn filled with marbles, half are red and half are white. 
+
+Consider an experiment where we draw four balls, and record the number of red balls. Then we repeat the experiment many times. 
+
+How much more often would we observe the expected outcome of “2 red and 2 blue”  in comparison to the extreme outcome “4 red”. 
+
+Let $X$ be the number of red after $N$ trials. 
+
+Then $X$ is a binomial variable and we can compute $P_{N}(X = x)$ for different values of $N$. 
+
+
+## A question
+
+
+Imagine a large urn filled with marbles, half are red and half are white. 
+
+Consider an experiment where we draw four balls, and record the number of red balls. 
+
+Then we repeat the experiment many times. 
+
+How much more often would we observe the expected outcome of “2 red and 2 blue”  in comparison to the extreme outcome “4 red”?
+
+
+
+## Another question
+
+Consider Jack who runs a binomial experiment with $N = 4$ and Jill who runs a binomial experiment with $N = 7$.
+
+How much more often does Jill see the extreme outcome of all red as compared to Jack. 
+
+## Key idea
+
+
+- What does this reveal is the real “cause” of the conflicting new stories on kidney cancer?
+
+
+- The key factor is not Republican or rural it is sparsely populated.
+
+- Small samples are more likely to yield extreme outcomes – this is a purely statistical phenomena. 
+
+- Yet people treat small samples as representative of the larger sample from which they come (later to be called the “representative heuristic”), and overinterpret the data. 
+
+
+## Random Sequences
+
+Consider the following sequence of boy and girl births at a hospital. What is their relative likelihood (most likely, etc)
+
+<center>
+BBBGGG <br> GGGGGG <br> BGBBGB
+</center>
+
+
+## Causes Trump Statistics
+
+- <font color = red> System 1 </font> is not prone to doubt, suppresses ambiguity, and automatically constructs stories that are coherent. (what alternatives could have happened is the essence of statistical thinking but violates WYSATI)
+
+- The WYSATI produces exaggerated faith in small samples that exaggerates consistency and coherency of the world relative to the actual reliability of the data. 
+
+
+## But what about the law of large numbers
+
+- System 2 knows the ”law of large numbers”. 
+
+- But does not know it well enough to counteract the swift confidence of System 1. 
+
+- Reprogramming a cognitive illusion can defy even experts
+
+
+## Next time - A Theory in Crisis
+
+
+![](https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492785687/articles/2013/04/26/daniel-kahneman-s-gripe-with-behavioral-economics/130425-daniel-kahneman-singal-tease_zi5ufc)
+
+>I’ve been studying intuition for 45 years, and I’m no better than when I started. I make extreme predictions. I’m over-confident. I fall for every one of the biases.” 
+

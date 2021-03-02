@@ -85,621 +85,39 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Econ 262: Market Design Blog</title>
+  <title>The Law of Small Numbers</title>
+
+  <meta property="description" itemprop="description" content="Fooled by Randomness."/>
 
 
-
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2021-03-02"/>
+  <meta property="article:created" itemprop="dateCreated" content="2021-03-02"/>
+  <meta name="article:author" content="Amit Gandhi"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Econ 262: Market Design Blog"/>
+  <meta property="og:title" content="The Law of Small Numbers"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Fooled by Randomness."/>
   <meta property="og:locale" content="en_US"/>
-  <meta property="og:site_name" content="Econ 262"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Econ 262: Market Design Blog"/>
+  <meta property="twitter:title" content="The Law of Small Numbers"/>
+  <meta property="twitter:description" content="Fooled by Randomness."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title"]}},"value":[{"type":"character","attributes":{},"value":["Market Design Blog"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","preview"]}},"value":[{"type":"character","attributes":{},"value":["The Law of Small Numbers"]},{"type":"character","attributes":{},"value":["Fooled by Randomness.\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Amit Gandhi"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":[]}},"value":[]}]}]},{"type":"character","attributes":{},"value":["03-02-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]},{"type":"character","attributes":{},"value":["http://psychology.iresearchnet.com/wp-content/uploads/2016/01/Law-of-Small-Numbers-300x259.jpg"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["law-of-small-numbers_files/anchor-4.2.2/anchor.min.js","law-of-small-numbers_files/bowser-1.9.3/bowser.min.js","law-of-small-numbers_files/distill-2.2.21/template.v2.js","law-of-small-numbers_files/header-attrs-2.7/header-attrs.js","law-of-small-numbers_files/jquery-1.11.3/jquery.min.js","law-of-small-numbers_files/webcomponents-2.0.0/webcomponents.js"]}
+  </script>
   <!--radix_placeholder_navigation_in_header-->
-  <meta name="distill:offset" content=""/>
-
-  <script type="application/javascript">
-
-    window.headroom_prevent_pin = false;
-
-    window.document.addEventListener("DOMContentLoaded", function (event) {
-
-      // initialize headroom for banner
-      var header = $('header').get(0);
-      var headerHeight = header.offsetHeight;
-      var headroom = new Headroom(header, {
-        tolerance: 5,
-        onPin : function() {
-          if (window.headroom_prevent_pin) {
-            window.headroom_prevent_pin = false;
-            headroom.unpin();
-          }
-        }
-      });
-      headroom.init();
-      if(window.location.hash)
-        headroom.unpin();
-      $(header).addClass('headroom--transition');
-
-      // offset scroll location for banner on hash change
-      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
-      window.addEventListener("hashchange", function(event) {
-        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
-      });
-
-      // responsive menu
-      $('.distill-site-header').each(function(i, val) {
-        var topnav = $(this);
-        var toggle = topnav.find('.nav-toggle');
-        toggle.on('click', function() {
-          topnav.toggleClass('responsive');
-        });
-      });
-
-      // nav dropdowns
-      $('.nav-dropbtn').click(function(e) {
-        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
-        $(this).parent().siblings('.nav-dropdown')
-           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $("body").click(function(e){
-        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
-      });
-      $(".nav-dropdown").click(function(e){
-        e.stopPropagation();
-      });
-    });
-  </script>
-
-  <style type="text/css">
-
-  /* Theme (user-documented overrideables for nav appearance) */
-
-  .distill-site-nav {
-    color: rgba(255, 255, 255, 0.8);
-    background-color: #0F2E3D;
-    font-size: 15px;
-    font-weight: 300;
-  }
-
-  .distill-site-nav a {
-    color: inherit;
-    text-decoration: none;
-  }
-
-  .distill-site-nav a:hover {
-    color: white;
-  }
-
-  @media print {
-    .distill-site-nav {
-      display: none;
-    }
-  }
-
-  .distill-site-header {
-
-  }
-
-  .distill-site-footer {
-
-  }
-
-
-  /* Site Header */
-
-  .distill-site-header {
-    width: 100%;
-    box-sizing: border-box;
-    z-index: 3;
-  }
-
-  .distill-site-header .nav-left {
-    display: inline-block;
-    margin-left: 8px;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header .nav-left {
-      margin-left: 0;
-    }
-  }
-
-
-  .distill-site-header .nav-right {
-    float: right;
-    margin-right: 8px;
-  }
-
-  .distill-site-header a,
-  .distill-site-header .title {
-    display: inline-block;
-    text-align: center;
-    padding: 14px 10px 14px 10px;
-  }
-
-  .distill-site-header .title {
-    font-size: 18px;
-    min-width: 150px;
-  }
-
-  .distill-site-header .logo {
-    padding: 0;
-  }
-
-  .distill-site-header .logo img {
-    display: none;
-    max-height: 20px;
-    width: auto;
-    margin-bottom: -4px;
-  }
-
-  .distill-site-header .nav-image img {
-    max-height: 18px;
-    width: auto;
-    display: inline-block;
-    margin-bottom: -3px;
-  }
-
-
-
-  @media screen and (min-width: 1000px) {
-    .distill-site-header .logo img {
-      display: inline-block;
-    }
-    .distill-site-header .nav-left {
-      margin-left: 20px;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 20px;
-    }
-    .distill-site-header .title {
-      padding-left: 12px;
-    }
-  }
-
-
-  .distill-site-header .nav-toggle {
-    display: none;
-  }
-
-  .nav-dropdown {
-    display: inline-block;
-    position: relative;
-  }
-
-  .nav-dropdown .nav-dropbtn {
-    border: none;
-    outline: none;
-    color: rgba(255, 255, 255, 0.8);
-    padding: 16px 10px;
-    background-color: transparent;
-    font-family: inherit;
-    font-size: inherit;
-    font-weight: inherit;
-    margin: 0;
-    margin-top: 1px;
-    z-index: 2;
-  }
-
-  .nav-dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    border: 1px solid rgba(0,0,0,0.15);
-    border-radius: 4px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
-    z-index: 1;
-    margin-top: 2px;
-    white-space: nowrap;
-    padding-top: 4px;
-    padding-bottom: 4px;
-  }
-
-  .nav-dropdown-content hr {
-    margin-top: 4px;
-    margin-bottom: 4px;
-    border: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-dropdown-active {
-    display: block;
-  }
-
-  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
-    color: black;
-    padding: 6px 24px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-  }
-
-  .nav-dropdown-content .nav-dropdown-header {
-    display: block;
-    padding: 5px 24px;
-    padding-bottom: 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    color: #999999;
-    white-space: nowrap;
-  }
-
-  .nav-dropdown:hover .nav-dropbtn {
-    color: white;
-  }
-
-  .nav-dropdown-content a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-
-  .nav-right .nav-dropdown-content {
-    margin-left: -45%;
-    right: 0;
-  }
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
-    .distill-site-header a.nav-toggle {
-      float: right;
-      display: block;
-    }
-    .distill-site-header .title {
-      margin-left: 0;
-    }
-    .distill-site-header .nav-right {
-      margin-right: 0;
-    }
-    .distill-site-header {
-      overflow: hidden;
-    }
-    .nav-right .nav-dropdown-content {
-      margin-left: 0;
-    }
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-header.responsive {position: relative; min-height: 500px; }
-    .distill-site-header.responsive a.nav-toggle {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .distill-site-header.responsive a,
-    .distill-site-header.responsive .nav-dropdown {
-      display: block;
-      text-align: left;
-    }
-    .distill-site-header.responsive .nav-left,
-    .distill-site-header.responsive .nav-right {
-      width: 100%;
-    }
-    .distill-site-header.responsive .nav-dropdown {float: none;}
-    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
-    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
-      display: block;
-      width: 100%;
-      text-align: left;
-    }
-  }
-
-  /* Site Footer */
-
-  .distill-site-footer {
-    width: 100%;
-    overflow: hidden;
-    box-sizing: border-box;
-    z-index: 3;
-    margin-top: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-
-  /* Headroom */
-
-  d-title {
-    padding-top: 6rem;
-  }
-
-  @media print {
-    d-title {
-      padding-top: 4rem;
-    }
-  }
-
-  .headroom {
-    z-index: 1000;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-  }
-
-  .headroom--transition {
-    transition: all .4s ease-in-out;
-  }
-
-  .headroom--unpinned {
-    top: -100px;
-  }
-
-  .headroom--pinned {
-    top: 0;
-  }
-
-  </style>
-
-  <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
-  <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
-  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
-  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-
-  <script type="application/javascript">
-
-  function getMeta(metaName) {
-    var metas = document.getElementsByTagName('meta');
-    for (let i = 0; i < metas.length; i++) {
-      if (metas[i].getAttribute('name') === metaName) {
-        return metas[i].getAttribute('content');
-      }
-    }
-    return '';
-  }
-
-  function offsetURL(url) {
-    var offset = getMeta('distill:offset');
-    return offset ? offset + '/' + url : url;
-  }
-
-  function createFuseIndex() {
-
-    // create fuse index
-    var options = {
-      keys: [
-        { name: 'title', weight: 20 },
-        { name: 'categories', weight: 15 },
-        { name: 'description', weight: 10 },
-        { name: 'contents', weight: 5 },
-      ],
-      ignoreLocation: true,
-      threshold: 0
-    };
-    var fuse = new window.Fuse([], options);
-
-    // fetch the main search.json
-    return fetch(offsetURL('search.json'))
-      .then(function(response) {
-        if (response.status == 200) {
-          return response.json().then(function(json) {
-            // index main articles
-            json.articles.forEach(function(article) {
-              fuse.add(article);
-            });
-            // download collections and index their articles
-            return Promise.all(json.collections.map(function(collection) {
-              return fetch(offsetURL(collection)).then(function(response) {
-                if (response.status === 200) {
-                  return response.json().then(function(articles) {
-                    articles.forEach(function(article) {
-                      fuse.add(article);
-                    });
-                  })
-                } else {
-                  return Promise.reject(
-                    new Error('Unexpected status from search index request: ' +
-                              response.status)
-                  );
-                }
-              });
-            })).then(function() {
-              return fuse;
-            });
-          });
-
-        } else {
-          return Promise.reject(
-            new Error('Unexpected status from search index request: ' +
-                        response.status)
-          );
-        }
-      });
-  }
-
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-
-    // get search element (bail if we don't have one)
-    var searchEl = window.document.getElementById('distill-search');
-    if (!searchEl)
-      return;
-
-    createFuseIndex()
-      .then(function(fuse) {
-
-        // make search box visible
-        searchEl.classList.remove('hidden');
-
-        // initialize autocomplete
-        var options = {
-          autoselect: true,
-          hint: false,
-          minLength: 2,
-        };
-        window.autocomplete(searchEl, options, [{
-          source: function(query, callback) {
-            const searchOptions = {
-              isCaseSensitive: false,
-              shouldSort: true,
-              minMatchCharLength: 2,
-              limit: 10,
-            };
-            var results = fuse.search(query, searchOptions);
-            callback(results
-              .map(function(result) { return result.item; })
-              .filter(function(item) { return !!item.description; })
-            );
-          },
-          templates: {
-            suggestion: function(suggestion) {
-              var html = `
-                <div class="search-item">
-                  <h3>${suggestion.title}</h3>
-                  <div class="search-item-description">
-                    ${suggestion.description}
-                  </div>
-                  <div class="search-item-preview">
-                    <img src="${suggestion.preview ? offsetURL(suggestion.preview) : ''}"</img>
-                  </div>
-                </div>
-              `;
-              return html;
-            }
-          }
-        }]).on('autocomplete:selected', function(event, suggestion) {
-          window.location.href = offsetURL(suggestion.path);
-        });
-        // remove inline display style on autocompleter (we want to
-        // manage responsive display via css)
-        $('.algolia-autocomplete').css("display", "");
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-
-  });
-
-  </script>
-
-  <style type="text/css">
-
-  /* Algolioa Autocomplete */
-
-  .algolia-autocomplete {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: sub;
-    background-color: white;
-    color: black;
-    padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 0;
-    border-radius: 6px;
-    border: 1px #0F2E3D solid;
-    width: 180px;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-nav .algolia-autocomplete {
-      display: none;
-      visibility: hidden;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete {
-      display: inline-block;
-      visibility: visible;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
-      margin-left: 0;
-      width: 400px;
-      max-height: 400px;
-    }
-  }
-
-  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
-    width: 90%;
-    outline: none;
-    border: none;
-  }
-
-  .algolia-autocomplete .aa-hint {
-    color: #999;
-  }
-  .algolia-autocomplete .aa-dropdown-menu {
-    width: 550px;
-    max-height: 70vh;
-    overflow-x: visible;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 3px;
-    margin-left: -150px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #999;
-    border-top: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-    cursor: pointer;
-    padding: 5px 4px;
-    border-bottom: 1px solid #eee;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
-    overflow: hidden;
-    font-size: 0.8em;
-    line-height: 1.4em;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
-    margin-block-start: 0;
-    margin-block-end: 5px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
-    display: inline-block;
-    overflow: hidden;
-    height: 2.8em;
-    width: 80%;
-    margin-right: 4%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
-    display: inline-block;
-    width: 15%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
-    height: 3em;
-    width: auto;
-    display: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
-    display: initial;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-    background-color: #eee;
-  }
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  </style>
-
-
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -1984,572 +1402,13 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </script>
 
-  <style type="text/css">
-  /* base variables */
-
-  /* Edit the CSS properties in this file to create a custom
-     Distill theme. Only edit values in the right column
-     for each row; values shown are the CSS defaults.
-     To return any property to the default,
-     you may set its value to: unset
-     All rows must end with a semi-colon.                      */
-
-  /* Optional: embed custom fonts here with `@import`          */
-  /* This must remain at the top of this file.                 */
-
-
-
-  html {
-    /*-- Main font sizes --*/
-    --title-size:      50px;
-    --body-size:       1.06rem;
-    --code-size:       14px;
-    --aside-size:      12px;
-    --fig-cap-size:    13px;
-    /*-- Main font colors --*/
-    --title-color:     #000000;
-    --header-color:    rgba(0, 0, 0, 0.8);
-    --body-color:      rgba(0, 0, 0, 0.8);
-    --aside-color:     rgba(0, 0, 0, 0.6);
-    --fig-cap-color:   rgba(0, 0, 0, 0.6);
-    /*-- Specify custom fonts ~~~ must be imported above   --*/
-    --heading-font:    sans-serif;
-    --mono-font:       monospace;
-    --body-font:       sans-serif;
-    --navbar-font:     sans-serif;  /* websites + blogs only */
-  }
-
-  /*-- ARTICLE METADATA --*/
-  d-byline {
-    --heading-size:    0.6rem;
-    --heading-color:   rgba(0, 0, 0, 0.5);
-    --body-size:       0.8rem;
-    --body-color:      rgba(0, 0, 0, 0.8);
-  }
-
-  /*-- ARTICLE TABLE OF CONTENTS --*/
-  .d-contents {
-    --heading-size:    18px;
-    --contents-size:   13px;
-  }
-
-  /*-- ARTICLE APPENDIX --*/
-  d-appendix {
-    --heading-size:    15px;
-    --heading-color:   rgba(0, 0, 0, 0.65);
-    --text-size:       0.8em;
-    --text-color:      rgba(0, 0, 0, 0.5);
-  }
-
-  /*-- WEBSITE HEADER + FOOTER --*/
-  /* These properties only apply to Distill sites and blogs  */
-
-  .distill-site-header {
-    --title-size:       18px;
-    --text-color:       rgba(255, 255, 255, 0.8);
-    --text-size:        15px;
-    --hover-color:      white;
-    --bkgd-color:       #0F2E3D;
-  }
-
-  .distill-site-footer {
-    --text-color:       rgba(255, 255, 255, 0.8);
-    --text-size:        15px;
-    --hover-color:      white;
-    --bkgd-color:       #0F2E3D;
-  }
-
-  /*-- Additional custom styles --*/
-  /* Add any additional CSS rules below                      */
-  </style>
-  <style type="text/css">/* base variables */
-
-  /* Edit the CSS properties in this file to create a custom
-     Distill theme. Only edit values in the right column
-     for each row; values shown are the CSS defaults.
-     To return any property to the default,
-     you may set its value to: unset
-     All rows must end with a semi-colon.                      */
-
-  /* Optional: embed custom fonts here with `@import`          */
-  /* This must remain at the top of this file.                 */
-  @import url('https://fonts.googleapis.com/css2?family=Lato');
-  @import url('https://fonts.googleapis.com/css2?family=Chivo');
-  @import url('https://fonts.googleapis.com/css2?family=Fira+Mono');
-
-
-
-  html {
-    /*-- Main font sizes --*/
-    --title-size:      50px;
-    --body-size:       1.26rem;
-    --code-size:       14px;
-    --aside-size:      12px;
-    --fig-cap-size:    13px;
-    /*-- Main font colors --*/
-    --title-color:     #000000;
-    --header-color:    rgba(0, 0, 0, 0.8);
-    --body-color:      rgba(0, 0, 0, 0.8);
-    --aside-color:     rgba(0, 0, 0, 0.6);
-    --fig-cap-color:   rgba(0, 0, 0, 0.6);
-    /*-- Specify custom fonts ~~~ must be imported above   --*/
-    --heading-font:    'Fira Mono', sans-serif;
-    --mono-font:       'Fira Mono', monospace;
-    --body-font:       'Lato', sans-serif;
-    --navbar-font:     "Fira Mono", serif;
-  }
-
-  /*-- ARTICLE METADATA --*/
-  .d-byline {
-    --heading-size:    0.6rem;
-    --heading-color:   rgba(0, 0, 0, 0.5);
-    --body-size:       0.8rem;
-    --body-color:      rgba(0, 0, 0, 0.8);
-  }
-
-  /*-- ARTICLE TABLE OF CONTENTS --*/
-  .d-contents {
-    --heading-size:    18px;
-    --contents-size:   13px;
-  }
-
-  /*-- ARTICLE APPENDIX --*/
-  d-appendix {
-    --heading-size:    15px;
-    --heading-color:   rgba(0, 0, 0, 0.65);
-    --text-size:       0.8em;
-    --text-color:      rgba(0, 0, 0, 0.5);
-  }
-
-  /*-- WEBSITE HEADER + FOOTER --*/
-  /* These properties only apply to Distill sites and blogs  */
-
-  .distill-site-header {
-    --title-size:       18px;
-    --text-color:       #000;
-    --text-size:        15px;
-    --hover-color:      #ff6700;
-    --bkgd-color:       white;
-  }
-
-  .distill-site-footer {
-    --text-color:       #000;
-    --text-size:        15px;
-    --hover-color:      #ff6700;
-    --bkgd-color:       white;
-  }
-
-
-  :root {
-    --color-salt: #61acf0; /* blue */
-    --color-fat: #f0a561; /* orange */
-    --color-acid: #cbd20a; /* lime */
-    --color-heat: #e74a2f; /* red */
-    --color-black: #1a1917; /* black */
-  }
-
-  .large { 
-    font-size: 160%;
-  }
-
-  .salt {
-    color: var(--color-salt);
-    font-size: 200%; 
-    font-weight:700;
-  }
-
-  .fat {
-    color: var(--color-fat);
-    font-size: 200%; 
-    font-weight:700;
-  }
-
-  .acid {
-    color: var(--color-acid);
-    font-size: 200%;
-    font-weight:700;
-  }
-
-  .heat {
-    color: var(--color-heat);
-    font-size: 200%;
-    font-weight:700;
-  }
-
-  .saltinline {
-    color: var(--color-salt);
-  }
-
-  .fatinline {
-    color: var(--color-fat);
-  }
-
-  .acidinline {
-    color: var(--color-acid);
-  }
-
-  .heatinline {
-    color: var(--color-heat);
-  }
-
-
-  /* highlighted code */
-
-  .remark-code-line-highlighted {
-    background-color: rgba(97, 172, 240, .5);
-  }
-
-  /* in line code */
-
-  .remark-code, .remark-inline-code {
-    color: var(--color-heat);
-  }
-
-  /* from emi tanaka's ninjutsu css! */
-
-  .img-fill img { object-fit: fill; height:100%; width:100%; overflow: hidden;}
-  .img-contain img { object-fit: contain; height:100%; width:100%;  overflow: hidden}
-  .img-cover img { object-fit: cover; height:100%; width:100%;  overflow: hidden}
-  .img-none img { object-fit: none; height:100%; width:100%; }
-
-  /* from lucy's css!
-  ol {
-    max-width: 350px;
-    counter-reset: my-counter;
-    list-style: none;
-    padding-left: 40px;
-  }
-  ol li {
-    counter-increment: my-counter;
-    position: relative;
-    margin: 20px 0;
-  }
-  ol li::before {
-    content: counter(my-counter);
-    color: #fff;
-    font-weight: bold;
-    position: absolute;
-    left: -60px;
-    width: 9%;
-    height: 0;
-    padding-bottom: 9%;
-    line-height: 1em;
-    margin-top: -0.5em;
-    background: var(--color-fat);
-    border-radius: 50%;
-    text-align: center;
-  }
-  */
-
-  .inverse {
-    background-color: var(--color-black);
-    text-shadow: 0 0 0;
-  }
-
-
-
-  /* links */
-  					 
-  a,
-  a:visited {
-    color: var(--color-black);
-    border-bottom: 1px solid var(--color-salt);
-    box-shadow: inset 0 -2px 0 var(--color-salt);
-  }
-
-  a:hover,
-  a:focus {
-    color: var(--color-black);
-    background: rgba(97, 172, 240, .5);
-    border-bottom: none;
-  }
-
-  a > code {
-    color: var(--color-heat);
-    text-decoration: none;
-  }
-
-  .inverse a {
-    color: #FFF;
-  }
-
-  .remark-inline-code {
-    color: var(--color-heat);
-    text-decoration: none;
-  }
-
-  /* from the hygge css! */
-
-  .polaroid img {
-      display: block; 
-      width: inherit; 
-      border: 10px solid #fff;
-      border-bottom: 45px solid #fff;
-      -webkit-box-shadow: 3px 3px 3px #111;
-      -moz-box-shadow: 3px 3px 3px #111;
-      box-shadow: 3px 3px 3px #111;
-  }
-
-  /* footer */
-
-  div.my-footer {
-      background-color: #1a1917;
-      position: absolute;
-      bottom: 0px;
-      left: 0px;
-      height: 20px;
-      width: 100%;
-  }
-
-  div.my-footer span {
-      font-size: 10pt;
-      color: #F7F8FA;
-      position: absolute;
-      left: 15px;
-      bottom: 2px;
-  }
-
-  .remark-slide-number {
-    bottom: 18px;
-    opacity: 0.5;
-    position: absolute;
-    right: 20px;
-  }
-
-  img.circle {
-    border-radius:50%;
-  }
-
-  /* split rows*/
-
-
-  .title-slide .remark-slide-number { 
-    display: none; 
-  }
-
-  .wrapper {
-    display: grid;
-    width: 100vw;
-    height: 100vh;
-    place-items: center;
-    place-content: center;	
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-  }
-
-  .top-left {
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-    background-color: var(--color-salt);
-  }
-
-  .top-right {
-    grid-row: 1 / 2;
-    grid-column: 3 / 4;
-    background-color: var(--color-fat);
-  }
-
-  .bottom-left {
-    grid-row: 3 / 4;
-    grid-column: 1 / 2;
-    background-color: var(--color-acid);
-  }
-
-  .bottom-right {
-    grid-row: 3 / 4;
-    grid-column: 3 / 4;
-    background-color: var(--color-heat);
-  }
-
-  /* https://stackoverflow.com/questions/50919104/horizontally-scrollable-output-on-xaringan-slides */
-
-  pre {
-    background: #f8f8f8; /* match github highlightjs */
-    max-width: 100%;
-    overflow-x: auto;
-  }
-
-  img.lil {
-    width: 15%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  /* Headings */
-
-  h1{ font-size:2.5em; }
-  h2{ font-size:2em;  border-bottom: 1px solid #CCC; padding-bottom: 10px; }
-  h3{ font-size:1.5em; }
-  h4{ font-size:1.2em; }
-  h5{ font-size:1em; }
-  h6{ font-size:0.9em; }
-
-  <style>
-    .col2 {
-      columns: 2 200px;         /* number of columns and width in pixels*/
-      -webkit-columns: 2 200px; /* chrome, safari */
-      -moz-columns: 2 200px;    /* firefox */
-    }
-    .col3 {
-      columns: 3 100px;
-      -webkit-columns: 3 100px;
-      -moz-columns: 3 100px;
-    }
-  </style></style>
-  <style type="text/css">
-  /* base style */
-
-  /* FONT FAMILIES */
-
-  :root {
-    --heading-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-    --mono-default: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
-    --body-default: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
-  }
-
-  body,
-  .posts-list .post-preview p,
-  .posts-list .description p {
-    font-family: var(--body-font), var(--body-default);
-  }
-
-  h1, h2, h3, h4, h5, h6,
-  .posts-list .post-preview h2,
-  .posts-list .description h2 {
-    font-family: var(--heading-font), var(--heading-default);
-  }
-
-  d-article div.sourceCode code,
-  d-article pre code {
-  	font-family: var(--mono-font), var(--mono-default);
-  }
-
-
-  /*-- TITLE --*/
-  d-title h1,
-  .posts-list > h1 {
-    color: var(--title-color, black);
-  }
-
-  d-title h1 {
-    font-size: var(--title-size, 50px);
-  }
-
-  /*-- HEADERS --*/
-  d-article h1,
-  d-article h2,
-  d-article h3,
-  d-article h4,
-  d-article h5,
-  d-article h6 {
-    color: var(--header-color, rgba(0, 0, 0, 0.8));
-  }
-
-  /*-- BODY --*/
-  /* only text inside of <p> tags */
-  d-article > p {
-    color: var(--body-color, rgba(0, 0, 0, 0.8));
-    font-size: var(--body-size, 1.06rem);
-  }
-
-  /*-- CODE --*/
-  d-article div.sourceCode code,
-  d-article pre code {
-  	font-size: var(--code-size, 14px);
-  }
-
-  /*-- ASIDE --*/
-  d-article aside {
-  	font-size: var(--aside-size, 12px);
-  	color: var(--aside-color, rgba(0, 0, 0, 0.6));
-  }
-
-  /*-- FIGURE CAPTIONS --*/
-  figure .caption,
-  figure figcaption,
-  .figure .caption {
-  	font-size: var(--fig-cap-size, 13px);
-  	color: var(--fig-cap-color, rgba(0, 0, 0, 0.6));
-  }
-
-  /*-- METADATA --*/
-  d-byline h3 {
-  	font-size: var(--heading-size, 0.6rem);
-  	color: var(--heading-color, rgba(0, 0, 0, 0.5));
-  }
-
-  d-byline {
-  	font-size: var(--body-size, 0.8rem);
-  	color: var(--body-color, rgba(0, 0, 0, 0.8));
-  }
-
-  d-byline a,
-  d-article d-byline a {
-  	color: var(--body-color, rgba(0, 0, 0, 0.8));
-  }
-
-  /*-- TABLE OF CONTENTS --*/
-  .d-contents nav h3 {
-  	font-size: var(--heading-size, 18px);
-  }
-
-  .d-contents nav a {
-  	font-size: var(--contents-size, 13px);
-  }
-
-  /*-- APPENDIX --*/
-  d-appendix h3 {
-    font-size: var(--heading-size, 15px);
-  	color: var(--heading-color, rgba(0, 0, 0, 0.65));
-  }
-
-  d-appendix {
-    font-size: var(--text-size, 0.8em);
-  	color: var(--text-color, rgba(0, 0, 0, 0.5));
-  }
-
-  d-appendix d-footnote-list a.footnote-backlink {
-  	color: var(--text-color, rgba(0, 0, 0, 0.5));
-  }
-
-  /*-- WEBSITE HEADER + FOOTER --*/
-  .distill-site-header .title {
-  	font-size: var(--title-size, 18px);
-  	font-family: var(--navbar-font), var(--heading-default);
-  }
-
-  .distill-site-header a,
-  .nav-dropdown .nav-dropbtn {
-    font-family: var(--navbar-font), var(--heading-default);
-  }
-
-  .distill-site-header a:hover {
-  	color: var(--hover-color, white);
-  }
-
-  .distill-site-header {
-  	font-size: var(--text-size, 15px);
-  	color: var(--text-color, rgba(255, 255, 255, 0.8));
-  	background-color: var(--bkgd-color, #0F2E3D);
-  }
-
-  .distill-site-footer {
-  	font-size: var(--text-size, 15px);
-  	color: var(--text-color, rgba(255, 255, 255, 0.8));
-  	background-color: var(--bkgd-color, #0F2E3D);
-  }
-
-  .distill-site-footer a:hover {
-  	color: var(--hover-color, white);
-  }</style>
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.7/header-attrs.js"></script>
-  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
-  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
-  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
-  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
-  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <script src="law-of-small-numbers_files/header-attrs-2.7/header-attrs.js"></script>
+  <script src="law-of-small-numbers_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="law-of-small-numbers_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="law-of-small-numbers_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="law-of-small-numbers_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="law-of-small-numbers_files/distill-2.2.21/template.v2.js"></script>
   <!--radix_placeholder_site_in_header-->
   <!--/radix_placeholder_site_in_header-->
 
@@ -2561,49 +1420,87 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"Market Design Blog","authors":[]}
+{"title":"The Law of Small Numbers","description":"Fooled by Randomness.","authors":[{"author":"Amit Gandhi","authorURL":{},"affiliation":"&nbsp;","affiliationURL":"#","orcidID":""}],"publishedDate":"2021-03-02T00:00:00.000+00:00","citationText":"Gandhi, 2021"}
 </script>
 
 <!--/radix_placeholder_front_matter-->
 <!--radix_placeholder_navigation_before_body-->
-<header class="header header--fixed" role="banner">
-<nav class="distill-site-nav distill-site-header">
-<div class="nav-left">
-<span class="logo">
-<img src="images/pennlogo.png"/>
-</span>
-<a href="index.html" class="title">Econ 262</a>
-<input id="distill-search" class="nav-search hidden" type="text" placeholder="Search..."/>
-</div>
-<div class="nav-right">
-<a href="index.html">Home</a>
-<a href="about.html">About</a>
-<a href="https://twitter.com/AmitEcon">
-<i class="fa fa-twitter" aria-hidden="true"></i>
-</a>
-<a href="mailto:akgandhi@upenn.edu">
-<i class="fa fa-envelope" aria-hidden="true"></i>
-</a>
-<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
-</div>
-</nav>
-</header>
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>Market Design Blog</h1>
+<h1>The Law of Small Numbers</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-
+<p><p>Fooled by Randomness.</p></p>
 </div>
 
+<div class="d-byline">
+  Amit Gandhi true 
+  
+<br/>03-02-2021
+</div>
 
 <div class="d-article">
-<p>This is the course blog for <strong>Economics 262 - Market Design</strong> taught at the <strong>University of Pennsylvania</strong> in Spring 2021. Market design is the part of economics that aims to make economics <em>functional</em> - apply economic principles to make real world decisions.</p>
-<p>The course is predicated on the view that modern deployments of economics into the real world invariably involve the confluence of economic principles, data, and technology. The course blog is a reflection of this philosophy.</p>
-<p>Our ultimate aim is empowering a new generation of software that is able to “think like an economist” and help humans and organizations make better decisions.</p>
+<p>The belief in the <strong>law of small numbers</strong> is the belief that the properties of a sample (even a small one) should closely resemble the properties of the population from which the sample is drawn.</p>
+<p>Or said another way, the belief is tied to an <strong>under-estimate</strong> of the role of sampling variation to explain sample outcomes.</p>
+<p>Consider the following judgment task</p>
+<p><font size = 4pt> Study of the incidence of kidney cancer in 3141 counties in the USA. The counties in which the incidence of kidney cancer is <font color = "red"> lowest </font> are mostly rural, sparsely populated, and located in traditionally Republican states in the Midwest, the South and the West. </font></p>
+<p>What do you make of this fact?</p>
+<h2 id="the-mental-shotgun">The Mental Shotgun</h2>
+<ul>
+<li><p>This is a thinking problem.</p></li>
+<li><p>System 2 tries to go to work: Searches memory and forms hypotheses.</p></li>
+<li><p>System 1 goes to work also: seeks associative coherence and cognitive ease that it recommends to System 2.</p></li>
+<li><p>Associative machine activates network of associates and attempts to assemble story.</p></li>
+<li><p>What is the causal coherence that comes to mind?</p></li>
+</ul>
+<h2 id="now-consider-the-following-judgment-task">Now consider the following judgment task</h2>
+<p><font size = 4pt> Study of the incidence of kidney cancer in 3141 counties in the USA. The counties in which the incidence of kidney cancer is <font color = "red"> highest </font> are mostly rural, sparsely populated, and located in traditionally Republican states in the Midwest, the South and the West. </font></p>
+<p>How can these both be true?</p>
+<h2 id="a-binomial-experiment">A Binomial Experiment</h2>
+<p>Imagine a large urn filled with marbles, half are red and half are white.</p>
+<p>Consider an experiment where we draw four balls, and record the number of red balls. Then we repeat the experiment many times.</p>
+<p>How much more often would we observe the expected outcome of “2 red and 2 blue” in comparison to the extreme outcome “4 red”.</p>
+<p>Let <span class="math inline">\(X\)</span> be the number of red after <span class="math inline">\(N\)</span> trials.</p>
+<p>Then <span class="math inline">\(X\)</span> is a binomial variable and we can compute <span class="math inline">\(P_{N}(X = x)\)</span> for different values of <span class="math inline">\(N\)</span>.</p>
+<h2 id="a-question">A question</h2>
+<p>Imagine a large urn filled with marbles, half are red and half are white.</p>
+<p>Consider an experiment where we draw four balls, and record the number of red balls.</p>
+<p>Then we repeat the experiment many times.</p>
+<p>How much more often would we observe the expected outcome of “2 red and 2 blue” in comparison to the extreme outcome “4 red”?</p>
+<h2 id="another-question">Another question</h2>
+<p>Consider Jack who runs a binomial experiment with <span class="math inline">\(N = 4\)</span> and Jill who runs a binomial experiment with <span class="math inline">\(N = 7\)</span>.</p>
+<p>How much more often does Jill see the extreme outcome of all red as compared to Jack.</p>
+<h2 id="key-idea">Key idea</h2>
+<ul>
+<li><p>What does this reveal is the real “cause” of the conflicting new stories on kidney cancer?</p></li>
+<li><p>The key factor is not Republican or rural it is sparsely populated.</p></li>
+<li><p>Small samples are more likely to yield extreme outcomes – this is a purely statistical phenomena.</p></li>
+<li><p>Yet people treat small samples as representative of the larger sample from which they come (later to be called the “representative heuristic”), and overinterpret the data.</p></li>
+</ul>
+<h2 id="random-sequences">Random Sequences</h2>
+<p>Consider the following sequence of boy and girl births at a hospital. What is their relative likelihood (most likely, etc)</p>
+<center>
+BBBGGG <br> GGGGGG <br> BGBBGB
+</center>
+<h2 id="causes-trump-statistics">Causes Trump Statistics</h2>
+<ul>
+<li><p><font color = red> System 1 </font> is not prone to doubt, suppresses ambiguity, and automatically constructs stories that are coherent. (what alternatives could have happened is the essence of statistical thinking but violates WYSATI)</p></li>
+<li><p>The WYSATI produces exaggerated faith in small samples that exaggerates consistency and coherency of the world relative to the actual reliability of the data.</p></li>
+</ul>
+<h2 id="but-what-about-the-law-of-large-numbers">But what about the law of large numbers</h2>
+<ul>
+<li><p>System 2 knows the ”law of large numbers”.</p></li>
+<li><p>But does not know it well enough to counteract the swift confidence of System 1.</p></li>
+<li><p>Reprogramming a cognitive illusion can defy even experts</p></li>
+</ul>
+<h2 id="next-time---a-theory-in-crisis">Next time - A Theory in Crisis</h2>
+<p><img src="https://img.thedailybeast.com/image/upload/c_crop,d_placeholder_euli9k,h_1439,w_2560,x_0,y_0/dpr_1.5/c_limit,w_1044/fl_lossy,q_auto/v1492785687/articles/2013/04/26/daniel-kahneman-s-gripe-with-behavioral-economics/130425-daniel-kahneman-singal-tease_zi5ufc" /></p>
+<blockquote>
+<p>I’ve been studying intuition for 45 years, and I’m no better than when I started. I make extreme predictions. I’m over-confident. I fall for every one of the biases.”</p>
+</blockquote>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->
@@ -2612,6 +1509,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <div class="d-appendix">
 </div>
 
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
 
 <!--radix_placeholder_site_after_body-->
 <!--/radix_placeholder_site_after_body-->
