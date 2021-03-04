@@ -1,0 +1,360 @@
+---
+title: ' Lecture 4 '
+subtitle: 'Law of Small Numbers'
+author: Amit Gandhi
+date: 2021-03-04
+output:
+  xaringan::moon_reader:
+  lib_dir: libs
+  nature:
+    highlightStyle: github
+    highlightLines: true
+    countIncrementalSlides: false
+---
+#  Consider the following judgment task: 
+
+Study of the incidence of kidney cancer in 3141 counties in the USA. The counties in which the incidence of kidney cancer is lowest are mostly rural, sparsely populated, and located in traditionally Republican states in the Midwest, the South and the West.
+What do you make of this?
+
+
+---
+#  Mental Shotgun 
+
++ This is a thinking problem.
+	+ System 2 tries to go to work: Searches memory and forms hypotheses.
+	+ System 1 goes to work also: seeks associative coherence and cognitive ease that it recommends to System 2.
+	+ Associative machine activates network of associates and attempts to assemble story.
+	+ What is the causal coherence that comes to mind?
+
+
+---
+#  Now consider the following…. 
+
++ Study of the incidence of kidney cancer in 3141 counties in the USA.  The counties in which the incidence of kidney cancer is highest are mostly rural, sparsely populated, and located in traditionally Republican states in the Midwest, the South and the West.
+What do you make of this?
+
+
+---
+#  What is happening here…. 
+
+Imagine a large urn filled with marbles, half are red and half are white.
+Consider an experiment where we draw four balls, and record the number of red balls. Then we repeat the experiment many times.
+How much more often would we observe the expected outcome of “2 red and 2 blue”  in comparison to the extreme outcome “4 red”.
+
+
+---
+#  Lets Answer a Simpler Question First… 
+
++ Consider an experiment where we take single draw from an urn with probability of red.
+	+ Denote the outcome of the experiment as that takes value of 1 if we draw a red, and 0 otherwise. is a RV known as a Bernoulli Trial .
++ The probability mass function described as
+
+
+---
+#  Repeated experiment 
+
++ Consider repeating the Bernoulli experiment many times
+	+ Then the fraction of times in repetitions that the outcome of the experiment is red is approximately
+	+ This is the law of large numbers
+	+ Red is the outcome more times than white.
+	+ is the ”odds” ratio of the Bernoulli trial.
+
+
+---
+#  Binomial experiment 
+
++ What if the number of Bernoulli trials is a small
+	+ Then the total number of red will exhibit sampling variability .
+	+ Let be the number of red after Bernoulli trials.
+	+ Then .
++ Bernoulli trials equals a single Binomial trial/experiment
+
+
+---
+#  Repeated Binomial Experiments 
+
++ Suppose we repeat the Binomial experiment many times
+	+ Then the fraction of times the Binomial experiment returns is equal to the probability mass
++ The number of more times the Binomial experiment returns compared to is given by
+ 
+
+
+---
+#  Lets return to the question 
+
+Imagine a large urn filled with marbles, half are red and half are white. Consider an experiment where we draw four balls, and record the number of red balls. Then we repeat the experiment many times. How much more often would we observe the expected outcome of “2 red and 2 blue”  in comparison to the extreme outcome “4 red”?
+Use a Binomial calculator as a tool to assist.
+[Binomial calculator](https://homepage.divms.uiowa.edu/~mbognar/applets/bin.html)
+
+
+---
+#  Changing the sample size 
+
++ Consider Jack who runs a repeated Binomial experiment with draws and Jill who runs the repeated Binomial experiment with draws.
++ How much more often does Jill see the “extreme” outcome of all red compared to Jack?
+	+ Use the Binomial calculator to help.
+
+
+---
+#  Now solve the mystery 
+
+What does this reveal is the real “cause” of the conflicting new stories on kidney cancer?
+
+
+---
+#  Practice problem 
+
++ “Many researchers have sought the secret of successful education by identifying the most successful schools in the hope of discovering what distinguishes them from the others.
+
+---
+#  The law of small numbers 
+
++ The key factor is not Republican or rural it is sparsely populated.
+	+ Small samples are more likely to yield extreme outcomes – this is a purely statistical phenomena.
+	+ Yet people treat small samples as representative of the larger sample from which they come (later to be called the “representative heuristic”), and overinterpret the data.
+
+---
+#  Random Sequences 
+
+Consider the following sequence of boy and girl births at a hospital. What is their relative likelihood (most likely, etc )
+BBBGGG
+GGGGGG
+BGBBGB
+
+---
+#  Intuitive Sampling Distributions 
+
+Question:  Approximately N = 1000 (or 100 or 10) babies are born each day in a certain region.  What percentage of the days will have the number of boys among 1000 babies as follows:  0 to 50?  50 to 150?  150 to 250?  .... 850 – 950?  950 – 1000?
+.pull-left[![](assets/img/image6.png)]
+
+.pull-right[![](assets/img/image7.png)]
+
+---
+#  Causes Trump Statistics 
+
++ System 1 is not prone to doubt, suppresses ambiguity, and automatically constructs stories that are coherent. (what alternatives could have happened is the essence of statistical thinking but violates WYSATI)
+	+ The WYSATI produces exaggerated faith in small samples that exaggerates consistency and coherency of the world relative to the actual reliability of the data.
+
+---
+#  But what about the law of large numbers? 
+
++ System 2 knows the ”law of large numbers”.
+	+ But does not know it well enough to counteract the swift confidence of System 1.
+	+ Reprogramming a cognitive illusion can defy even experts
+
+---
+
+![](assets/img/image8.png)
+
+---
+#  Even the best of us can’t resist the lure of cognitive ease over plain old statistics 
+
+Its just hard to see unless you have immense practice (even among practitioners!)
+
+---
+#  Economics : The Log of Zero Problem 
+
+Lets think about the research design for understanding whether death penalty has a deterrence effect on homicide?
+
+---
+#  Scientific Crisis in Social Priming Studies 
+
+.pull-left[![](assets/img/image10.png)]
+
+.pull-right[![](assets/img/image9.png)]
+
+---
+#  The Florida Effect 
+
+Assemble 4 word sentences from 5 words
+Eg: “finds he it yellow instantly”
+One group scrambled sentences include
+Florida, forgetful, old, grey, wrinkle
+Asked to walk to another room…
+
+---
+#  Voting 
+
+Arizona ballot to increase school funding
+
+---
+#  Voting 
+
++ Support greater when in a school
+	+ Also when exposure to pictures of classrooms & school lockers increased support
+	+ bigger than parents
+
+---
+#  Some notable additions from the lit 
+
++ Subtle reminders about money…..
++ Holding warm coffee…..
+	+ Listening to the Beatles “When I’m 64”
+
+---
+#  Disbelief is not an option 
+
++ “ Disbelief is not an option …The results are not made up, nor are they statistical flukes. You have no choice but to accept that the major conclusions of these studies are true. More important, you must accept that they are true about you .” (TFS, p. 57)
+![](assets/img/image12.jpeg)
+[Disbelief is not an option](http://isites.harvard.edu/fs/docs/icb.topic1092050.files/Kahneman_Daniel._Thinking_Fast_and_Slow_pp._50-58.pdf)
+
+---
+#  The replication crisis 
+
+“I don’t know a replicable finding. Its not that there isn’t one, but I can’t name it”
+“I’ve gone from being full believer to full skeptic”
+`when he read the relevant part of Kahneman’s book, “I was like, not one of these studies will replicate. And so far, nothing has”
+
+---
+#  The Irony Effect 
+
++ Kahneman and Tversky anticipated the problem in their first paper in 1971 “BELIEF IN THE LAW OF SMALL NUMBERS”
+“Apparently, most psychologists have an exaggerated belief in the likelihood of successfully replicating an obtained finding. The sources of such beliefs, and their consequences for the conduct of scientific inquiry, are what this paper is about. Our thesis is that people have strong intuitions about random sampling; that these intuitions are wrong in fundamental respects; that these intuitions are shared by naive subjects and by trained scientists; and that they are applied with unfortunate consequences in the course of scientific inquiry. “
+
+---
+#  Belief in the Law of Small Numbers 
+
+The strong bias towards believing that small samples closely resemble the population from which they are drawn is also part of a larger story: The exaggerated faith of researchers in what can be learned from a few observations is closely related to the halo effect, the sense we often get that we know and understand a person about whom we actually know very little. System 1 runs ahead of the facts in constructing a rich image on the basis of scraps of evidence. A machine for jumping to conclusions will act as if it believed in the law of small numbers. (TFS p 114)
+
+---
+#  A Confession 
+
+See the blog Replicability-index
+[Replicability-index](https://replicationindex.com/2017/02/02/reconstruction-of-a-train-wreck-how-priming-research-went-of-the-rails/comment-page-1/#comments)
+
+---
+#  What is happening 
+
++ People find something in the data
+	+ It accords with what they believe should be true (confirmation bias)
+	+ It gels with a causal account for explaining the phenomena
+	+ The role that chance is playing in explaining their finding is ignored (System 1 beats a busy System 2)
+
+---
+#  Lets understand what is happening 
+
++ Lets say we run a randomized study on the difference between a control group and treatment group on an outcome variable in .
+	+ We collect data and on
+	+ You find that …, Now what did we learn?
+
+---
+
+![](assets/img/image13.jpg)
+
+---
+#  Treatment effect 
+
++ View the data as the outcome of a sampling experiment from an underlying probability model of the population being studied.
+are independent urn draws from
+are independent urn draws from
+The effect of interest is , aka, the treatment effect
+
+---
+#  The Null 
+
++ Test statistic is a draw from an urn
+	+ The test statistic is a random variable that depends on the treatment effect
+	+ The Null Hypothesis is no effect (pure random sampling differences between the groups).
+
+---
+#  The p-value 
+
++ What is the likelihood of observing an observed effect size as large as under the null
++ This is , the so called p-value .
+	+ Gives a basis for rejecting - a low p-value is a low concordance between the hypothesis and the evidence/data.
+
+---
+#  The significance level 
+
++ We will set a cutoff such that if , then we reject
+	+ Type 1 error : We want to minimize the risk of a false positive– rejecting when it is true.
+	+ We pick a small significance level (typically .05) of the type 1 risk we are willing to incur.
+
+---
+
+![](assets/img/image18.png)
+
+---
+#  The significance test 
+
++ Then the cutoff is set such that
+	+ If then reject (equivalently, p-value smaller than .05)
+![](assets/img/image18.png)
+
+---
+#  What did we learn exactly? 
+
++ Lets say you reject the null? Do you now have greater confidence in your theory as an explanation of the data.
+
+---
+#  The P-value: What the heck is it anyway? 
+
+The American Statistical Association (ASA) warns about improper use and interpretation of the p-value on March 8th, 2016 ( 6 ); its Statement consists of 6 principles:
++ P-value can indicate how incompatible the data are with a specified statistical model.
+	+ P-value neither measures the probability that the studied hypothesis is true nor the probability that the data were produced by random chance alone.
+	+ Scientific conclusions and business or policy decisions should not be based only on whether a p-value passes a specific threshold.
+	+ Proper inference requires full reporting and transparency.
+	+ A p-value, or statistical significance, does not measure the size of an effect or the importance of a result.
+	+ By itself, a p-value does not provide a good measure of evidence regarding a model or hypothesis.”
+[6](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5804470/#R6)
+
+---
+#  What would Friedman say? 
+
+.pull-left[![](assets/img/image19.jpeg)]
+
+.pull-right[![](assets/img/image20.jpeg)]
+
+---
+#  Enter the “Alternative” 
+
++ Jerzy Neyman and Egon Pearson’s theory of statistical tests extend Fisher’s significance testing framework
+.pull-left[![](assets/img/image22.jpg)]
+
+.pull-right[![](assets/img/image21.jpg)]
+
+---
+#  The idea 
+
++ To interpret a rejection of the null, it somehow has to matter what was a meaningful alternative to the null your theory had in mind.
++ It had to matter whether the treatment effect was .01, or 50
+	+ Let the alternative be the smallest value such that there is a substantively interesting difference between the populations
+
+---
+#  Power vs Significance 
+
++ A Type II error is failing to reject the null when the alternative is true.
+	+ The risk of type II error is )
++ The power of the test ( is the probability of rejecting the null at significance level assuming the alternative is true.
+
+---
+
+![](assets/img/image25.jpg)
+
+---
+
+
+---
+
+
+---
+#  Research Design 
+
++ After we have specified the alternative and the significance level and power , this determines the sample size we need.
+	+ The vast majority of psychological (and social scientific experiments in general) are underpowered.
+
+---
+#  Consequences 
+
++ If the theory predicted a chance of rejecting the null, and we observe a test stat that rejected the null, did we really learn anything?
+	+ What if we ran the study many times – how many times should we expect results consistent with a rejection of the null.
+	+ What does it mean when we read the literature and only find rejections?
+
+---
+#  The Human Incentive Problem 
+
++ Why not attract grants to fund large scale experiments for social priming effects (with the right power)
+	+ If it reveals trivial effect sizes is it still interesting in relation to surprising effect sizes that are collected rapidly with smaller groups?
+
+---
+
