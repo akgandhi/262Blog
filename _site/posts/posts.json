@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-03-04-conversation-starters/",
+    "title": "Conversation Starters",
+    "description": "Using conversations as data",
+    "author": [
+      {
+        "name": "Amit Gandhi",
+        "url": {}
+      }
+    ],
+    "date": "2021-03-04",
+    "categories": [],
+    "contents": "\nIn order to collect data from the user and conduct primary research, you need a research strategy.\nThe goal is to get the user to react, not to your analysis, but rather issues/concepts you want to understand directly from them.\nA data collection strategy is that of conversation starters\n\n\n\n\n\n\n",
+    "preview": "https://www.testingtime.com/app/uploads/2018/08/1-f5NUjRLDNlChWqCjs3uVKw-1.png",
+    "last_modified": "2021-03-04T18:15:42+00:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2021-03-04-theory-in-crisis/",
     "title": "The Reproducibility Crisis",
     "description": "The law of small numbers and scientific inference",

@@ -1,0 +1,25 @@
+---
+title: "Conversation Starters"
+description: |
+  Using conversations as data
+author:
+  - name: Amit Gandhi
+    url: {}
+date: 03-04-2021
+output:
+  distill::distill_article:
+    self_contained: false
+preview: https://www.testingtime.com/app/uploads/2018/08/1-f5NUjRLDNlChWqCjs3uVKw-1.png
+---
+
+In order to collect data from the user and conduct primary research, you need a research strategy. 
+
+The goal is to get the user to react, not to your analysis, but rather issues/concepts you want to understand directly from them. 
+
+A data collection strategy is that of **conversation starters**
+
+![](cs1.png)
+
+![](cs2.png)
+
+![](cs3.png)
