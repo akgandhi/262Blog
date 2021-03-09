@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-03-09-emilio-guest/",
+    "title": "Guest Lecture",
+    "description": "Emilio Cuilty",
+    "author": [
+      {
+        "name": "Amit Gandhi",
+        "url": {}
+      }
+    ],
+    "date": "2021-03-09",
+    "categories": [],
+    "contents": "\nWe are delighted to welcome Emilio Cuilty to our class to present his perspective on Using Econometrics to Guide Investment Decisions\nBiography\nEmilio graduated with a PhD in Economics from the University of Wisconsin-Madison in 2018. He wrote his dissertation in the area of empirical industrial organization with an emphasis on the application of Behavioral Economics to demand estimation.\nHe joined Amazon in August 2018, first working in Amazon Prime where he helped developed the core economic models for customer demand. In October 2019 he transitioned to Prime Video/Amazon Studios science group.\nEmilio currently lives in California, and besides economics, has interests in CrossFit and of course movies/shows.\n\n\n\n",
+    "preview": "posts/2021-03-09-emilio-guest/emilio.png",
+    "last_modified": "2021-03-09T15:10:36+00:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2021-03-04-conversation-starters/",
     "title": "Conversation Starters",
     "description": "Using conversations as data",
