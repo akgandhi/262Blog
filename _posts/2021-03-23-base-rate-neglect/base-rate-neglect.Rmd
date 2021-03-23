@@ -1,0 +1,93 @@
+---
+title: "Base Rate Neglect"
+description: |
+  Bayes Rule versus the Representative Heuristic
+author:
+  - name: Amit Gandhi
+date: 03-23-2021
+output:
+  distill::distill_article:
+    self_contained: false
+preview: https://thedecisionlab.com/wp-content/uploads/2020/09/base-rate-fallacy.jpg
+---
+
+# Bayes Rule
+
+![](base1.png)
+
+## Interpretation
+
+![](base2.png)
+
+## Odds Formulation
+
+![](base3.png)
+
+
+## Interpretation
+
+![](base4.png)
+
+
+# Base Rate Neglect
+
+
+## A Question
+
+![](base5.png)
+
+
+## Bayesian Analysis
+
+![](base6.png)
+
+
+## Empirical Evidence
+
+![](base7.png)
+
+# Tom W
+
+
+## The Description
+
+![](base8.png)
+
+
+## The Task
+
+![](base9.png)
+
+
+## The Findings
+
+![](base10.png)
+
+
+## The Interpretation
+
+![](base11.png)
+
+
+# Disciplining Intuition
+
+>Intuitive impressions of the diagnosticiity of evidence are often exaggerated. The combination of WYSIATI and associative coherence tends to make us believe in the storeis we spin for ourselves. 
+
+
+## Kahneman Advice
+
+- Anchor your judgement of the probability of an outcome on a plausible base rate. 
+
+- Question the diagnosticity of your evidence. 
+
+
+## Discussion Questions on *Base Rate Neglect* Paper
+
+1. What do you think would have happened had you *nudged* the subjects to "think like statisticians". Evidence from psychology literature (e.g., Norbert Schwarz) that individuals are motivated to take base-rate information into account, but not in a fully efficient way.
+
+2. Activation of System 2 improves predictive acccuracy - frowning students perform better! System 2 knows the base rates are relevant but is *lazy* and ignores them (as oppsoed to not understanding the relevance of base rates). h
+
+3. What are mental models? How can we manipulate them?
+
+
+
