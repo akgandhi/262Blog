@@ -11,7 +11,7 @@ output:
     self_contained: false
     toc: true
     toc_depth: 2
-bibliography: ../../biblio.json
+bibliography: ../../biblio.bib
 categories:
   - Data 
   - A.I.
@@ -427,27 +427,27 @@ No Class
 
 ## `r advdate(mon, 7)`
 
-**Project**: Start User Interviews
+**Project**: Plan User Interviews
 
 
 ## `r advdate(mon, 8)`
 
-**Project**: Continue User Interviews
+**Project**: Continue Planning User Interviews
 
 
 
 ## `r advdate(mon, 9)`
 
-**Project**: Start Data Collection
+**Project**: Conduct User Interviews
 
 ## `r advdate(mon, 10)`
 
-**Project**: Continue Data Collection
+**Project**: Continue Conducting User Interviews
 
 
 ## `r advdate(mon, 11)`
 
-**Project**: Build Prototype
+**Project**: Continue Conducting User Interviews
 
 ### Tues March 30 {.heatinline}
 
@@ -457,15 +457,15 @@ No class
 
 ## `r advdate(mon, 12)`
 
-**Project**: Continue Build Prototype
+**Project**: Build Storyboard Prototype
 
 ## `r advdate(mon, 13)`
 
-**Project**: Collect User Feedback
+**Project**: Continue Building Storyboard Prototype
 
 ## `r advdate(mon, 14)`
 
-**Project**: Continue Collect User Feedback
+**Project**: Collect User Feedback
 
 ## `r advdate(mon, 15)`
 **Project**: Iterate and Finalize

@@ -1,0 +1,26 @@
+---
+title: "Storyboarding"
+description: |
+  A low fidelity prototype of your decision solution
+author:
+  - name: Amit Gandhi
+    url: {}
+date: 04-06-2021
+output:
+  distill::distill_article:
+    self_contained: false
+preview: https://static.skillshare.com/uploads/discussion/tmp/60d4ee17
+---
+
+
+
+![](sb1.png)
+
+![](sb2.png)
+
+![](sb3.png)
+
+![](sb4.png)
+
+![](sb5.png)
+

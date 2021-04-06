@@ -20,19 +20,19 @@
 
 <style type="text/css">code{white-space: pre;}</style>
 <style type="text/css" data-origin="pandoc">
-code.sourceCode > span { display: inline-block; line-height: 1.25; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-code.sourceCode > span:empty { height: 1.2em; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
-code.sourceCode { white-space: pre; position: relative; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
 div.sourceCode { margin: 1em 0; }
 pre.sourceCode { margin: 0; }
 @media screen {
 div.sourceCode { overflow: auto; }
 }
 @media print {
-code.sourceCode { white-space: pre-wrap; }
-code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -52,7 +52,7 @@ pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-le
 div.sourceCode
   {   }
 @media screen {
-code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
@@ -87,76 +87,76 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   <!--radix_placeholder_meta_tags-->
   <title>Course Introduction</title>
-  
+
   <meta property="description" itemprop="description" content="Economics at the Intersection of Data and Technology"/>
-  
-  
+
+
   <!--  https://schema.org/Article -->
   <meta property="article:published" itemprop="datePublished" content="2021-01-25"/>
   <meta property="article:created" itemprop="dateCreated" content="2021-01-25"/>
   <meta name="article:author" content="Amit K. Gandhi"/>
-  
+
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
   <meta property="og:title" content="Course Introduction"/>
   <meta property="og:type" content="article"/>
   <meta property="og:description" content="Economics at the Intersection of Data and Technology"/>
   <meta property="og:locale" content="en_US"/>
-  
+
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
   <meta property="twitter:title" content="Course Introduction"/>
   <meta property="twitter:description" content="Economics at the Intersection of Data and Technology"/>
-  
+
   <!--/radix_placeholder_meta_tags-->
   
   <!--radix_placeholder_rmarkdown_metadata-->
-  
+
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","bibliography","categories","preview"]}},"value":[{"type":"character","attributes":{},"value":["Course Introduction"]},{"type":"character","attributes":{},"value":["Economics at the Intersection of Data and Technology\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Amit K. Gandhi"]},{"type":"character","attributes":{},"value":["upenn.edu"]}]}]},{"type":"character","attributes":{},"value":["1-25-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]}]}]},{"type":"character","attributes":{},"value":["../../biblio.json"]},{"type":"character","attributes":{},"value":["Data","A.I.","Homo Economicus","Behavioral Economics"]},{"type":"character","attributes":{},"value":["https://db0ip7zd23b50.cloudfront.net/dims4/default/0dfba66/2147483647/legacy_thumbnail/960x369%3E/quality/90/?url=http%3A%2F%2Fbloomberg-bna-brightspot.s3.amazonaws.com%2F43%2F5e%2F9afb1c354b0e8ee71a13c737d4f5%2Fgettyimages-921135480.jpg"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output","bibliography","categories","preview"]}},"value":[{"type":"character","attributes":{},"value":["Course Introduction"]},{"type":"character","attributes":{},"value":["Economics at the Intersection of Data and Technology\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url"]}},"value":[{"type":"character","attributes":{},"value":["Amit K. Gandhi"]},{"type":"character","attributes":{},"value":["upenn.edu"]}]}]},{"type":"character","attributes":{},"value":["1-25-2021"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained","toc","toc_depth"]}},"value":[{"type":"logical","attributes":{},"value":[false]},{"type":"logical","attributes":{},"value":[true]},{"type":"integer","attributes":{},"value":[2]}]}]},{"type":"character","attributes":{},"value":["../../biblio.bib"]},{"type":"character","attributes":{},"value":["Data","A.I.","Homo Economicus","Behavioral Economics"]},{"type":"character","attributes":{},"value":["https://db0ip7zd23b50.cloudfront.net/dims4/default/0dfba66/2147483647/legacy_thumbnail/960x369%3E/quality/90/?url=http%3A%2F%2Fbloomberg-bna-brightspot.s3.amazonaws.com%2F43%2F5e%2F9afb1c354b0e8ee71a13c737d4f5%2Fgettyimages-921135480.jpg"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["course-introduction_files/anchor-4.2.2/anchor.min.js","course-introduction_files/bowser-1.9.3/bowser.min.js","course-introduction_files/DiagrammeR-styles-0.2/styles.css","course-introduction_files/distill-2.2.21/template.v2.js","course-introduction_files/grViz-binding-1.0.6.1/grViz.js","course-introduction_files/htmlwidgets-1.5.2/htmlwidgets.js","course-introduction_files/jquery-1.11.3/jquery.min.js","course-introduction_files/viz-1.8.2/viz.js","course-introduction_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["course-introduction_files/anchor-4.2.2/anchor.min.js","course-introduction_files/bowser-1.9.3/bowser.min.js","course-introduction_files/DiagrammeR-styles-0.2/styles.css","course-introduction_files/distill-2.2.21/template.v2.js","course-introduction_files/grViz-binding-1.0.6.1/grViz.js","course-introduction_files/header-attrs-2.7/header-attrs.js","course-introduction_files/htmlwidgets-1.5.2/htmlwidgets.js","course-introduction_files/htmlwidgets-1.5.3/htmlwidgets.js","course-introduction_files/jquery-1.11.3/jquery.min.js","course-introduction_files/popper-2.6.0/popper.min.js","course-introduction_files/tippy-6.2.7/tippy-bundle.umd.min.js","course-introduction_files/tippy-6.2.7/tippy-light-border.css","course-introduction_files/tippy-6.2.7/tippy.css","course-introduction_files/tippy-6.2.7/tippy.umd.min.js","course-introduction_files/viz-1.8.2/viz.js","course-introduction_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
-  
+
   <style type="text/css">
-  
+
   body {
     background-color: white;
   }
-  
+
   .pandoc-table {
     width: 100%;
   }
-  
+
   .pandoc-table>caption {
     margin-bottom: 10px;
   }
-  
+
   .pandoc-table th:not([align]) {
     text-align: left;
   }
-  
+
   .pagedtable-footer {
     font-size: 15px;
   }
-  
+
   d-byline .byline {
     grid-template-columns: 2fr 2fr;
   }
-  
+
   d-byline .byline h3 {
     margin-block-start: 1.5em;
   }
-  
+
   d-byline .byline .authors-affiliations h3 {
     margin-block-start: 0.5em;
   }
-  
+
   .authors-affiliations .orcid-id {
     width: 16px;
     height:16px;
@@ -165,12 +165,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     vertical-align: middle;
     padding-bottom: 2px;
   }
-  
+
   d-title .dt-tags {
     margin-top: 1em;
     grid-column: text;
   }
-  
+
   .dt-tags .dt-tag {
     text-decoration: none;
     display: inline-block;
@@ -184,24 +184,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     text-transform: uppercase;
     font-weight: 500;
   }
-  
+
   d-article table.gt_table td,
   d-article table.gt_table th {
     border-bottom: none;
   }
-  
+
   .html-widget {
     margin-bottom: 2.0em;
   }
-  
+
   .l-screen-inset {
     padding-right: 16px;
   }
-  
+
   .l-screen .caption {
     margin-left: 10px;
   }
-  
+
   .shaded {
     background: rgb(247, 247, 247);
     padding-top: 20px;
@@ -209,75 +209,75 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
-  
+
   .shaded .html-widget {
     margin-bottom: 0;
     border: 1px solid rgba(0, 0, 0, 0.1);
   }
-  
+
   .shaded .shaded-content {
     background: white;
   }
-  
+
   .text-output {
     margin-top: 0;
     line-height: 1.5em;
   }
-  
+
   .hidden {
     display: none !important;
   }
-  
+
   d-article {
     padding-top: 2.5rem;
     padding-bottom: 30px;
   }
-  
+
   d-appendix {
     padding-top: 30px;
   }
-  
+
   d-article>p>img {
     width: 100%;
   }
-  
+
   d-article h2 {
     margin: 1rem 0 1.5rem 0;
   }
-  
+
   d-article h3 {
     margin-top: 1.5rem;
   }
-  
+
   d-article iframe {
     border: 1px solid rgba(0, 0, 0, 0.1);
     margin-bottom: 2.0em;
     width: 100%;
   }
-  
+
   /* Tweak code blocks */
-  
+
   d-article div.sourceCode code,
   d-article pre code {
     font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   }
-  
+
   d-article pre,
   d-article div.sourceCode,
   d-article div.sourceCode pre {
     overflow: auto;
   }
-  
+
   d-article div.sourceCode {
     background-color: white;
   }
-  
+
   d-article div.sourceCode pre {
     padding-left: 10px;
     font-size: 12px;
     border-left: 2px solid rgba(0,0,0,0.1);
   }
-  
+
   d-article pre {
     font-size: 12px;
     color: black;
@@ -289,45 +289,50 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     word-break: normal;
     word-wrap: normal;
     line-height: 1.5;
-  
+
     -moz-tab-size: 4;
     -o-tab-size: 4;
     tab-size: 4;
-  
+
     -webkit-hyphens: none;
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
   }
-  
+
   d-article pre a {
     border-bottom: none;
   }
-  
+
   d-article pre a:hover {
     border-bottom: none;
     text-decoration: underline;
   }
-  
+
+  d-article details {
+    grid-column: text;
+    margin-bottom: 0.8em;
+  }
+
   @media(min-width: 768px) {
-  
+
   d-article pre,
   d-article div.sourceCode,
   d-article div.sourceCode pre {
     overflow: visible !important;
   }
-  
+
   d-article div.sourceCode pre {
     padding-left: 18px;
     font-size: 14px;
   }
-  
+
   d-article pre {
     font-size: 14px;
   }
-  
+
   }
-  
+
   figure img.external {
     background: white;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -335,9 +340,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding: 18px;
     box-sizing: border-box;
   }
-  
+
   /* CSS for d-contents */
-  
+
   .d-contents {
     grid-column: text;
     color: rgba(0,0,0,0.8);
@@ -349,7 +354,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding-left: 0.25em;
     justify-self: start;
   }
-  
+
   @media(min-width: 1000px) {
     .d-contents.d-contents-float {
       height: 0;
@@ -360,82 +365,82 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       padding-left: 2em;
     }
   }
-  
+
   .d-contents nav h3 {
     font-size: 18px;
     margin-top: 0;
     margin-bottom: 1em;
   }
-  
+
   .d-contents li {
     list-style-type: none
   }
-  
+
   .d-contents nav > ul {
     padding-left: 0;
   }
-  
+
   .d-contents ul {
     padding-left: 1em
   }
-  
+
   .d-contents nav ul li {
     margin-top: 0.6em;
     margin-bottom: 0.2em;
   }
-  
+
   .d-contents nav a {
     font-size: 13px;
     border-bottom: none;
     text-decoration: none
     color: rgba(0, 0, 0, 0.8);
   }
-  
+
   .d-contents nav a:hover {
     text-decoration: underline solid rgba(0, 0, 0, 0.6)
   }
-  
+
   .d-contents nav > ul > li > a {
     font-weight: 600;
   }
-  
+
   .d-contents nav > ul > li > ul {
     font-weight: inherit;
   }
-  
+
   .d-contents nav > ul > li > ul > li {
     margin-top: 0.2em;
   }
-  
-  
+
+
   .d-contents nav ul {
     margin-top: 0;
     margin-bottom: 0.25em;
   }
-  
+
   .d-article-with-toc h2:nth-child(2) {
     margin-top: 0;
   }
-  
-  
+
+
   /* Figure */
-  
+
   .figure {
     position: relative;
     margin-bottom: 2.5em;
     margin-top: 1.5em;
   }
-  
+
   .figure img {
     width: 100%;
   }
-  
+
   .figure .caption {
     color: rgba(0, 0, 0, 0.6);
     font-size: 12px;
     line-height: 1.5em;
   }
-  
+
   .figure img.external {
     background: white;
     border: 1px solid rgba(0, 0, 0, 0.1);
@@ -443,31 +448,42 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding: 18px;
     box-sizing: border-box;
   }
-  
+
   .figure .caption a {
     color: rgba(0, 0, 0, 0.6);
   }
-  
+
   .figure .caption b,
   .figure .caption strong, {
     font-weight: 600;
     color: rgba(0, 0, 0, 1.0);
   }
-  
+
   /* Citations */
-  
+
   d-article .citation {
     color: inherit;
     cursor: inherit;
   }
-  
+
   div.hanging-indent{
     margin-left: 1em; text-indent: -1em;
   }
-  
-  
+
+  /* Citation hover box */
+
+  .tippy-box[data-theme~=light-border] {
+    background-color: rgba(250, 250, 250, 0.95);
+  }
+
+  .tippy-content > p {
+    margin-bottom: 0;
+    padding: 2px;
+  }
+
+
   /* Tweak 1000px media break to show more text */
-  
+
   @media(min-width: 1000px) {
     .base-grid,
     distill-header,
@@ -483,11 +499,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
       grid-column-gap: 16px;
     }
-  
+
     .grid {
       grid-column-gap: 16px;
     }
-  
+
     d-article {
       font-size: 1.06rem;
       line-height: 1.7em;
@@ -496,7 +512,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       font-size: 13px;
     }
   }
-  
+
   @media(min-width: 1180px) {
     .base-grid,
     distill-header,
@@ -512,16 +528,16 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
       grid-column-gap: 32px;
     }
-  
+
     .grid {
       grid-column-gap: 32px;
     }
   }
-  
-  
+
+
   /* Get the citation styles for the appendix (not auto-injected on render since
      we do our own rendering of the citation appendix) */
-  
+
   d-appendix .citation-appendix,
   .d-appendix .citation-appendix {
     font-size: 11px;
@@ -538,9 +554,9 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     white-space: pre-wrap;
     word-wrap: break-word;
   }
-  
+
   /* Include appendix styles here so they can be overridden */
-  
+
   d-appendix {
     contain: layout style;
     font-size: 0.8em;
@@ -552,7 +568,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding-top: 60px;
     padding-bottom: 48px;
   }
-  
+
   d-appendix h3 {
     grid-column: page-start / text-start;
     font-size: 15px;
@@ -561,59 +577,59 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     margin-bottom: 0;
     color: rgba(0,0,0,0.65);
   }
-  
+
   d-appendix h3 + * {
     margin-top: 1em;
   }
-  
+
   d-appendix ol {
     padding: 0 0 0 15px;
   }
-  
+
   @media (min-width: 768px) {
     d-appendix ol {
       padding: 0 0 0 30px;
       margin-left: -30px;
     }
   }
-  
+
   d-appendix li {
     margin-bottom: 1em;
   }
-  
+
   d-appendix a {
     color: rgba(0, 0, 0, 0.6);
   }
-  
+
   d-appendix > * {
     grid-column: text;
   }
-  
+
   d-appendix > d-footnote-list,
   d-appendix > d-citation-list,
   d-appendix > distill-appendix {
     grid-column: screen;
   }
-  
+
   /* Include footnote styles here so they can be overridden */
-  
+
   d-footnote-list {
     contain: layout style;
   }
-  
+
   d-footnote-list > * {
     grid-column: text;
   }
-  
+
   d-footnote-list a.footnote-backlink {
     color: rgba(0,0,0,0.3);
     padding-left: 0.5em;
   }
-  
-  
-  
+
+
+
   /* Anchor.js */
-  
+
   .anchorjs-link {
     /*transition: all .25s linear; */
     text-decoration: none;
@@ -624,86 +640,86 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     text-decoration: none;
     border-bottom: none;
   }
-  
+
   /* Social footer */
-  
+
   .social_footer {
     margin-top: 30px;
     margin-bottom: 0;
     color: rgba(0,0,0,0.67);
   }
-  
+
   .disqus-comments {
     margin-right: 30px;
   }
-  
+
   .disqus-comment-count {
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
     cursor: pointer;
   }
-  
+
   #disqus_thread {
     margin-top: 30px;
   }
-  
+
   .article-sharing a {
     border-bottom: none;
     margin-right: 8px;
   }
-  
+
   .article-sharing a:hover {
     border-bottom: none;
   }
-  
+
   .sidebar-section.subscribe {
     font-size: 12px;
     line-height: 1.6em;
   }
-  
+
   .subscribe p {
     margin-bottom: 0.5em;
   }
-  
-  
+
+
   .article-footer .subscribe {
     font-size: 15px;
     margin-top: 45px;
   }
-  
-  
+
+
   .sidebar-section.custom {
     font-size: 12px;
     line-height: 1.6em;
   }
-  
+
   .custom p {
     margin-bottom: 0.5em;
   }
-  
+
   /* Styles for listing layout (hide title) */
   .layout-listing d-title, .layout-listing .d-title {
     display: none;
   }
-  
+
   /* Styles for posts lists (not auto-injected) */
-  
-  
+
+
   .posts-with-sidebar {
     padding-left: 45px;
     padding-right: 45px;
   }
-  
+
   .posts-list .description h2,
   .posts-list .description p {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
   }
-  
+
   .posts-list .description h2 {
     font-weight: 700;
     border-bottom: none;
     padding-bottom: 0;
   }
-  
+
   .posts-list h2.post-tag {
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     padding-bottom: 12px;
@@ -712,7 +728,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     margin-top: 60px;
     margin-bottom: 24px;
   }
-  
+
   .posts-list .post-preview {
     text-decoration: none;
     overflow: hidden;
@@ -720,29 +736,29 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 24px 0;
   }
-  
+
   .post-preview-last {
     border-bottom: none !important;
   }
-  
+
   .posts-list .posts-list-caption {
     grid-column: screen;
     font-weight: 400;
   }
-  
+
   .posts-list .post-preview h2 {
     margin: 0 0 6px 0;
     line-height: 1.2em;
     font-style: normal;
     font-size: 24px;
   }
-  
+
   .posts-list .post-preview p {
     margin: 0 0 12px 0;
     line-height: 1.4em;
     font-size: 16px;
   }
-  
+
   .posts-list .post-preview .thumbnail {
     box-sizing: border-box;
     margin-bottom: 24px;
@@ -753,32 +769,32 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     width: 100%;
     display: block;
   }
-  
+
   .posts-list .metadata {
     font-size: 12px;
     line-height: 1.4em;
     margin-bottom: 18px;
   }
-  
+
   .posts-list .metadata > * {
     display: inline-block;
   }
-  
+
   .posts-list .metadata .publishedDate {
     margin-right: 2em;
   }
-  
+
   .posts-list .metadata .dt-authors {
     display: block;
     margin-top: 0.3em;
     margin-right: 2em;
   }
-  
+
   .posts-list .dt-tags {
     display: block;
     line-height: 1em;
   }
-  
+
   .posts-list .dt-tags .dt-tag {
     display: inline-block;
     color: rgba(0,0,0,0.6);
@@ -791,24 +807,24 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     text-transform: uppercase;
     font-weight: 500;
   }
-  
+
   .posts-list img {
     opacity: 1;
   }
-  
+
   .posts-list img[data-src] {
     opacity: 0;
   }
-  
+
   .posts-more {
     clear: both;
   }
-  
-  
+
+
   .posts-sidebar {
     font-size: 16px;
   }
-  
+
   .posts-sidebar h3 {
     font-size: 16px;
     margin-top: 0;
@@ -816,39 +832,39 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     font-weight: 400;
     text-transform: uppercase;
   }
-  
+
   .sidebar-section {
     margin-bottom: 30px;
   }
-  
+
   .categories ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
   }
-  
+
   .categories li {
     color: rgba(0, 0, 0, 0.8);
     margin-bottom: 0;
   }
-  
+
   .categories li>a {
     border-bottom: none;
   }
-  
+
   .categories li>a:hover {
     border-bottom: 1px solid rgba(0, 0, 0, 0.4);
   }
-  
+
   .categories .active {
     font-weight: 600;
   }
-  
+
   .categories .category-count {
     color: rgba(0, 0, 0, 0.4);
   }
-  
-  
+
+
   @media(min-width: 768px) {
     .posts-list .post-preview h2 {
       font-size: 26px;
@@ -884,55 +900,55 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       padding-bottom: 24px;
     }
   }
-  
-  
+
+
   /* Improve display for browsers without grid (IE/Edge <= 15) */
-  
+
   .downlevel {
     line-height: 1.6em;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
     margin: 0;
   }
-  
+
   .downlevel .d-title {
     padding-top: 6rem;
     padding-bottom: 1.5rem;
   }
-  
+
   .downlevel .d-title h1 {
     font-size: 50px;
     font-weight: 700;
     line-height: 1.1em;
     margin: 0 0 0.5rem;
   }
-  
+
   .downlevel .d-title p {
     font-weight: 300;
     font-size: 1.2rem;
     line-height: 1.55em;
     margin-top: 0;
   }
-  
+
   .downlevel .d-byline {
     padding-top: 0.8em;
     padding-bottom: 0.8em;
     font-size: 0.8rem;
     line-height: 1.8em;
   }
-  
+
   .downlevel .section-separator {
     border: none;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
-  
+
   .downlevel .d-article {
     font-size: 1.06rem;
     line-height: 1.7em;
     padding-top: 1rem;
     padding-bottom: 2rem;
   }
-  
-  
+
+
   .downlevel .d-appendix {
     padding-left: 0;
     padding-right: 0;
@@ -944,11 +960,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding-top: 40px;
     padding-bottom: 48px;
   }
-  
+
   .downlevel .footnotes ol {
     padding-left: 13px;
   }
-  
+
   .downlevel .base-grid,
   .downlevel .distill-header,
   .downlevel .d-title,
@@ -965,7 +981,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     padding-left: 40px;
     padding-right: 40px;
   }
-  
+
   @media(min-width: 768px) {
     .downlevel .base-grid,
     .downlevel .distill-header,
@@ -985,14 +1001,14 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     max-width: 900px;
   }
   }
-  
+
   .downlevel pre code {
     display: block;
     border-left: 2px solid rgba(0, 0, 0, .1);
     padding: 0 0 0 20px;
     font-size: 14px;
   }
-  
+
   .downlevel code, .downlevel pre {
     color: black;
     background: none;
@@ -1003,27 +1019,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     word-break: normal;
     word-wrap: normal;
     line-height: 1.5;
-  
+
     -moz-tab-size: 4;
     -o-tab-size: 4;
     tab-size: 4;
-  
+
     -webkit-hyphens: none;
     -moz-hyphens: none;
     -ms-hyphens: none;
     hyphens: none;
   }
-  
+
   .downlevel .posts-list .post-preview {
     color: inherit;
   }
-  
-  
-  
+
+
+
   </style>
-  
+
   <script type="application/javascript">
-  
+
   function is_downlevel_browser() {
     if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
                                    window.navigator.userAgent)) {
@@ -1032,20 +1048,20 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       return window.load_distill_framework === undefined;
     }
   }
-  
+
   // show body when load is complete
   function on_load_complete() {
-  
+
     // add anchors
     if (window.anchors) {
       window.anchors.options.placement = 'left';
       window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
     }
-  
-  
+
+
     // set body to visible
     document.body.style.visibility = 'visible';
-  
+
     // force redraw for leaflet widgets
     if (window.HTMLWidgets) {
       var maps = window.HTMLWidgets.findAll(".leaflet");
@@ -1058,39 +1074,39 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
         });
       });
     }
-  
+
     // trigger 'shown' so htmlwidgets resize
     $('d-article').trigger('shown');
   }
-  
+
   function init_distill() {
-  
+
     init_common();
-  
+
     // create front matter
     var front_matter = $('<d-front-matter></d-front-matter>');
     $('#distill-front-matter').wrap(front_matter);
-  
+
     // create d-title
     $('.d-title').changeElementType('d-title');
-  
+
     // create d-byline
     var byline = $('<d-byline></d-byline>');
     $('.d-byline').replaceWith(byline);
-  
+
     // create d-article
     var article = $('<d-article></d-article>');
     $('.d-article').wrap(article).children().unwrap();
-  
+
     // move posts container into article
     $('.posts-container').appendTo($('d-article'));
-  
+
     // create d-appendix
     $('.d-appendix').changeElementType('d-appendix');
-  
+
     // flag indicating that we have appendix items
     var appendix = $('.appendix-bottom').children('h3').length > 0;
-  
+
     // replace footnotes with <d-footnote>
     $('.footnote-ref').each(function(i, val) {
       appendix = true;
@@ -1106,10 +1122,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     });
     // remove footnotes
     $('.footnotes').remove();
-  
+
     // move refs into #references-listing
     $('#references-listing').replaceWith($('#refs'));
-  
+
     $('h1.appendix, h2.appendix').each(function(i, val) {
       $(this).changeElementType('h3');
     });
@@ -1119,18 +1135,18 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       appendix = true;
       $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
     });
-  
+
     // show d-appendix if we have appendix content
     $("d-appendix").css('display', appendix ? 'grid' : 'none');
-  
+
     // localize layout chunks to just output
     $('.layout-chunk').each(function(i, val) {
-  
+
       // capture layout
       var layout = $(this).attr('data-layout');
-  
+
       // apply layout to markdown level block elements
-      var elements = $(this).children().not('div.sourceCode, pre, script');
+      var elements = $(this).children().not('details, div.sourceCode, pre, script');
       elements.each(function(i, el) {
         var layout_div = $('<div class="' + layout + '"></div>');
         if (layout_div.hasClass('shaded')) {
@@ -1141,40 +1157,40 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           $(this).wrap(layout_div);
         }
       });
-  
-  
+
+
       // unwrap the layout-chunk div
       $(this).children().unwrap();
     });
-  
+
     // remove code block used to force  highlighting css
     $('.distill-force-highlighting-css').parent().remove();
-  
+
     // remove empty line numbers inserted by pandoc when using a
     // custom syntax highlighting theme
     $('code.sourceCode a:empty').remove();
-  
+
     // load distill framework
     load_distill_framework();
-  
+
     // wait for window.distillRunlevel == 4 to do post processing
     function distill_post_process() {
-  
+
       if (!window.distillRunlevel || window.distillRunlevel < 4)
         return;
-  
+
       // hide author/affiliations entirely if we have no authors
       var front_matter = JSON.parse($("#distill-front-matter").html());
       var have_authors = front_matter.authors && front_matter.authors.length > 0;
       if (!have_authors)
         $('d-byline').addClass('hidden');
-  
+
       // article with toc class
       $('.d-contents').parent().addClass('d-article-with-toc');
-  
+
       // strip links that point to #
       $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
-  
+
       // add orcid ids
       $('.authors-affiliations').find('.author').each(function(i, el) {
         var orcid_id = front_matter.authors[i].orcidID;
@@ -1189,12 +1205,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           $(this).append(a);
         }
       });
-  
+
       // hide elements of author/affiliations grid that have no value
       function hide_byline_column(caption) {
         $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
       }
-  
+
       // affiliations
       var have_affiliations = false;
       for (var i = 0; i<front_matter.authors.length; ++i) {
@@ -1206,11 +1222,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       }
       if (!have_affiliations)
         $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
-  
+
       // published date
       if (!front_matter.publishedDate)
         hide_byline_column("Published");
-  
+
       // document object identifier
       var doi = $('d-byline').find('h3:contains("DOI")');
       var doi_p = doi.next().empty();
@@ -1230,54 +1246,68 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
            .html(front_matter.doi)
            .appendTo(doi_p);
       }
-  
+
        // change plural form of authors/affiliations
       if (front_matter.authors.length === 1) {
         var grid = $('.authors-affiliations');
         grid.children('h3:contains("Authors")').text('Author');
         grid.children('h3:contains("Affiliations")').text('Affiliation');
       }
-  
+
       // remove d-appendix and d-footnote-list local styles
       $('d-appendix > style:first-child').remove();
       $('d-footnote-list > style:first-child').remove();
-  
+
       // move appendix-bottom entries to the bottom
       $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
       $('.appendix-bottom').remove();
-  
+
+      // hoverable references
+      $('span.citation[data-cites]').each(function() {
+        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
+        window.tippy(this, {
+          allowHTML: true,
+          content: refHtml,
+          maxWidth: 500,
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        });
+      });
+
       // clear polling timer
       clearInterval(tid);
-  
+
       // show body now that everything is ready
       on_load_complete();
     }
-  
+
     var tid = setInterval(distill_post_process, 50);
     distill_post_process();
-  
+
   }
-  
+
   function init_downlevel() {
-  
+
     init_common();
-  
+
      // insert hr after d-title
     $('.d-title').after($('<hr class="section-separator"/>'));
-  
+
     // check if we have authors
     var front_matter = JSON.parse($("#distill-front-matter").html());
     var have_authors = front_matter.authors && front_matter.authors.length > 0;
-  
+
     // manage byline/border
     if (!have_authors)
       $('.d-byline').remove();
     $('.d-byline').after($('<hr class="section-separator"/>'));
     $('.d-byline a').remove();
-  
+
     // remove toc
     $('.d-contents').remove();
-  
+
     // move appendix elements
     $('h1.appendix, h2.appendix').each(function(i, val) {
       $(this).changeElementType('h3');
@@ -1285,62 +1315,62 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
     $('h3.appendix').each(function(i, val) {
       $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
     });
-  
-  
+
+
     // inject headers into references and footnotes
     var refs_header = $('<h3></h3>');
     refs_header.text('References');
     $('#refs').prepend(refs_header);
-  
+
     var footnotes_header = $('<h3></h3');
     footnotes_header.text('Footnotes');
     $('.footnotes').children('hr').first().replaceWith(footnotes_header);
-  
+
     // move appendix-bottom entries to the bottom
     $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
     $('.appendix-bottom').remove();
-  
+
     // remove appendix if it's empty
     if ($('.d-appendix').children().length === 0)
       $('.d-appendix').remove();
-  
+
     // prepend separator above appendix
     $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
-  
+
     // trim code
     $('pre>code').each(function(i, val) {
       $(this).html($.trim($(this).html()));
     });
-  
+
     // move posts-container right before article
     $('.posts-container').insertBefore($('.d-article'));
-  
+
     $('body').addClass('downlevel');
-  
+
     on_load_complete();
   }
-  
-  
+
+
   function init_common() {
-  
+
     // jquery plugin to change element types
     (function($) {
       $.fn.changeElementType = function(newType) {
         var attrs = {};
-  
+
         $.each(this[0].attributes, function(idx, attr) {
           attrs[attr.nodeName] = attr.nodeValue;
         });
-  
+
         this.replaceWith(function() {
           return $("<" + newType + "/>", attrs).append($(this).contents());
         });
       };
     })(jQuery);
-  
+
     // prevent underline for linked images
     $('a > img').parent().css({'border-bottom' : 'none'});
-  
+
     // mark non-body figures created by knitr chunks as 100% width
     $('.layout-chunk').each(function(i, val) {
       var figures = $(this).find('img, .html-widget');
@@ -1352,35 +1382,35 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
           var fig = $(this);
           fig.css('width', fig.attr('width') + 'px');
         });
-  
+
       }
     });
-  
+
     // auto-append index.html to post-preview links in file: protocol
     // and in rstudio ide preview
     $('.post-preview').each(function(i, val) {
       if (window.location.protocol === "file:")
         $(this).attr('href', $(this).attr('href') + "index.html");
     });
-  
+
     // get rid of index.html references in header
     if (window.location.protocol !== "file:") {
       $('.distill-site-header a[href]').each(function(i,val) {
         $(this).attr('href', $(this).attr('href').replace("index.html", "./"));
       });
     }
-  
+
     // add class to pandoc style tables
     $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
     $('.kable-table').children('table').addClass('pandoc-table');
-  
+
     // add figcaption style to table captions
     $('caption').parent('table').addClass("figcaption");
-  
+
     // initialize posts list
     if (window.init_posts_list)
       window.init_posts_list();
-  
+
     // implmement disqus comment link
     $('.disqus-comment-count').click(function() {
       window.headroom_prevent_pin = true;
@@ -1394,22 +1424,27 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
       }
     });
   }
-  
+
   document.addEventListener('DOMContentLoaded', function() {
     if (is_downlevel_browser())
       init_downlevel();
     else
       window.addEventListener('WebComponentsReady', init_distill);
   });
-  
+
   </script>
-  
+
   <!--/radix_placeholder_distill-->
-  <script src="course-introduction_files/htmlwidgets-1.5.2/htmlwidgets.js"></script>
+  <script src="course-introduction_files/header-attrs-2.7/header-attrs.js"></script>
+  <script src="course-introduction_files/htmlwidgets-1.5.3/htmlwidgets.js"></script>
   <script src="course-introduction_files/viz-1.8.2/viz.js"></script>
   <link href="course-introduction_files/DiagrammeR-styles-0.2/styles.css" rel="stylesheet" />
   <script src="course-introduction_files/grViz-binding-1.0.6.1/grViz.js"></script>
   <script src="course-introduction_files/jquery-1.11.3/jquery.min.js"></script>
+  <script src="course-introduction_files/popper-2.6.0/popper.min.js"></script>
+  <link href="course-introduction_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="course-introduction_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="course-introduction_files/tippy-6.2.7/tippy.umd.min.js"></script>
   <script src="course-introduction_files/anchor-4.2.2/anchor.min.js"></script>
   <script src="course-introduction_files/bowser-1.9.3/bowser.min.js"></script>
   <script src="course-introduction_files/webcomponents-2.0.0/webcomponents.js"></script>
@@ -1460,16 +1495,19 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <ul>
 <li><a href="#welcome">Welcome</a></li>
 <li><a href="#what-is-market-design">What is Market Design?</a></li>
-<li><a href="#what-is-the-topic-of-our-class">What is the Topic of Our Class?</a><ul>
+<li><a href="#what-is-the-topic-of-our-class">What is the Topic of Our Class?</a>
+<ul>
 <li><a href="#our-approach-to-market-design">Our approach to market design</a></li>
 <li><a href="#how-does-this-differ-from-data-science">How does this differ from data science?</a></li>
 </ul></li>
-<li><a href="#how-we-will-learn">How We Will Learn</a><ul>
+<li><a href="#how-we-will-learn">How We Will Learn</a>
+<ul>
 <li><a href="#reading-50">Reading (50%)</a></li>
 <li><a href="#project-50">Project (50%)</a></li>
 </ul></li>
 <li><a href="#course-logistics">Course Logistics</a></li>
-<li><a href="#course-schedule">Course Schedule</a><ul>
+<li><a href="#course-schedule">Course Schedule</a>
+<ul>
 <li><a href="#week-01-0118---0122">Week 01, 01/18 - 01/22</a></li>
 <li><a href="#week-02-0125---0129">Week 02, 01/25 - 01/29</a></li>
 <li><a href="#week-03-0201---0205">Week 03, 02/01 - 02/05</a></li>
@@ -1529,15 +1567,15 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </table>
 </center>
 <p></font></p>
-<h1 id="welcome" class="salt">Welcome</h1>
+<h1 class="salt" id="welcome">Welcome</h1>
 <p><strong>Welcome to Market Design (Econ 262)</strong>! This is a virtual course in the <strong>economics of decision making</strong> being taught in the Spring of 2021 at the <strong>University of Pennsylvania</strong>. This page describes the topic of the course, the learning objectives, the logistical plan, the evaluation policies, and the class schedule.</p>
 <p>The course <a href="marketdesign.io">website</a> will act as a central repository for the class to disseminate lecture materials and announcements. A <strong>GroupMe</strong> group for the class has been setup (reach out to Amit for access if you do not have it yet) and will serve as our platform to communicate with each other, conduct flash polls, and send reminders of class activities (including links for zoom class meetings.)</p>
-<h1 id="what-is-market-design" class="salt">What is Market Design?</h1>
-<p>The goal of market design is to design policies that improve the efficiency of economic decisions. An <strong>economic decision</strong> is any decision that involves trade-offs, which is synonymous with the very definition of economics as “the study of the allocation of scarce means to satisfy competing ends.” <span class="citation" data-cites="becker2017economic">(Becker <a href="#ref-becker2017economic" role="doc-biblioref">2017</a>)</span></p>
+<h1 class="salt" id="what-is-market-design">What is Market Design?</h1>
+<p>The goal of market design is to design policies that improve the efficiency of economic decisions. An <strong>economic decision</strong> is any decision that involves trade-offs, which is synonymous with the very definition of economics as “the study of the allocation of scarce means to satisfy competing ends.” <span class="citation" data-cites="becker2017economic">(<a href="#ref-becker2017economic" role="doc-biblioref">Becker 2017</a>)</span></p>
 <p>Economic decisions are made by diverse actors in an economic system - <strong>households</strong>, <strong>firms</strong>, <strong>governments</strong>, and even the <strong>markets</strong> themselves (e.g., the invisible hand!).</p>
 <p>An economic decision is <strong>efficient</strong> if it makes an optimal trade-off given the objectives and constraints of the decision maker.</p>
 <p>Helping make decisions more efficient <strong>creates value, generates profits, and raises welfare</strong>. But how should such interventions be designed? This is the central problem of market design.</p>
-<h1 id="what-is-the-topic-of-our-class" class="salt">What is the Topic of Our Class?</h1>
+<h1 class="salt" id="what-is-the-topic-of-our-class">What is the Topic of Our Class?</h1>
 <p>Our class is focused on the problems of market design in <strong>digital environments</strong>.</p>
 <p>Humans are increasingly making decisions in the presence of <strong>screens</strong> and <strong>devices</strong>, both at work and home. This has been especially pronounced during the last year of the pandemic where life quite literally moved online!</p>
 <aside>
@@ -1548,7 +1586,7 @@ A digital environment is one where computers and devices are networked together 
 <p>A key difference between digital decisions and their offline counterparts is the role of <strong>data</strong>. A digital decision can leverage unprecedented <strong>velocity, variety, and volume </strong> of data. The proliferation of data is a product of technological advancements in <em>data science, data engineering, data analytics, machine learning, and A.I</em>, which are distributed to decision makers through <strong>public cloud infrastructure</strong>.</p>
 <p>A fundamental question is then:</p>
 <center>
-<h3 id="more-data-better-decisions" class="heat">More Data = Better Decisions?</h3>
+<h3 class="heat" id="more-data-better-decisions">More Data = Better Decisions?</h3>
 </center>
 <p>The answer is not as straightforward as it may seem. From a purely statistical or econometric viewpoint - more data is always better - we get better parameter inferences, better predictive accuracy, and better power to test models.</p>
 <p>However from a decision making perspective matters are less clear. The main problem is that data and A.I. - despite the hype - is not a panacea by itself. <strong>The technologies alone do not magically transform decisions.</strong> As economists are fond of saying, <strong>there is no free lunch</strong>!</p>
@@ -1558,9 +1596,9 @@ A digital environment is one where computers and devices are networked together 
 </blockquote>
 <p>In order to create value, data technologies need to be transformed into applications that solve real problems and improve economic decisions. That is, applications need to be <strong>designed</strong> to extract value from data. Without good design, we are left with an alternative possibility:</p>
 <center>
-<h3 id="more-data-more-complexity-worse-decisions" class="heat">More Data = <br> More Complexity = <br> Worse Decisions!</h3>
+<h3 class="heat" id="more-data-more-complexity-worse-decisions">More Data = <br> More Complexity = <br> Worse Decisions!</h3>
 </center>
-<p>A <font size = 4 color = "red"> central problem </font> for market design is <font size = 4 color = "red"> designing digital environment to translate “more data” into “better economic decisions”.</font>.</p>
+<p>A <font size = 4 color = "red"> central problem </font> for market design is <font size = 4 color = "red"> designing digital environment to translate “more data” into “better economic decisions.”</font>.</p>
 <h2 id="our-approach-to-market-design">Our approach to market design</h2>
 <p>How should digital environment be designed to enable efficient economic decisions?</p>
 <p><strong>The first rule of good design is to know your audience.</strong> For whom are we designing? Who is the user?</p>
@@ -1589,7 +1627,7 @@ You cannot understand good design if you do not understand people; design is mad
 <aside>
 I recognize that combining “human-centered” and “economic” together is not often how the “dismal science” is practiced or perceived. 😄
 </aside>
-<h1 id="how-we-will-learn" class="salt">How We Will Learn</h1>
+<h1 class="salt" id="how-we-will-learn">How We Will Learn</h1>
 <p>In order to solve the design problem above, we need to understand our user - <em>human decision makers</em> - <strong>in the wild</strong>. The investigation will proceed along two parallel tracks of learning in the class:</p>
 <ol type="1">
 <li>Reading</li>
@@ -1607,19 +1645,19 @@ I recognize that combining “human-centered” and “economic” together is n
 <li>Reading to learn tools for understanding human users and influencing them with the data scientific artifacts.</li>
 </ol>
 <p>We describe the main texts that are part of the reading:</p>
-<h3 id="thinking-fast-and-slow" class="heat">Thinking Fast and Slow</h3>
+<h3 class="heat" id="thinking-fast-and-slow">Thinking Fast and Slow</h3>
 <p><img src="https://www.kurzweilai.net/images/book-cover-Thinking-Fast-+-Slow-no.-5.png" /></p>
 <p>In order to identify and influence economic inefficiencies in the wild, we need a map to know where to look. If human departures from efficient decisions happen completely at random, then the search would be difficult if not impossible - we would be at the mercy of luck to successfully design!</p>
 <p>Fortunately this is not the case. What is arguably the biggest discovery in the social and behavioral science in the last 50 years is that there are robust patterns of human cognition that make humans, e.g, <strong>Homo Sapien</strong> behave differently than the rational ideal, e.g., <strong>Homo Economicus</strong>.</p>
 <p>The science we will apply to the question follows from the seminal work of Kahneman and Tversy (KT for short) who in 1971 began the first inquiry into the question of whether humans naturally are <strong>intuitive statisticians</strong> - e.g., do humans instinctively process data in a fashion that abides by formal statistical principles?</p>
 <p><img src="https://media.vanityfair.com/photos/58262be9364154776b0baa17/1:1/w_1016,h_1016,c_limit/michael-lewis-moneyball-daniel-kahneman-amos-tversky-01.jpg" /> <img src="images/lawofsmallnumbers.png" /></p>
-<p>The surprising answer to the question was “no”, and led to an influential research paradigm known as <strong>“Heuristics and Biases”</strong> (H&amp;B for short).</p>
+<p>The surprising answer to the question was “no,” and led to an influential research paradigm known as <strong>“Heuristics and Biases”</strong> (H&amp;B for short).</p>
 <p>The crux of H&amp;B, which is among the biggest discovery in the social and behavioral sciences of the last 50 years, is that there are robust patterns of human cognition that make humans, e.g, <strong>Homo Sapien</strong> behave differently than the rational ideal, e.g., <strong>Homo Economicus</strong>. The program spawned the field of behavioral economics and led to Kahneman being awarded the <strong>Nobel Prize for Economic Science</strong> in 2002 (Tversy sadly passed away in 1996).</p>
 <aside>
 <strong>Homo Economicus</strong> is the "rational actor&amp;quot from your principles of economics courses used to model decisions by consumers, firms, and societies/governments.
 </aside>
 <p>The book <strong>“Thinking Fast and Slow”</strong> by <em>Daniel Kahneman</em> - describes the conceptual and historical backdrop behind H&amp;B and provides the basic clues for where we can anticipate that sub-rational economic decisions will happen. Identifying these scenarios is a central part of being a market designer in the digital age - data and AI when properly employed should ameliorate these biases and improve economic efficiency.</p>
-<h3 id="nudge-optional" class="heat">Nudge (optional)</h3>
+<h3 class="heat" id="nudge-optional">Nudge (optional)</h3>
 <p><img src="https://cms.qz.com/wp-content/uploads/2018/10/Nudge.jpg?quality=75&amp;strip=all&amp;w=1600&amp;h=900&amp;crop=1g" /></p>
 <p>Identifying an inefficiency in an economic decision is one thing. Changing someone’s behavior towards a more efficient state is quite another. No one likes to be told what to do, especially from data they may not fully be aware or understand.</p>
 <p>Perhaps the answer lies not in directing the outcome of the decision, but rather to <em>nudge</em> the decision maker towards the rational outcome while respecting their autonomy over the decision.</p>
@@ -1627,7 +1665,7 @@ I recognize that combining “human-centered” and “economic” together is n
 <p>An implication of H&amp;B for market design is that it is not simply <em>what</em> data is presented to humans, but <strong>how</strong> they are presented that affects which economic decisions are made. It implies that both the presentation of information as well as the information itself are part of the design problem. Said another way - <strong>The interface matters!</strong></p>
 <p>Nudge applies this fact and recognizes that interfaces (what they call <strong>choice contexts</strong>) can manipulated and hence designed to produce decisions that are more rational. Thaler and Sunstein call this type of market design <em>choice architecture</em> - designing the choice environment to nudge people to behave more rationally without having to make people “think” more rationally!</p>
 <p>However the practice of designing nudges has a potential <strong>dark side</strong> - especially in digital environments. They can be used to exploit human frailties to extract profits in a way that may not be human welfare improving to the user. Of course the definition of <em>welfare</em> itself can be in the eye of the beholder, and the dividing line between <em>good</em> vs <em>evil</em> nudges is not always clear. We will aim to be mindful of this important complexity as we explore the topic.</p>
-<h3 id="r-for-data-science" class="heat">R for Data Science</h3>
+<h3 class="heat" id="r-for-data-science">R for Data Science</h3>
 <p><img src="https://d33wubrfki0l68.cloudfront.net/bd366e1a176f391d0e6f092439ee92a0e99875c6/6250e/wp-content/uploads/2018/08/r-for-data-science.jpg" /></p>
 <p>Both “Thinking Fast and Slow” and “Nudge” were written before data science came of age. In fact the term “data science” itself was coined in 2008 (by D.J. Patil and Jeff Hammerbacher), the same year as <em>Nudge</em> was published.</p>
 <!-- Furthermore, the audience that "Nudge" is targeting is an audience of policy makers in positions of power and authority. This does not describe the lives of many young people entering the workforce who will be increasingly working directly with data to solve problems.  -->
@@ -1640,11 +1678,11 @@ I recognize that combining “human-centered” and “economic” together is n
 <h2 id="project-50">Project (50%)</h2>
 <p>You will work in teams of 3-4 and engage in a human centered design process that applies data to help solve a decision problem. The process will entail 7 distinct stages that you will carry your project forward with your team. The stages correspond to the elements of a human centered design process for data solutions:</p>
 <center>
-<h3 id="project-flow" class="heat">Project Flow</h3>
+<h3 class="heat" id="project-flow">Project Flow</h3>
 </center>
 <div class="layout-chunk" data-layout="l-body">
-<div id="htmlwidget-9f6c88f22ff11fa6c4fa" style="width:960px;height:576px;" class="grViz html-widget"></div>
-<script type="application/json" data-for="htmlwidget-9f6c88f22ff11fa6c4fa">{"x":{"diagram":"digraph{\n\n                     graph[rankdir = TD]\n                     \n                     node[shape = rectangle, style = filled, fontsize = 44]  \n                     A[label = \"Decision Problem\"]\n                     B[label = \"User Persona\"]\n                     C[label = \"User Interview\"]\n                     D[label = \"Data Collection\"]\n                     E[label = \"Construct Prototype\"]\n                     F[label = \"Collect Feedback\"]\n                     G[label = \"Iterate and Finalize\"]\n\n                     edge[color = black, fontsize = 44]\n                     A -> B\n                     B -> C\n                     C -> D\n                     D -> E\n                     E -> F\n                     F -> G\n                     \n                     }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-7ce2e07971b6b0686104" style="width:960px;height:576px;" class="grViz html-widget"></div>
+<script type="application/json" data-for="htmlwidget-7ce2e07971b6b0686104">{"x":{"diagram":"digraph{\n\n                     graph[rankdir = TD]\n                     \n                     node[shape = rectangle, style = filled, fontsize = 44]  \n                     A[label = \"Decision Problem\"]\n                     B[label = \"User Persona\"]\n                     C[label = \"User Interview\"]\n                     D[label = \"Data Collection\"]\n                     E[label = \"Construct Prototype\"]\n                     F[label = \"Collect Feedback\"]\n                     G[label = \"Iterate and Finalize\"]\n\n                     edge[color = black, fontsize = 44]\n                     A -> B\n                     B -> C\n                     C -> D\n                     D -> E\n                     E -> F\n                     F -> G\n                     \n                     }","config":{"engine":"dot","options":null}},"evals":[],"jsHooks":[]}</script>
 </div>
 <p>The components are:</p>
 <p><strong>1</strong>: <em>Define a decision problem of interest/concern</em> <br> <strong>2</strong>: <em>Hypothesize user personas and recruit users for interviews</em> <br> <strong>3</strong>: <em>Conduct user interviews and test/iterate the problem and persona definitions</em> <br> <strong>4</strong>: <em>Collect data for the problem</em> <br> <strong>5</strong>: <em>Construct a prototype</em> <br> <strong>6</strong>: <em>Collect user feedback on the prototype</em> <br> <strong>7</strong>: <em>Iterate and finalize prototype</em> <br></p>
@@ -1652,7 +1690,7 @@ I recognize that combining “human-centered” and “economic” together is n
 <p>The goal of the project is to get you to experience first hand what I view as the most challenging aspect of the <strong>design problem</strong>. This is usually not the technical AI, ML, or Data Science component, but rather <strong>understanding the user experience</strong> and user value for the decision being improved. The particular data technique that factors into building a prototype can be very simple - a well designed <strong>data visualization</strong> for example can more than suffice for a successful prototype, but it is the discretion of the team to find the appropriate data design for the problem at hand.</p>
 <p>You are not being evaluated on the intricacy of the prototype- <strong>there is no failure</strong>! Your evaluation is based on attempting to follow the process to develop a useful scenario for the application of data to the decision problem you have scoped. A big part of success is thus having a <strong>well defined problem</strong>, which itself will feel ambiguous and will morph as you go along the process.</p>
 <p>Thus you should see the process as an education in itself in real world design of data solution. You will <strong>struggle with ambiguity</strong> and test ideas, and discard many false starts before you find a path towards a solution that adds value to a decision problem. This is the nature of the <strong>iterative method</strong> and keeps you constantly connected to the <strong>user scenario</strong> before investing heavily in the technology side of what you are developing.</p>
-<h1 id="course-logistics" class="salt">Course Logistics</h1>
+<h1 class="salt" id="course-logistics">Course Logistics</h1>
 <p>The course will work in the following way.</p>
 <h3 id="you-will-have-readings-mostly-due-tuesday-of-each-week.">You will have readings mostly due Tuesday of each week.</h3>
 <p>With some occasional exceptions for shorter readings that are due both Tues and Thurs, which will take place early in the semester to establish a few foundations (see schedule below).</p>
@@ -1662,69 +1700,67 @@ I recognize that combining “human-centered” and “economic” together is n
 <p>We will arrange a schedule for meeting in advance of the week. Each team will have a session alloted with me, and a session with Nawaaz. There is no necessity to meet with us (you can opt out), and it is intended as an aid to help unblock any challenges you may face along the process of building a data solution.</p>
 <h3 id="on-select-lecture-dates-we-will-have-guest-speakers">On select lecture dates we will have guest speakers</h3>
 <p>The topic we are studying is at the bleeding edge of applied practice in the data industry. As such it is useful to hear perspective on human centered design from leaders in industry. As their participation is confirmed it will be updated on the course schedule.</p>
-<h1 id="course-schedule" class="salt">Course Schedule</h1>
+<h1 class="salt" id="course-schedule">Course Schedule</h1>
 <p>The following schedule provides dates for readings. Most but not all readings will be assigned to Perusall. It has also marked the weeks where a project milestone begins and ends. The schedule will fill out with more detail as the semester progresses.</p>
 <h2 id="week-01-0118---0122">Week 01, 01/18 - 01/22</h2>
-<h3 id="thurs-jan-21" class="heatinline">Thurs Jan 21</h3>
+<h3 class="heatinline" id="thurs-jan-21">Thurs Jan 21</h3>
 <h4 id="topic-rstudio-global-conference">Topic: Rstudio Global Conference</h4>
 <p>Register and attend any session(s) of the <a href="https://rstudio.com/conference/">Rstudio global conference</a> <br> <br> <img src="https://rstudio.com/assets/img/rstudio-global-with-date.jpg" /></p>
 <h2 id="week-02-0125---0129">Week 02, 01/25 - 01/29</h2>
-<h3 id="tues-jan-26" class="heatinline">Tues Jan 26</h3>
+<h3 class="heatinline" id="tues-jan-26">Tues Jan 26</h3>
 <h4 id="topic-syllabus-day">Topic: Syllabus Day</h4>
-<h3 id="thurs-jan-28" class="heatinline">Thurs Jan 28</h3>
+<h3 class="heatinline" id="thurs-jan-28">Thurs Jan 28</h3>
 <h4 id="topic-introduction-to-data-based-decisions">Topic: Introduction to Data Based Decisions</h4>
 <p>📖 tfs (Introduction) <br> nudge (Chapter 1)</p>
 <div class="layout-chunk" data-layout="l-body">
-<p>📜 Bounthavong, M. (2019). <em>Communicating data effectively with data visualizations: Part 21</em>. URL: <a href="https://mbounthavong.com/blog/2019/12/13/communicating-data-effectively-with-data-visualizations-part-21-examples-of-famous-and-infamous-data-visualizations-1">https://mbounthavong.com/blog/2019/12/13/communicating-data-effectively-with-data-visualizations-part-21-examples-of-famous-and-infamous-data-visualizations-1</a>.</p>
-<p>Schneider, C., M. Weinmann, and J. Vom Brocke (2018). “Digital nudging: guiding online user choices through interface design”. In: <em>Communications of the ACM</em> 61.7, pp. 67-73. URL: <a href="https://cacm.acm.org/magazines/2018/7/229029-digital-nudging/fulltext#R25">https://cacm.acm.org/magazines/2018/7/229029-digital-nudging/fulltext#R25</a>.</p>
+<p>📜 NULL</p>
 </div>
 <h2 id="week-03-0201---0205">Week 03, 02/01 - 02/05</h2>
 <p><strong>Project</strong>: Start Problem Definition</p>
-<h3 id="tues-feb-2" class="heatinline">Tues Feb 2</h3>
+<h3 class="heatinline" id="tues-feb-2">Tues Feb 2</h3>
 <h4 id="topic-homo-economicus">Topic: Homo Economicus</h4>
 <div class="layout-chunk" data-layout="l-body">
-<p>📜 Friedman, M. (1953). “The methodology of positive economics”. In: <em>Essays in positive economics</em> 3.3, pp. 145-178.</p>
+<p>📜 NULL</p>
 </div>
-<h3 id="thurs-feb-4" class="heatinline">Thurs Feb 4</h3>
+<h3 class="heatinline" id="thurs-feb-4">Thurs Feb 4</h3>
 <h4 id="topic-r-markdown">Topic: R Markdown</h4>
 <div class="layout-chunk" data-layout="l-body">
-<p>📜 Hohman, F., M. Conlen, J. Heer, et al. (2020). “Communicating with Interactive Articles”. In: <em>Distill</em>. <a href="https://distill.pub/2020/communicating-with-interactive-articles" class="uri">https://distill.pub/2020/communicating-with-interactive-articles</a>. DOI: <a href="https://doi.org/10.23915%2Fdistill.00028">10.23915/distill.00028</a>.</p>
-<p>Wickham, H. (2017). “R Markdown”. In: <em>R for Data Science</em>. O’Reilly. Chap. 27.</p>
+<p>📜 NULL</p>
 </div>
 <h2 id="week-04-0208---0212">Week 04, 02/08 - 02/12</h2>
 <p><strong>Project</strong>: Continue Problem Definition</p>
-<h3 id="thursday-feb-11" class="heatinline">Thursday Feb 11</h3>
+<h3 class="heatinline" id="thursday-feb-11">Thursday Feb 11</h3>
 <p>No Class</p>
 <h2 id="week-05-0215---0219">Week 05, 02/15 - 02/19</h2>
 <p><strong>Project</strong>: Start User Persona</p>
 <h2 id="week-06-0222---0226">Week 06, 02/22 - 02/26</h2>
 <p><strong>Project</strong>: Continue User Persona</p>
 <h2 id="week-07-0301---0305">Week 07, 03/01 - 03/05</h2>
-<p><strong>Project</strong>: Start User Interviews</p>
+<p><strong>Project</strong>: Plan User Interviews</p>
 <h2 id="week-08-0308---0312">Week 08, 03/08 - 03/12</h2>
-<p><strong>Project</strong>: Continue User Interviews</p>
+<p><strong>Project</strong>: Continue Planning User Interviews</p>
 <h2 id="week-09-0315---0319">Week 09, 03/15 - 03/19</h2>
-<p><strong>Project</strong>: Start Data Collection</p>
+<p><strong>Project</strong>: Conduct User Interviews</p>
 <h2 id="week-10-0322---0326">Week 10, 03/22 - 03/26</h2>
-<p><strong>Project</strong>: Continue Data Collection</p>
+<p><strong>Project</strong>: Continue Conducting User Interviews</p>
 <h2 id="week-11-0329---0402">Week 11, 03/29 - 04/02</h2>
-<p><strong>Project</strong>: Build Prototype</p>
-<h3 id="tues-march-30" class="heatinline">Tues March 30</h3>
+<p><strong>Project</strong>: Continue Conducting User Interviews</p>
+<h3 class="heatinline" id="tues-march-30">Tues March 30</h3>
 <p>No class</p>
 <h2 id="week-12-0405---0409">Week 12, 04/05 - 04/09</h2>
-<p><strong>Project</strong>: Continue Build Prototype</p>
+<p><strong>Project</strong>: Build Storyboard Prototype</p>
 <h2 id="week-13-0412---0416">Week 13, 04/12 - 04/16</h2>
-<p><strong>Project</strong>: Collect User Feedback</p>
+<p><strong>Project</strong>: Continue Building Storyboard Prototype</p>
 <h2 id="week-14-0419---0423">Week 14, 04/19 - 04/23</h2>
-<p><strong>Project</strong>: Continue Collect User Feedback</p>
+<p><strong>Project</strong>: Collect User Feedback</p>
 <h2 id="week-15-0426---0430">Week 15, 04/26 - 04/30</h2>
 <p><strong>Project</strong>: Iterate and Finalize</p>
 <h2 id="week-16-0503---0507">Week 16, 05/03 - 05/07</h2>
 <p><strong>Project</strong>: Continue Iterate and Finalize</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
-<div id="refs" class="references" role="doc-bibliography">
-<div id="ref-becker2017economic">
-<p>Becker, Gary S. 2017. <em>Economic Theory</em>. Routledge.</p>
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography">
+<div id="ref-becker2017economic" class="csl-entry" role="doc-biblioentry">
+Becker, Gary S. 2017. <em>Economic Theory</em>. Routledge.
 </div>
 </div>
 <!--radix_placeholder_article_footer-->
