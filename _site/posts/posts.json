@@ -1,5 +1,39 @@
 [
   {
+    "path": "posts/2021-04-15-regression/",
+    "title": "Regression",
+    "description": "The perils of non-regressive predictions",
+    "author": [
+      {
+        "name": "Amit Gandhi",
+        "url": {}
+      }
+    ],
+    "date": "2021-04-15",
+    "categories": [],
+    "contents": "\nStatistical Setup\n\nSome rearrangement\n\nRegression to the Mean\n\nKahneman’s Formula\n\nSystem 1: Non-Regressive Predictions\n\n\n\n\n",
+    "preview": "https://images.squarespace-cdn.com/content/v1/5792920c15d5dbebc9ce0197/1554555813287-5LEJMAZAJORUKTAIP1YD/ke17ZwdGBToddI8pDm48kJX8umODPpYitMJ4DARYOhVZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzu_709Se0fJeITSQR9xhc4qhCjWIeMi_K193vnPQ-mHjHJzwoeYxW5KTxULyrkYw0/diagram+based+table.jpg",
+    "last_modified": "2021-04-15T16:19:41+00:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2021-04-08-less-is-more/",
+    "title": "Less is More",
+    "description": "The causes and consequences of the conjunction fallacy",
+    "author": [
+      {
+        "name": "Amit Gandhi",
+        "url": {}
+      }
+    ],
+    "date": "2021-04-08",
+    "categories": [],
+    "contents": "\nThe Linda experiment is a rather famous one.\n\n\n\n",
+    "preview": "http://1.bp.blogspot.com/-NPihdAgExh8/UDjHm-6M0LI/AAAAAAAAD3U/iFezqbNNAwQ/s1600/Linda+Venn.jpg",
+    "last_modified": "2021-04-08T12:31:32+00:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2021-04-06-storyboarding/",
     "title": "Storyboarding",
     "description": "A low fidelity prototype of your decision solution",

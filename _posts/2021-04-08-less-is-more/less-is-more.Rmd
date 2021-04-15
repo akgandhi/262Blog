@@ -1,0 +1,15 @@
+---
+title: "Less is More"
+description: |
+  The causes and consequences of the conjunction fallacy
+author:
+  - name: Amit Gandhi
+    url: {}
+date: 04-08-2021
+output:
+  distill::distill_article:
+    self_contained: false
+preview: http://1.bp.blogspot.com/-NPihdAgExh8/UDjHm-6M0LI/AAAAAAAAD3U/iFezqbNNAwQ/s1600/Linda+Venn.jpg
+---
+
+The Linda experiment is a rather famous one. 

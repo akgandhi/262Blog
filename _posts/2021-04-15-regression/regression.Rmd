@@ -1,0 +1,38 @@
+---
+title: "Regression"
+description: |
+  The perils of non-regressive predictions
+author:
+  - name: Amit Gandhi
+    url: {}
+date: 04-15-2021
+output:
+  distill::distill_article:
+    self_contained: false
+preview: https://images.squarespace-cdn.com/content/v1/5792920c15d5dbebc9ce0197/1554555813287-5LEJMAZAJORUKTAIP1YD/ke17ZwdGBToddI8pDm48kJX8umODPpYitMJ4DARYOhVZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzu_709Se0fJeITSQR9xhc4qhCjWIeMi_K193vnPQ-mHjHJzwoeYxW5KTxULyrkYw0/diagram+based+table.jpg
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Statistical Setup
+
+![](reg2.png)
+
+## Some rearrangement
+
+![](reg3.png)
+
+## Regression to the Mean
+
+![](reg4.png)
+
+## Kahneman's Formula
+
+![](reg5.png)
+
+## System 1: Non-Regressive Predictions
+
+![](reg6.png)
