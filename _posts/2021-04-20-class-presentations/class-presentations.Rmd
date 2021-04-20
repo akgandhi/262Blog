@@ -1,0 +1,29 @@
+---
+title: "Class Presentations"
+description: |
+  Your 7 min structure
+author:
+  - name: Amit Gandhi
+    url: {}
+date: 04-20-2021
+output:
+  distill::distill_article:
+    self_contained: false
+preview: https://miro.medium.com/max/2732/1*mcZkRpUrirQg3uzW6W7aqg.png
+---
+
+### Each group should aim for roughly a 10 minute presentation with 7 mins of content and time remaining for Q+A.  
+
+### The order of data/information conveyed should be similar between the teams. The key elements are the following:
+
+<br>
+
+1. What is your problem/question and why is it relevant/important. (< 1min)
+
+2. Who are the primary user personas of interest to you and their connection to your question. (< 1.5 min)
+
+3. What did you learn from your user interview experience in terms of the definition of your problem (what did you tweak?) and the relationship to your user (what did you tweak?) (< 2 min)
+
+4. Present a story board of your idea for a solution to the user's experience in the decision problem you have defined. (< 2.5 min)
+
+5. Answer Questions. 

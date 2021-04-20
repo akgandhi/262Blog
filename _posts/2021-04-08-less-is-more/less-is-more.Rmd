@@ -12,4 +12,33 @@ output:
 preview: http://1.bp.blogspot.com/-NPihdAgExh8/UDjHm-6M0LI/AAAAAAAAD3U/iFezqbNNAwQ/s1600/Linda+Venn.jpg
 ---
 
-The Linda experiment is a rather famous one. 
+## A Famous Experiment 
+
+![](linda1.png)
+
+
+![](linda2.png)
+
+
+## The Finding
+
+![](linda3.png)
+
+
+## Conjuction Fallacy
+
+![](linda4.png)
+
+## The Representative Heuristic
+
+![](linda5.png)
+
+
+## Probability vs Plausability
+
+![](linda6.png)
+
+
+## The Importance of Storytelling
+
+![](linda7.png)

@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2021-04-20-class-presentations/",
+    "title": "Class Presentations",
+    "description": "Your 7 min structure",
+    "author": [
+      {
+        "name": "Amit Gandhi",
+        "url": {}
+      }
+    ],
+    "date": "2021-04-20",
+    "categories": [],
+    "contents": "\nEach group should aim for roughly a 10 minute presentation with 7 mins of content and time remaining for Q+A.\nThe order of data/information conveyed should be similar between the teams. The key elements are the following:\n\nWhat is your problem/question and why is it relevant/important. (< 1min)\nWho are the primary user personas of interest to you and their connection to your question. (< 1.5 min)\nWhat did you learn from your user interview experience in terms of the definition of your problem (what did you tweak?) and the relationship to your user (what did you tweak?) (< 2 min)\nPresent a story board of your idea for a solution to the user’s experience in the decision problem you have defined. (< 2.5 min)\nAnswer Questions.\n\n\n\n",
+    "preview": "https://miro.medium.com/max/2732/1*mcZkRpUrirQg3uzW6W7aqg.png",
+    "last_modified": "2021-04-20T14:09:31+00:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2021-04-15-regression/",
     "title": "Regression",
     "description": "The perils of non-regressive predictions",
@@ -11,9 +28,9 @@
     ],
     "date": "2021-04-15",
     "categories": [],
-    "contents": "\nStatistical Setup\n\nSome rearrangement\n\nRegression to the Mean\n\nKahneman’s Formula\n\nSystem 1: Non-Regressive Predictions\n\n\n\n\n",
+    "contents": "\nStatistical Setup\n\nSome rearrangement\n\nRegression to the Mean\n\nKahneman’s Formula\n\nSystem 1: Non-Regressive Predictions\n\nAn Example\n\nWhat Happens\n\nTaming Intuitive Predictions?\n\n\nTo Tame or Not to Tame?\n\nA Final Example\n ## Broader Implications\n\n\n\n\n",
     "preview": "https://images.squarespace-cdn.com/content/v1/5792920c15d5dbebc9ce0197/1554555813287-5LEJMAZAJORUKTAIP1YD/ke17ZwdGBToddI8pDm48kJX8umODPpYitMJ4DARYOhVZw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpzu_709Se0fJeITSQR9xhc4qhCjWIeMi_K193vnPQ-mHjHJzwoeYxW5KTxULyrkYw0/diagram+based+table.jpg",
-    "last_modified": "2021-04-15T16:19:41+00:00",
+    "last_modified": "2021-04-20T16:24:13+00:00",
     "input_file": {}
   },
   {
@@ -28,9 +45,9 @@
     ],
     "date": "2021-04-08",
     "categories": [],
-    "contents": "\nThe Linda experiment is a rather famous one.\n\n\n\n",
+    "contents": "\nA Famous Experiment\n\n\nThe Finding\n\nConjuction Fallacy\n\nThe Representative Heuristic\n\nProbability vs Plausability\n\nThe Importance of Storytelling\n\n\n\n\n",
     "preview": "http://1.bp.blogspot.com/-NPihdAgExh8/UDjHm-6M0LI/AAAAAAAAD3U/iFezqbNNAwQ/s1600/Linda+Venn.jpg",
-    "last_modified": "2021-04-08T12:31:32+00:00",
+    "last_modified": "2021-04-20T16:39:48+00:00",
     "input_file": {}
   },
   {

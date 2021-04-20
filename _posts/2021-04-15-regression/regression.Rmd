@@ -36,3 +36,31 @@ knitr::opts_chunk$set(echo = FALSE)
 ## System 1: Non-Regressive Predictions
 
 ![](reg6.png)
+
+
+
+## An Example
+
+![](test0.png)
+
+## What Happens
+
+![](test1.png)
+
+# Taming Intuitive Predictions?
+
+![](reg23.png)
+
+![](reg24.png)
+
+
+## To Tame or Not to Tame?
+
+![](test2.png)
+
+## A Final Example
+
+![](test3.png)
+## Broader Implications
+
+![](test6.png)
