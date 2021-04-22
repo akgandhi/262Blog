@@ -1,0 +1,60 @@
+---
+title: "Project Submission"
+description: |
+  A workflow to connect Rmarkdown, Rstudio, and GitHub
+author:
+  - name: Amit Gandhi
+date: 04-21-2021
+output:
+  distill::distill_article:
+    self_contained: false
+preview: https://miro.medium.com/max/2756/1*UwLa1LPpa1tI7wIAsMH67w.jpeg
+---
+
+We will deploy a market design team project blog site. 
+
+The steps to follow for submitting your projects in Rmarkdown form via GitHub. 
+
+1. Download [Rstudio](https://www.rstudio.com/products/rstudio/download/#download)
+
+
+2. Install the distill package `install.packages("distill")`
+
+3. Create a GitHub account if you do not have one already. 
+
+4. Navigate to the course projects repository: `akgandhi/econ262s21`
+
+5. In the upper right hand corner, click **Fork**. This creates a copy of the repo in your GitHub account. You should now be pointed to `YOU/econ262s21`
+
+6. Clone the forked repo to your local machine via Rstudio. 
+
+    - *File > New Project > Version Control > Git*. 
+    - In the “repository URL” paste the URL of your new GitHub repository. It will be something like this https://github.com/jennybc/myrepo.git.
+    - Be intentional about where you create this Project.
+    - Suggest you “Open in new session”.
+    - Click “Create Project” to create a new directory, which will be all of these things: a directory or “folder” on your computer a Git repository, linked to a remote GitHub repository an RStudio Project
+
+6.  The files contained in the project you createdc are the pieces of the blog we will assemble and deploy. To contribute your team's project, navigate to  <font color = "red">_posts > your_team_number </font>. 
+    - Upload files as necessary to the folder and use the template Rmarkdown file `project_summary.Rmd` to summarize you content. 
+    - You will knit this .Rmd file to create an html which will automatically be placed in your team directory.
+    - You can periodically knit to examine the progress of your document as an HTML product. 
+
+
+7. When you are finished editing and want to submit your project writeup, you will send a pull request to me (the main repo owner) using the following steps:
+    - Click the “Git” tab in upper right pane
+    - Check “Staged” box for all files shown (which correspond to the one's you have edited/created)
+    - Click “Commit”
+    - In the pop-up window ,enter a “Commit message”, such as “Team 5 project submission”.
+    - Click “Commit”
+
+8. Click the green “Push” button to send your local changes to GitHub. You will need to authenticate into GitHub. 
+
+9. Confirm the local change propagated to your GitHub remote
+    - Go to your browser and navigate to the forked GitHub repo.
+    - You should see all the project files you committed there.
+
+10. Submit pull request from the button on your remote repo page in GitHub.com
+
+
+
+

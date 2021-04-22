@@ -1,0 +1,81 @@
+---
+title: "Untitled"
+description: |
+  A new article created using the Distill format.
+author:
+  - name: Nora Jones 
+    url: https://example.com/norajones
+    affiliation: Spacely Sprockets
+    affiliation_url: https://example.com/spacelysprokets
+date: "`r Sys.Date()`"
+output: distill::distill_article
+---
+
+# Problem Statement
+
+Place a short description (3 sentences max) of your problem. 
+
+### Explain the decision inefficiency in the state of problem today.
+
+### Why is it importnat or worth solving?
+
+
+# User Personas
+
+## Persona 1 
+
+![](petname.png)
+
+### Persona 2
+
+![](petname.png)
+
+### Persona 3
+
+![](petname.png)
+
+# Conversation Starters
+
+1. Starter 1
+2. Starter 2
+3. Starter 3
+4. Starter 4
+5. Starter 5. 
+
+# User Interviews
+
+1. Interview 1 Name
+    - When did it happen
+    - How did it happen
+ 
+
+2. Interview 2 Name
+    - When did it happen
+    - How did it happen
+    
+3. Interview 3 Name
+    - When did it happen
+    - How did it happen
+    
+
+# Learnings from the User Interviews
+
+1. Learning 1 and what did you tweak in problem or persona understanding
+2. Learning 2 and what did you tweak in your problem or persona understanding
+3. Learning 3 and what did you tweak in your problem or persona understanding. 
+
+# Storyboarding a Solution
+
+## Frame 1
+
+In the first frame start with the user and their basic situation/problem before experiencing your solution. 
+
+- Point 1
+- Point 2
+- Point 3
+
+![](insertimagehere.gif)
+
+
+
+

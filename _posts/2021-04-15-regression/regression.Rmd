@@ -61,6 +61,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ## A Final Example
 
 ![](test3.png)
+
 ## Broader Implications
 
 ![](test6.png)
