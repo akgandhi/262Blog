@@ -2674,12 +2674,19 @@ d-appendix d-footnote-list a.footnote-backlink {
 </div>
 
 <div class="d-article">
-<p>We will deploy a market design team project blog site.</p>
-<p>The steps to follow for submitting your projects in Rmarkdown form via GitHub.</p>
+<h3 id="we-will-deploy-a-market-design-team-project-blog-site.">We will deploy a market design team project blog site.</h3>
+<h3 id="the-steps-to-follow-for-submitting-your-projects-in-rmarkdown-form-via-github.">The steps to follow for submitting your projects in Rmarkdown form via GitHub.</h3>
 <ol type="1">
-<li><p>Download <a href="https://www.rstudio.com/products/rstudio/download/#download">Rstudio</a></p></li>
-<li><p>Install the distill package <code>install.packages("distill")</code></p></li>
 <li><p>Create a GitHub account if you do not have one already.</p></li>
+<li><p>Download <a href="https://www.rstudio.com/products/rstudio/download/#download">Rstudio</a></p></li>
+<li><p>Install the <code>distill</code> package via <code>install.packages("distill")</code></p></li>
+<li><p>Install git on your machine for windows (<a href="https://gitforwindows.org/" class="uri">https://gitforwindows.org/</a>) or mac (<a href="http://git-scm.com/downloads" class="uri">http://git-scm.com/downloads</a>)</p></li>
+<li><p>Introduce yourself to git via the <code>usethis</code> package:</p>
+<ul>
+<li><code>install.packages("usethis")</code></li>
+<li><code>library(usethis)</code></li>
+<li><code>use_git_config(user.name = "Jane Doe", user.email = "jane@example.org")</code> where you should substitute your name and the email associated with your GitHub account</li>
+</ul></li>
 <li><p>Navigate to the course projects repository: <code>akgandhi/econ262s21</code></p></li>
 <li><p>In the upper right hand corner, click <strong>Fork</strong>. This creates a copy of the repo in your GitHub account. You should now be pointed to <code>YOU/econ262s21</code></p></li>
 <li><p>Clone the forked repo to your local machine via Rstudio.</p>
@@ -2711,6 +2718,7 @@ d-appendix d-footnote-list a.footnote-backlink {
 <li>You should see all the project files you committed there.</li>
 </ul></li>
 <li><p>Submit pull request from the button on your remote repo page in GitHub.com</p></li>
+<li><p>I will contact you if there are merge conflicts.</p></li>
 </ol>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
